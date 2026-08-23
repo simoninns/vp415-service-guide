@@ -4,32 +4,89 @@ description: >-
   Deck electronics: laser supply and the laser detection unit.
 ---
 
-<!-- drafted by tools/import_modules.py - hand-edited afterwards -->
-
 # Module Z - Deck electronics
 
 Deck electronics: laser supply and the laser detection unit.
 
 ## Overview
 
+Deck electronics is the board **under the optical deck chassis**, connected to
+the laser detection unit by a flex-foil. It does two things: it runs the
+**laser supply**, and it turns the photodiode signals from the LDU into the
+signals the rest of the player works with — HF, radial, focus and tilt.
+
+It is also the board with **six adjustment potentiometers on it** and no
+adjustment procedure in the manual — see below.
+
 | | |
 | --- | --- |
-| Designation | **Z** |
+| Designation | **Z** — deck electronics |
 | Modification levels | 2 → 3 |
-| Data sheet | `CS 7 861`, page 098 |
-| Circuit diagram | `CS 6 893`, page 099 |
+| Data sheet | `CS 7 861`, page 098 — parts and PCB lay-out |
+| Circuit diagram | `CS 6 893`, page 099 — laser detection unit |
+| Connectors | `Z0` to `Z6` on the deck |
+| Out | `HF-OUT1`, `HF-OUT2` · `RAD-ER` · `FOC-ER`, `FPI` · `LA-STA` |
 
 ## Where it sits in the player
 
-See the [module and connector lay-out](../../system/module-layout.md).
+On the optical deck itself, underneath the deck chassis — the yellow laser
+warning label in the overhead photograph on the
+[module and connector lay-out](../../system/module-layout.md) page is directly
+above it. There are no plug-in-module photographs of this board in the
+collection because it is not a plug-in module; the photographs on the
+[deck electronics adjustment](../../reference/calibration/deck-electronics.md)
+page show it in place.
+
+!!! danger "Class 1 laser"
+
+    Working on this board means working with the laser supply live and the
+    deck open. Read [warnings](../../general-service/warnings.md) first.
 
 ## Circuit description
 
-[Chapter 7, module Z](../../circuit-description/modules.md#module-z).
+**The laser supply.** The solid-state laser runs from +5 V through a
+controllable DC amplifier. Part of the light goes to the optics and part to an
+internal monitor diode, whose output is fed back through T7002 and T7003 to
+amplifier T7005 — a constant-current loop. The monitor signal also drives
+switch T7004, taking `LA-STA` low once the laser is on, which
+[drive processor module R](../r-drive-processor/index.md) watches. `LA`
+switches the amplifier, and so the laser, on and off through T7001 — **`LA`
+low = laser off**.
+
+**HF.** Photodiodes A, B, C and D carry the pit pattern. The sum A+B+C+D goes
+through a > 50 kHz high-pass filter to the HF preamplifier, which produces
+`HF-OUT1` and `HF-OUT2`, both FM modulated by the disc information.
+
+**Radial.** Photodiodes R1 and R2 produce a radial error when the laser spots
+are not exactly on track; the servo preamplifier turns that into `RAD-ER` for
+[radial module M](../m-radial/index.md).
+
+The full text — focus, tilt and the active tilt control — is in
+[chapter 7, module Z](../../circuit-description/modules.md#module-z).
 
 ## Adjustments
 
-None.
+**The manual gives no adjustment procedure for this module**, which is
+unhelpful, because the board carries six potentiometers and they all matter:
+
+| Item | Value | What it sets |
+| --- | --- | --- |
+| 3040 | 1 kΩ | HF amplitude |
+| 3058 | 1 kΩ | Focus / radial ratio |
+| 3066 | 100 kΩ | Focus gain |
+| 3076 | 10 kΩ | Radial balance |
+| 3079 | 22 kΩ | Radial gain |
+| 3088 | 4.7 kΩ | Tilt offset |
+
+!!! tip "There is a guide for these"
+
+    The [deck electronics adjustment](../../reference/calibration/deck-electronics.md)
+    page carries an annotated photograph locating all six pots on a real board,
+    and a scope trace for each showing what a correct adjustment looks like.
+    That is original work, not from the manual.
+
+Note also that chapter 2 asks you to check `CVBS OUT` after replacing module H,
+K, L **or Z** — see [adjustments](../../general-service/adjustments.md).
 
 ## Circuit diagram
 
@@ -55,17 +112,15 @@ None.
 
 ## List of electrical parts
 
-**Other**
-
-| Item | Service code number | Value | Rating |
-| --- | --- | --- | --- |
-|  | 4822 130 60493 | Detector diode |  |
-
 **Diodes**
 
-| Item | Service code number | Value | Rating |
-| --- | --- | --- | --- |
-| 6020 | 4822 130 32114 | GP1SD4 Photo interruptor |  |
+| Item | Service code number | Type |
+| --- | --- | --- |
+| — | 4822 130 60493 | Detector diode |
+| 6020 | 4822 130 32114 | GP1S04 photo interrupter |
+
+The detector diode has no item number on the sheet; that is how the manual
+prints it.
 
 **Potentiometers**
 
@@ -82,56 +137,6 @@ None.
 
 | Item | Service code number | Value | Rating |
 | --- | --- | --- | --- |
-| 3010 | D 5 | 3036 | B 5 |
-| 3011 | C 5 | 3040 | B 2 |
-| 3012 | C 5 | 3041 | B 5 |
-| 3013 | C 5 | 3042 | B 4 |
-| 3014 | D 5 | 3043 | B 4 |
-| 3015 | D 5 | 3044 | B 5 |
-| 3016 | D 4 | 3045 | A 4 |
-| 3023 | C 5 | 3046 | A 4 |
-| 3027 | B 5 | 3053 | B 5 |
-| 3050 | B 5 | 3060 | C 6 |
-| 3056 | B 5 | 3066 | C 1 |
-| 3057 | B 6 | 3067 | C 5 |
-| 3058 | B 1 | 3066 | C 5 |
-| 3059 | C 6 | 3060 | C 6 |
-| 3059 | C 5 | 7061 | D 5 |
-| 3060 | C 5 | 3036 | B 4 |
-| 3060 | C 6 | 3071 | C 5 |
-| 3061 | C 4 | 6014 | D 6 |
-| 3061 | C 6 | 3071 | C 6 |
-| 3062 | D 4 | 6015 | D 6 |
-| 3062 | C 6 | 3072 | C 6 |
-| 3062 | C 6 | 3073 | C 6 |
-| 3063 | C 4 | 6016 | D 6 |
-| 3064 | C 5 | 3084 | C 6 |
-| 3065 | D 4 | 6017 | D 5 |
-| 3067 | B 6 | 6018 | D 5 |
-| 3068 | C 5 | 6019 | D 5 |
-| 3070 | C 6 | 7062 | D 5 |
-| 3071 | C 4 | 7063 | C 5 |
-| 3072 | D 6 | 7064 | C 4 |
-| 3074 | C 6 | 3080 | D 6 |
-| 3075 | C 5 | 3080 | D 6 |
-| 3076 | C 2 | 3081 | D 6 |
-| 3077 | C 5 | 3082 | D 6 |
-| 3078 | C 5 | 3083 | D 6 |
-| 3079 | C 1 | 3084 | D 6 |
-| 3085 | A 4 | 3085 | D 6 |
-| 3086 | D 6 | 3086 | D 6 |
-| 3087 | D 6 | 3087 | D 6 |
-| 3088 | D 2 | 3100 | D 6 |
-| 3101 | D 6 | 3111 | D 5 |
-| 3102 | D 6 | 3112 | D 5 |
-| 3103 | D 6 | 3113 | D 5 |
-| 3104 | D 5 | 3114 | C 5 |
-| 3105 | D 5 | 3115 | D 5 |
-| 3106 | D 5 | 3116 | D 5 |
-| 3107 | D 5 | 3120 | D 6 |
-| 3108 | D 5 | 3121 | D 6 |
-| 3109 | C 5 | 3122 | C 6 |
-| 3110 | C 6 | 3123 | C 6 |
 | 3120 | 4822 111 30892 | 27 Ω |  |
 | 3121 | 4822 111 30892 | 27 Ω |  |
 
@@ -140,25 +145,15 @@ None.
 | Item | Service code number | Value | Rating |
 | --- | --- | --- | --- |
 | 2001 | 4822 122 31759 | 22 nF |  |
-| 2001 | D 5 | 2026 | A 2 |
 | 2002 | 4822 122 32974 | 100 pF |  |
-| 2002 | C 5 | 2021 | C 5 |
 | 2003 | 4822 122 31759 | 22 nF |  |
-| 2003 | D 5 | 2022 | B 5 |
 | 2004 | 4822 124 22194 | 33 μF | 10 V |
-| 2004 | D 2 | 2028 | B 5 |
 | 2005 | 4822 124 22194 | 33 μF | 10 V |
-| 2005 | D 2 | 2034 | C 6 |
 | 2006 | 4822 122 32974 | 100 pF |  |
-| 2006 | D 5 | 2035 | C 6 |
 | 2007 | 4822 122 32542 | 47 nF |  |
-| 2007 | D 5 | 2036 | C 6 |
 | 2023 | 4822 122 31759 | 22 nF |  |
-| 2023 | B 5 | 2037 | C 6 |
 | 2024 | 4822 124 22193 | 10 μF | 16 V |
-| 2024 | B 2 | 2038 | C 6 |
 | 2025 | 4822 124 22192 | 1 μF | 16 V |
-| 2025 | B 3 | 2039 | C 6 |
 | 2026 | 4822 124 22192 | 1 μF | 16 V |
 | 2031 | 4822 122 31971 | 10 pF |  |
 | 2032 | 4822 122 31971 | 10 pF |  |
@@ -171,51 +166,44 @@ None.
 | 2039 | 4822 122 32975 | 33 pF |  |
 | 2042 | 4822 122 31759 | 22 nF |  |
 | 2043 | 4822 122 31759 | 22 nF |  |
-| 2043 | C 5 | 2055 | B 1 |
-| 2043 | C 5 | 2056 | B 1 |
-| 2043 | C 5 | 3002 | D 5 |
 | 2044 | 4822 122 31966 | 27 pF |  |
-| 2044 | C 5 | 3001 | D 5 |
 | 2045 | 4822 122 31966 | 27 pF |  |
-| 2046 | D 6 | 3003 | D 5 |
 | 2048 | 4822 122 33007 | 330 nF | 25 V |
 | 2049 | 4822 122 33007 | 330 nF | 25 V |
-| 2049 | D 6 | 3004 | C 5 |
 | 2051 | 4822 121 51107 | 4.7 μF | 16 V |
-| 2051 | C 1 | 3005 | D 5 |
 | 2052 | 4822 122 31759 | 22 nF |  |
-| 2052 | C 6 | 3006 | D 5 |
 | 2053 | 4822 121 51107 | 4.7 μF | 16 V |
-| 2053 | D 1 | 3007 | D 5 |
-| 2054 | 4822 122 32891 | 66 nF |  |
-| 2054 | C 6 | 3008 | C 5 |
+| 2054 | 4822 122 32891 | 68 nF |  |
 | 2055 | 4822 124 22192 | 1 μF | 16 V |
 | 2056 | 4822 124 22192 | 1 μF | 16 V |
 
-**Transistors and integrated circuits**
-
-| Item | Service code number | Value | Rating |
-| --- | --- | --- | --- |
-| 7000 | D 5 | 7202 | C 6 |
-| 7010 | B 5 | 7202 | C 5 |
-| 7011 | B 5 | 7204 | D 6 |
-| 7012 | A 5 | 7206 | D 6 |
-| 7013 | C 5 | 7208 | D 5 |
-| 7015 | D 5 | 7207 | D 5 |
-| 7016 | C 5 |  |  |
-| 7017 | D 6 |  |  |
-| 7018 | D 5 |  |  |
-| 7251 | B 6 |  |  |
-
 ## Modification levels
 
-[Chapter 8, module Z](../../service-information/modification-levels.md#mod-z).
+The module shipped at level 2 and went to level 3 in the fifth production
+batch. The chapter 8 sheet records three changes, none of them tied to a level
+number on the sheet itself:
+
+- R3104 22 k → 10 k, R3086 6k8 → 33 k, R3087 4k7 → 22 k, R3088 4k7 → 22 k and
+  R3089 1 M → 4M7 — a fault in the diagram, and the introduction of a **new
+  corner sensor** with a different specification.
+- D6021 (HZA92, 8.2 V) added with R3109 and R3110 changed from 10 Ω to 0 Ω,
+  because the **tilt motor did not work correctly**.
+- D6021 HZA92 → BC548B, "cheaper".
+
+Note that R3088 appears in the parts list above as a 4.7 kΩ potentiometer and
+in the mod list as a fixed resistor changing 4k7 → 22 k; the sheets use the
+same item number for both, so **check the board**.
+
+Full tables, with service code numbers:
+[chapter 8, module Z](../../service-information/modification-levels.md#mod-z).
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md)
-- [The optical deck](../../circuit-description/optical-deck.md)
-- [VP400 series architecture](../../circuit-description/vp400-series.md)
-- [Fault-finding charts](../../repair/fault-finding.md)
-- [Modification levels per module](../../service-information/modification-levels.md)
-- [Module and connector lay-out](../../system/module-layout.md)
+- [Deck electronics adjustment](../../reference/calibration/deck-electronics.md) — the six potentiometers, with photograph and scope traces
+- [The optical deck](../../circuit-description/optical-deck.md) — the LDU this board reads
+- [Module circuit descriptions](../../circuit-description/modules.md#module-z) — the chapter 7 text in full
+- [Warnings](../../general-service/warnings.md) — laser safety
+- [Modification levels per module](../../service-information/modification-levels.md#mod-z) — the corner sensor and tilt motor changes
+- [Module J — Focus](../j-focus/index.md) — takes `FOC-ER` and `FPI` from here
+- [Module M — Radial](../m-radial/index.md) — takes `RAD-ER` from here
+- [Module K — HF processor](../k-hf-processor/index.md) — takes the HF signal from here

@@ -249,7 +249,9 @@ STAMP = re.compile(r'^\s*(MDA-\d+|T\d+/\d+)\s*$', re.M)
 # number against grid square, "2001 A 4", hundreds of them. It belongs to the
 # drawing, not to the parts list, and it is not reproduced as text - the
 # lay-out figure carries it.
-LOCATOR_CELL = re.compile(r'^\d{4}\s*[A-D]\s*\d$')
+# The OCR reads a locator entry either whole - "2001 A 4" - or split across
+# two cells, the item in one and the grid square in the next.
+LOCATOR_CELL = re.compile(r'^\d{4}\s*[A-D]\s*\d$|^[A-D]\s*\d$')
 
 
 def unmath(text: str) -> str:
@@ -267,7 +269,7 @@ def is_locator(line: str) -> bool:
     if not line.startswith('|') or is_rule(line):
         return False
     got = [c for c in cells(line) if c]
-    return len(got) > 2 and sum(bool(LOCATOR_CELL.match(c)) for c in got) > len(got) / 2
+    return len(got) > 2 and sum(bool(LOCATOR_CELL.match(c)) for c in got) >= len(got) / 2
 
 
 def clean(text: str) -> str:
