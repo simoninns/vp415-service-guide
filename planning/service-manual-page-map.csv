@@ -1,198 +1,198 @@
 page,fold,sheet,chapter,section,module,content_type,cs_code,title,publish_source
-001,A4,001,front,front-matter,,cover,CS 7 814,Front cover / contents,Original PNG/vp415-colour300dpi-fixed_Page_001.png
-002,A4,002,front,front-matter,,contents,,Chapter tab contents,Original PNG/vp415-colour300dpi-fixed_Page_002.png
-003,A4,003,1,divider,,divider,,"Chapter 1 divider (Technical data, controls, connector pinning)",Original PNG/vp415-colour300dpi-fixed_Page_003.png
-004,A4,004,1,technical-data,,text,CS 7 816,Technical data,Original PNG/vp415-colour300dpi-fixed_Page_004.png
-005,A4,005,1,controls-connections,,text+figure,,"Controls, indicators and connections",Original PNG/vp415-colour300dpi-fixed_Page_005.png
-006,A4,006,1,connector-pinning,,text,,"Connector pinning (A/V Euroconnector, RGB TTL DIN, SCSI)",Original PNG/vp415-colour300dpi-fixed_Page_006.png
-007,A4,007,2,divider,,divider,,Chapter 2 divider (General service information),Original PNG/vp415-colour300dpi-fixed_Page_007.png
-008,A4,008,2,remarks,,text,,Remarks,Original PNG/vp415-colour300dpi-fixed_Page_008.png
-009,A4,009,2,warnings,,text,,Warnings (laser radiation),Original PNG/vp415-colour300dpi-fixed_Page_009.png
-010,A4,010,2,modification-levels,,text,,Modification levels,Original PNG/vp415-colour300dpi-fixed_Page_010.png
-011,A4,011,2,adjustments,,text,,Adjustments - general and required,Original PNG/vp415-colour300dpi-fixed_Page_011.png
-012,bifold,012,2,adjustments,,figure,,Video adjustments survey (block diagram),Original PNG/vp415-colour300dpi-fixed_Page_012.png
-013,bifold,013,2,demounting,,figure,,Demounting instructions,Original PNG/vp415-colour300dpi-fixed_Page_013.png
-014,A4,014,2,service-hints,,text,,Service hints (ESD),Original PNG/vp415-colour300dpi-fixed_Page_014.png
-015,A4,015,2,service-tools,,figure,,Service tools,Original PNG/vp415-colour300dpi-fixed_Page_015.png
-016,bifold,016,2,service-tools,,figure,,Application of service tools,Original PNG/vp415-colour300dpi-fixed_Page_016.png
-017,bifold,017,2,symbols,,figure,,List of used symbols,Original PNG/vp415-colour300dpi-fixed_Page_017.png
-018,A4,018,3,divider,,divider,,Chapter 3 divider (Layout / signals / block diagrams),Original PNG/vp415-colour300dpi-fixed_Page_018.png
-019,bifold,019,3,module-layout,,figure,CS 7 829,Module and connector lay-out,Original PNG/vp415-colour300dpi-fixed_Page_019.png
-020,bifold,020,3,signal-listing,,table,CS 7 830,Alphabetical signal listing,Original PNG/vp415-colour300dpi-fixed_Page_020.png
-021,trifold,021_022,3,wiring-diagram,,figure,CS 7 831,Wiring diagram - player (WDP) - left portion,A4 trifold/vp415-colour300dpi-fixed_Page_021_022.png
-022,trifold,021_022,3,wiring-diagram,,figure,CS 7 831,Wiring diagram - player (WDP) - right portion,A4 trifold/vp415-colour300dpi-fixed_Page_021_022.png
-023,bifold,023,3,wiring-diagram,,figure,CS 7 832,Wiring diagram - sandwich (WDS),Original PNG/vp415-colour300dpi-fixed_Page_023.png
-024,bifold,024,3,block-diagrams,,figure,CS 7 833,Block diagram - control routes,Original PNG/vp415-colour300dpi-fixed_Page_024.png
-025,bifold,025,3,block-diagrams,,figure,CS 7 834,Block diagram - audio/video signal path,Original PNG/vp415-colour300dpi-fixed_Page_025.png
-026,bifold,026,3,block-diagrams,,figure,CS 7 835,Block diagram - servo,Original PNG/vp415-colour300dpi-fixed_Page_026.png
-027,A4,027,3,semiconductors,,figure,CS 8 121,Connections of semiconductors,Original PNG/vp415-colour300dpi-fixed_Page_027.png
-028,A4,028,4,divider,,divider,,Chapter 4 divider (Modules A to Z),Original PNG/vp415-colour300dpi-fixed_Page_028.png
-029,A4,029,4,survey,,table,CS 7 855,Survey of modules VP415,Original PNG/vp415-colour300dpi-fixed_Page_029.png
-030,trifold,030_031,4,module,V,pcb-layout,CS 7 836,Module carrier V - PCB lay-out (component/solder side),A4 trifold/vp415-colour300dpi-fixed_Page_030_031.png
-031,trifold,030_031,4,module,V,pcb-layout,CS 7 836,Module carrier V (mod level 1),A4 trifold/vp415-colour300dpi-fixed_Page_030_031.png
-032,bifold,032,4,module,A,module-sheet,,Audio processor module A (mod level 2) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_032.png
-033,bifold,033,4,module,A,circuit,CS 6 867,Audio processor module A - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_033.png
-034,bifold,034,4,module,B,circuit,CS 6 868,RGB module B - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_034.png
-035,trifold,035_036,4,module,B,module-sheet,CS 7 838,RGB module B (mod level 5) - adjustments / PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_035_036.png
-036,trifold,035_036,4,module,B,module-sheet,CS 7 838,RGB module B - adjustments (continued),A4 trifold/vp415-colour300dpi-fixed_Page_035_036.png
-037,bifold,037,4,module,C,module-sheet,,Video processor module C (mod level 3) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_037.png
-038,bifold,038,4,module,C,circuit,CS 6 869,Video processor module C - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_038.png
-039,trifold,039_040,4,module,C,circuit,CS 6 870,Video processor module C - circuit diagram (sync generator),A4 trifold/vp415-colour300dpi-fixed_Page_039_040.png
-040,trifold,039_040,4,module,D,circuit,CS 6 870,Reference source module D - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_039_040.png
-041,bifold,041,4,module,D,module-sheet,CS 7 840,Reference source module D (mod level 2) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_041.png
-042,bifold,042,4,module,E,module-sheet,CS 7 841,Slide drive module E (mod level 3) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_042.png
-043,bifold,043,4,module,E,circuit,CS 6 871,Slide drive module E - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_043.png
-044,bifold,044,4,module,F,circuit,CS 6 872,Motor + sequence module F - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_044.png
-045,bifold,045,4,module,F,module-sheet,CS 7 842,Motor + sequence module F (mod level 5) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_045.png
-046,bifold,046,4,module,G,module-sheet,CS 7 843,Gen lock module G (mod level 3) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_046.png
-047,bifold,047,4,module,G,circuit,CS 6 873,Gen lock module G - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_047.png
-048,bifold,048,4,module,H,circuit,CS 6 874,ETBC-B module H - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_048.png
-049,bifold,049,4,module,H,module-sheet,CS 7 844,ETBC-B module H (mod level 5) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_049.png
-050,bifold,050,4,module,I,module-sheet,CS 7 845,ETBC-C module I (mod level 6) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_050.png
-051,bifold,051,4,module,I,circuit,CS 6 875,ETBC-C module I - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_051.png
-052,A4,052,4,module,I,circuit,CS 6 876,ETBC-C module I - circuit diagram (continued),Original PNG/vp415-colour300dpi-fixed_Page_052.png
-053,bifold,053,4,module,J,module-sheet,CS 7 846,Focus module J (mod level 2) - PCB / parts / circuit,Original PNG/vp415-colour300dpi-fixed_Page_053.png
-054,bifold,054,4,module,K,module-sheet,CS 7 847,HF processor module K (mod level 0) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_054.png
-055,bifold,055,4,module,K,circuit,CS 6 877,HF processor module K - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_055.png
-056,bifold,056,4,module,L,circuit,CS 6 878,Video drop-out correction module L - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_056.png
-057,bifold,057,4,module,L,module-sheet,CS 7 848,Video drop-out correction module L (mod level 0) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_057.png
-058,bifold,058,4,module,M,module-sheet,CS 7 849,Radial module M (mod level 1) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_058.png
-059,bifold,059,4,module,M,circuit,CS 6 879,Radial module M - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_059.png
-060,A4,060,4,module,N,circuit,CS 6 880,Display + keyboard module N - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_060.png
-061,trifold,061_062,4,module,N,module-sheet,CS 7 850,Display + keyboard module N (mod level 1) - PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_061_062.png
-062,trifold,061_062,4,module,P,module-sheet,CS 7 850,Frontloader module P (mod level 4) - PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_061_062.png
-063,trifold,063_064,4,module,Q,module-sheet,CS 7 851,"RC5 circuit module Q; list of electrical parts module R",A4 trifold/vp415-colour300dpi-fixed_Page_063_064.png
-064,trifold,063_064,4,module,R,module-sheet,CS 7 851,Drive processor module R (mod level 3) - PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_063_064.png
-065,trifold,065_066,4,module,R,circuit,CS 6 883,Drive processor module R - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_065_066.png
-066,trifold,065_066,4,module,R,circuit,CS 6 883,Drive processor module R - circuit diagram (continued),A4 trifold/vp415-colour300dpi-fixed_Page_065_066.png
-067,trifold,067_068,4,module,S,circuit,CS 6 884,Control module S - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_067_068.png
-068,trifold,067_068,4,module,S,circuit,CS 6 884,Control module S - circuit diagram (continued),A4 trifold/vp415-colour300dpi-fixed_Page_067_068.png
-069,trifold,069_070,4,module,S,module-sheet,CS 7 852,Control module S (mod level 3) - parts,A4 trifold/vp415-colour300dpi-fixed_Page_069_070.png
-070,trifold,069_070,4,module,S,pcb-layout,CS 7 852,Control module S - PCB lay-out,A4 trifold/vp415-colour300dpi-fixed_Page_069_070.png
-071,trifold,071_072,4,module,T,module-sheet,CS 7 853,Supply module T (mod level 1) - adjustments / PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_071_072.png
-072,trifold,071_072,4,module,T,module-sheet,CS 7 853,Supply module T - parts (continued),A4 trifold/vp415-colour300dpi-fixed_Page_071_072.png
-073,bifold,073,4,module,T,circuit,CS 6 885,Supply module T - circuit diagram (switched mode power supply),Original PNG/vp415-colour300dpi-fixed_Page_073.png
-074,bifold,074,4,module,U,circuit,CS 6 886,Analog I/O module Ua (CVBS + audio part) - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_074.png
-075,trifold,075_076,4,module,U,module-sheet,CS 7 854,Analog I/O module U (mod level 3) - parts,A4 trifold/vp415-colour300dpi-fixed_Page_075_076.png
-076,trifold,075_076,4,module,U,pcb-layout,CS 7 854,Analog I/O module U - PCB lay-out,A4 trifold/vp415-colour300dpi-fixed_Page_075_076.png
-077,trifold,077_078,4,module,U,module-sheet,CS 7 854,Analog I/O module U - parts (continued),A4 trifold/vp415-colour300dpi-fixed_Page_077_078.png
-078,trifold,077_078,4,module,U,pcb-layout,CS 7 854,Analog I/O module U - PCB lay-out (continued),A4 trifold/vp415-colour300dpi-fixed_Page_077_078.png
-079,bifold,079,4,module,U,circuit,CS 6 887,Analog I/O module Ub (video part) - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_079.png
-080,bifold,080,4,module,U,circuit,CS 6 888,Analog I/O module Uc (TXT part) - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_080.png
-081,A4,081,4,module,U,adjustments,,Analog I/O module U - adjustments,Original PNG/vp415-colour300dpi-fixed_Page_081.png
-082,bifold,082,4,module,U,adjustments,CS 7 856,Analog I/O module U - adjustments (continued) / connector detail,Original PNG/vp415-colour300dpi-fixed_Page_082.png
-083,A4,083,4,module,W,parts,CS 7 857,List of electrical parts module W (EPROMs),Original PNG/vp415-colour300dpi-fixed_Page_083.png
-084,bifold,084,4,module,W,pcb-layout,,CPU + data grabber module W (mod level 2) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_084.png
-085,trifold,085_086,4,module,W,circuit,CS 6 889,CPU + data grabber module W - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_085_086.png
-086,trifold,085_086,4,module,W,circuit,CS 6 889,Data grabber data processing module Wa - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_085_086.png
-087,trifold,087_088,4,module,W,circuit,CS 6 890,CPU + data grabber module W - circuit diagram (EPROM section),A4 trifold/vp415-colour300dpi-fixed_Page_087_088.png
-088,trifold,087_088,4,module,W,circuit,CS 6 890,LV-ROM interface module Wb - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_087_088.png
-089,bifold,089,4,module,W,pcb-layout,CS 8 122,CPU + data grabber module W - PCB lay-out (later revision),Original PNG/vp415-colour300dpi-fixed_Page_089.png
-090,bifold,090,4,module,W,pcb-layout,CS 7 858,CPU + data grabber module W - PCB lay-out,Original PNG/vp415-colour300dpi-fixed_Page_090.png
-091,trifold,091_092,4,module,X,module-sheet,CS 7 859,LV-ROM decoder module X (mod level 3) - adjustments / PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_091_092.png
-092,trifold,091_092,4,module,X,module-sheet,CS 7 859,LV-ROM decoder module X - parts (continued),A4 trifold/vp415-colour300dpi-fixed_Page_091_092.png
-093,bifold,093,4,module,X,circuit,CS 6 891,LV-ROM decoder module X - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_093.png
-094,trifold,094_095,4,module,Y,circuit,CS 6 892,Video mixer module Y - circuit diagram (mode switch / buffer+clamp / mixers),A4 trifold/vp415-colour300dpi-fixed_Page_094_095.png
-095,trifold,094_095,4,module,Y,circuit,CS 6 892,Video mixer module Y - circuit diagram (continued),A4 trifold/vp415-colour300dpi-fixed_Page_094_095.png
-096,trifold,096_097,4,module,Y,module-sheet,CS 7 860,Video mixer module Y (mod level 4) - parts,A4 trifold/vp415-colour300dpi-fixed_Page_096_097.png
-097,trifold,096_097,4,module,Y,pcb-layout,CS 7 860,Video mixer module Y - PCB lay-out,A4 trifold/vp415-colour300dpi-fixed_Page_096_097.png
-098,bifold,098,4,module,Z,module-sheet,CS 7 861,Deck electronics module Z - parts,Original PNG/vp415-colour300dpi-fixed_Page_098.png
-099,bifold,099,4,module,Z,circuit,CS 6 893,Deck electronics module Z - circuit diagram (laser detection unit),Original PNG/vp415-colour300dpi-fixed_Page_099.png
-100,bifold,100,4,module,RC,module-sheet,CS 7 862,Remote control RC53/VP410/VP415 transmitter - exploded view / PCB,Original PNG/vp415-colour300dpi-fixed_Page_100.png
-101,A4,101,5,divider,,divider,,Chapter 5 divider (Exploded views and parts lists),Original PNG/vp415-colour300dpi-fixed_Page_101.png
-102,bifold,102,5,exploded-views,,figure,CS 7 863,Exploded view - cabinet,Original PNG/vp415-colour300dpi-fixed_Page_102.png
-103,bifold,103,5,exploded-views,,figure,CS 7 864,Exploded view - sandwich,Original PNG/vp415-colour300dpi-fixed_Page_103.png
-104,bifold,104,5,exploded-views,,figure,CS 7 865,Exploded view - frontloader,Original PNG/vp415-colour300dpi-fixed_Page_104.png
-105,bifold,105,5,exploded-views,,figure,CS 7 866,Exploded view - disc drive,Original PNG/vp415-colour300dpi-fixed_Page_105.png
-106,A4,106,6,divider,,divider,,Chapter 6 divider (Repair method),Original PNG/vp415-colour300dpi-fixed_Page_106.png
-107,A4,107,6,repair-method,,text,,Repair method - title page and contents,Original PNG/vp415-colour300dpi-fixed_Page_107.png
-108,A4,108,6,repair-method,,text,,Introduction / diagnostic software,Original PNG/vp415-colour300dpi-fixed_Page_108.png
-109,A4,109,6,repair-method,,text,,Reproducing the error codes on the screen,Original PNG/vp415-colour300dpi-fixed_Page_109.png
-110,A4,110,6,repair-method,,text,,Programme loop in the self-test mode,Original PNG/vp415-colour300dpi-fixed_Page_110.png
-111,A4,111,6,repair-method,,table,,Meaning of the error codes,Original PNG/vp415-colour300dpi-fixed_Page_111.png
-112,A4,112,6,fault-finding,,text,,Fault finding - meaning of the symbols used,Original PNG/vp415-colour300dpi-fixed_Page_112.png
-113,A4,113,6,fault-finding,,figure,CS 8 116,Test procedure flow chart,Original PNG/vp415-colour300dpi-fixed_Page_113.png
-114,A4,114,6,fault-finding,,figure,,Fault finding chart 1 - no display,Original PNG/vp415-colour300dpi-fixed_Page_114.png
-115,A4,115,6,fault-finding,,figure,,Fault finding chart 2 - error code <60 (self test mode),Original PNG/vp415-colour300dpi-fixed_Page_115.png
-116,A4,116,6,fault-finding,,figure,CS 8 119,"Fault finding chart - time out tilt, laser not on, not out of focus",Original PNG/vp415-colour300dpi-fixed_Page_116.png
-117,A4,117,6,fault-finding,,figure,,"Fault finding chart - not in focus after 5 attempts, motor speed error, frame lock",Original PNG/vp415-colour300dpi-fixed_Page_117.png
-118,A4,118,7,divider,,divider,,Chapter 7 divider (Circuit description),Original PNG/vp415-colour300dpi-fixed_Page_118.png
-119,A4,119,5,exploded-views,,figure,CS 7 867,Exploded view - optical deck [bound after chapter 7 divider],Original PNG/vp415-colour300dpi-fixed_Page_119.png
-120,A4,120,5,parts-mechanical,,table,,List of mechanical parts - fixing materials / optical deck,Original PNG/vp415-colour300dpi-fixed_Page_120.png
-121,A4,121,5,parts-mechanical,,table,,List of mechanical parts - disc drive / sandwich / cabinet,Original PNG/vp415-colour300dpi-fixed_Page_121.png
-122,A4,122,5,parts-electrical,,table,,List of electrical parts - remote control / integrated circuits,Original PNG/vp415-colour300dpi-fixed_Page_122.png
-123,A4,123,5,parts-electrical,,table,,List of electrical parts - transistors / diodes,Original PNG/vp415-colour300dpi-fixed_Page_123.png
-124,A4,124,5,parts-electrical,,table,,List of electrical parts - standard resistors,Original PNG/vp415-colour300dpi-fixed_Page_124.png
-125,A4,125,7,circuit-description,,text,,Circuit description - title page and contents,Original PNG/vp415-colour300dpi-fixed_Page_125.png
-126,A4,126,7,laservision-system,,text,,The LaserVision system - introduction / encoding,Original PNG/vp415-colour300dpi-fixed_Page_126.png
-127,A4,127,7,laservision-system,,text,,Lead-in / lead-out tracks / programme area,Original PNG/vp415-colour300dpi-fixed_Page_127.png
-128,A4,128,7,laservision-system,,text,,Radial tracking / time base correction / genlock,Original PNG/vp415-colour300dpi-fixed_Page_128.png
-129,A4,129,7,optical-deck,,figure,CS 7 878,Fig. OD1 - optical deck,Original PNG/vp415-colour300dpi-fixed_Page_129.png
-130,A4,130,7,optical-deck,,text,,The optical deck,Original PNG/vp415-colour300dpi-fixed_Page_130.png
-131,A4,131,7,optical-deck,,text,,Active tilt control (ATC),Original PNG/vp415-colour300dpi-fixed_Page_131.png
-132,A4,132,7,vp400-series,,text,,VP400 series - introduction / audio-video signal path,Original PNG/vp415-colour300dpi-fixed_Page_132.png
-133,bifold,133,7,vp400-series,,figure,CS 7 581,Fig. SP1 - audio/video signal path,Original PNG/vp415-colour300dpi-fixed_Page_133.png
-134,bifold,134,7,vp400-series,,figure,CS 7 882,Fig. CR1 - block diagram control routes,Original PNG/vp415-colour300dpi-fixed_Page_134.png
-135,A4,135,7,vp400-series,,figure,,Fig. CR2 - start-up sequence,Original PNG/vp415-colour300dpi-fixed_Page_135.png
-136,bifold,136,7,vp400-series,,text,,Control routes / S-bus / constraints on operation,Original PNG/vp415-colour300dpi-fixed_Page_136.png
-137,bifold,137,7,vp400-series,,figure,CS 8 123,Fig. SE1 - block diagram servo,Original PNG/vp415-colour300dpi-fixed_Page_137.png
-138,A4,138,7,vp400-series,,text,,The servo block diagram - short description,Original PNG/vp415-colour300dpi-fixed_Page_138.png
-139,A4,139,7,module-description,A,text,,Module A - audio processor,Original PNG/vp415-colour300dpi-fixed_Page_139.png
-140,A4,140,7,module-description,B,text,,Module B - RGB,Original PNG/vp415-colour300dpi-fixed_Page_140.png
-141,A4,141,7,module-description,C,text,,Module C - video processing,Original PNG/vp415-colour300dpi-fixed_Page_141.png
-142,A4,142,7,module-description,D,text,,Module D - reference source,Original PNG/vp415-colour300dpi-fixed_Page_142.png
-143,bifold,143,7,module-description,E,text,,Module E - slide drive,Original PNG/vp415-colour300dpi-fixed_Page_143.png
-144,bifold,144,7,module-description,F,text,,Module F - motor + sequence (running condition / frequency / phase control),Original PNG/vp415-colour300dpi-fixed_Page_144.png
-145,A4,145,7,module-description,H,text,,Module H - ETBC B,Original PNG/vp415-colour300dpi-fixed_Page_145.png
-146,A4,146,7,module-description,I,text,,Module I - ETBC C,Original PNG/vp415-colour300dpi-fixed_Page_146.png
-147,bifold,147,7,module-description,I,text,,Module I - ETBC C (continued),Original PNG/vp415-colour300dpi-fixed_Page_147.png
-148,bifold,148,7,module-description,J,text,,Module J - focus / Module K - HF processing,Original PNG/vp415-colour300dpi-fixed_Page_148.png
-149,A4,149,7,module-description,L,text,,Module L - video drop-out correction,Original PNG/vp415-colour300dpi-fixed_Page_149.png
-150,A4,150,7,module-description,M,text,,Module M - radial drive / Module N - display and keyboard,Original PNG/vp415-colour300dpi-fixed_Page_150.png
-151,bifold,151,7,module-description,P,text,,Module P - frontloader / Module R - drive processor,Original PNG/vp415-colour300dpi-fixed_Page_151.png
-152,bifold,152,7,module-description,S,text,,Module S - control (operation / watchdog),Original PNG/vp415-colour300dpi-fixed_Page_152.png
-153,A4,153,7,module-description,U,text,,Module Ua - analogue I/O CVBS + audio part,Original PNG/vp415-colour300dpi-fixed_Page_153.png
-154,A4,154,7,module-description,U,text,,Module Ub - analogue I/O video part,Original PNG/vp415-colour300dpi-fixed_Page_154.png
-155,A4,155,7,module-description,U,text,,Module Uc - analogue I/O TXT part,Original PNG/vp415-colour300dpi-fixed_Page_155.png
-156,A4,156,7,module-description,W,text,,Module W - data grabber and CPU,Original PNG/vp415-colour300dpi-fixed_Page_156.png
-157,A4,157,7,module-description,W,text,,Module W - header register / byte counter / RDY,Original PNG/vp415-colour300dpi-fixed_Page_157.png
-158,A4,158,7,module-description,W,text,,Module W - CPU inputs and outputs,Original PNG/vp415-colour300dpi-fixed_Page_158.png
-159,A4,159,7,module-description,W,text,,Module W - system clock / UPI-41 / SCSI interface,Original PNG/vp415-colour300dpi-fixed_Page_159.png
-160,A4,160,7,module-description,W,text,,Module W - target ID / CPU memory map / port map,Original PNG/vp415-colour300dpi-fixed_Page_160.png
-161,A4,161,7,module-description,X,text,,Module X - LV-ROM decoder,Original PNG/vp415-colour300dpi-fixed_Page_161.png
-162,A4,162,7,module-description,X,text,,Module X - LV-ROM decoder (continued),Original PNG/vp415-colour300dpi-fixed_Page_162.png
-163,A4,163,7,module-description,Z,text,,Module Z - deck electronics / laser supply,Original PNG/vp415-colour300dpi-fixed_Page_163.png
-164,A4,164,8,divider,,divider,,Chapter 8 divider (Service information),Original PNG/vp415-colour300dpi-fixed_Page_164.png
-165,A4,165,8,service-information,,text,,Service information VP87-01 - survey of modifications,Original PNG/vp415-colour300dpi-fixed_Page_165.png
-166,A4,166,8,service-information,,figure,CS 8 263,Positioning of labels,Original PNG/vp415-colour300dpi-fixed_Page_166.png
-167,A4,167,8,modification-levels,,table,,Survey of modification levels VP415,Original PNG/vp415-colour300dpi-fixed_Page_167.png
-168,A4,168,8,modification-levels,,table,,Survey of modification levels (page 2/2),Original PNG/vp415-colour300dpi-fixed_Page_168.png
-169,A4,169,8,modification-levels,,table,,Modification levels per module,Original PNG/vp415-colour300dpi-fixed_Page_169.png
-170,A4,170,8,modification-levels,B,table,,Mod levels - RGB module B,Original PNG/vp415-colour300dpi-fixed_Page_170.png
-171,A4,171,8,modification-levels,C,table,,Mod levels - video processor module C,Original PNG/vp415-colour300dpi-fixed_Page_171.png
-172,A4,172,8,modification-levels,F,table,,Mod levels - motor + sequence module F,Original PNG/vp415-colour300dpi-fixed_Page_172.png
-173,A4,173,8,modification-levels,G,table,,Mod levels - gen lock module G,Original PNG/vp415-colour300dpi-fixed_Page_173.png
-174,A4,174,8,modification-levels,H,table,,Mod levels - ETBC B module H,Original PNG/vp415-colour300dpi-fixed_Page_174.png
-175,A4,175,8,modification-levels,I,table,,Mod levels - ETBC-C module I,Original PNG/vp415-colour300dpi-fixed_Page_175.png
-176,A4,176,8,modification-levels,J,table,,Mod levels - focus module J,Original PNG/vp415-colour300dpi-fixed_Page_176.png
-177,A4,177,8,modification-levels,K,table,,Mod levels - HF processor module K,Original PNG/vp415-colour300dpi-fixed_Page_177.png
-178,A4,178,8,modification-levels,L,table,,Mod levels - video correction module L,Original PNG/vp415-colour300dpi-fixed_Page_178.png
-179,A4,179,8,modification-levels,M,table,,Mod levels - radial module M,Original PNG/vp415-colour300dpi-fixed_Page_179.png
-180,A4,180,8,modification-levels,R,table,,Mod levels - drive processor module R,Original PNG/vp415-colour300dpi-fixed_Page_180.png
-181,A4,181,8,modification-levels,R,table,,Mod levels - drive processor module R (continued),Original PNG/vp415-colour300dpi-fixed_Page_181.png
-182,A4,182,8,modification-levels,S,table,,Mod levels - control module S,Original PNG/vp415-colour300dpi-fixed_Page_182.png
-183,A4,183,8,modification-levels,T,table,,Mod levels - supply module T,Original PNG/vp415-colour300dpi-fixed_Page_183.png
-184,A4,184,8,modification-levels,U,table,,Mod levels - analog I/O module U,Original PNG/vp415-colour300dpi-fixed_Page_184.png
-185,A4,185,8,modification-levels,Y,table,,Mod levels - video mix module Y,Original PNG/vp415-colour300dpi-fixed_Page_185.png
-186,A4,186,8,modification-levels,Z,table,,Mod levels - deck electronics module Z,Original PNG/vp415-colour300dpi-fixed_Page_186.png
-187,A4,187,8,software-releases,,table,,Survey of software releases VP410/415,Original PNG/vp415-colour300dpi-fixed_Page_187.png
-188,A4,188,8,software-releases,,text,,Description of software modifications,Original PNG/vp415-colour300dpi-fixed_Page_188.png
-189,A4,189,8,software-releases,S,table,,Software - CONTROL (on module S),Original PNG/vp415-colour300dpi-fixed_Page_189.png
-190,A4,190,8,software-releases,W,table,,Software - SYNC (on module W),Original PNG/vp415-colour300dpi-fixed_Page_190.png
-191,A4,191,8,software-releases,W,table,,Software - DESCRAMBLER (on module W),Original PNG/vp415-colour300dpi-fixed_Page_191.png
-192,A4,192,8,software-releases,W,table,,Software - LV-DOS#1 + LV-DOS#2 (on module W),Original PNG/vp415-colour300dpi-fixed_Page_192.png
-193,A4,193,8,fault-symptoms,,table,,Fault symptoms and solutions,Original PNG/vp415-colour300dpi-fixed_Page_193.png
-194,A4,194,8,fault-symptoms,,table,,Start-up problems,Original PNG/vp415-colour300dpi-fixed_Page_194.png
-195,A4,195,8,fault-symptoms,,table,,Playability problems,Original PNG/vp415-colour300dpi-fixed_Page_195.png
-196,A4,196,8,fault-symptoms,,table,,Video problems,Original PNG/vp415-colour300dpi-fixed_Page_196.png
-197,A4,197,8,fault-symptoms,,table,,Communication problems,Original PNG/vp415-colour300dpi-fixed_Page_197.png
+001,A4,001,front,front-matter,,cover,CS 7 814,Front cover / contents,Original PNG/vp415-colour300dpi-fixed_Page_001.webp
+002,A4,002,front,front-matter,,contents,,Chapter tab contents,Original PNG/vp415-colour300dpi-fixed_Page_002.webp
+003,A4,003,1,divider,,divider,,"Chapter 1 divider (Technical data, controls, connector pinning)",Original PNG/vp415-colour300dpi-fixed_Page_003.webp
+004,A4,004,1,technical-data,,text,CS 7 816,Technical data,Original PNG/vp415-colour300dpi-fixed_Page_004.webp
+005,A4,005,1,controls-connections,,text+figure,,"Controls, indicators and connections",Original PNG/vp415-colour300dpi-fixed_Page_005.webp
+006,A4,006,1,connector-pinning,,text,,"Connector pinning (A/V Euroconnector, RGB TTL DIN, SCSI)",Original PNG/vp415-colour300dpi-fixed_Page_006.webp
+007,A4,007,2,divider,,divider,,Chapter 2 divider (General service information),Original PNG/vp415-colour300dpi-fixed_Page_007.webp
+008,A4,008,2,remarks,,text,,Remarks,Original PNG/vp415-colour300dpi-fixed_Page_008.webp
+009,A4,009,2,warnings,,text,,Warnings (laser radiation),Original PNG/vp415-colour300dpi-fixed_Page_009.webp
+010,A4,010,2,modification-levels,,text,,Modification levels,Original PNG/vp415-colour300dpi-fixed_Page_010.webp
+011,A4,011,2,adjustments,,text,,Adjustments - general and required,Original PNG/vp415-colour300dpi-fixed_Page_011.webp
+012,bifold,012,2,adjustments,,figure,,Video adjustments survey (block diagram),Original PNG/vp415-colour300dpi-fixed_Page_012.webp
+013,bifold,013,2,demounting,,figure,,Demounting instructions,Original PNG/vp415-colour300dpi-fixed_Page_013.webp
+014,A4,014,2,service-hints,,text,,Service hints (ESD),Original PNG/vp415-colour300dpi-fixed_Page_014.webp
+015,A4,015,2,service-tools,,figure,,Service tools,Original PNG/vp415-colour300dpi-fixed_Page_015.webp
+016,bifold,016,2,service-tools,,figure,,Application of service tools,Original PNG/vp415-colour300dpi-fixed_Page_016.webp
+017,bifold,017,2,symbols,,figure,,List of used symbols,Original PNG/vp415-colour300dpi-fixed_Page_017.webp
+018,A4,018,3,divider,,divider,,Chapter 3 divider (Layout / signals / block diagrams),Original PNG/vp415-colour300dpi-fixed_Page_018.webp
+019,bifold,019,3,module-layout,,figure,CS 7 829,Module and connector lay-out,Original PNG/vp415-colour300dpi-fixed_Page_019.webp
+020,bifold,020,3,signal-listing,,table,CS 7 830,Alphabetical signal listing,Original PNG/vp415-colour300dpi-fixed_Page_020.webp
+021,trifold,021_022,3,wiring-diagram,,figure,CS 7 831,Wiring diagram - player (WDP) - left portion,A4 trifold/vp415-colour300dpi-fixed_Page_021_022.webp
+022,trifold,021_022,3,wiring-diagram,,figure,CS 7 831,Wiring diagram - player (WDP) - right portion,A4 trifold/vp415-colour300dpi-fixed_Page_021_022.webp
+023,bifold,023,3,wiring-diagram,,figure,CS 7 832,Wiring diagram - sandwich (WDS),Original PNG/vp415-colour300dpi-fixed_Page_023.webp
+024,bifold,024,3,block-diagrams,,figure,CS 7 833,Block diagram - control routes,Original PNG/vp415-colour300dpi-fixed_Page_024.webp
+025,bifold,025,3,block-diagrams,,figure,CS 7 834,Block diagram - audio/video signal path,Original PNG/vp415-colour300dpi-fixed_Page_025.webp
+026,bifold,026,3,block-diagrams,,figure,CS 7 835,Block diagram - servo,Original PNG/vp415-colour300dpi-fixed_Page_026.webp
+027,A4,027,3,semiconductors,,figure,CS 8 121,Connections of semiconductors,Original PNG/vp415-colour300dpi-fixed_Page_027.webp
+028,A4,028,4,divider,,divider,,Chapter 4 divider (Modules A to Z),Original PNG/vp415-colour300dpi-fixed_Page_028.webp
+029,A4,029,4,survey,,table,CS 7 855,Survey of modules VP415,Original PNG/vp415-colour300dpi-fixed_Page_029.webp
+030,trifold,030_031,4,module,V,pcb-layout,CS 7 836,Module carrier V - PCB lay-out (component/solder side),A4 trifold/vp415-colour300dpi-fixed_Page_030_031.webp
+031,trifold,030_031,4,module,V,pcb-layout,CS 7 836,Module carrier V (mod level 1),A4 trifold/vp415-colour300dpi-fixed_Page_030_031.webp
+032,bifold,032,4,module,A,module-sheet,,Audio processor module A (mod level 2) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_032.webp
+033,bifold,033,4,module,A,circuit,CS 6 867,Audio processor module A - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_033.webp
+034,bifold,034,4,module,B,circuit,CS 6 868,RGB module B - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_034.webp
+035,trifold,035_036,4,module,B,module-sheet,CS 7 838,RGB module B (mod level 5) - adjustments / PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_035_036.webp
+036,trifold,035_036,4,module,B,module-sheet,CS 7 838,RGB module B - adjustments (continued),A4 trifold/vp415-colour300dpi-fixed_Page_035_036.webp
+037,bifold,037,4,module,C,module-sheet,,Video processor module C (mod level 3) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_037.webp
+038,bifold,038,4,module,C,circuit,CS 6 869,Video processor module C - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_038.webp
+039,trifold,039_040,4,module,C,circuit,CS 6 870,Video processor module C - circuit diagram (sync generator),A4 trifold/vp415-colour300dpi-fixed_Page_039_040.webp
+040,trifold,039_040,4,module,D,circuit,CS 6 870,Reference source module D - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_039_040.webp
+041,bifold,041,4,module,D,module-sheet,CS 7 840,Reference source module D (mod level 2) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_041.webp
+042,bifold,042,4,module,E,module-sheet,CS 7 841,Slide drive module E (mod level 3) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_042.webp
+043,bifold,043,4,module,E,circuit,CS 6 871,Slide drive module E - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_043.webp
+044,bifold,044,4,module,F,circuit,CS 6 872,Motor + sequence module F - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_044.webp
+045,bifold,045,4,module,F,module-sheet,CS 7 842,Motor + sequence module F (mod level 5) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_045.webp
+046,bifold,046,4,module,G,module-sheet,CS 7 843,Gen lock module G (mod level 3) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_046.webp
+047,bifold,047,4,module,G,circuit,CS 6 873,Gen lock module G - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_047.webp
+048,bifold,048,4,module,H,circuit,CS 6 874,ETBC-B module H - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_048.webp
+049,bifold,049,4,module,H,module-sheet,CS 7 844,ETBC-B module H (mod level 5) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_049.webp
+050,bifold,050,4,module,I,module-sheet,CS 7 845,ETBC-C module I (mod level 6) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_050.webp
+051,bifold,051,4,module,I,circuit,CS 6 875,ETBC-C module I - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_051.webp
+052,A4,052,4,module,I,circuit,CS 6 876,ETBC-C module I - circuit diagram (continued),Original PNG/vp415-colour300dpi-fixed_Page_052.webp
+053,bifold,053,4,module,J,module-sheet,CS 7 846,Focus module J (mod level 2) - PCB / parts / circuit,Original PNG/vp415-colour300dpi-fixed_Page_053.webp
+054,bifold,054,4,module,K,module-sheet,CS 7 847,HF processor module K (mod level 0) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_054.webp
+055,bifold,055,4,module,K,circuit,CS 6 877,HF processor module K - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_055.webp
+056,bifold,056,4,module,L,circuit,CS 6 878,Video drop-out correction module L - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_056.webp
+057,bifold,057,4,module,L,module-sheet,CS 7 848,Video drop-out correction module L (mod level 0) - adjustments / PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_057.webp
+058,bifold,058,4,module,M,module-sheet,CS 7 849,Radial module M (mod level 1) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_058.webp
+059,bifold,059,4,module,M,circuit,CS 6 879,Radial module M - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_059.webp
+060,A4,060,4,module,N,circuit,CS 6 880,Display + keyboard module N - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_060.webp
+061,trifold,061_062,4,module,N,module-sheet,CS 7 850,Display + keyboard module N (mod level 1) - PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_061_062.webp
+062,trifold,061_062,4,module,P,module-sheet,CS 7 850,Frontloader module P (mod level 4) - PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_061_062.webp
+063,trifold,063_064,4,module,Q,module-sheet,CS 7 851,"RC5 circuit module Q; list of electrical parts module R",A4 trifold/vp415-colour300dpi-fixed_Page_063_064.webp
+064,trifold,063_064,4,module,R,module-sheet,CS 7 851,Drive processor module R (mod level 3) - PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_063_064.webp
+065,trifold,065_066,4,module,R,circuit,CS 6 883,Drive processor module R - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_065_066.webp
+066,trifold,065_066,4,module,R,circuit,CS 6 883,Drive processor module R - circuit diagram (continued),A4 trifold/vp415-colour300dpi-fixed_Page_065_066.webp
+067,trifold,067_068,4,module,S,circuit,CS 6 884,Control module S - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_067_068.webp
+068,trifold,067_068,4,module,S,circuit,CS 6 884,Control module S - circuit diagram (continued),A4 trifold/vp415-colour300dpi-fixed_Page_067_068.webp
+069,trifold,069_070,4,module,S,module-sheet,CS 7 852,Control module S (mod level 3) - parts,A4 trifold/vp415-colour300dpi-fixed_Page_069_070.webp
+070,trifold,069_070,4,module,S,pcb-layout,CS 7 852,Control module S - PCB lay-out,A4 trifold/vp415-colour300dpi-fixed_Page_069_070.webp
+071,trifold,071_072,4,module,T,module-sheet,CS 7 853,Supply module T (mod level 1) - adjustments / PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_071_072.webp
+072,trifold,071_072,4,module,T,module-sheet,CS 7 853,Supply module T - parts (continued),A4 trifold/vp415-colour300dpi-fixed_Page_071_072.webp
+073,bifold,073,4,module,T,circuit,CS 6 885,Supply module T - circuit diagram (switched mode power supply),Original PNG/vp415-colour300dpi-fixed_Page_073.webp
+074,bifold,074,4,module,U,circuit,CS 6 886,Analog I/O module Ua (CVBS + audio part) - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_074.webp
+075,trifold,075_076,4,module,U,module-sheet,CS 7 854,Analog I/O module U (mod level 3) - parts,A4 trifold/vp415-colour300dpi-fixed_Page_075_076.webp
+076,trifold,075_076,4,module,U,pcb-layout,CS 7 854,Analog I/O module U - PCB lay-out,A4 trifold/vp415-colour300dpi-fixed_Page_075_076.webp
+077,trifold,077_078,4,module,U,module-sheet,CS 7 854,Analog I/O module U - parts (continued),A4 trifold/vp415-colour300dpi-fixed_Page_077_078.webp
+078,trifold,077_078,4,module,U,pcb-layout,CS 7 854,Analog I/O module U - PCB lay-out (continued),A4 trifold/vp415-colour300dpi-fixed_Page_077_078.webp
+079,bifold,079,4,module,U,circuit,CS 6 887,Analog I/O module Ub (video part) - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_079.webp
+080,bifold,080,4,module,U,circuit,CS 6 888,Analog I/O module Uc (TXT part) - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_080.webp
+081,A4,081,4,module,U,adjustments,,Analog I/O module U - adjustments,Original PNG/vp415-colour300dpi-fixed_Page_081.webp
+082,bifold,082,4,module,U,adjustments,CS 7 856,Analog I/O module U - adjustments (continued) / connector detail,Original PNG/vp415-colour300dpi-fixed_Page_082.webp
+083,A4,083,4,module,W,parts,CS 7 857,List of electrical parts module W (EPROMs),Original PNG/vp415-colour300dpi-fixed_Page_083.webp
+084,bifold,084,4,module,W,pcb-layout,,CPU + data grabber module W (mod level 2) - PCB / parts,Original PNG/vp415-colour300dpi-fixed_Page_084.webp
+085,trifold,085_086,4,module,W,circuit,CS 6 889,CPU + data grabber module W - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_085_086.webp
+086,trifold,085_086,4,module,W,circuit,CS 6 889,Data grabber data processing module Wa - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_085_086.webp
+087,trifold,087_088,4,module,W,circuit,CS 6 890,CPU + data grabber module W - circuit diagram (EPROM section),A4 trifold/vp415-colour300dpi-fixed_Page_087_088.webp
+088,trifold,087_088,4,module,W,circuit,CS 6 890,LV-ROM interface module Wb - circuit diagram,A4 trifold/vp415-colour300dpi-fixed_Page_087_088.webp
+089,bifold,089,4,module,W,pcb-layout,CS 8 122,CPU + data grabber module W - PCB lay-out (later revision),Original PNG/vp415-colour300dpi-fixed_Page_089.webp
+090,bifold,090,4,module,W,pcb-layout,CS 7 858,CPU + data grabber module W - PCB lay-out,Original PNG/vp415-colour300dpi-fixed_Page_090.webp
+091,trifold,091_092,4,module,X,module-sheet,CS 7 859,LV-ROM decoder module X (mod level 3) - adjustments / PCB / parts,A4 trifold/vp415-colour300dpi-fixed_Page_091_092.webp
+092,trifold,091_092,4,module,X,module-sheet,CS 7 859,LV-ROM decoder module X - parts (continued),A4 trifold/vp415-colour300dpi-fixed_Page_091_092.webp
+093,bifold,093,4,module,X,circuit,CS 6 891,LV-ROM decoder module X - circuit diagram,Original PNG/vp415-colour300dpi-fixed_Page_093.webp
+094,trifold,094_095,4,module,Y,circuit,CS 6 892,Video mixer module Y - circuit diagram (mode switch / buffer+clamp / mixers),A4 trifold/vp415-colour300dpi-fixed_Page_094_095.webp
+095,trifold,094_095,4,module,Y,circuit,CS 6 892,Video mixer module Y - circuit diagram (continued),A4 trifold/vp415-colour300dpi-fixed_Page_094_095.webp
+096,trifold,096_097,4,module,Y,module-sheet,CS 7 860,Video mixer module Y (mod level 4) - parts,A4 trifold/vp415-colour300dpi-fixed_Page_096_097.webp
+097,trifold,096_097,4,module,Y,pcb-layout,CS 7 860,Video mixer module Y - PCB lay-out,A4 trifold/vp415-colour300dpi-fixed_Page_096_097.webp
+098,bifold,098,4,module,Z,module-sheet,CS 7 861,Deck electronics module Z - parts,Original PNG/vp415-colour300dpi-fixed_Page_098.webp
+099,bifold,099,4,module,Z,circuit,CS 6 893,Deck electronics module Z - circuit diagram (laser detection unit),Original PNG/vp415-colour300dpi-fixed_Page_099.webp
+100,bifold,100,4,module,RC,module-sheet,CS 7 862,Remote control RC53/VP410/VP415 transmitter - exploded view / PCB,Original PNG/vp415-colour300dpi-fixed_Page_100.webp
+101,A4,101,5,divider,,divider,,Chapter 5 divider (Exploded views and parts lists),Original PNG/vp415-colour300dpi-fixed_Page_101.webp
+102,bifold,102,5,exploded-views,,figure,CS 7 863,Exploded view - cabinet,Original PNG/vp415-colour300dpi-fixed_Page_102.webp
+103,bifold,103,5,exploded-views,,figure,CS 7 864,Exploded view - sandwich,Original PNG/vp415-colour300dpi-fixed_Page_103.webp
+104,bifold,104,5,exploded-views,,figure,CS 7 865,Exploded view - frontloader,Original PNG/vp415-colour300dpi-fixed_Page_104.webp
+105,bifold,105,5,exploded-views,,figure,CS 7 866,Exploded view - disc drive,Original PNG/vp415-colour300dpi-fixed_Page_105.webp
+106,A4,106,6,divider,,divider,,Chapter 6 divider (Repair method),Original PNG/vp415-colour300dpi-fixed_Page_106.webp
+107,A4,107,6,repair-method,,text,,Repair method - title page and contents,Original PNG/vp415-colour300dpi-fixed_Page_107.webp
+108,A4,108,6,repair-method,,text,,Introduction / diagnostic software,Original PNG/vp415-colour300dpi-fixed_Page_108.webp
+109,A4,109,6,repair-method,,text,,Reproducing the error codes on the screen,Original PNG/vp415-colour300dpi-fixed_Page_109.webp
+110,A4,110,6,repair-method,,text,,Programme loop in the self-test mode,Original PNG/vp415-colour300dpi-fixed_Page_110.webp
+111,A4,111,6,repair-method,,table,,Meaning of the error codes,Original PNG/vp415-colour300dpi-fixed_Page_111.webp
+112,A4,112,6,fault-finding,,text,,Fault finding - meaning of the symbols used,Original PNG/vp415-colour300dpi-fixed_Page_112.webp
+113,A4,113,6,fault-finding,,figure,CS 8 116,Test procedure flow chart,Original PNG/vp415-colour300dpi-fixed_Page_113.webp
+114,A4,114,6,fault-finding,,figure,,Fault finding chart 1 - no display,Original PNG/vp415-colour300dpi-fixed_Page_114.webp
+115,A4,115,6,fault-finding,,figure,,Fault finding chart 2 - error code <60 (self test mode),Original PNG/vp415-colour300dpi-fixed_Page_115.webp
+116,A4,116,6,fault-finding,,figure,CS 8 119,"Fault finding chart - time out tilt, laser not on, not out of focus",Original PNG/vp415-colour300dpi-fixed_Page_116.webp
+117,A4,117,6,fault-finding,,figure,,"Fault finding chart - not in focus after 5 attempts, motor speed error, frame lock",Original PNG/vp415-colour300dpi-fixed_Page_117.webp
+118,A4,118,7,divider,,divider,,Chapter 7 divider (Circuit description),Original PNG/vp415-colour300dpi-fixed_Page_118.webp
+119,A4,119,5,exploded-views,,figure,CS 7 867,Exploded view - optical deck [bound after chapter 7 divider],Original PNG/vp415-colour300dpi-fixed_Page_119.webp
+120,A4,120,5,parts-mechanical,,table,,List of mechanical parts - fixing materials / optical deck,Original PNG/vp415-colour300dpi-fixed_Page_120.webp
+121,A4,121,5,parts-mechanical,,table,,List of mechanical parts - disc drive / sandwich / cabinet,Original PNG/vp415-colour300dpi-fixed_Page_121.webp
+122,A4,122,5,parts-electrical,,table,,List of electrical parts - remote control / integrated circuits,Original PNG/vp415-colour300dpi-fixed_Page_122.webp
+123,A4,123,5,parts-electrical,,table,,List of electrical parts - transistors / diodes,Original PNG/vp415-colour300dpi-fixed_Page_123.webp
+124,A4,124,5,parts-electrical,,table,,List of electrical parts - standard resistors,Original PNG/vp415-colour300dpi-fixed_Page_124.webp
+125,A4,125,7,circuit-description,,text,,Circuit description - title page and contents,Original PNG/vp415-colour300dpi-fixed_Page_125.webp
+126,A4,126,7,laservision-system,,text,,The LaserVision system - introduction / encoding,Original PNG/vp415-colour300dpi-fixed_Page_126.webp
+127,A4,127,7,laservision-system,,text,,Lead-in / lead-out tracks / programme area,Original PNG/vp415-colour300dpi-fixed_Page_127.webp
+128,A4,128,7,laservision-system,,text,,Radial tracking / time base correction / genlock,Original PNG/vp415-colour300dpi-fixed_Page_128.webp
+129,A4,129,7,optical-deck,,figure,CS 7 878,Fig. OD1 - optical deck,Original PNG/vp415-colour300dpi-fixed_Page_129.webp
+130,A4,130,7,optical-deck,,text,,The optical deck,Original PNG/vp415-colour300dpi-fixed_Page_130.webp
+131,A4,131,7,optical-deck,,text,,Active tilt control (ATC),Original PNG/vp415-colour300dpi-fixed_Page_131.webp
+132,A4,132,7,vp400-series,,text,,VP400 series - introduction / audio-video signal path,Original PNG/vp415-colour300dpi-fixed_Page_132.webp
+133,bifold,133,7,vp400-series,,figure,CS 7 581,Fig. SP1 - audio/video signal path,Original PNG/vp415-colour300dpi-fixed_Page_133.webp
+134,bifold,134,7,vp400-series,,figure,CS 7 882,Fig. CR1 - block diagram control routes,Original PNG/vp415-colour300dpi-fixed_Page_134.webp
+135,A4,135,7,vp400-series,,figure,,Fig. CR2 - start-up sequence,Original PNG/vp415-colour300dpi-fixed_Page_135.webp
+136,bifold,136,7,vp400-series,,text,,Control routes / S-bus / constraints on operation,Original PNG/vp415-colour300dpi-fixed_Page_136.webp
+137,bifold,137,7,vp400-series,,figure,CS 8 123,Fig. SE1 - block diagram servo,Original PNG/vp415-colour300dpi-fixed_Page_137.webp
+138,A4,138,7,vp400-series,,text,,The servo block diagram - short description,Original PNG/vp415-colour300dpi-fixed_Page_138.webp
+139,A4,139,7,module-description,A,text,,Module A - audio processor,Original PNG/vp415-colour300dpi-fixed_Page_139.webp
+140,A4,140,7,module-description,B,text,,Module B - RGB,Original PNG/vp415-colour300dpi-fixed_Page_140.webp
+141,A4,141,7,module-description,C,text,,Module C - video processing,Original PNG/vp415-colour300dpi-fixed_Page_141.webp
+142,A4,142,7,module-description,D,text,,Module D - reference source,Original PNG/vp415-colour300dpi-fixed_Page_142.webp
+143,bifold,143,7,module-description,E,text,,Module E - slide drive,Original PNG/vp415-colour300dpi-fixed_Page_143.webp
+144,bifold,144,7,module-description,F,text,,Module F - motor + sequence (running condition / frequency / phase control),Original PNG/vp415-colour300dpi-fixed_Page_144.webp
+145,A4,145,7,module-description,H,text,,Module H - ETBC B,Original PNG/vp415-colour300dpi-fixed_Page_145.webp
+146,A4,146,7,module-description,I,text,,Module I - ETBC C,Original PNG/vp415-colour300dpi-fixed_Page_146.webp
+147,bifold,147,7,module-description,I,text,,Module I - ETBC C (continued),Original PNG/vp415-colour300dpi-fixed_Page_147.webp
+148,bifold,148,7,module-description,J,text,,Module J - focus / Module K - HF processing,Original PNG/vp415-colour300dpi-fixed_Page_148.webp
+149,A4,149,7,module-description,L,text,,Module L - video drop-out correction,Original PNG/vp415-colour300dpi-fixed_Page_149.webp
+150,A4,150,7,module-description,M,text,,Module M - radial drive / Module N - display and keyboard,Original PNG/vp415-colour300dpi-fixed_Page_150.webp
+151,bifold,151,7,module-description,P,text,,Module P - frontloader / Module R - drive processor,Original PNG/vp415-colour300dpi-fixed_Page_151.webp
+152,bifold,152,7,module-description,S,text,,Module S - control (operation / watchdog),Original PNG/vp415-colour300dpi-fixed_Page_152.webp
+153,A4,153,7,module-description,U,text,,Module Ua - analogue I/O CVBS + audio part,Original PNG/vp415-colour300dpi-fixed_Page_153.webp
+154,A4,154,7,module-description,U,text,,Module Ub - analogue I/O video part,Original PNG/vp415-colour300dpi-fixed_Page_154.webp
+155,A4,155,7,module-description,U,text,,Module Uc - analogue I/O TXT part,Original PNG/vp415-colour300dpi-fixed_Page_155.webp
+156,A4,156,7,module-description,W,text,,Module W - data grabber and CPU,Original PNG/vp415-colour300dpi-fixed_Page_156.webp
+157,A4,157,7,module-description,W,text,,Module W - header register / byte counter / RDY,Original PNG/vp415-colour300dpi-fixed_Page_157.webp
+158,A4,158,7,module-description,W,text,,Module W - CPU inputs and outputs,Original PNG/vp415-colour300dpi-fixed_Page_158.webp
+159,A4,159,7,module-description,W,text,,Module W - system clock / UPI-41 / SCSI interface,Original PNG/vp415-colour300dpi-fixed_Page_159.webp
+160,A4,160,7,module-description,W,text,,Module W - target ID / CPU memory map / port map,Original PNG/vp415-colour300dpi-fixed_Page_160.webp
+161,A4,161,7,module-description,X,text,,Module X - LV-ROM decoder,Original PNG/vp415-colour300dpi-fixed_Page_161.webp
+162,A4,162,7,module-description,X,text,,Module X - LV-ROM decoder (continued),Original PNG/vp415-colour300dpi-fixed_Page_162.webp
+163,A4,163,7,module-description,Z,text,,Module Z - deck electronics / laser supply,Original PNG/vp415-colour300dpi-fixed_Page_163.webp
+164,A4,164,8,divider,,divider,,Chapter 8 divider (Service information),Original PNG/vp415-colour300dpi-fixed_Page_164.webp
+165,A4,165,8,service-information,,text,,Service information VP87-01 - survey of modifications,Original PNG/vp415-colour300dpi-fixed_Page_165.webp
+166,A4,166,8,service-information,,figure,CS 8 263,Positioning of labels,Original PNG/vp415-colour300dpi-fixed_Page_166.webp
+167,A4,167,8,modification-levels,,table,,Survey of modification levels VP415,Original PNG/vp415-colour300dpi-fixed_Page_167.webp
+168,A4,168,8,modification-levels,,table,,Survey of modification levels (page 2/2),Original PNG/vp415-colour300dpi-fixed_Page_168.webp
+169,A4,169,8,modification-levels,,table,,Modification levels per module,Original PNG/vp415-colour300dpi-fixed_Page_169.webp
+170,A4,170,8,modification-levels,B,table,,Mod levels - RGB module B,Original PNG/vp415-colour300dpi-fixed_Page_170.webp
+171,A4,171,8,modification-levels,C,table,,Mod levels - video processor module C,Original PNG/vp415-colour300dpi-fixed_Page_171.webp
+172,A4,172,8,modification-levels,F,table,,Mod levels - motor + sequence module F,Original PNG/vp415-colour300dpi-fixed_Page_172.webp
+173,A4,173,8,modification-levels,G,table,,Mod levels - gen lock module G,Original PNG/vp415-colour300dpi-fixed_Page_173.webp
+174,A4,174,8,modification-levels,H,table,,Mod levels - ETBC B module H,Original PNG/vp415-colour300dpi-fixed_Page_174.webp
+175,A4,175,8,modification-levels,I,table,,Mod levels - ETBC-C module I,Original PNG/vp415-colour300dpi-fixed_Page_175.webp
+176,A4,176,8,modification-levels,J,table,,Mod levels - focus module J,Original PNG/vp415-colour300dpi-fixed_Page_176.webp
+177,A4,177,8,modification-levels,K,table,,Mod levels - HF processor module K,Original PNG/vp415-colour300dpi-fixed_Page_177.webp
+178,A4,178,8,modification-levels,L,table,,Mod levels - video correction module L,Original PNG/vp415-colour300dpi-fixed_Page_178.webp
+179,A4,179,8,modification-levels,M,table,,Mod levels - radial module M,Original PNG/vp415-colour300dpi-fixed_Page_179.webp
+180,A4,180,8,modification-levels,R,table,,Mod levels - drive processor module R,Original PNG/vp415-colour300dpi-fixed_Page_180.webp
+181,A4,181,8,modification-levels,R,table,,Mod levels - drive processor module R (continued),Original PNG/vp415-colour300dpi-fixed_Page_181.webp
+182,A4,182,8,modification-levels,S,table,,Mod levels - control module S,Original PNG/vp415-colour300dpi-fixed_Page_182.webp
+183,A4,183,8,modification-levels,T,table,,Mod levels - supply module T,Original PNG/vp415-colour300dpi-fixed_Page_183.webp
+184,A4,184,8,modification-levels,U,table,,Mod levels - analog I/O module U,Original PNG/vp415-colour300dpi-fixed_Page_184.webp
+185,A4,185,8,modification-levels,Y,table,,Mod levels - video mix module Y,Original PNG/vp415-colour300dpi-fixed_Page_185.webp
+186,A4,186,8,modification-levels,Z,table,,Mod levels - deck electronics module Z,Original PNG/vp415-colour300dpi-fixed_Page_186.webp
+187,A4,187,8,software-releases,,table,,Survey of software releases VP410/415,Original PNG/vp415-colour300dpi-fixed_Page_187.webp
+188,A4,188,8,software-releases,,text,,Description of software modifications,Original PNG/vp415-colour300dpi-fixed_Page_188.webp
+189,A4,189,8,software-releases,S,table,,Software - CONTROL (on module S),Original PNG/vp415-colour300dpi-fixed_Page_189.webp
+190,A4,190,8,software-releases,W,table,,Software - SYNC (on module W),Original PNG/vp415-colour300dpi-fixed_Page_190.webp
+191,A4,191,8,software-releases,W,table,,Software - DESCRAMBLER (on module W),Original PNG/vp415-colour300dpi-fixed_Page_191.webp
+192,A4,192,8,software-releases,W,table,,Software - LV-DOS#1 + LV-DOS#2 (on module W),Original PNG/vp415-colour300dpi-fixed_Page_192.webp
+193,A4,193,8,fault-symptoms,,table,,Fault symptoms and solutions,Original PNG/vp415-colour300dpi-fixed_Page_193.webp
+194,A4,194,8,fault-symptoms,,table,,Start-up problems,Original PNG/vp415-colour300dpi-fixed_Page_194.webp
+195,A4,195,8,fault-symptoms,,table,,Playability problems,Original PNG/vp415-colour300dpi-fixed_Page_195.webp
+196,A4,196,8,fault-symptoms,,table,,Video problems,Original PNG/vp415-colour300dpi-fixed_Page_196.webp
+197,A4,197,8,fault-symptoms,,table,,Communication problems,Original PNG/vp415-colour300dpi-fixed_Page_197.webp

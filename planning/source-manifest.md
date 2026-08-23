@@ -3,9 +3,13 @@
 Survey of everything in [unsorted-source-material/](../unsorted-source-material/), what it is,
 and where it belongs in the site. Compiled 2026-08-23.
 
+> **Status: the space-reclamation pass in §11 has been carried out.** The source tree went from
+> **2477 MB to 1041 MB**. See §11.0 for exactly what was done. Figures elsewhere in this document
+> describe the tree *after* that pass unless marked "originally".
+
 Companion machine-readable files:
 
-- [source-inventory.csv](source-inventory.csv) — every source file with size and pixel dimensions (1525 files).
+- [source-inventory.csv](source-inventory.csv) — every source file with size and pixel dimensions (1361 files).
 - [service-manual-page-map.csv](service-manual-page-map.csv) — all 197 service-manual scan pages
   mapped to chapter / section / module / content type / Philips sheet code / **canonical source file**.
 
@@ -13,21 +17,19 @@ Companion machine-readable files:
 
 ## 1. Headline numbers
 
-| Category | Files | Size |
-| --- | --- | --- |
-| Images (scans, photos, diagrams, screenshots) | 554 | 2.30 GB |
-| PDFs | 7 | 107 MB |
-| Vendor OCR output (markdown + JSON + downscaled JPEGs) | 650 text + 271 jpeg | 14 MB |
-| Firmware dumps (ROM / BIN / HEX) | 28 | 0.5 MB |
-| Office documents (docx / pptx / xlsx) | 9 | 8.8 MB |
-| Archives (zip) | 6 | 0.1 MB |
-| **Total** | **1525** | **2477 MB** |
-| **Unique by content** | | **1749 MB** |
-| **Byte-identical duplication** | | **728 MB** |
+| Category | Files | Size | Originally |
+| --- | --- | --- | --- |
+| Images (scans, photos, diagrams) | 662 | 1041 MB | 554 files, 2357 MB |
+| PDFs | 6 | 24 MB | 7 files, 107 MB |
+| Vendor OCR output (markdown + JSON + downscaled JPEGs) | 650 text + 271 jpeg | 14 MB | unchanged |
+| Firmware dumps (ROM / BIN / HEX) | 28 | 0.5 MB | unchanged |
+| Office documents (docx / pptx / xlsx) | 9 | 8.8 MB | unchanged |
+| Archives (zip) | 6 | 0.1 MB | unchanged |
+| **Total** | **1361** | **1041 MB** | **1525 files, 2477 MB** |
 
-The git repository is **1.68 GiB packed** with no LFS — which is almost exactly the unique-content
-figure above, because git already stores identical blobs once. See §2.1 and
-[implementation-plan.md](implementation-plan.md) §"Asset strategy" for what that means in practice.
+The git repository was **1.68 GiB packed** with no LFS — almost exactly the original
+unique-content figure, because git already stores identical blobs once. The deletions above
+shrink every fresh checkout but do **not** shrink the pack; see §11.3.
 
 ---
 
@@ -37,20 +39,24 @@ figure above, because git already stores identical blobs once. See §2.1 and
 
 | Item | Size | Detail |
 | --- | --- | --- |
-| `Original PNG/` | 1.1 GB | **197 page scans**, 300 dpi colour. One-panel pages are 2482×3510; two-panel captures are 4964×3510. |
-| `A4/` | 300 MB | 104 files — **100% byte-identical duplicates** of the matching `Original PNG/` files |
-| `A4 bifold/` | 429 MB | 59 files — **100% byte-identical duplicates** of the matching `Original PNG/` files |
-| `A4 trifold/` | 243 MB | 17 files — **not duplicates.** Stitched three-panel composites, ~6980×3515, that exist nowhere else |
-| `Philips VP415 Service Manual (hires).pdf` | 84 MB | 179 pages. Not a wrapper of the PNGs — see §2.2 |
+| `Original PNG/` | 574 MB | **197 page scans**, 300 dpi colour, now **lossless WebP**. One-panel pages are 2482×3510; two-panel captures are 4964×3510. |
+| `A4 trifold/` | 126 MB | 17 files, now **lossless WebP** — **not duplicates.** Stitched three-panel composites, ~6980×3515, that exist nowhere else |
+| ~~`A4/`~~ | — | *deleted* — was 104 files / 300 MB, 100% byte-identical to `Original PNG/` |
+| ~~`A4 bifold/`~~ | — | *deleted* — was 59 files / 429 MB, 100% byte-identical to `Original PNG/` |
+| ~~`Philips VP415 Service Manual (hires).pdf`~~ | — | *deleted* at the owner's request; available elsewhere on the web. Was 84 MB / 179 pages — see §2.2 |
+
+The folder name `Original PNG/` is now a slight misnomer; renaming it is deferred to the migration
+in the plan's Phase 2a, where these files move into `docs/` and get meaningful names anyway.
 
 ### 2.1 The `A4*` folders
 
 Verified by SHA-256 and byte comparison across all 180 files:
 
-- `A4/` and `A4 bifold/` together are **728 MB of exact duplication** of `Original PNG/`. They
-  carry one piece of information the originals do not: which **physical fold class** each page
-  belongs to. That information is now captured in the `fold` column of the page map, so the two
-  folders can be deleted with zero loss.
+- `A4/` and `A4 bifold/` together were **728 MB of exact duplication** of `Original PNG/`. They
+  carried one piece of information the originals do not: which **physical fold class** each page
+  belongs to. That information is captured in the `fold` column of the page map, verified
+  byte-for-byte against the folders, so the two folders were deleted with zero loss. All 163 files
+  were re-verified identical at deletion time.
 - `A4 trifold/` is different in kind. A trifold sheet is three panels wide (~7000 px); the scanner
   could only capture two panels at a time, so the manual's 17 trifold sheets appear in
   `Original PNG/` as **34 overlapping two-panel captures**, and `A4 trifold/` holds the
@@ -75,8 +81,8 @@ pagination does **not** match the PNG page numbering.
 The 600 ppi mask is nominally finer than the 300 dpi colour scans, but Acrobat's JBIG2 encoder
 performs symbol substitution, which can silently swap visually-similar glyphs. That makes it
 unsafe as the authoritative source for part numbers and component references on schematics. The
-repo owner's assessment — PNG scans preferred — holds. Keep the PDF as a convenience download,
-not as an image source.
+repo owner’s assessment — the scans are the better source — holds, and the PDF has been deleted at
+their request; it is available elsewhere on the web.
 
 ### Manual structure (8 chapters, verified page by page)
 
@@ -245,7 +251,7 @@ The 6210/6211 erratum should be surfaced on module J's page.
 | `VP415 Push out tray manually.jpg`, `Remove IO module U.jpg`, `Remove optical deck.jpg`, `Remove sandwich.jpg`, `Upper case and front-loader.jpg` | Step illustrations |
 | `Philips-VP415-Back-panel annotated.jpg` | Annotated rear panel |
 | `PNG/Untitled-1…5.png` | 1024 px line-art versions of the demounting steps |
-| `PNG/vp415-colour300dpi-fixed_Page_102…105, 120.png` | Duplicates of manual pages — **use the `Original PNG/` copies instead** |
+| `PNG/vp415-colour300dpi-fixed_Page_102…105, 120.png` | 2048 px **cropped** derivatives of manual pages 102–105 and 120 — not duplicates. Lower resolution, but the crop isolates the drawing from the page. See §11.2 |
 
 ---
 
@@ -309,44 +315,72 @@ Destination: Chapter 1 (controls, indicators, connections) and the site landing 
 
 Everything in `unsorted-source-material/` has a destination. Nothing is orphaned.
 
-### 11.1 Redundant copies — delete, no information lost
+### 11.0 What has been done
 
-| Item | Size | Why |
+| Action | Result |
+| --- | --- |
+| Deleted `vp415 service manual/A4/` (104 files) | −300 MB. All 163 files re-verified byte-identical to `Original PNG/` immediately before deletion |
+| Deleted `vp415 service manual/A4 bifold/` (59 files) | −429 MB, same verification |
+| Deleted `Philips VP415 Service Manual (hires).pdf` | −84 MB, at the owner's request (available elsewhere on the web) |
+| Converted 214 scans to **lossless WebP** — 197 in `Original PNG/`, 17 in `A4 trifold/` | 1287 MB → 698 MB, **−589 MB (45.8%)** |
+
+**Source tree: 2477 MB → 1041 MB.**
+
+Every conversion was verified before its PNG was removed: `cwebp -lossless -z 6`, then
+`magick compare -metric AE` against the source requiring **exactly 0** differing pixels, plus a
+dimension match and a non-empty output. Any file failing either check kept both copies and was
+logged. **214 of 214 passed; zero failures.** Compression level `z 6` was chosen over `z 9` after
+measuring identical output size at one-fifth the encode time.
+
+The page map's `publish_source` column now points at the `.webp` files; all 180 canonical paths
+re-verified as resolving.
+
+### 11.1 Remaining redundancy — not yet acted on
+
+| Item | Size | Why it was left |
 | --- | --- | --- |
-| `vp415 service manual/A4/` | 300 MB | byte-identical to `Original PNG/`; fold class preserved in the page map |
-| `vp415 service manual/A4 bifold/` | 429 MB | byte-identical to `Original PNG/`; fold class preserved in the page map |
-| `Disassembly guide/PNG/vp415-colour300dpi-fixed_Page_*.png` | 5 files | duplicates of manual pages 102–105, 120 |
-| `VP415 ROM dumps/old VP415 ROMs/` | 3 files | `domesday_6807_descrambler 0x1FBE.rom` is byte-identical to both `domesday_scsi_6807.rom` and `W …6807 0 CPU V1_0 0x1FBE.BIN` |
-| `VP415 ROM dumps/domesday_scsi_6807.rom` | 16 KB | same content under a third name |
-| Loose `Microcontroller dumps/*.hex` (partial `2`/`3` variants) | 6 files | superseded by `Complete/` |
-| `*.zip` | 6 files | contents already present unpacked |
-| `pdfs/…Operating Instructions - uncompressed.pdf` | 20 MB | superseded by the compressed PDF plus the 27 page scans |
-| `ocr-markdown-service-manual/**/img-*.jpeg` | 271 files, ~10 MB | downscaled by the OCR vendor; never published (owner's instruction) |
-
-**Total reclaimed from the working tree: ~760 MB.**
+| `VP415 ROM dumps/` — 4 duplicate groups spanning 12 files | ~200 KB | Byte-identical, but the *filenames* carry provenance (`domesday_6807_descrambler` ↔ `W 3104 103 6807 0 CPU V1_0 0x1FBE.BIN`). Record the equivalences on the firmware page in Phase 6, then delete. Not a size concern |
+| `Microcontroller dumps/` — 6 identical `.hex` files | ~30 KB | Same, and see §11.4 — there is a substantive question here to settle first |
+| `*.zip` | 6 files, 0.1 MB | Contents already present unpacked |
+| `pdfs/…Operating Instructions - uncompressed.pdf` | 20 MB | Superseded by the compressed PDF plus the 27 page scans — but confirm the compressed copy is legible first |
+| `ocr-markdown-service-manual/**/img-*.jpeg` | 271 files, ~10 MB | Downscaled by the OCR vendor; never published. Delete once the OCR text has been imported in Phase 4 |
 
 ### 11.2 Not redundant despite appearances — keep
 
 | Item | Why |
 | --- | --- |
-| `A4 trifold/` (17 files, 243 MB) | the only complete rendering of the 17 three-panel fold-out sheets |
+| `A4 trifold/` (17 files, 126 MB) | the only complete rendering of the 17 three-panel fold-out sheets |
 | `Original PNG/` pages belonging to trifold sheets (34 pages) | the un-stitched captures; keep until the stitch quality is confirmed (see the plan's Phase 1) |
-| `Philips VP415 Service Manual (hires).pdf` | a different capture at 600 ppi bilevel, not a copy — §2.2 |
+| `Disassembly guide/PNG/vp415-colour300dpi-fixed_Page_*.png` (5 files, 3.6 MB) | **correction:** an earlier draft called these duplicates of manual pages 102–105 and 120. They are not — they are 2048 px **cropped** derivatives that isolate the drawing from the page. Lower resolution than the originals we hold, but the cropping is editorial work worth keeping until the asset pipeline reproduces it |
 | `Module Layout.pptx`, `RGB Module diagram.pptx`, `Deck electronics potentiometers.pptx` | editable sources for annotated diagrams whose exported PNG/JPG is also present; the annotations are only editable here |
 
 ### 11.3 Important caveat about repository size
 
-Deleting these files shrinks the **working tree and every fresh checkout**, but it does **not**
-shrink `.git`. Git stores blobs by content hash, so `A4/` and `A4 bifold/` already cost nothing
-extra in the 1.68 GiB pack — the pack is ~1.72 GB against 1.75 GB of unique content, i.e. it is
-already close to minimal for this history.
+The deletions and the WebP conversion shrink the **working tree and every fresh checkout** — from
+2477 MB to 1041 MB — but they do **not** shrink `.git`. Git stores blobs by content hash, so
+`A4/` and `A4 bifold/` already cost nothing extra in the 1.68 GiB pack, and deleting a file never
+reclaims its history. The pack will in fact *grow* slightly when the WebP files are committed,
+because both the old PNGs and the new WebP files then exist in history.
 
 Reducing the actual repository size requires rewriting history with `git filter-repo` and
-force-pushing. With three commits and a single author, that is straightforward, and now — before
-any site content exists — is the cheapest moment to do it. The plan covers this in Phase 1b, and
-it is the repo owner's call.
+force-pushing. With three commits and a single author that is straightforward, and now — before
+any site content exists — is the cheapest moment. **This is now the only remaining lever, and it
+is the repo owner's call.** Expected result: roughly 1.7 GB → 0.8 GB.
 
-A second, larger lever: **re-encoding the PNG scans as lossless WebP is pixel-identical and
-roughly 45% smaller** (measured: 4.0 MB → 2.2 MB, 9.6 MB → 5.3 MB, 22 MB → 12 MB, all with an
-absolute-error metric of exactly 0). Applied to `Original PNG/` and `A4 trifold/` that takes
-1.35 GB down to about 740 MB with no quality loss whatsoever.
+### 11.4 Firmware finding — needs resolving before the firmware page is written
+
+Every VP415 8041 microcontroller dump in the collection decodes to the **same 1 KB image**
+(0x0000–0x03F0):
+
+- `Complete/D8041AHC_NEC_VP415_Module_S_Control.hex` and
+  `Complete/D8041AHC_NEC_VP415_Module_W_CPU.hex` are byte-identical (2891 bytes each).
+- The larger loose files of the same names (8848 bytes) differ from each other only by a leading
+  blank line and a trailing newline; their HEX records are identical, and they are the same 1 KB
+  image repeated three times — the classic artefact of reading a 1 K device in a larger socket.
+- Only `Complete/D8041AHC_NEC_VP410_Module_S_Control.hex` (VP410, 2893 bytes) is genuinely
+  distinct.
+
+So either the two 8041s genuinely run the same UPI-41 bus-interface firmware, or one dump was
+saved under both names. **The files alone cannot settle it** — it needs a read from a real
+player. Do not assert either way on the firmware page; state what the dumps show and flag the
+ambiguity. This is also why the duplicate `.hex` files in §11.1 have not been deleted.

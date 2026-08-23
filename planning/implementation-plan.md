@@ -61,14 +61,14 @@ The page map's `publish_source` column names the one file to use for each of the
 `A4 trifold/` composite rather than from the 34 overlapping two-panel captures in `Original PNG/`.
 See manifest §2.1.
 
-### Lossless re-encoding of the archival originals
+### The archival scans are lossless WebP — done
 
-Re-encoding the PNG scans as **lossless WebP is pixel-identical** (verified: absolute-error metric
-exactly 0) and about **45% smaller**. Applied to the 180 canonical manual scans that is roughly
-1.35 GB → 740 MB, with no quality loss of any kind. Since the originals are the copy being kept,
-this is the single largest size win available and it costs nothing in fidelity.
+The 214 manual scans have been re-encoded from PNG to **lossless WebP**: 1287 MB → 698 MB,
+**−45.8%**, every file verified pixel-identical before its PNG was deleted. See manifest §11.0.
 
-Recommended, but it is the repo owner's call — see Phase 1b.
+Consequence for the rest of the plan: `publish_source` paths end in `.webp`, and the derivation
+step reads WebP rather than PNG — no other change, since `vips` and ImageMagick handle both
+transparently.
 
 ### Text comes from the vendor OCR, images from `Original PNG/`
 
@@ -226,30 +226,37 @@ Remaining work:
 
 ---
 
-## Phase 1b — Reclaim space, one copy of everything
+## Phase 1b — Reclaim space, one copy of everything ✅ *mostly done*
 
 **Goal:** the working tree holds exactly one copy of every distinct piece of source material.
 
-This runs before migration so that nothing redundant is ever carried into `docs/`.
+**Done — source tree 2477 MB → 1041 MB:**
 
-1. **Delete the exact duplicates** listed in manifest §11.1 — chiefly `A4/` (300 MB) and
-   `A4 bifold/` (429 MB), which are byte-identical to `Original PNG/`. Their only unique
-   contribution, the fold class of each page, is already recorded in the page map's `fold` column,
-   verified byte-for-byte. Total reclaimed: **~760 MB**.
-2. **Optionally re-encode the archival scans as lossless WebP.** Pixel-identical, ~45% smaller,
-   1.35 GB → ~740 MB. Verify with `magick compare -metric AE` returning exactly 0 on every file
-   before deleting any PNG. *Recommended.*
-3. **Optionally rewrite history.** Points 1 and 2 shrink the working tree but not `.git` — git
+1. ✅ **Deleted the exact duplicates** — `A4/` (300 MB) and `A4 bifold/` (429 MB), byte-identical
+   to `Original PNG/`. Their only unique contribution, the fold class of each page, is recorded in
+   the page map's `fold` column, verified byte-for-byte. All 163 files re-verified identical at
+   deletion time.
+2. ✅ **Deleted the hires service manual PDF** (84 MB) at the owner's request.
+3. ✅ **Re-encoded the 214 archival scans as lossless WebP** — 1287 MB → 698 MB, **−45.8%**. Every
+   file verified pixel-identical (`magick compare -metric AE` = 0) and dimension-matched before
+   its PNG was deleted; 214 of 214 passed. Page map `publish_source` updated to `.webp` and all
+   180 canonical paths re-verified.
+
+**Outstanding:**
+
+4. **Small duplicate groups** — ~230 KB across the ROM and microcontroller dumps. Deferred rather
+   than deleted, because the filenames carry provenance worth recording on the firmware page
+   first, and because of the finding in manifest §11.4. Resolve during Phase 6.
+5. **Optionally rewrite history.** The steps above shrink the working tree but not `.git` — git
    stores blobs by content hash, so the duplicates already cost nothing in the 1.68 GiB pack, and
-   deleting a file never reclaims its history. Only `git filter-repo` plus a force-push does. With
-   three commits and a single author this is low-risk, and now is the cheapest moment. **Repo
-   owner's call** — it rewrites published commit hashes.
+   deleting a file never reclaims its history. Committing the WebP files will in fact grow the
+   pack slightly, since both encodings then exist in history. Only `git filter-repo` plus a
+   force-push shrinks the clone. With three commits and a single author this is low-risk, and now
+   is the cheapest moment. **Repo owner's call** — it rewrites published commit hashes.
+   Expected result: roughly **1.7 GB → 0.8 GB**.
 
-Expected outcome if all three are taken: repository roughly **1.7 GB → 0.8 GB**.
-If only 1 and 2 are taken: working tree drops by ~1.3 GB, clone size unchanged.
-
-**Done when:** `sha256sum` across the source tree reports no duplicate groups, and the page map's
-`publish_source` column still resolves for all 180 canonical files.
+**Done when:** step 5 is decided either way, and the source tree's remaining duplicate groups are
+limited to the firmware files pending §11.4.
 
 ---
 
@@ -263,8 +270,8 @@ the web derivatives beside them.
 `tools/migrate.py`, driven by `publish_source` in the page map and by `tools/asset_map.csv`:
 
 - `git mv` each source file to `docs/<section>/assets/originals/<stable-name>`
-- rename to something meaningful on the way — `vp415-colour300dpi-fixed_Page_053.png` becomes
-  `docs/modules/j-focus/assets/originals/cs-7-846-module-sheet-p053.png`, carrying the Philips
+- rename to something meaningful on the way — `vp415-colour300dpi-fixed_Page_053.webp` becomes
+  `docs/modules/j-focus/assets/originals/cs-7-846-module-sheet-p053.webp`, carrying the Philips
   sheet code and the original page number
 - refuse to move a file that is not accounted for in the map, so nothing migrates by accident
 - record every move in `planning/migration-log.csv` — original path → new path — so provenance
@@ -540,11 +547,14 @@ end of phase 6.
    `site_url` and needs a `CNAME`)?
 4. **Contributions.** If you want community repair reports, that argues for an issue template and
    a contribution guide in Phase 7.
-5. **History rewrite.** Deleting the 760 MB of duplicates shrinks every checkout but not the
-   1.68 GiB pack — git already deduplicates blobs, so those copies cost nothing in history and
-   deleting them reclaims nothing from it. Only `git filter-repo` plus a force-push shrinks the
-   clone. With three commits and a single author it is low-risk and this is the cheapest moment.
-   Do you want it? (It rewrites already-pushed commit hashes.)
-6. **Lossless WebP for the archival scans.** Pixel-identical, ~45% smaller, 1.35 GB → ~740 MB.
-   The trade-off is that PNG is the more universally-openable archival format. Convert, or keep
-   PNG?
+5. **History rewrite.** The cleanup took the working tree from 2477 MB to 1041 MB, but the
+   1.68 GiB pack is unchanged — git already deduplicates blobs, so the deleted copies cost nothing
+   in history and removing them reclaims nothing from it. Committing the WebP files will grow the
+   pack slightly, since both encodings then exist in history. Only `git filter-repo` plus a
+   force-push shrinks the clone, to roughly 0.8 GB. With three commits and a single author it is
+   low-risk and this is the cheapest moment. Do you want it? (It rewrites already-pushed commit
+   hashes.)
+6. **Module S vs module W 8041 firmware.** Every VP415 8041 dump in the collection is the same
+   1 KB image — see manifest §11.4. Do the two modules genuinely share firmware, or was one dump
+   saved under both names? If you have a player to read from, that settles it; otherwise the
+   firmware page should state the ambiguity rather than pick a side.
