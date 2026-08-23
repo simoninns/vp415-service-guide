@@ -1,10 +1,8 @@
 name: Deploy site
 
 on:
-  # The push trigger is enabled once phase 3 lands mkdocs.yml and the build is
-  # green; until then the workflow is manual-only so main does not run red.
-  # push:
-  #   branches: [main]
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -35,6 +33,9 @@ jobs:
           restore-keys: assets-
       - run: nix develop -c just derive
       - run: nix develop -c mkdocs build --strict
+      # ~200 MB. The 918 MB of archival originals are excluded from the build
+      # (see `exclude_docs` in mkdocs.yml); publishing them would put the site
+      # past the 1 GB ceiling GitHub Pages puts on a published site.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site

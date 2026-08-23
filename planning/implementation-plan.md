@@ -43,8 +43,13 @@ original in any meaningful sense, so both are needed. The split is:
 `mkdocs build`, so the published site carries the derivatives while the repository carries only
 the archival originals. Nothing is stored twice.
 
-The archival originals are also published, as the "download the full sheet" link on each figure —
-so the site serves both the light preview and the authoritative scan.
+The archival originals are **not** published. `mkdocs.yml` excludes
+`docs/**/assets/originals/` from the build (`exclude_docs`), because at 918 MB they take the
+rendered site to 1.12 GB and GitHub Pages refuses to publish a site over 1 GB. Without them the
+site is 197 MB. The reader loses little: 240 of the 357 `-zoom` derivatives — every schematic,
+photograph and scope trace — are the scan at its native resolution, and the 117 text pages zoom
+to 2000 px against a 2482 px original. Anyone who wants the lossless file clones the repository,
+where it remains the single copy. See Phase 3.
 
 Derivative sizing rules (measured on real pages):
 
@@ -78,8 +83,9 @@ tables, correct `μ`/`Ω`/`≤`). It is the text source for every prose and tabl
 `img-*.jpeg` files are downscaled and are **never** published — every image on the site derives
 from `Original PNG/` or from the high-resolution photograph folders.
 
-Each transcribed page carries a link back to the original scan, so a reader who suspects an OCR
-slip can check the source in one click.
+Each transcribed page carries the scan of the page it was transcribed from, so a reader who
+suspects an OCR slip can check the source in one click. Since Phase 3 that is the `-zoom`
+derivative rather than the archival original — see the one-copy section above.
 
 ---
 
@@ -212,12 +218,12 @@ Also in this phase:
   `check` is the offline link check of the rendered site; `check-external` also resolves
   external URLs. `clean` removes `site/` and every `assets/web/` directory, leaving the
   originals alone.
-- `.github/workflows/deploy.yml` — the Phase 8 skeleton, but **the `push` trigger is commented
-  out** and the workflow is `workflow_dispatch`-only. There is no `mkdocs.yml` until Phase 3, so
-  an enabled trigger would only paint `main` red. Uncomment it when Phase 3 lands.
+- `.github/workflows/deploy.yml` — the Phase 8 skeleton. The `push` trigger was commented out
+  until there was an `mkdocs.yml` to build; **Phase 3 enabled it**, so every push to `main` now
+  deploys.
 
-`packages.site` evaluates but does not build yet — it wants `mkdocs.yml` (Phase 3);
-`tools/derive_assets.py` landed in Phase 2. The dev shell is Phase 0's actual deliverable.
+`packages.site` builds as of Phase 3, when `mkdocs.yml` landed; `tools/derive_assets.py` landed
+in Phase 2. The dev shell is Phase 0's actual deliverable.
 
 ---
 
@@ -391,7 +397,7 @@ Four findings, in full in [phase-2-findings.md](phase-2-findings.md):
 
 ---
 
-## Phase 3 — Site skeleton
+## Phase 3 — Site skeleton ✅ *done*
 
 **Goal:** navigable empty site with correct structure and URLs.
 
@@ -408,6 +414,39 @@ Four findings, in full in [phase-2-findings.md](phase-2-findings.md):
   Philips sheet code and source page number
 
 **Done when:** `just serve` renders every page and `mkdocs build --strict` passes.
+— **verified.** Full record: [phase-3-findings.md](phase-3-findings.md).
+
+**Landed:**
+
+- `mkdocs.yml` — Material theme, eleven navigation tabs, section index pages, instant navigation,
+  a three-way light/dark/system palette toggle, search, `glightbox`, `minify`, `redirects`, and
+  the `pymdownx` set for tabs, admonitions, footnotes and improved tables. `validation:` is set so
+  that `--strict` fails the build on an omitted file, an absolute link, an unrecognised link or a
+  dead anchor.
+- **Explicit `nav:`** covering all 86 pages, in manual order — no directory-order surprises.
+- **86 markdown pages**: the landing page written in full, and **85 stubs**, each with a
+  front-matter title and description, an H1, and a placeholder admonition naming the exact manual
+  pages and Philips `CS` sheets its content comes from. Those citations were generated from
+  `service-manual-sheet-map.csv`, not typed, so they cannot drift from the Phase 1 attribution.
+  The 26 module stubs also carry their intended section order and the module-specific notes this
+  plan records — the module J pinout erratum, the module S / W firmware ambiguity, the sheets
+  shared between N/P and Q/R.
+- `docs/stylesheets/extra.css` — the figure treatment: a `.sheet` figure class with a
+  `.sheet--fold` full-bleed variant for fold-out schematics, a `.sheet--photo` variant, a
+  `.sheet-pair` grid for top/bottom module photographs, and a caption style carrying the Philips
+  sheet code and the source page number. The pattern is documented at the top of the file, since
+  phases 4–6 write it several hundred times.
+- `justfile` — `check` and `check-external` now link-check through a root-dir shim. mkdocs emits
+  root-relative links under the Pages base path, which `lychee` cannot resolve against a local
+  directory; a symlink gives it a root in which `/vp415-service-guide/` exists.
+- `.github/workflows/deploy.yml` — the `push` trigger is enabled, per Phase 0's note.
+
+One finding, in full in [phase-3-findings.md](phase-3-findings.md):
+
+1. **The site as planned exceeded the GitHub Pages 1 GB limit.** Publishing the archival originals
+   put the rendered site at 1.12 GB, of which 918 MB was originals. Excluding them takes it to
+   197 MB. Decided by the owner: originals are not published and figures do not link to them. The
+   design decision above and Phase 8's notes are updated to match.
 
 ---
 
@@ -422,8 +461,9 @@ its figures.
 - keeps GFM tables as-is — they are good
 - rewrites `![img-NN.jpeg]` references to the derived assets from Phase 2, or drops them where
   the figure is the whole page
-- appends a source footer: *"Service manual page 041 · Philips sheet CS 7 840 · [view original
-  scan](…)"*
+- appends a source footer in the figure pattern Phase 3 established: the caption carries the
+  Philips sheet code and the manual page number, and the figure links its `-preview` derivative to
+  its `-zoom` derivative for the lightbox
 
 Then a manual editing pass per chapter — the OCR is good but not perfect, and headings, ordering
 and cross-links need a human eye. Specifically:
@@ -624,6 +664,9 @@ Notes:
 
 - `fetch-depth: 1` keeps checkout to the current tree only. That is ~1.7 GB today; after Phase 1b
   it should be well under 1 GB, and under 0.5 GB if history is rewritten too.
+- The uploaded Pages artifact is ~200 MB, because `exclude_docs` keeps the 918 MB of archival
+  originals out of the build. **GitHub Pages will not publish a site over 1 GB**, so nothing that
+  restores the originals to the site can ship without cutting something else.
 - The asset cache is keyed on the commit SHA with a `restore-keys` prefix fallback, so each build
   starts from the previous build's derivatives and `derive_assets.py`'s own per-file hash check
   rebuilds only what actually changed. Hashing the originals directly with `hashFiles` would be
@@ -643,9 +686,9 @@ and the build is green.
 | --- | --- | --- |
 | 0 — Toolchain ✅ | — | small |
 | 1 — Lock page attribution ✅ | 0 | small |
-| 1b — Reclaim space | 1 | small |
-| 2 — Migration and asset pipeline | 1, 1b | medium |
-| 3 — Site skeleton | 0, 2 | medium |
+| 1b — Reclaim space ✅ | 1 | small |
+| 2 — Migration and asset pipeline ✅ | 1, 1b | medium |
+| 3 — Site skeleton ✅ | 0, 2 | medium |
 | 4 — Chapter content | 2, 3 | large |
 | 5 — Module pages | 2, 3, 4 (ch. 7 & 8 text) | largest |
 | 6 — Original material | 3 | medium |
@@ -678,6 +721,16 @@ end of phase 6.
    [firmware-checksums.csv](firmware-checksums.csv) covers all 28 files with size, decoded image
    range, the Philips 16-bit sum, and SHA-256 of both the file and the decoded image. The hashes
    make the aliasing obvious without deleting anything: **28 files, 11 distinct images.**
+
+7. **The archival originals are not published.** Decided in Phase 3, forced by the GitHub Pages
+   1 GB site limit: publishing them makes the site 1.12 GB against 197 MB without them. Figures
+   carry no "download the original scan" link; the `-zoom` derivative is what the lightbox opens,
+   and for every schematic, photograph and scope trace that is the scan at native resolution. The
+   originals stay in the repository as the single copy of each file.
+8. **Deployment is live.** The `push` trigger on `.github/workflows/deploy.yml` was enabled in
+   Phase 3, so `main` publishes continuously from here on. Two things still gate a green run:
+   Pages must be set to deploy **from GitHub Actions** in the repository settings, and Phase 1b's
+   rewritten history still needs its force-push.
 
 ### Still genuinely open
 

@@ -1,0 +1,249 @@
+site_name: VP415 Service Guide
+site_description: >-
+  A working repair and servicing reference for the Philips VP415 LaserVision ROM
+  disc drive, built around the original Philips service manual.
+site_url: https://simoninns.github.io/vp415-service-guide/
+site_author: Simon Inns
+
+repo_url: https://github.com/simoninns/vp415-service-guide
+repo_name: simoninns/vp415-service-guide
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+# The archival originals stay in the repository as the single copy of every
+# scan, but they are not published: at 918 MB they would take the site to
+# 1.12 GB, past the 1 GB ceiling GitHub Pages puts on a published site. The
+# derivatives carry the reader - every schematic, photograph and scope trace
+# zooms to native resolution, and text pages to 2000 px - and anyone who wants
+# the lossless file clones the repository.
+exclude_docs: |
+  **/assets/originals/
+
+theme:
+  name: material
+  language: en
+  icon:
+    logo: material/disc-player
+    repo: fontawesome/brands/github
+  features:
+    # Navigation
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    # Search
+    - search.suggest
+    - search.highlight
+    - search.share
+    # Content
+    - content.action.edit
+    - content.code.copy
+    - content.tooltips
+  palette:
+    # Follow the reader's system setting by default, with an explicit override.
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/simoninns/vp415-service-guide
+      name: This site on GitHub
+
+plugins:
+  - search
+  # Click-to-zoom for the scanned sheets. Figures link their -preview
+  # derivative to the -zoom derivative; glightbox intercepts the link.
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      auto_caption: false
+      caption_position: bottom
+      skip_classes:
+        - no-lightbox
+  - minify:
+      minify_html: true
+      htmlmin_opts:
+        remove_comments: true
+  # Populated as pages move; empty is valid and keeps the plugin wired up.
+  - redirects:
+      redirect_maps: {}
+
+# --strict turns each of these into a build failure.
+validation:
+  omitted_files: warn
+  absolute_links: warn
+  unrecognized_links: warn
+  anchors: warn
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+
+  - Overview:
+      - overview/index.md
+      - Technical data: overview/technical-data.md
+      - Controls, indicators and connections: overview/controls-and-connections.md
+      - Connector pinning: overview/connector-pinning.md
+
+  - General service:
+      - general-service/index.md
+      - Remarks: general-service/remarks.md
+      - Warnings: general-service/warnings.md
+      - Modification levels: general-service/modification-levels.md
+      - Adjustments: general-service/adjustments.md
+      - Demounting: general-service/demounting.md
+      - Service hints: general-service/service-hints.md
+      - Service tools: general-service/service-tools.md
+      - List of used symbols: general-service/symbols.md
+      - Connections of semiconductors: general-service/semiconductor-connections.md
+
+  - System:
+      - system/index.md
+      - Module and connector lay-out: system/module-layout.md
+      - Alphabetical signal listing: system/signal-listing.md
+      - Wiring diagrams: system/wiring-diagrams.md
+      - Block diagrams: system/block-diagrams.md
+
+  - Modules:
+      - modules/index.md
+      - A - Audio processor: modules/a-audio-processor/index.md
+      - B - RGB: modules/b-rgb/index.md
+      - C - Video processor: modules/c-video-processor/index.md
+      - D - Reference source: modules/d-reference-source/index.md
+      - E - Slide drive: modules/e-slide-drive/index.md
+      - F - Motor + sequence: modules/f-motor-sequence/index.md
+      - G - Gen lock: modules/g-genlock/index.md
+      - H - ETBC-B: modules/h-etbc-b/index.md
+      - I - ETBC-C: modules/i-etbc-c/index.md
+      - J - Focus: modules/j-focus/index.md
+      - K - HF processor: modules/k-hf-processor/index.md
+      - L - Video drop-out correction: modules/l-video-dropout-correction/index.md
+      - M - Radial: modules/m-radial/index.md
+      - N - Display + keyboard: modules/n-display-keyboard/index.md
+      - P - Frontloader: modules/p-frontloader/index.md
+      - Q - RC5 receiver: modules/q-rc5-receiver/index.md
+      - R - Drive processor: modules/r-drive-processor/index.md
+      - S - Control: modules/s-control/index.md
+      - T - Supply: modules/t-supply/index.md
+      - U - Analog I/O: modules/u-analog-io/index.md
+      - V - Module carrier: modules/v-module-carrier/index.md
+      - W - CPU + data grabber: modules/w-cpu-data-grabber/index.md
+      - X - LV-ROM decoder: modules/x-lv-rom-decoder/index.md
+      - Y - Video mixer: modules/y-video-mixer/index.md
+      - Z - Deck electronics: modules/z-deck-electronics/index.md
+      - Remote control: modules/remote-control/index.md
+
+  - Parts:
+      - parts/index.md
+      - Exploded views: parts/exploded-views.md
+      - Mechanical parts: parts/mechanical-parts.md
+      - Electrical parts: parts/electrical-parts.md
+
+  - Repair:
+      - repair/index.md
+      - Diagnostic mode: repair/diagnostic-mode.md
+      - Error codes: repair/error-codes.md
+      - Fault-finding charts: repair/fault-finding.md
+      - Case studies:
+          - repair/case-studies/index.md
+          - Error 7 - not in focus: repair/case-studies/error-7-focus.md
+          - Error 9 - frame lock: repair/case-studies/error-9-frame-lock.md
+
+  - Circuit description:
+      - circuit-description/index.md
+      - The LaserVision system: circuit-description/laservision-system.md
+      - The optical deck: circuit-description/optical-deck.md
+      - VP400 series architecture: circuit-description/vp400-series.md
+      - Module circuit descriptions: circuit-description/modules.md
+
+  - Service information:
+      - service-information/index.md
+      - Modification levels per module: service-information/modification-levels.md
+      - Software releases: service-information/software-releases.md
+      - Fault symptoms: service-information/fault-symptoms.md
+
+  - Operating instructions:
+      - operating-instructions/index.md
+      - Introduction: operating-instructions/introduction.md
+      - Installation: operating-instructions/installation.md
+      - Controls, indicators and connections: operating-instructions/controls-and-connections.md
+      - Playing a disc: operating-instructions/playing-a-disc.md
+      - Special play functions: operating-instructions/special-play-functions.md
+      - Interactive play: operating-instructions/interactive-play.md
+      - F-code programming: operating-instructions/f-code-programming.md
+      - F-code commands: operating-instructions/f-code-commands.md
+      - SCSI operation: operating-instructions/scsi-operation.md
+      - Maintenance: operating-instructions/maintenance.md
+      - Technical data: operating-instructions/technical-data.md
+
+  - Reference:
+      - reference/index.md
+      - Firmware: reference/firmware.md
+      - F-codes: reference/f-codes.md
+      - Downloads: reference/downloads.md
+      - Calibration:
+          - reference/calibration/index.md
+          - RGB module calibration: reference/calibration/rgb-module.md
+          - Deck electronics adjustment: reference/calibration/deck-electronics.md

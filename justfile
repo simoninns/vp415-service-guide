@@ -20,11 +20,25 @@ build: derive
 
 # Strict build plus an offline link check of the rendered site
 check: build
-    lychee --offline --include-fragments --no-progress site
+    @just _lychee --offline
 
 # As `check`, but also resolves external URLs - needs network, slower
 check-external: build
-    lychee --include-fragments --no-progress site
+    @just _lychee
+
+# Link-check site/ under the Pages base path.
+#
+# mkdocs writes root-relative links (/vp415-service-guide/...) because site_url
+# is set, so lychee needs a root directory in which that path exists. A symlink
+# gives it one without moving the build output.
+_lychee *ARGS:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    root=$(mktemp -d)
+    trap 'rm -rf "$root"' EXIT
+    ln -s "$PWD/site" "$root/vp415-service-guide"
+    lychee {{ARGS}} --include-fragments --no-progress --root-dir "$root" \
+        "$root/vp415-service-guide"
 
 # Remove generated output: site/ and every assets/web/ directory
 clean:

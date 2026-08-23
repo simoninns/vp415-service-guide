@@ -1,0 +1,143 @@
+/* VP415 service guide - figure and caption treatment.
+ *
+ * The site's core content is 300 dpi scans of Philips CS sheets: circuit
+ * diagrams, PCB lay-outs and fold-out schematics up to three A4 panels wide.
+ * Material's prose column is sized for text, so scanned sheets get their own
+ * treatment here.
+ *
+ * The figure pattern, used everywhere a scan appears:
+ *
+ *   <figure class="sheet sheet--fold" markdown>
+ *   [![Alt text](assets/web/cs-6-876-circuit-p052-preview.webp)](assets/web/cs-6-876-circuit-p052-zoom.webp)
+ *   <figcaption>
+ *     Focus module J, circuit diagram.
+ *     <span class="cs">CS 6 876</span>
+ *     <span class="src">service manual page 052</span>
+ *   </figcaption>
+ *   </figure>
+ *
+ * The inline image is the -preview derivative; the link target is the -zoom
+ * derivative, which glightbox opens in the lightbox. For schematics,
+ * photographs and scope traces the -zoom derivative is the scan at native
+ * resolution, so the lightbox is the full sheet. Add `sheet--fold` for
+ * fold-outs and full-width schematics, leave it off for photographs and
+ * text pages.
+ *
+ * The archival originals under assets/originals/ are not published - see
+ * `exclude_docs` in mkdocs.yml - so figures never link to them.
+ */
+
+/* Scans need more room than a text column gives them. */
+.md-grid {
+  max-width: 66rem;
+}
+
+/* ---------------------------------------------------------------- figures */
+
+.md-typeset figure.sheet {
+  display: block;
+  width: 100%;
+  margin: 1.6rem 0 2rem;
+}
+
+.md-typeset figure.sheet p {
+  margin: 0;
+}
+
+.md-typeset figure.sheet img {
+  display: block;
+  width: 100%;
+  height: auto;
+  /* Scans are white paper. Keep them white in dark mode too - inverting a
+     circuit diagram makes it harder to read, not easier. */
+  background: #fff;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.1rem;
+}
+
+/* Fold-outs break out of the prose column by the article's own padding, but
+   only once the screen is wide enough that nothing collides with them. */
+@media screen and (min-width: 60em) {
+  .md-typeset figure.sheet--fold {
+    width: calc(100% + 3.2rem);
+    max-width: none;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+  }
+}
+
+/* A photograph is not a sheet: no white backing, no full-bleed. */
+.md-typeset figure.sheet--photo img {
+  background: none;
+}
+
+/* Two module photographs, top and bottom, side by side. */
+.md-typeset .sheet-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 45em) {
+  .md-typeset .sheet-pair {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.md-typeset .sheet-pair figure.sheet {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------- captions */
+
+.md-typeset figure.sheet > figcaption {
+  max-width: none;
+  margin: 0.5rem 0 0;
+  padding-left: 0.6rem;
+  border-left: 0.15rem solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* The Philips sheet code, e.g. CS 6 876 - the sheet's own identity, and the
+   thing a reader cross-references against a paper manual. */
+.md-typeset figcaption .cs {
+  display: inline-block;
+  margin-left: 0.3rem;
+  padding: 0 0.3em;
+  border-radius: 0.1rem;
+  background: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+  font-family: var(--md-code-font-family);
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+/* Where the sheet sits in the printed manual. */
+.md-typeset figcaption .src {
+  margin-left: 0.3rem;
+  white-space: nowrap;
+}
+
+.md-typeset figcaption .src::before {
+  content: "· ";
+  color: var(--md-default-fg-color--lighter);
+}
+
+/* ------------------------------------------------------------- home page */
+
+/* The landing page's hero image sits above the first heading. */
+.md-typeset figure.hero {
+  margin: 0 0 1.5rem;
+}
+
+/* Crop the hero to a banner: at full height the photograph pushes everything
+   the reader actually came for below the fold. */
+.md-typeset figure.hero img {
+  max-height: 22rem;
+  object-fit: cover;
+  object-position: center 45%;
+  border-radius: 0.2rem;
+}
