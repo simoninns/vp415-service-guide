@@ -100,9 +100,11 @@ docs/service-information/assets/originals/cs-8-284-table-p187.webp             2
 
 This is a genuine violation of *one copy of everything*, deliberately not resolved unilaterally
 because the upright scan is the more useful one for a reader: the manual's own copy is sideways.
-**Recommendation for phase 6:** keep `-upright.png`, delete `-cropped.jpg`, and have
-`docs/reference/firmware.md` use the upright version while `docs/service-information/` keeps the
-manual sheet in its manual position. Owner's call.
+**Recommendation for phase 6** — written up in full in
+[implementation-plan.md](implementation-plan.md) § Phase 6, and listed under *Still genuinely
+open*: keep `-upright.png`, delete `-cropped.jpg`, and have `docs/reference/firmware.md` use the
+upright version while `docs/service-information/` keeps the manual sheet in its manual position,
+the two pages cross-referencing each other. Owner's call.
 
 ### 5.2 Two stale titles left over from phase 1 — fixed
 
@@ -150,4 +152,5 @@ is where. `derive_assets.py` reads the profile from the migration log, not the a
 > `modules/r-drive-processor/assets/originals/cs-7-851-circuit-p063-064.webp`, and module P's
 > from `modules/n-display-keyboard/assets/originals/cs-7-850-module-sheet-p061-062.webp`.
 
-> **Phase 6.** Resolve finding 5.1.
+> **Phase 6.** Resolve finding 5.1 — the recommendation and its alternative are recorded in
+> [implementation-plan.md](implementation-plan.md) § Phase 6.

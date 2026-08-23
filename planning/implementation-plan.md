@@ -512,8 +512,33 @@ Module-specific extras:
   image size and address range, the Philips 16-bit sum, **SHA-256**, and a download link.
   Publishing SHA-256 per file makes the aliasing self-evident: **28 files, 11 distinct images.**
   Group the table by image so the duplicates read as aliases rather than separate firmware.
-  Include the ROM version survey image and the provenance note from `Rom descriptions.txt`, and
-  publish the NEC/Intel datasheets.
+  Include the software-release survey image and the provenance note from `Rom descriptions.txt`,
+  and publish the NEC/Intel datasheets.
+- **Resolve the `CS 8 284` triplicate** — carried from Phase 2, finding 5.1. The two files named
+  "VP415 ROM version survey" are not a ROM survey: both are the manual's `CS 8 284`, *Survey of
+  software releases VP410/415*, rotated upright, and manual sheet 187 is a third copy of the same
+  page. Content is identical in all three; they differ only in crop and resolution.
+
+  | File | Size | What it is |
+  | --- | --- | --- |
+  | `docs/reference/assets/originals/cs-8-284-software-release-survey-upright.png` | 3510×2482 | the whole page, upright |
+  | `docs/reference/assets/originals/cs-8-284-software-release-survey-cropped.jpg` | 1822×1286 | a crop of the same, lossy |
+  | `docs/service-information/assets/originals/cs-8-284-table-p187.webp` | 2482×3510 | the manual sheet, sideways |
+
+  **Recommendation: keep two, delete one.** Delete the cropped JPEG — it is a lossy crop of the
+  upright PNG and carries nothing the PNG does not. Keep the upright PNG and use it on
+  `docs/reference/firmware.md`, because a reader comparing checksums wants the table the right way
+  up. Keep the manual sheet in `docs/service-information/` in its manual position, and have the two
+  pages cross-reference each other so the duplication is visible rather than accidental.
+
+  This leaves one deliberate exception to *one copy of everything*, justified by the same rule
+  that allows web derivatives: a sideways scan and an upright one are not interchangeable for a
+  reader. If you would rather hold the line, keep only the manual sheet and rotate it in CSS —
+  that costs the reader nothing but the ability to download an upright original.
+
+  Whichever way it goes, delete the file(s) with `git rm`, drop the row(s) from
+  `planning/migration-log.csv` and `tools/asset_map.csv`, and re-run `just derive` to prune the
+  orphaned derivatives.
 - **F-codes** — `vp415Fcode.xlsx` as a searchable table, plus the real-player `?D`/`?P`/`?U`/`?=`
   responses per Domesday disc side from `misc/`.
 - **Operating instructions** — the user manual as its own top-level section (see the layout),
@@ -656,6 +681,9 @@ end of phase 6.
 
 ### Still genuinely open
 
+- **The `CS 8 284` triplicate.** Recommendation and the alternative are written out in Phase 6;
+  it needs an owner's yes or no, not more investigation. See
+  [phase-2-findings.md](phase-2-findings.md) §5.1.
 - **Module S vs module W 8041 firmware.** All eight VP415 8041 dumps decode to the *same* 1 KB
   image (sum16 `0xFC62`, SHA-256 `35d258eb…`) — see manifest §11.4. Whether the two modules really
   share firmware, or one dump was saved under both names, cannot be settled from the files. If you
