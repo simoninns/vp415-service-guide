@@ -31,14 +31,18 @@ check-external: build
 # mkdocs writes root-relative links (/vp415-service-guide/...) because site_url
 # is set, so lychee needs a root directory in which that path exists. A symlink
 # gives it one without moving the build output.
+#
+# mkdocs also writes directory-style URLs (.../error-codes/#error-7). Without
+# --index-files, lychee resolves those to a directory and reports every
+# cross-page anchor as a missing fragment.
 _lychee *ARGS:
     #!/usr/bin/env bash
     set -euo pipefail
     root=$(mktemp -d)
     trap 'rm -rf "$root"' EXIT
     ln -s "$PWD/site" "$root/vp415-service-guide"
-    lychee {{ARGS}} --include-fragments --no-progress --root-dir "$root" \
-        "$root/vp415-service-guide"
+    lychee {{ARGS}} --include-fragments --index-files index.html --no-progress \
+        --root-dir "$root" "$root/vp415-service-guide"
 
 # Remove generated output: site/ and every assets/web/ directory
 clean:

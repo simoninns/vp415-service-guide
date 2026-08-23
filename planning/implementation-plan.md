@@ -445,7 +445,7 @@ One finding, in full in [phase-3-findings.md](phase-3-findings.md):
 
 ---
 
-## Phase 4 — Chapter content (chapters 1, 2, 3, 5, 6, 7, 8)
+## Phase 4 — Chapter content (chapters 1, 2, 3, 5, 6, 7, 8) ✅ *done*
 
 **Goal:** every non-module chapter of the manual is on the site as readable, searchable text with
 its figures.
@@ -484,6 +484,41 @@ and cross-links need a human eye. Specifically:
 
 **Done when:** all seven chapters are complete, `mkdocs build --strict` passes, and spot-checking
 ten random pages against the original scans finds no transcription errors.
+— **verified.** Full record: [phase-4-findings.md](phase-4-findings.md).
+
+**Landed:**
+
+- `tools/import_ocr.py` — OCR markdown to page draft, as specified above. It refuses to overwrite
+  a page that has had its editing pass, recognising its own marker and the Phase 3 stub marker.
+- **36 pages, about 57 700 words**, covering all 120 sheets of the seven chapters. Every sheet is
+  referenced from exactly one page, and every figure carries its `CS` code and manual page number.
+- Long regular tables — the 243-entry signal listing, the parts lists, the error codes, the
+  modification levels — were generated from the OCR rather than retyped, then corrected against
+  the scan.
+- **Sixteen sheets read at 300 dpi and compared line by line**, well past the ten the exit
+  criterion asks for. 25 transcription errors found and corrected, 22 of them mnemonics in the
+  signal listing. Listed in the findings.
+- `just check` — 11 995 links, 0 errors.
+
+Five findings, in full in [phase-4-findings.md](phase-4-findings.md):
+
+1. **Sheets 009 and 010 do have a `CS` code** — `CS 7 819` and `CS 7 820`. Phase 1 missed them
+   because these two sheets print the code bottom-*left*, not bottom-right. Recorded in the sheet
+   map and the migration log, and the two originals renamed to carry it.
+2. **The disassembly guide was carrying every image twice** — a `PNG/` folder duplicating the
+   named JPEGs, nine pairs, each JPEG a lossy encode of its PNG. Kept the PNGs under the JPEGs'
+   names; deleted the JPEGs, plus one downscaled crop of a sheet published in full. 10 files gone.
+3. **Two sets of assets were filed away from the page that uses them** — sheet 027 was under
+   `system/` and the four cleaned exploded views under `general-service/`. Moved to
+   `general-service/` and `parts/` respectively.
+4. **Chapter 7 describes 25 modules, and the sheet map only knows about 22.** Module G's whole
+   description is on the second panel of sheet 144, which the map records as module F; module Y's
+   is on sheet 162, recorded as module X. Phase 5 must use the anchors on
+   `circuit-description/modules.md`, not the sheet map's `module` column. Chapter 7 has no
+   description at all for modules Q and V or the remote control.
+5. **`lychee` was reporting every cross-page anchor as broken.** mkdocs writes directory-style
+   URLs and `lychee` resolved the directory rather than its `index.html`. Fixed with
+   `--index-files index.html` in the justfile. `mkdocs --strict` did not catch these either.
 
 ---
 
@@ -492,6 +527,18 @@ ten random pages against the original scans finds no transcription errors.
 **Goal:** the centrepiece. Twenty-six module pages, each self-contained.
 
 For each module, assemble from the sources identified in the manifest:
+
+!!! note "Where the chapter 7 and 8 text is"
+
+    Phase 4 landed both. Link at the anchors, not the sheets:
+    `circuit-description/modules.md#module-x` for the circuit description, and
+    `service-information/modification-levels.md#mod-x` for the modification levels.
+    **Do not use the sheet map's `module` column to find a module's chapter 7 text** — four
+    bifolds carry two modules each, module G's whole description is on the second panel of the
+    sheet recorded as module F, and module Y's is on the sheet recorded as module X. See phase 4
+    finding 4. Modules Q and V and the remote control have no chapter 7 description at all, and
+    modules D, E, N, P, Q, V, W and X have no chapter 8 mod-level sheet; say so on those pages
+    rather than leaving the section empty.
 
 | Section | Source |
 | --- | --- |
@@ -684,7 +731,7 @@ and the build is green.
 | 1b — Reclaim space ✅ | 1 | small |
 | 2 — Migration and asset pipeline ✅ | 1, 1b | medium |
 | 3 — Site skeleton ✅ | 0, 2 | medium |
-| 4 — Chapter content | 2, 3 | large |
+| 4 — Chapter content ✅ | 2, 3 | large |
 | 5 — Module pages | 2, 3, 4 (ch. 7 & 8 text) | largest |
 | 6 — Original material | 3 | medium |
 | 7 — Cross-linking | 4, 5, 6 | medium |

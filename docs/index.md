@@ -127,6 +127,11 @@ per sheet, for anyone who wants them.
 
 !!! info "This site is being built"
 
-    The structure is complete and every page exists, but most of them are still
-    placeholders. Each one names the manual pages and Philips sheets its content
-    will be built from. Chapter text lands next, then the module pages.
+    **Written:** the seven non-module chapters of the service manual — overview,
+    general service, system, parts, repair method, circuit description and
+    service information.
+
+    **Still placeholders:** the twenty-six [module pages](modules/index.md), the
+    [operating instructions](operating-instructions/index.md) and the
+    [reference](reference/index.md) section. Each of those names the manual
+    pages and Philips sheets its content will be built from.
