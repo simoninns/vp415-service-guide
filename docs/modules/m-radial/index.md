@@ -4,20 +4,25 @@ description: >-
   Radial servo: fine tracking and jump control.
 ---
 
-<!-- drafted by tools/import_modules.py - hand-edited afterwards -->
-
 # Module M - Radial
 
 Radial servo: fine tracking and jump control.
 
 ## Overview
 
+The radial module supplies the current that drives the **radial mirror**,
+keeping the laser beam on the required track in every play mode — and throwing
+it deliberately across tracks when a jump is wanted.
+
 | | |
 | --- | --- |
-| Designation | **M** |
+| Designation | **M** — radial |
 | Modification levels | 0 → 3 |
-| Data sheet | `CS 7 849`, page 058 |
+| Data sheet | `CS 7 849`, page 058 (mod level 1) |
 | Circuit diagram | `CS 6 879`, page 059 |
+| Connectors | `M1`, `M2` |
+| In | `RAD-ER` radial error, from the deck · `RLS` radial loop switch and `CP1`/`CP2` course pulses, from [drive processor module R](../r-drive-processor/index.md) |
+| Out | mirror drive current · a level-shifted copy of the drive signal, back to module R |
 
 ## The board
 
@@ -38,15 +43,37 @@ Radial servo: fine tracking and jump control.
 
 ## Where it sits in the player
 
-See the [module and connector lay-out](../../system/module-layout.md).
+Rearmost of the four boards in the right-hand cage, behind
+[L](../l-video-dropout-correction/index.md) — see the
+[module and connector lay-out](../../system/module-layout.md).
 
 ## Circuit description
 
-[Chapter 7, module M](../../circuit-description/modules.md#module-m).
+In normal play `RAD-ER` — proportional to how far the beam has strayed from
+the track — passes a phase compensation network and limiter IC7100-2B to the
+radial loop switch, transistor 7002. That switch is driven from the
+microprocessor on
+[drive processor module R](../r-drive-processor/index.md) and is closed only
+while a track is being followed. The error is then amplified in IC7100-2A and
+fed to the mirror through output transistors 7010–7013.
+
+The mirror's deflection range is limited, so the drive signal is also sent back
+to module R through level shifter IC7101-2A, and too large a deflection is
+taken up by moving the slide instead. The level shifter turns a signal that
+swings both positive and negative into a positive signal with the same
+variation.
+
+For a **jump**, the beam is thrown across one or more tracks by a fast
+deflection of the mirror: course pulse `CP1` forward, `CP2` reverse, both fed
+into the same radial amplifier. During a jump `RLS` opens the radial loop.
+
+The full text is in
+[chapter 7, module M](../../circuit-description/modules.md#module-m).
 
 ## Adjustments
 
-None.
+The manual gives **no adjustment procedure** for this module: the data sheet
+carries only the PCB lay-out and the parts list.
 
 ## Circuit diagram
 
@@ -106,12 +133,27 @@ None.
 
 ## Modification levels
 
-[Chapter 8, module M](../../service-information/modification-levels.md#mod-m).
+The module shipped at level 0 and reached level 3 in the last production batch
+— the busiest change history of the servo boards:
+
+- **Level 1** — TS7023 and TS7024 (BC558B) added with R3085 and R3086 (47 k),
+  to avoid a DC offset when the radial mirror is unloaded.
+- **Level 2** — those four parts deleted again, because the new drive software
+  6803.5 on
+  [drive processor module R](../r-drive-processor/index.md) made them
+  unnecessary. Also at level 2: R3001–R3010, C2002, C2004 and TS7001 deleted
+  with source and drain of TS7001 shorted, improving jump behaviour, and TS7004
+  deleted.
+- **Level 3** — C2024 (10 pF) added, to stop IC7100 oscillating.
+
+Full tables, with service code numbers:
+[chapter 8, module M](../../service-information/modification-levels.md#mod-m).
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md)
-- [VP400 series architecture](../../circuit-description/vp400-series.md)
-- [Fault symptoms](../../service-information/fault-symptoms.md)
-- [Modification levels per module](../../service-information/modification-levels.md)
-- [Module and connector lay-out](../../system/module-layout.md)
+- [Module circuit descriptions](../../circuit-description/modules.md#module-m) — the chapter 7 text in full
+- [Modification levels per module](../../service-information/modification-levels.md#mod-m) — three levels of changes, one of them a reversal
+- [Fault symptoms](../../service-information/fault-symptoms.md) — the playability entries reach this module
+- [Software releases](../../service-information/software-releases.md) — drive software 6803.5, which the level-2 change depends on
+- [The optical deck](../../circuit-description/optical-deck.md) — the radial mirror itself
+- [Module R — Drive processor](../r-drive-processor/index.md) — supplies `RLS`, `CP1` and `CP2`

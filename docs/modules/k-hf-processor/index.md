@@ -4,20 +4,28 @@ description: >-
   HF processing of the raw signal off the disc.
 ---
 
-<!-- drafted by tools/import_modules.py - hand-edited afterwards -->
-
 # Module K - HF processor
 
 HF processing of the raw signal off the disc.
 
 ## Overview
 
+The HF processor is where the signal read off the disc is split in two. The HF
+from the deck goes to a video section — high-pass filtered, frequency-response
+corrected under the `MTF` voltage, then demodulated — and to an audio section,
+where a low-pass filter takes out the FM audio carriers.
+
+The frequency-response correction matters: the read-out diameter of the disc
+changes the response of the pick-up, so `MTF` adapts for it.
+
 | | |
 | --- | --- |
-| Designation | **K** |
-| Modification levels | 0 |
+| Designation | **K** — HF processor |
+| Modification levels | 0 (unchanged through production) |
 | Data sheet | `CS 7 847`, page 054 |
 | Circuit diagram | `CS 6 877`, page 055 |
+| Connectors | `K1`, `K2` |
+| Out | `CV-DEM` on `6K2`, to [video drop-out correction module L](../l-video-dropout-correction/index.md) · `HF-AUD` on `1K1`, to [ETBC B module H](../h-etbc-b/index.md) |
 
 ## The board
 
@@ -38,56 +46,72 @@ HF processing of the raw signal off the disc.
 
 ## Where it sits in the player
 
-See the [module and connector lay-out](../../system/module-layout.md).
+Second of the four boards in the right-hand cage, between
+[J](../j-focus/index.md) and
+[L](../l-video-dropout-correction/index.md) — see the
+[module and connector lay-out](../../system/module-layout.md).
 
 ## Circuit description
 
-[Chapter 7, module K](../../circuit-description/modules.md#module-k).
+The HF signal is first filtered by the LC circuit 5003, 2014 and 2015. The
+**video** path is taken from the collector of 7005, high-pass filtered above
+2 MHz by 2004, 2005, 2006 and 5001, and amplified by 7002, 7003 and 7004. In
+7002's collector circuit sits an LC circuit tuned to 8 MHz which is damped more
+or less according to the `MTF` signal through 7001 — that is the
+frequency-response adaptation. IC7201-2A demodulates the result, with the
+output amplitude set by **R3043**; pin 16 carries demodulated video, and after
+a < 5 MHz low-pass filter and IC7201-2B the composite video `CV-DEM` leaves on
+`6K2`.
+
+The **audio** path is taken from the emitter of 7005 through the feedback
+amplifier 7006, 7007, 7008, with a < 2 MHz low-pass filter in 7006's collector
+(5004 with 2019, 2020 and 2021). `HF-AUD` leaves on `1K1`.
+
+The full text is in
+[chapter 7, module K](../../circuit-description/modules.md#module-k).
 
 ## Adjustments
 
-# Required
+Two adjustments: the video amplitude, and three filter dips that need an HF
+generator.
 
-Test disc
+!!! info "Required"
 
-Scope
+    Test disc · scope · HF generator (100 kHz – 10 MHz)
 
-HF generator (100 kHz - 10 MHz)
+    Load the test disc; still picture, picture no. 6200.
 
-# Adjustment conditions
+**1) R3043 — video amplitude**
 
-Load test disc
+- Measure `CVBS OUT` on `BNC3` at the rear with the scope, 75 Ω terminated.
+- Press switch `SK2` on [analog I/O module U](../u-analog-io/index.md) to the
+  **NOT ENCODED** position.
+- Adjust R3043 until the signal is **1 Vpp ± 50 mV**.
+- Return `SK2` to its earlier position.
 
-Still picture, picture no. 6200
+**2) L5001, L5002, L5004 — audio dip 0.875 MHz, MTF, audio dip 2.8 MHz**
 
-# Adjustments
+- Switch the drive into **STANDBY**.
+- Connect an HF generator signal of 0.8 Vpp to `3K2`.
+- Measure on pin 5 of IC7201-2A with the scope.
+- Set the generator to **875 kHz** and adjust **L5001** for minimum amplitude.
+- Set the generator to **8 MHz** at 40 mV and adjust **L5002** for maximum
+  amplitude.
+- Move the scope to `1K1` (`HF-AUD`).
+- Set the generator to **2.8 MHz** at 20 mV and adjust **L5004** for minimum
+  amplitude.
 
-1) R3043 (Video amplitude)
+**Adjustment when an item is replaced**
 
-- Using the scope, measure the CVBS OUT-signal on BNC3 (rear), 75Ω terminated.
-- Switch SK2 on Analog I/O module U in pos. NOT ENCODED (pressed).
-- Adjust R3043 until this signal is 1 Vpp ± 50 mV
-- Switch SK2 back into the earlier position.
+| Replaced | Adjust |
+| --- | --- |
+| IC7201 | R3043 |
 
-2) L5001, L5002, L5004 (Audio dip 0,875 MHz, MTF, Audio dip 2,8 MHz)
+!!! important "Replacing the whole module"
 
-- Switch the drive into STANDBY mode.
-- Connect an HF generator signal with an amplitude of 0.8 Vpp to 3K2.
-- Measure the signal on 5-IC7201-2A with the scope.
-- Set the generator to a frequency of 875 kHz and adjust L5001 for minimum amplitude of the scope signal.
-- Set the generator to a frequency of 8 MHz and an amplitude of 40 mV and adjust L5002 for maximum amplitude of the scope signal.
-- Measure the signal on 1K1 (HF-AUD) with the scope.
-- Set the generator to a frequency of 2.8 MHz and an amplitude of 20 mV and adjust L5004 for minimum amplitude of the scope signal.
-
-# Adjustment when item replaced
-
-replaced
-
-IC7201
-
-adjust
-
-R3043
+    Module K is one of the four modules that must be adjusted even when the
+    board is swapped complete: adjust **R3043** (video amplitude). See
+    [adjustments](../../general-service/adjustments.md).
 
 ## Circuit diagram
 
@@ -138,7 +162,7 @@ R3043
 | --- | --- | --- | --- |
 | 3041 | 4822 111 30847 | 22 Ω |  |
 
-**PCB-5-067**
+**Capacitors**
 
 | Item | Service code number | Value | Rating |
 | --- | --- | --- | --- |
@@ -188,13 +212,18 @@ R3043
 
 ## Modification levels
 
-[Chapter 8, module K](../../service-information/modification-levels.md#mod-k).
+The survey records module K at **level 0 in every production batch**, but the
+chapter 8 sheet documents a level-1 change: R3015 470 Ω → 120 Ω, to stop the
+HF amplifier limiting at maximum resonant rise.
+
+Full table, with service code numbers:
+[chapter 8, module K](../../service-information/modification-levels.md#mod-k).
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md)
-- [VP400 series architecture](../../circuit-description/vp400-series.md)
-- [Adjustments](../../general-service/adjustments.md)
-- [Fault symptoms](../../service-information/fault-symptoms.md)
-- [Modification levels per module](../../service-information/modification-levels.md)
-- [Module and connector lay-out](../../system/module-layout.md)
+- [Module circuit descriptions](../../circuit-description/modules.md#module-k) — the chapter 7 text in full
+- [Adjustments](../../general-service/adjustments.md) — R3043 must be set after a module swap
+- [Fault symptoms](../../service-information/fault-symptoms.md) — this module appears in the playability entries
+- [Modification levels per module](../../service-information/modification-levels.md#mod-k) — the level-1 change
+- [Module L — Video drop-out correction](../l-video-dropout-correction/index.md) — takes `CV-DEM` from here
+- [The LaserVision system](../../circuit-description/laservision-system.md) — what is on the HF signal in the first place

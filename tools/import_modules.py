@@ -279,6 +279,8 @@ def clean(text: str) -> str:
     text = CS_TAIL.sub('', text)
     text = STAMP.sub('', text)
     text = unmath(text)
+    # The OCR uses both the micro sign and Greek mu; the site uses Greek mu.
+    text = text.replace('\u00b5', '\u03bc')
     return re.sub(r'\n{3,}', '\n\n', text).strip()
 
 
