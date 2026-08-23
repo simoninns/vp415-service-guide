@@ -32,10 +32,8 @@ adjustment procedure in the manual — see below.
 On the optical deck itself, underneath the deck chassis — the yellow laser
 warning label in the overhead photograph on the
 [module and connector lay-out](../../system/module-layout.md) page is directly
-above it. There are no plug-in-module photographs of this board in the
-collection because it is not a plug-in module; the photographs on the
-[deck electronics adjustment](../../reference/calibration/deck-electronics.md)
-page show it in place.
+above it. There are no photographs of this board in the collection's plug-in
+module set, because it is not a plug-in module.
 
 !!! danger "Class 1 laser"
 
@@ -77,13 +75,6 @@ unhelpful, because the board carries six potentiometers and they all matter:
 | 3076 | 10 kΩ | Radial balance |
 | 3079 | 22 kΩ | Radial gain |
 | 3088 | 4.7 kΩ | Tilt offset |
-
-!!! tip "There is a guide for these"
-
-    The [deck electronics adjustment](../../reference/calibration/deck-electronics.md)
-    page carries an annotated photograph locating all six pots on a real board,
-    and a scope trace for each showing what a correct adjustment looks like.
-    That is original work, not from the manual.
 
 Note also that chapter 2 asks you to check `CVBS OUT` after replacing module H,
 K, L **or Z** — see [adjustments](../../general-service/adjustments.md).
@@ -199,7 +190,6 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Deck electronics adjustment](../../reference/calibration/deck-electronics.md) — the six potentiometers, with photograph and scope traces
 - [The optical deck](../../circuit-description/optical-deck.md) — the LDU this board reads
 - [Module circuit descriptions](../../circuit-description/modules.md#module-z) — the chapter 7 text in full
 - [Warnings](../../general-service/warnings.md) — laser safety

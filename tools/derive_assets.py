@@ -9,11 +9,18 @@ the file carries in planning/migration-log.csv:
 
   profile       preview          zoom
   text-page     1400px q82       2000px q82
+  text-spread   1400px q82       2000px q82   (rotated upright and split in two)
   schematic     1600px q80       native q80
   module-photo  1400px q82       native q82
   photo         1400px q82       native q82
   scope-trace   1400px q82       native q82
   none          -                -            (firmware, PDFs, office documents)
+
+The operating-instructions photographs are sideways two-page sheets, so
+`text-spread` rotates each one upright and cuts it down the gutter, writing
+`-a-` for the left page and `-b-` for the right. Which printed page each half
+holds is not the derivation's business: planning/operating-instructions-page-map.csv
+records that, and tools/import_operating_instructions.py reads it.
 
 Nothing is ever upscaled: a target wider than the source yields the source size.
 Every save strips metadata, so no EXIF reaches the published site.
@@ -41,6 +48,7 @@ import os
 import pathlib
 import subprocess
 import sys
+import tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 LOG = ROOT / 'planning/migration-log.csv'
@@ -50,6 +58,7 @@ MANIFEST_VERSION = 1
 # The plan's derivative sizing table. `None` means native resolution.
 PROFILES = {
     'text-page':    {'preview': (1400, 82), 'zoom': (2000, 82)},
+    'text-spread':  {'preview': (1400, 82), 'zoom': (2000, 82)},
     'schematic':    {'preview': (1600, 80), 'zoom': (None, 80)},
     'module-photo': {'preview': (1400, 82), 'zoom': (None, 82)},
     'photo':        {'preview': (1400, 82), 'zoom': (None, 82)},
@@ -58,6 +67,10 @@ PROFILES = {
 }
 
 IMAGE_SUFFIXES = {'.webp', '.png', '.jpg', '.jpeg', '.tif', '.tiff'}
+
+# Profiles whose source is one photograph of two pages lying side by side,
+# shot sideways: rotate 90 degrees clockwise, then cut down the middle.
+SPLIT_PROFILES = {'text-spread'}
 
 # Cap on the total size of docs/**/assets/web/, from the phase 2 exit criteria.
 SIZE_BUDGET_MB = 350
@@ -111,11 +124,37 @@ def encode(src: pathlib.Path, dest: pathlib.Path, width: int | None, quality: in
     return {'bytes': dest.stat().st_size, 'width': w, 'height': h}
 
 
+def halves(src: pathlib.Path, tmp: pathlib.Path) -> list[tuple[str, pathlib.Path]]:
+    """Rotate a sideways two-page sheet upright and cut it down the gutter."""
+    upright = tmp / 'upright.v'
+    subprocess.run(['vips', 'rot', str(src), str(upright), 'd90'], check=True,
+                   capture_output=True)
+    w, h = header(upright)
+    cuts = [('a', 0, w // 2), ('b', w // 2, w - w // 2)]
+    out = []
+    for side, left, width in cuts:
+        page = tmp / f'{side}.v'
+        subprocess.run(['vips', 'crop', str(upright), str(page),
+                        str(left), '0', str(width), str(h)], check=True,
+                       capture_output=True)
+        out.append((side, page))
+    return out
+
+
 def derive_one(src: pathlib.Path, web: pathlib.Path, prof: str) -> dict:
     src_w, src_h = header(src)
     entry = {'source_sha256': sha256(src), 'source_bytes': src.stat().st_size,
              'source_width': src_w, 'source_height': src_h,
              'profile': prof, 'outputs': {}}
+    if prof in SPLIT_PROFILES:
+        with tempfile.TemporaryDirectory() as td:
+            for side, page in halves(src, pathlib.Path(td)):
+                page_w, _ = header(page)
+                for kind, (width, quality) in PROFILES[prof].items():
+                    dest = web / f'{src.stem}-{side}-{kind}.webp'
+                    entry['outputs'][dest.name] = encode(page, dest, width,
+                                                         quality, page_w)
+        return entry
     for kind, (width, quality) in PROFILES[prof].items():
         dest = web / f'{src.stem}-{kind}.webp'
         entry['outputs'][dest.name] = encode(src, dest, width, quality, src_w)
@@ -133,13 +172,21 @@ def up_to_date(entry: dict | None, src: pathlib.Path, web: pathlib.Path,
     return True
 
 
+# Sources for pages that are deferred: the originals stay in the repository,
+# but nothing references them, and mkdocs excludes the directory, so deriving
+# them would only cost disk. See "deferred out of phase 6" in the plan.
+DEFERRED = ('docs/reference/calibration',)
+
+
 def originals_dirs(roots: list[pathlib.Path]) -> list[pathlib.Path]:
     seen: set[pathlib.Path] = set()
     for root in roots:
         if not root.exists():
             continue
         for d in root.rglob('originals'):
-            if d.is_dir() and d.parent.name == 'assets':
+            if d.is_dir() and d.parent.name == 'assets' \
+                    and not d.as_posix().startswith(
+                        tuple(f'{ROOT.as_posix()}/{p}/' for p in DEFERRED)):
                 seen.add(d)
     return sorted(seen)
 

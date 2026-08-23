@@ -46,9 +46,6 @@ straightforward to make:
 - the **VID MIX coupling piece** has pins 1 to 4 removed, which short-circuits
   the video-mixer signals — VP415 only.
 
-The [RGB module calibration guide](../reference/calibration/rgb-module.md)
-describes making both, and an extender cable, from modern parts.
-
 <figure class="sheet" markdown>
 [![Service tools: the 6-inch test disc, the Torx screwdriver set, and the contents of repair set 4822 310 31198 — extender prints, extension assemblies, coupling pieces, the disc clamping piece and the frontloader simulation plug, each with its service code number](assets/web/cs-7-825-figure-p015-preview.webp)](assets/web/cs-7-825-figure-p015-zoom.webp)
 <figcaption>

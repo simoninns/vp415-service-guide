@@ -377,7 +377,7 @@ force-pushing. **Done in Phase 1b** — pack 1.68 GiB → 1.04 GiB, force-pushed
 commits preserved and every stripped path verified absent from every object. The 1.04 GiB pack
 against a 1041 MB working tree means it is now essentially just current content.
 
-### 11.4 Firmware finding — needs resolving before the firmware page is written
+### 11.4 Firmware finding — carried onto the firmware page as an open question
 
 Every VP415 8041 microcontroller dump in the collection decodes to the **same 1 KB image**
 (0x0000–0x03F0):
@@ -394,6 +394,10 @@ So either the two 8041s genuinely run the same UPI-41 bus-interface firmware, or
 saved under both names. **The files alone cannot settle it** — it needs a read from a real
 player. Do not assert either way on the firmware page; state what the dumps show and flag the
 ambiguity.
+
+**Phase 6 did exactly that.** `docs/reference/firmware.md` publishes the eight files as one
+image, states both explanations without choosing, and asks anyone with a player to read the 8041
+on module W and compare it against `0xFC62`. The same note is on the module S and module W pages.
 
 ### 11.5 Firmware checksums
 

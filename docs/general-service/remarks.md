@@ -113,9 +113,9 @@ and, at the production department, adjusted by complicated alignment equipment.
 
     This is a 1986 instruction and the Concern Service Centre is long gone. It
     is recorded here because it explains why the manual gives no component-level
-    procedure for the deck — not because a deck can be sent anywhere today. See
-    the [deck electronics adjustment guide](../reference/calibration/deck-electronics.md)
-    for what can be done on the bench.
+    procedure for the deck — not because a deck can be sent anywhere today. The
+    [module Z](../modules/z-deck-electronics/index.md) page lists the six
+    potentiometers the deck electronics board carries and what each one sets.
 
 Repairs on the slide drive assembly and the Automatic Tilt Control (ATC)
 assembly are possible. See the

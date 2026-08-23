@@ -236,8 +236,18 @@ Four programmed EPROMs, and the 8041 slave processor.
 
 IC1 is the **sync detector** EPROM described above and IC24 the
 **descrambler**; the two LV-DOS EPROMs are the CPU's own program. All four are
-VP415-only. Dumps, with sizes and SHA-256, are on the
+VP415-only. **All six images above are in the collection** — this is the only
+module whose every release has been dumped — with sizes and SHA-256 on the
 [firmware](../../reference/firmware.md) page.
+
+!!! warning "The manual's checksum for 6805.3 does not match the dump"
+
+    The survey prints `BF90` for `LVDOS#1` 6805.3, and the row above repeats
+    it. The dump of that program computes **`0x8F90`**, and the person who made
+    it put `0x8F90` in the filename — so the file agrees with itself and
+    disagrees with the manual, uniquely among the fourteen checksums that can
+    be checked. A typewriter `B` for an `8` is the likely explanation, but it
+    is not proven: see [firmware](../../reference/firmware.md).
 
 !!! important "Order both LV-DOS EPROMs together"
 

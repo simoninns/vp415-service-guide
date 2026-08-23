@@ -27,15 +27,6 @@ the encoder on [analog I/O module Ub](../u-analog-io/index.md).
 | Connectors | `B1`, `B2`, `B3` |
 | Key devices | IC7201 multistandard decoder · IC7202 colour transient improver · IC7203 PAL decoder |
 
-!!! tip "There is a full calibration guide for this module"
-
-    The manual's seven adjustments below assume a Philips test disc that is no
-    longer obtainable. The
-    [RGB module calibration guide](../../reference/calibration/rgb-module.md)
-    works the same adjustments with a substitute disc, an extender cable and
-    scope captures of every step — including the two potentiometers, R89 and
-    R90, that mod-level-9 boards carry and this sheet does not show.
-
 ## The board
 
 <div class="sheet-pair" markdown>
@@ -280,7 +271,6 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [RGB module calibration guide](../../reference/calibration/rgb-module.md) — the practical procedure, with scope captures
 - [Module circuit descriptions](../../circuit-description/modules.md#module-b) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-b) — what changed at levels 6 to 8
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptom A 4 involves this module

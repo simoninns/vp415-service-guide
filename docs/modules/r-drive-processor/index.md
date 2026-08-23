@@ -192,8 +192,10 @@ the level of the board follows it: **6803.5 is mod level 4, 6803.6 is mod level
 including that 6803.6 added **error codes 77 and 78**, which is why they are
 missing from the manual's own error code table.
 
-Dumps of all three, with sizes and SHA-256, are on the
-[firmware](../../reference/firmware.md) page.
+**Only the last of the three is in the collection**: 6803.6, sum16 `0x68FF`,
+held four times over under different names. It is on the
+[firmware](../../reference/firmware.md) page with its size and SHA-256; 6803.4
+and 6803.5 have not been dumped.
 
 ## Modification levels
 

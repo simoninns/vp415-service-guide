@@ -17,11 +17,13 @@ interface, built in 1986 so a computer could drive it. It is the player at the h
 This repository holds a repair and servicing reference for that player, built around the original
 Philips service manual — 197 sheets covering technical data, the twenty-six plug-in modules A to Z,
 circuit descriptions, parts lists, the diagnostic software and its error codes — together with
-material the manual does not have: firmware dumps with checksums, the F-code command set, bench
-calibration guides and repair case studies.
+material the manual does not have: firmware dumps with checksums, the F-code command set and
+repair case studies.
 
-**It is a work in progress.** The site structure is complete and every page exists, but most pages
-are still placeholders naming the sources their content will be built from. See
+**Every page is written.** The service manual is transcribed in full — the seven non-module
+chapters and all twenty-six module pages — along with the VP415 *operating instructions* as a
+separate section, the firmware survey, the F-code reference and two repair case studies. What is
+left is cross-linking, polish and deployment. See
 [planning/implementation-plan.md](planning/implementation-plan.md) for what is done and what is next.
 
 ## Repository layout

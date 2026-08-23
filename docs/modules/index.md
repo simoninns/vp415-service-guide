@@ -79,10 +79,9 @@ Eleven of the twenty-six. The rest carry a PCB lay-out and a parts list only.
 | [X](x-lv-rom-decoder/index.md) | 1 — demodulator frequency |
 
 [Deck electronics module Z](z-deck-electronics/index.md) carries six
-potentiometers and **no procedure in the manual**; the
-[deck electronics adjustment](../reference/calibration/deck-electronics.md)
-guide covers them. The general rules — what to adjust after replacing a whole
-module, and what equipment you need — are on
+potentiometers and **no procedure in the manual**; its page tabulates what each
+one sets. The general rules — what to adjust after replacing a whole module,
+and what equipment you need — are on
 [general service → adjustments](../general-service/adjustments.md).
 
 ## A note on the parts lists

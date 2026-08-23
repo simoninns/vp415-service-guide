@@ -201,9 +201,10 @@ IC7211 is a **NEC D8041AHC** UPI-41 slave, carrying one RS232 and two RC5
 I/Os. The manual gives it no program number.
 
 What changed at each `CONTROL` release is on
-[software releases](../../service-information/software-releases.md); dumps,
-with sizes and SHA-256, are on the [firmware](../../reference/firmware.md)
-page.
+[software releases](../../service-information/software-releases.md). **Of the
+five releases, only 6804.9 is in the collection** — sum16 `0x6728`, held twice
+over — and it is on the [firmware](../../reference/firmware.md) page with its
+size and SHA-256.
 
 !!! warning "Open question: the module S and module W 8041 dumps are the same image"
 

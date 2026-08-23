@@ -80,10 +80,19 @@ and the original Philips `CS` sheet codes kept together on every page.
 
     ---
 
-    The manual's adjustment procedures, plus bench calibration guides for the
-    RGB module and the deck electronics written from work on a real player.
+    The manual's adjustment procedures, module by module, and the general rules
+    for what to re-adjust after replacing a board.
 
-    [:octicons-arrow-right-24: Calibration guides](reference/calibration/index.md)
+    [:octicons-arrow-right-24: Adjustments](general-service/adjustments.md)
+
+-   :material-console: **You want to drive it from a computer**
+
+    ---
+
+    The F-code command set over RS232-C, or LV-DOS over SCSI — the interface
+    the Domesday system was built on, with the responses a real player gives.
+
+    [:octicons-arrow-right-24: F-codes](reference/f-codes.md)
 
 </div>
 
@@ -108,7 +117,9 @@ And two sections the service manual does not have:
   manual, kept deliberately separate so the two are never confused. F-code
   programming and SCSI operation live here.
 - **[Reference](reference/index.md)** — firmware dumps with checksums, the
-  F-code command set, calibration guides, repair case studies and downloads.
+  F-code command set, and the files worth downloading. The
+  [repair case studies](repair/case-studies/index.md) sit with the repair
+  method chapter, beside the error codes they start from.
 
 ## How the pages are put together
 
@@ -125,15 +136,14 @@ schematic is readable down to the component reference. The lossless 300 dpi
 originals are not served by the site, but they are in the repository, one file
 per sheet, for anyone who wants them.
 
-!!! info "This site is being built"
+!!! success "Every page is written"
 
-    **Written:** the whole service manual — the seven non-module chapters
-    (overview, general service, system, parts, repair method, circuit
-    description and service information) and all twenty-six
-    [module pages](modules/index.md).
+    The whole service manual — the seven non-module chapters and all twenty-six
+    [module pages](modules/index.md) — the
+    [operating instructions](operating-instructions/index.md) in full, and the
+    [reference](reference/index.md) section: firmware with checksums, the
+    F-code command set, and two
+    [repair case studies](repair/case-studies/index.md) traced on a real player.
 
-    **Still placeholders:** the
-    [operating instructions](operating-instructions/index.md) and the
-    [reference](reference/index.md) section — firmware, F-codes, the
-    calibration guides and the repair case studies. Each of those names the
-    material its content will be built from.
+    What remains is cross-linking and polish, and the corrections that come
+    from people using it at a bench. Errata are welcome.

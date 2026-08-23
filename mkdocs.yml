@@ -18,8 +18,14 @@ site_dir: site
 # derivatives carry the reader - every schematic, photograph and scope trace
 # zooms to native resolution, and text pages to 2000 px - and anyone who wants
 # the lossless file clones the repository.
+#
+# reference/calibration/ holds the sources for the RGB module calibration guide
+# and the deck electronics adjustment, both deferred out of phase 6. The scope
+# captures stay in the repository; with no page referencing them there is
+# nothing for the site to publish.
 exclude_docs: |
   **/assets/originals/
+  reference/calibration/
 
 theme:
   name: material
@@ -243,7 +249,3 @@ nav:
       - Firmware: reference/firmware.md
       - F-codes: reference/f-codes.md
       - Downloads: reference/downloads.md
-      - Calibration:
-          - reference/calibration/index.md
-          - RGB module calibration: reference/calibration/rgb-module.md
-          - Deck electronics adjustment: reference/calibration/deck-electronics.md

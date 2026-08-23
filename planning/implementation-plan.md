@@ -12,8 +12,8 @@ Read [source-manifest.md](source-manifest.md) first — this plan assumes its fi
 ### Site structure follows the service manual
 
 The manual's eight chapters become eight top-level sections, plus a ninth for material that has no
-manual equivalent (firmware dumps, F-codes, repair case studies, the RGB calibration guide) and a
-tenth for the operating instructions.
+manual equivalent (firmware dumps, F-codes, repair case studies) and a tenth for the operating
+instructions.
 Chapter 4 — modules A to Z — is the heart of the site and gets one page per module.
 
 ### Assets live beside their markdown
@@ -151,10 +151,8 @@ docs/
     assets/originals/  assets/web/
   reference/                    # material with no manual equivalent
     index.md  firmware.md  f-codes.md
-    calibration/rgb-module.md   # the owner's RGB calibration guide
-    calibration/deck-electronics.md
     downloads.md
-    assets/originals+web/  calibration/assets/originals+web/
+    assets/originals+web/       # includes calibration/, whose pages are deferred - see phase 6
 ```
 
 The operating instructions are a **separate top-level section**, not folded into the service
@@ -555,7 +553,8 @@ For each module, assemble from the sources identified in the manifest:
 
 Module-specific extras:
 
-- **B (RGB)** — link prominently to the owner's calibration guide (Phase 6)
+- **B (RGB)** — link prominently to the owner's calibration guide (Phase 6). ~~Superseded~~: the
+  guide is deferred, and the link came out again — see *deferred out of phase 6* below
 - **J (Focus)** — carry the erratum: *the service manual prints the 6210/6211 pinout as BCE; it
   should be ECB*, sourced from the error-7 investigation
 - **R, S, W** — firmware tables with part numbers, versions and checksums, linking to Phase 6
@@ -625,17 +624,10 @@ Six findings, in full in [phase-5-findings.md](phase-5-findings.md):
 
 ---
 
-## Phase 6 — Original and community material
+## Phase 6 — Original and community material ✅ *done*
 
 **Goal:** the content that makes this more than a manual scan.
 
-- **RGB module calibration guide** — convert `Calibration and adjustment of RGB Module.docx` to
-  markdown, place its 15 scope captures inline in step order, add the annotated board diagram.
-  Preserve the practical detail: the *Jason and the Argonauts* test-disc substitute, the extender
-  cable pinout, the 3D-printed clamp, the front-loader simulation jumper on module R connector R3
-  pins 3–4, and the undocumented R89/R90 potentiometers on mod-level-9 boards.
-- **Deck electronics adjustment** — the annotated potentiometer photograph, the six scope traces,
-  and what each pot does.
 - **Repair case studies** — the error-7 (focus) and error-9 (frame lock) investigations, written
   up as worked diagnostic examples with their scope traces, cross-linked to the chapter 6 error
   codes and to modules G, J, L and D.
@@ -644,8 +636,9 @@ Six findings, in full in [phase-5-findings.md](phase-5-findings.md):
   image size and address range, the Philips 16-bit sum, **SHA-256**, and a download link.
   Publishing SHA-256 per file makes the aliasing self-evident: **28 files, 11 distinct images.**
   Group the table by image so the duplicates read as aliases rather than separate firmware.
-  Include the software-release survey image and the provenance note from `Rom descriptions.txt`,
-  and publish the NEC/Intel datasheets.
+  Include the software-release survey image and the provenance note from `Rom descriptions.txt`.
+  Name the NEC/Intel datasheets by part number in the text, but **do not publish the PDFs** — see
+  the downloads item.
 - **Resolve the `CS 8 284` triplicate** — carried from Phase 2, finding 5.1. The two files named
   "VP415 ROM version survey" are not a ROM survey: both are the manual's `CS 8 284`, *Survey of
   software releases VP410/415*, rotated upright, and manual sheet 187 is a third copy of the same
@@ -675,10 +668,83 @@ Six findings, in full in [phase-5-findings.md](phase-5-findings.md):
   responses per Domesday disc side from `misc/`.
 - **Operating instructions** — the user manual as its own top-level section (see the layout),
   from the OCR markdown with the 3500×4956 page scans as figures.
-- **Downloads** — one page linking the operating
-  instructions PDF, the firmware images and the datasheets.
+- **Downloads** — one page linking the firmware images. **No PDF files:** the site does not serve
+  the operating instructions PDF or the NEC/Intel datasheets. The operating instructions are
+  published as their own section, transcribed from the OCR with the page scans as figures, which
+  is what a reader wants at the bench; the PDF and the datasheets stay in `assets/originals/` for
+  anyone cloning the repository.
 
-**Done when:** every item in manifest §5–§10 is published or explicitly listed as excluded.
+### Deferred out of phase 6
+
+Two items from the manifest are **deferred**. They are not to be published — not in this phase and
+not later in this run — and nothing in `docs/` should link to them or promise them. They are not
+cancelled: the source material stays in the repository.
+
+- **RGB module calibration guide** — `Calibration and adjustment of RGB Module.docx`, its 15 scope
+  captures and the annotated board diagram, with the *Jason and the Argonauts* test-disc
+  substitute, the extender cable pinout, the 3D-printed clamp, the front-loader simulation jumper
+  on module R connector R3 pins 3–4, and the undocumented R89/R90 potentiometers on mod-level-9
+  boards.
+- **Deck electronics adjustment** — the annotated potentiometer photograph, the six scope traces,
+  and what each pot does.
+
+Their sources stay under `docs/reference/calibration/assets/originals/`, and their rows stay in
+`planning/migration-log.csv` and `tools/asset_map.csv`; only the pages go. That empties the
+`reference/calibration/` section, so the phase 3 stubs for it, its nav entries, and the inbound
+links from `docs/index.md`, `docs/reference/index.md`, `docs/general-service/remarks.md`,
+`docs/general-service/service-tools.md`, `docs/modules/index.md`, `docs/modules/b-rgb/` and
+`docs/modules/z-deck-electronics/` went with them. Phase 5's record above describes the RGB guide
+as linked prominently from module B; that link came out when this deferral landed.
+
+**Done when:** every item in manifest §5–§10 is published, deferred above, or explicitly listed as
+excluded.
+— **verified.** Full record: [phase-6-findings.md](phase-6-findings.md).
+
+**Landed:**
+
+- `tools/build_oi_page_map.py` — the operating-instructions photographs are not pages: each is two
+  pages of the booklet side by side, shot sideways, and the pairs are mostly **two apart**
+  (page 31 beside page 29), with three sheets photographed twice. The tool rotates and cuts each
+  photograph, reads both halves with tesseract, and scores them against the vendor OCR — F1, not
+  recall, or every unreadable half is handed to the shortest page in the book. The result is
+  checked in as `planning/operating-instructions-page-map.csv`.
+- `tools/derive_assets.py` — new **`text-spread`** profile: rotates a sideways two-page photograph
+  upright and cuts it down the gutter, writing `-a-` and `-b-` derivatives. Originals untouched.
+- `tools/import_operating_instructions.py` — the OCR to 12 page drafts, arranged by the manual's
+  own sections rather than by page, each with the photographs of the pages it transcribes.
+- `tools/import_firmware.py` — the checksum CSV to the firmware page's tables, **grouped by image
+  rather than by file**, so 28 files read as the 11 pieces of firmware they are.
+- **The operating instructions in full — 12 pages, about 20 600 words**, with all 45 printed pages
+  and the cover referenced exactly once.
+- **The reference section — about 7 500 words**: firmware (28 files, 11 images, SHA-256 and
+  downloads), the F-code command set with the responses a real player gave for 13 Domesday disc
+  sides, and downloads.
+- **Two repair case studies — about 2 400 words**, with their 11 scope traces.
+- `just check` — **13 735 links, 0 errors**.
+
+Six findings, in full in [phase-6-findings.md](phase-6-findings.md):
+
+1. **The manual's checksum for `LVDOS#1` 6805.3 is `BF90`; the dump computes `0x8F90`.** Checked
+   against the 300 dpi scan — the glyph is a typewriter `B`. It is the only one of the fourteen
+   filename checksums the manual contradicts. Stated as an open question, not corrected away.
+2. **Module R and module S promised dumps that do not exist.** The collection holds only the last
+   release of each: 8 of the survey's 14 releases are dumped. Both pages fixed.
+3. **The user manual names one cable two ways** — `SBC 1015` on page 7, `SBC 1014` in Fig. 2, same
+   service code number. Order by the code number.
+4. **The group 6 command descriptor block is labelled `Group code (0)`**, copied from the group 0
+   table above it; the operation codes `CAH` and `C8H` are unambiguously group 6. Anyone
+   implementing LV-DOS from the manual would build a wrong block.
+5. **`?=` identifies a player's software**, and the captured responses — `=01717` on every disc —
+   place that player at `DRIVE` 6803.6 and `CONTROL` 6804.7. The `?D` parity bits check out, which
+   is good evidence the byte-level decoding is right.
+6. **The real-player disc capture disagrees with itself in three places.** Published as written,
+   with each conflict named.
+
+**`CS 8 284` triplicate, resolved** as the plan recommended: the cropped JPEG deleted with
+`git rm`, its rows dropped from both CSVs, `build_asset_map.py` taught to exclude it, and the two
+survivors — the upright PNG on the firmware page and the manual sheet in chapter 8 — now
+cross-reference each other in their captions.
+excluded.
 
 ---
 

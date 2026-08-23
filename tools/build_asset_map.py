@@ -16,6 +16,7 @@ Dispositions
 
 Derivative profiles (see the plan's sizing table)
   text-page    1400px q82 preview / 2000px q82 zoom
+  text-spread  as text-page, but rotated upright and split into two pages
   schematic    1600px q80 preview / native q80 zoom
   module-photo 1400px q82 preview / native q82 zoom
   photo        1400px q82 preview / native q82 zoom
@@ -125,7 +126,7 @@ def classify(path: str):
             dest = 'docs/reference/calibration/assets/originals'
             if p.suffix.lower() == '.docx':
                 return ('convert', dest, slugify(name), 'none',
-                        'converted to docs/reference/calibration/rgb-module.md in phase 6')
+                        'source for the RGB calibration guide - deferred, not published (see phase 6)')
             if p.suffix.lower() == '.pptx':
                 return ('publish', dest, slugify(name), 'none', 'editable source (manifest §11.2)')
             return ('publish', dest, slugify(name), 'scope-trace', 'RGB calibration capture')
@@ -147,13 +148,18 @@ def classify(path: str):
                     'none', 'device datasheet')
         if name.startswith('VP415 ROM version survey'):
             # Not a ROM survey at all: both files are the manual's CS 8 284
-            # 'Survey of software releases', rotated upright. The .png is the
-            # whole page, the .jpg a crop of it. Distinct names so their
-            # derivatives cannot collide - see planning/phase-2-findings.md.
-            crop = 'cropped' if p.suffix.lower() == '.jpg' else 'upright'
+            # 'Survey of software releases', rotated upright - see
+            # planning/phase-2-findings.md. The .png is the whole page and is
+            # published on the firmware page, because a reader comparing
+            # checksums wants the table the right way up; the .jpg is a smaller
+            # lossy crop of that same PNG and carries nothing it does not, so
+            # phase 6 deleted it (planning/phase-6-findings.md).
+            if p.suffix.lower() == '.jpg':
+                return ('exclude', '', '', 'none',
+                        'lossy crop of the upright PNG of CS 8 284; deleted in phase 6')
             return ('publish', 'docs/reference/assets/originals',
-                    f'cs-8-284-software-release-survey-{crop}{p.suffix.lower()}', 'photo',
-                    'CS 8 284 rotated upright; duplicates manual sheet 187')
+                    'cs-8-284-software-release-survey-upright.png', 'photo',
+                    'CS 8 284 upright; the manual sheet is at page 187')
         if p.suffix.lower() in ('.png', '.jpg'):
             return ('publish', 'docs/reference/assets/originals', slugify(name), 'photo',
                     'ROM version survey')
@@ -188,9 +194,21 @@ def classify(path: str):
     if top == 'vp415 manual':
         m = re.match(r'image(\d+)', name)
         n = int(m.group(1)) if m else 0
+        # Each photograph is two pages of the booklet lying side by side, shot
+        # sideways; `text-spread` rotates and splits them (see derive_assets.py).
+        # Three sheets were photographed twice. The second exposure is kept as
+        # an original but nothing references it, so it gets no derivatives -
+        # see planning/operating-instructions-page-map.csv for what each half
+        # holds, and planning/phase-6-findings.md.
+        second_exposure = {9: 7, 12: 10, 25: 23}
+        if n in second_exposure:
+            return ('publish', 'docs/operating-instructions/assets/originals',
+                    f'operating-instructions-scan-{n:02d}.jpg', 'none',
+                    'second exposure of the sheet photographed as scan-'
+                    f'{second_exposure[n]:02d}; kept, not published')
         return ('publish', 'docs/operating-instructions/assets/originals',
-                f'operating-instructions-scan-{n:02d}.jpg', 'text-page',
-                '3500x4956 page scan of the operating instructions')
+                f'operating-instructions-scan-{n:02d}.jpg', 'text-spread',
+                '3500x4956 two-page sheet of the operating instructions')
 
     return ('UNMAPPED', '', '', 'none', 'no rule matched - fix build_asset_map.py')
 
