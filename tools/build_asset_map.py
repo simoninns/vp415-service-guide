@@ -3,7 +3,7 @@
 
 Every file under unsorted-source-material/ gets exactly one row saying where it
 goes under docs/ and which derivative profile applies. The 214 service-manual
-scans are governed by planning/service-manual-page-map.csv instead and are
+scans are governed by planning/service-manual-sheet-map.csv instead and are
 marked `page-map` here so the coverage check still accounts for them.
 
 Dispositions
@@ -11,7 +11,7 @@ Dispositions
   download    published as a file to download; no image derivatives
   convert     document converted to markdown in a later phase; original kept
   source-text vendor OCR text consumed by tools/import_ocr.py, not an asset
-  page-map    a service-manual scan; see service-manual-page-map.csv
+  page-map    a service-manual scan; see service-manual-sheet-map.csv
   exclude     never published (see `notes` for why)
 
 Derivative profiles (see the plan's sizing table)
@@ -56,7 +56,7 @@ def classify(path: str):
     # ---- service manual scans: governed by the page map -------------------
     if top == 'vp415 service manual':
         return ('page-map', '', '', 'schematic',
-                'canonical source chosen by service-manual-page-map.csv publish_source')
+                'canonical source chosen by service-manual-sheet-map.csv publish_source')
 
     # ---- vendor OCR -------------------------------------------------------
     if top == 'ocr-markdown-service-manual':

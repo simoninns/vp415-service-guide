@@ -10,8 +10,11 @@ and where it belongs in the site. Compiled 2026-08-23.
 Companion machine-readable files:
 
 - [source-inventory.csv](source-inventory.csv) — every source file with size and pixel dimensions (1361 files).
-- [service-manual-page-map.csv](service-manual-page-map.csv) — all 197 service-manual scan pages
-  mapped to chapter / section / module / content type / Philips sheet code / **canonical source file**.
+- [service-manual-sheet-map.csv](service-manual-sheet-map.csv) — all 180 service-manual sheets,
+  keyed by **panel** (273 rows), mapped to chapter / section / module / content type / Philips
+  sheet code / vendor-OCR path / **canonical source file**. Replaces the old page-keyed map; see
+  [phase-1-findings.md](phase-1-findings.md) §6.
+- [phase-1-findings.md](phase-1-findings.md) — the Phase 1 verification record.
 
 ---
 
@@ -39,7 +42,7 @@ shrink every fresh checkout but do **not** shrink the pack; see §11.3.
 
 | Item | Size | Detail |
 | --- | --- | --- |
-| `Original PNG/` | 574 MB | **197 page scans**, 300 dpi colour, now **lossless WebP**. One-panel pages are 2482×3510; two-panel captures are 4964×3510. |
+| `Original PNG/` | 402 MB | **163 page scans**, 300 dpi colour, **lossless WebP**. One-panel pages are 2482×3510; two-panel captures are 4964×3510. The 34 trifold captures were deleted in Phase 1. |
 | `A4 trifold/` | 126 MB | 17 files, now **lossless WebP** — **not duplicates.** Stitched three-panel composites, ~6980×3515, that exist nowhere else |
 | ~~`A4/`~~ | — | *deleted* — was 104 files / 300 MB, 100% byte-identical to `Original PNG/` |
 | ~~`A4 bifold/`~~ | — | *deleted* — was 59 files / 429 MB, 100% byte-identical to `Original PNG/` |
@@ -54,7 +57,7 @@ Verified by SHA-256 and byte comparison across all 180 files:
 
 - `A4/` and `A4 bifold/` together were **728 MB of exact duplication** of `Original PNG/`. They
   carried one piece of information the originals do not: which **physical fold class** each page
-  belongs to. That information is captured in the `fold` column of the page map, verified
+  belongs to. That information is captured in the `fold` column of the sheet map, verified
   byte-for-byte against the folders, so the two folders were deleted with zero loss. All 163 files
   were re-verified identical at deletion time.
 - `A4 trifold/` is different in kind. A trifold sheet is three panels wide (~7000 px); the scanner
@@ -65,8 +68,8 @@ Verified by SHA-256 and byte comparison across all 180 files:
   that overlap in the middle panel.
 
 **Consequence:** for the 17 trifold sheets the stitched file is the only complete rendering and is
-the one to publish. The page map's new `publish_source` column records this — 180 canonical files
-for 197 logical pages.
+the one to publish. The sheet map's `publish_source` column records this — 180 canonical files
+for 180 sheets (273 panels).
 
 The three folders are a complete, non-overlapping partition of the 197 pages
 (104 + 59 + 34 = 197 — verified).
@@ -105,7 +108,7 @@ their request; it is available elsewhere on the web.
 2. Pages **119–124** (optical-deck exploded view, mechanical and electrical parts lists) are
    Chapter 5 content but are bound *after* the Chapter 7 divider on page 118.
 
-The page map CSV records the *logical* chapter, not the binder order.
+The sheet map CSV records the *logical* chapter, not the binder order.
 
 ### Philips sheet codes
 
@@ -114,7 +117,9 @@ Every drawing carries a `CS n nnn` code in the bottom-right corner. Two families
 - `CS 7 8xx` — **module data sheets**: adjustments, PCB lay-out, list of electrical parts
 - `CS 6 8xx` — **circuit diagrams**
 
-These codes are captured in the page map and give an independent check on page attribution.
+These codes are captured in the sheet map and give an independent check on attribution. Phase 1
+recovered 89 of them from the vendor OCR, taking coverage to 180 of 197 pages; `CS 6 881` and
+`CS 6 882` are absent from the document entirely.
 Note `CS 8 122` (page 089) is a later-revision PCB lay-out for module W that supersedes
 `CS 7 858` (page 090) — both are present in the manual.
 
@@ -124,14 +129,14 @@ Note `CS 8 122` (page 089) is a later-revision PCB lay-out for module W that sup
 | --- | --- | --- | --- |
 | A | Audio processor | 032 | 033 |
 | B | RGB | 035–036 | 034 |
-| C | Video processor | 037 | 038, 039 |
-| D | Reference source | 041 | 040 |
+| C | Video processor | 037 | 038 |
+| D | Reference source | 041 | 039_040 (whole sheet, CS 6 870) |
 | E | Slide drive | 042 | 043 |
 | F | Motor + sequence | 045 | 044 |
-| G | Gen lock | 046 | 047, 048 |
-| H | ETBC B | 049 | 048* |
-| I | ETBC C | 050 | 051, 052 |
-| J | Focus | 053 | 053 (same sheet) |
+| G | Gen lock | 046 | 047 |
+| H | ETBC B | 049 | 048 (CS 6 874)* |
+| I | ETBC C | 050 | 051 |
+| J | Focus | 053 | 052 (CS 6 876) |
 | K | HF processor | 054 | 055 |
 | L | Video drop-out correction | 057 | 056 |
 | M | Radial | 058 | 059 |
@@ -149,8 +154,13 @@ Note `CS 8 122` (page 089) is a later-revision PCB lay-out for module W that sup
 | Z | Deck electronics | 098 | 099 |
 | RC | Remote control transmitter | 100 | 100 |
 
-\* Page 048 (CS 6 874) sits between the Gen-lock and ETBC-B sheets and its right-hand title block
-is not legible at survey resolution. **Flagged for verification in Phase 2.**
+\* Page 048 (`CS 6 874`) was flagged as illegible at survey resolution. **Resolved in Phase 1:**
+read at full resolution, its title block is *ETBC B MODULE (mod level 5)*, boxed **H**. The title
+block sits at the sheet's top right, not bottom right, which is why the survey missed it.
+
+**Two attribution errors were corrected in Phase 1** — page 052 is module **J**, not I, and
+sheet 039_040 is module **D** throughout, not C+D. See
+[phase-1-findings.md](phase-1-findings.md) §1.
 
 ---
 
@@ -330,7 +340,7 @@ dimension match and a non-empty output. Any file failing either check kept both 
 logged. **214 of 214 passed; zero failures.** Compression level `z 6` was chosen over `z 9` after
 measuring identical output size at one-fifth the encode time.
 
-The page map's `publish_source` column now points at the `.webp` files; all 180 canonical paths
+The sheet map's `publish_source` column points at the `.webp` files; all 180 canonical paths
 re-verified as resolving.
 
 ### 11.1 Remaining redundancy — not yet acted on
@@ -350,7 +360,7 @@ VP415 service guide.
 | Item | Why |
 | --- | --- |
 | `A4 trifold/` (17 files, 126 MB) | the only complete rendering of the 17 three-panel fold-out sheets |
-| `Original PNG/` pages belonging to trifold sheets (34 pages) | the un-stitched captures; keep until the stitch quality is confirmed (see the plan's Phase 1) |
+| ~~`Original PNG/` pages belonging to trifold sheets (34 pages)~~ | **deleted in Phase 1** (−172 MB). The stitches were measured and do resample (0.4–3.4 % of pixels differ, PSNR 23–31 dB, deskewed), but they crop nothing and are visually equivalent, so the stitch is now the archival copy. See [phase-1-findings.md](phase-1-findings.md) §3 |
 | `Disassembly guide/PNG/vp415-colour300dpi-fixed_Page_*.png` (5 files, 3.6 MB) | **correction:** an earlier draft called these duplicates of manual pages 102–105 and 120. They are not — they are 2048 px **cropped** derivatives that isolate the drawing from the page. Lower resolution than the originals we hold, but the cropping is editorial work worth keeping until the asset pipeline reproduces it |
 | `Module Layout.pptx`, `RGB Module diagram.pptx`, `Deck electronics potentiometers.pptx` | editable sources for annotated diagrams whose exported PNG/JPG is also present; the annotations are only editable here |
 

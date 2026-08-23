@@ -57,7 +57,7 @@ Derivative sizing rules (measured on real pages):
 
 ### Canonical source per page
 
-The page map's `publish_source` column names the one file to use for each of the 197 manual pages
+The sheet map's `publish_source` column names the one file to use for each of the 180 sheets
 — **180 distinct files**, because the 17 trifold sheets are published from the stitched
 `A4 trifold/` composite rather than from the 34 overlapping two-panel captures in `Original PNG/`.
 See manifest §2.1.
@@ -221,37 +221,57 @@ Also in this phase:
 
 ---
 
-## Phase 1 — Lock the page attribution
+## Phase 1 — Lock the page attribution ✅ *done*
 
 **Goal:** every one of the 197 scan pages is provably assigned to the right chapter, section and
 module before any content is written on top of it.
 
-[service-manual-page-map.csv](service-manual-page-map.csv) already holds this mapping, derived
-from the vendor OCR text, the `CS n nnn` Philips sheet codes, the `A4`/`A4 bifold`/`A4 trifold`
-fold classification, and a visual pass over the title block of every page in chapters 3–5.
-The `fold` column has been verified byte-for-byte against the source folders.
+[service-manual-sheet-map.csv](service-manual-sheet-map.csv) now holds this mapping.
+Full verification record: [phase-1-findings.md](phase-1-findings.md).
 
-Remaining work:
+**The map is keyed by panel, not by captured page.** A captured page is an artefact of the
+scanner - it can hold two thirds of one drawing, or the tail of one module's sheet and the head of
+another's. A *panel*, the A4-sized face the sheet folds into, is the real unit: 104 A4 sheets x1,
+59 bifold x2, 17 trifold x3 = **273 panel rows over 180 sheets**. Each panel names its own module,
+so a sheet covering two modules is expressible.
 
-1. **Resolve the three unread title blocks.** Pages 044 (`CS 6 872`), 048 (`CS 6 874`) and 052
-   (`CS 6 876`) are attributed by sheet-code adjacency rather than a directly-read title — their
-   title blocks were illegible at survey resolution. Crop each at full resolution and settle it.
-2. **Reconcile the `CS 6 8xx` sequence.** Codes 881 and 882 are unaccounted for; confirm whether
-   they sit on pages already mapped or are genuinely absent from this printing. (867–880 and
-   883–893 are all accounted for.)
-3. **Confirm the trifold stitch quality.** For each of the 17 trifold sheets, compare the stitched
-   `A4 trifold/` composite against the two `Original PNG/` captures at full resolution. If the
-   stitch is a clean lossless join, the 34 two-panel captures are redundant and can be dropped
-   (~490 MB). If it resamples or misaligns, keep the captures and note it. This decides whether
-   the sheet or the captures are the archival copy.
-4. **Add an `ocr_path` column** to the page map, resolving each global page to its
-   `ocr-playground-download-*/…/pages/page-N/markdown.md`, so later phases never recompute the
-   five-part offset arithmetic.
-5. **Write `tools/asset_map.csv`** — the same treatment for the non-manual material: every
-   photograph, scope trace and diagram mapped to its destination directory and derivative profile.
+Outcome of the five tasks:
 
-**Done when:** the page map has no unresolved rows, and `asset_map.csv` accounts for every file in
-`source-inventory.csv` that is not on the manifest's exclusion list.
+1. [x] **The three unread title blocks resolved** - read at full resolution. The title block is at
+   the sheet's **top right**, not bottom right, which is why the survey missed them.
+   Page 044 = `CS 6 872` module F, page 048 = `CS 6 874` module H, page 052 = `CS 6 876`
+   **module J - the map said I**. Corrected.
+2. [x] **A second attribution error found and corrected** - sheet `CS 6 870` (039_040) is one
+   schematic across all three panels, *REF. SOURCE MODULE*, boxed **D**. Page 039 was mapped as
+   module C. Module C's circuit is page 038 alone.
+3. [x] **`CS 6 881` and `CS 6 882` are absent** from the document - confirmed against both the
+   vendor OCR of all 197 pages and a local tesseract sweep. Every other code 867-893 is present.
+   They most likely belonged to circuit sheets for modules P and Q, whose circuits this printing
+   draws on their data sheets instead - inference, not a reading.
+4. [x] **Trifold stitches measured: they resample.** No sheet matches its captures pixel-exactly at
+   any alignment (0.4-3.4 % of pixels differ, PSNR 23-31 dB); stitched heights vary 3510-3569 px
+   against a uniform 3510 for captures, so a deskew was applied. No content is cropped and the
+   result is visually equivalent. **Decision: the 34 two-panel captures were deleted** (-172 MB,
+   not the ~490 MB estimated pre-WebP). The stitch is now the archival copy.
+5. [x] **`ocr_path` added** to every row, and `cs_code` filled for **89 previously blank rows** from
+   the vendor OCR - coverage 91/197 -> 180/197. The remaining 17 pages carry no code at all.
+   The page offsets are confirmed by content: 108 of 108 pre-existing CS codes agree with the
+   vendor OCR at the computed offset, zero contradictions.
+6. [x] **`tools/asset_map.csv` written** - all **1155** files under `unsorted-source-material/`
+   accounted for, no unmapped file, no destination collisions. `source-inventory.csv` refreshed;
+   it still listed the 172 deleted AIV OCR files.
+
+**Done when:** the map has no unresolved rows, and `asset_map.csv` accounts for every file in
+`source-inventory.csv` that is not on the manifest's exclusion list. - **verified:** 273 rows,
+180 distinct `publish_source` and 197 distinct `ocr_path`, all resolving; 1155/1155 files mapped.
+
+> **Carry into Phase 5.** The rule *"every CS sheet is referenced from exactly one module page"*
+> becomes *every sheet **panel***. Two sheets cover two modules each and are referenced twice:
+> `CS 7 850` (061_062) - panels 1-2 module N, panel 3 module P; and `CS 7 851` (063_064) -
+> panel 1 module Q, panels 2-3 module R.
+
+> **Carry into Phase 4.** The vendor OCR of page 089 (module W PCB lay-out, `CS 8 122`) contains a
+> long hallucinated `2001 A1 2002 A 2007 A ...` run. Do not import that page's table unchecked.
 
 ---
 
@@ -263,7 +283,7 @@ Remaining work:
 
 1. ✅ **Deleted the exact duplicates** — `A4/` (300 MB) and `A4 bifold/` (429 MB), byte-identical
    to `Original PNG/`. Their only unique contribution, the fold class of each page, is recorded in
-   the page map's `fold` column, verified byte-for-byte. All 163 files re-verified identical at
+   the sheet map's `fold` column, verified byte-for-byte. All 163 files re-verified identical at
    deletion time.
 2. ✅ **Deleted the hires service manual PDF** (84 MB) at the owner's request.
 3. ✅ **Re-encoded the 214 archival scans as lossless WebP** — 1287 MB → 698 MB, **−45.8%**. Every
@@ -303,7 +323,7 @@ the web derivatives beside them.
 
 ### 2a. Migration
 
-`tools/migrate.py`, driven by `publish_source` in the page map and by `tools/asset_map.csv`:
+`tools/migrate.py`, driven by `publish_source` in the sheet map and by `tools/asset_map.csv`:
 
 - `git mv` each source file to `docs/<section>/assets/originals/<stable-name>`
 - rename to something meaningful on the way — `vp415-colour300dpi-fixed_Page_053.webp` becomes
@@ -328,7 +348,7 @@ Migration is incremental: run it per section as that section's content phase com
 - skips work when the source hash is unchanged, so re-runs are near-instant
 
 Fold-out handling: the 17 trifold sheets derive from the stitched `A4 trifold/` composite, so a
-schematic is never split down the middle. The page map's `sheet` column is what the markdown
+schematic is never split down the middle. The sheet map's `sheet` column is what the markdown
 references.
 
 **Done when:** `just derive` from clean completes, `docs/**/assets/web/` totals under 350 MB, the
@@ -434,7 +454,7 @@ Module-specific extras:
 - **Remote control** — exploded view, PCB, RC5 circuit (module Q)
 
 **Done when:** all 26 module pages are complete, every module photograph is placed, and every
-`CS` sheet in the page map is referenced from exactly one module page.
+`CS` sheet panel in the sheet map is referenced from exactly one module page.
 
 ---
 
@@ -562,7 +582,7 @@ and the build is green.
 | Phase | Depends on | Rough size |
 | --- | --- | --- |
 | 0 — Toolchain ✅ | — | small |
-| 1 — Lock page attribution | 0 | small |
+| 1 — Lock page attribution ✅ | 0 | small |
 | 1b — Reclaim space | 1 | small |
 | 2 — Migration and asset pipeline | 1, 1b | medium |
 | 3 — Site skeleton | 0, 2 | medium |
