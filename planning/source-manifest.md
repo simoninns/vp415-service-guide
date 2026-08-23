@@ -372,10 +372,10 @@ The deletions and the WebP conversion shrink the **working tree and every fresh 
 reclaims its history. The pack will in fact *grow* slightly when the WebP files are committed,
 because both the old PNGs and the new WebP files then exist in history.
 
-Reducing the actual repository size requires rewriting history with `git filter-repo` and
-force-pushing. With three commits and a single author that is straightforward, and now — before
-any site content exists — is the cheapest moment. **This is now the only remaining lever, and it
-is the repo owner's call.** Expected result: roughly 1.7 GB → 0.8 GB.
+Reducing the actual repository size required rewriting history with `git filter-repo` and
+force-pushing. **Done in Phase 1b** — pack 1.68 GiB → 1.04 GiB, force-pushed to `origin`, all six
+commits preserved and every stripped path verified absent from every object. The 1.04 GiB pack
+against a 1041 MB working tree means it is now essentially just current content.
 
 ### 11.4 Firmware finding — needs resolving before the firmware page is written
 

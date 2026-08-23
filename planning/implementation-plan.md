@@ -305,20 +305,15 @@ Outcome of the five tasks:
    1.04 GiB against a 1041 MB working tree means the pack is now essentially just current content
    — the floor, without deleting more live files.
 
+6. ✅ **Force-pushed.** `origin/main` carries the rewritten history — verified: the local branch
+   descends from `origin/main` with no divergence, so nothing of the old history survives on
+   either side. Anyone holding a clone from before the rewrite must re-clone; GitHub reclaims the
+   old objects on its own schedule rather than immediately.
+
 **Firmware duplicates kept by decision** — see the decisions list. Publishing SHA-256 per file
 makes the aliasing visible without pruning anything.
 
-**Remaining:** the rewrite is local only. `origin` still holds the old history until a
-force-push:
-
-```
-git push --force-with-lease origin main
-```
-
-Two caveats: anyone with an existing clone must re-clone or hard-reset, and GitHub does not
-reclaim the space immediately — old objects linger until their own garbage collection runs.
-A pre-rewrite backup bundle of the original history exists in the session scratchpad, and
-`origin` itself is a backup until the force-push lands.
+**Phase 1b is closed.** Nothing about the history rewrite is outstanding.
 
 ---
 
@@ -716,7 +711,7 @@ end of phase 6.
 3. **Domain:** `https://simoninns.github.io/vp415-service-guide/`. No custom domain, so no `CNAME`
    and `site_url` is the default Pages URL.
 4. **Issue and PR templates: yes.** Scoped in Phase 7.
-5. **History rewrite: yes.** Carried out — pack 1.68 GiB → 1.04 GiB. See Phase 1b; needs a force-push to take effect on GitHub.
+5. **History rewrite: yes.** Carried out and force-pushed — pack 1.68 GiB → 1.04 GiB. See Phase 1b. Closed.
 6. **Firmware: keep every file, publish SHA-256 for all of them.** Done —
    [firmware-checksums.csv](firmware-checksums.csv) covers all 28 files with size, decoded image
    range, the Philips 16-bit sum, and SHA-256 of both the file and the decoded image. The hashes
@@ -728,9 +723,9 @@ end of phase 6.
    and for every schematic, photograph and scope trace that is the scan at native resolution. The
    originals stay in the repository as the single copy of each file.
 8. **Deployment is live.** The `push` trigger on `.github/workflows/deploy.yml` was enabled in
-   Phase 3, so `main` publishes continuously from here on. Two things still gate a green run:
-   Pages must be set to deploy **from GitHub Actions** in the repository settings, and Phase 1b's
-   rewritten history still needs its force-push.
+   Phase 3, so `main` publishes continuously from here on. One thing still gates a green run:
+   Pages must be set to deploy **from GitHub Actions**, not from a branch, in the repository
+   settings.
 
 ### Still genuinely open
 
