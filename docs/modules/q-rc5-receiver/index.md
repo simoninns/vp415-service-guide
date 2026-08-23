@@ -4,32 +4,52 @@ description: >-
   RC5 infrared receiver for the remote control handset.
 ---
 
+<!-- drafted by tools/import_modules.py - hand-edited afterwards -->
+
 # Module Q - RC5 receiver
 
 RC5 infrared receiver for the remote control handset.
 
-!!! note "Not written yet - this page lands in phase 5"
+## Overview
 
-    The content will be built from:
+| | |
+| --- | --- |
+| Designation | **Q** |
+| Modification levels | 0 |
+| Circuit diagram | `CS 7 851`, pages 063, 064, panel 1 |
 
-    - Service manual page(s) **063-064**
-    - Philips sheet(s) `CS 7 851`
-    - *RC5 circuit module Q; list of electrical parts module R*
-    - Module photographs, top and bottom
+## Where it sits in the player
 
-The finished page carries, in this order:
+See the [module and connector lay-out](../../system/module-layout.md).
 
-1. Overview and modification level
-1. Photographs, top and bottom
-1. Location in the player
-1. Circuit description (chapter 7)
-1. Adjustments
-1. Circuit diagram
-1. PCB lay-out
-1. List of electrical parts
-1. Modification levels (chapter 8)
-1. Related repairs and firmware
+## Circuit description
 
-!!! warning "Carried note"
+The manual carries no circuit description for this module.
 
-    Module Q owns no sheet of its own: its RC5 circuit is panel 1 of `CS 7 851`, filed under [module R](../r-drive-processor/index.md). Its circuit diagram is absent from this printing - `CS 6 881` and `CS 6 882` are missing from the document entirely.
+## Adjustments
+
+None.
+
+## Circuit diagram
+
+<figure class="sheet sheet--fold" markdown>
+[![RC5 circuit module Q; list of electrical parts module R](../r-drive-processor/assets/web/cs-7-851-circuit-p063-064-preview.webp)](../r-drive-processor/assets/web/cs-7-851-circuit-p063-064-zoom.webp)
+<figcaption>
+  RC5 circuit module Q; list of electrical parts module R.
+  <span class="cs">CS 7 851</span>
+  <span class="src">service manual pages 063, 064</span>
+</figcaption>
+</figure>
+
+## List of electrical parts
+
+None listed.
+
+## Modification levels
+
+The manual has no modification-level sheet for this module.
+
+## Related
+
+- [Modification levels per module](../../service-information/modification-levels.md)
+- [Module and connector lay-out](../../system/module-layout.md)
