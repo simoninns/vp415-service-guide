@@ -189,10 +189,21 @@ The manual gives **no adjustment procedure** for this module.
 Two programmable devices sit on this board: the `CONTROL` EPROM at IC7202 and
 the 8041 slave processor at IC7211.
 
-| Item | Device | Program | Revisions |
-| --- | --- | --- | --- |
-| 7202 | TMS 27512 EPROM | `CONTROL` 3104 103 6804.x | 6804.4 → 6804.9 (SW rev. 1.4 → 1.8) |
-| 7211 | NEC D8041AHC slave | UPI-41, no program number printed | — |
+| Program | SW rev. | Introduced | Philips sum16 | Service code number |
+| --- | --- | --- | --- | --- |
+| 3104 103 6804.4 | 1.4 | 1986-10-30 | `1F53` | 4822 209 51256 |
+| 3104 103 6804.5 | 1.5 | 1986-11-24 | `2B55` | 4822 209 51256 |
+| 3104 103 6804.6 | 1.6 | 1987-02-09 | `5D44` | 4822 209 51256 |
+| 3104 103 6804.7 | 1.7 | 1987-02-23 | `C699` | 4822 209 51256 |
+| 3104 103 6804.9 | 1.8 | 1987-03-19 | `6728` | 4822 209 51256 |
+
+IC7211 is a **NEC D8041AHC** UPI-41 slave, carrying one RS232 and two RC5
+I/Os. The manual gives it no program number.
+
+What changed at each `CONTROL` release is on
+[software releases](../../service-information/software-releases.md); dumps,
+with sizes and SHA-256, are on the [firmware](../../reference/firmware.md)
+page.
 
 !!! warning "Open question: the module S and module W 8041 dumps are the same image"
 

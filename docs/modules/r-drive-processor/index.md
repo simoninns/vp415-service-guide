@@ -175,6 +175,26 @@ the diagnostic software: see
 Items 2101 to 2122 are the supply decoupling and are all the same 22 nF
 capacitor; the sheet lists them individually.
 
+## Firmware
+
+One programmed device: the `DRIVE` EPROM at IC7204.
+
+| Program | SW rev. | Introduced | Philips sum16 | Service code number |
+| --- | --- | --- | --- | --- |
+| 3104 103 6803.4 | 1.5 | 1986-10-30 | `B5F1` | 4822 209 51257 |
+| 3104 103 6803.5 | 1.6 | 1986-11-24 | `9DB6` | 4822 209 51257 |
+| 3104 103 6803.6 | 1.7 | 1987-02-23 | `68FF` | 4822 209 51257 |
+
+The sum is the quickest way to identify an EPROM you have in front of you, and
+the level of the board follows it: **6803.5 is mod level 4, 6803.6 is mod level
+6**. What changed at each release is on
+[software releases](../../service-information/software-releases.md) —
+including that 6803.6 added **error codes 77 and 78**, which is why they are
+missing from the manual's own error code table.
+
+Dumps of all three, with sizes and SHA-256, are on the
+[firmware](../../reference/firmware.md) page.
+
 ## Modification levels
 
 The busiest board in the player: **level 3 at first shipment, level 7 by the

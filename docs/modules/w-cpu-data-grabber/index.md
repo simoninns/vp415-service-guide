@@ -225,15 +225,19 @@ reference. Items 2102–2177 are the supply decoupling, c39 to c77 on the board.
 
 Four programmed EPROMs, and the 8041 slave processor.
 
-| Item | PCB | Service code number | Device | Program |
-| --- | --- | --- | --- | --- |
-| 7201 | IC1 | 4822 209 51258 | TMS 27128 | `SYNC` — 3104 103 6808.0 |
-| 7224 | IC24 | 4822 209 51259 | TMS 27128 | `DESCR.` — 3104 103 6807.0 |
-| 7247 | IC47 | 4822 209 51261 | TMS 27128 | `LVDOS#1` — 3104 103 6805.2 → 6805.3 |
-| 7248 | IC48 | 4822 209 51262 | TMS 27128 | `LVDOS#2` — 3104 103 6806.2 → 6806.3 |
+| Item | PCB | Program | SW rev. | Philips sum16 | Service code number |
+| --- | --- | --- | --- | --- | --- |
+| 7201 | IC1 | `SYNC` 3104 103 6808.0 | 1.0 | `D120` | 4822 209 51258 |
+| 7224 | IC24 | `DESCR.` 3104 103 6807.0 | 1.0 | `1FBE` | 4822 209 51259 |
+| 7247 | IC47 | `LVDOS#1` 3104 103 6805.2 | 1.3 | `B42D` | 4822 209 51261 |
+| 7247 | IC47 | `LVDOS#1` 3104 103 6805.3 | 1.4 | `BF90` | 4822 209 51261 |
+| 7248 | IC48 | `LVDOS#2` 3104 103 6806.2 | 1.3 | `1A1C` | 4822 209 51262 |
+| 7248 | IC48 | `LVDOS#2` 3104 103 6806.3 | 1.4 | `56D7` | 4822 209 51262 |
 
 IC1 is the **sync detector** EPROM described above and IC24 the
-**descrambler**; the two LV-DOS EPROMs are the CPU's own program.
+**descrambler**; the two LV-DOS EPROMs are the CPU's own program. All four are
+VP415-only. Dumps, with sizes and SHA-256, are on the
+[firmware](../../reference/firmware.md) page.
 
 !!! important "Order both LV-DOS EPROMs together"
 

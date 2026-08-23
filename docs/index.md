@@ -127,11 +127,13 @@ per sheet, for anyone who wants them.
 
 !!! info "This site is being built"
 
-    **Written:** the seven non-module chapters of the service manual — overview,
-    general service, system, parts, repair method, circuit description and
-    service information.
+    **Written:** the whole service manual — the seven non-module chapters
+    (overview, general service, system, parts, repair method, circuit
+    description and service information) and all twenty-six
+    [module pages](modules/index.md).
 
-    **Still placeholders:** the twenty-six [module pages](modules/index.md), the
+    **Still placeholders:** the
     [operating instructions](operating-instructions/index.md) and the
-    [reference](reference/index.md) section. Each of those names the manual
-    pages and Philips sheets its content will be built from.
+    [reference](reference/index.md) section — firmware, F-codes, the
+    calibration guides and the repair case studies. Each of those names the
+    material its content will be built from.

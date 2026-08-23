@@ -522,7 +522,7 @@ Five findings, in full in [phase-4-findings.md](phase-4-findings.md):
 
 ---
 
-## Phase 5 — Module pages (chapter 4)
+## Phase 5 — Module pages (chapter 4) ✅ *done*
 
 **Goal:** the centrepiece. Twenty-six module pages, each self-contained.
 
@@ -572,6 +572,56 @@ Module-specific extras:
 
 **Done when:** all 26 module pages are complete, every module photograph is placed, and every
 `CS` sheet panel in the sheet map is referenced from exactly one module page.
+— **verified.** Full record: [phase-5-findings.md](phase-5-findings.md).
+
+**Landed:**
+
+- `tools/import_modules.py` — chapter 4 to page drafts. A second importer rather than another
+  `SECTION_PAGE` entry, because chapter 4 is one data sheet and one circuit diagram per module
+  rather than a run of text pages. It reads the sheet map **per panel**, so the four bifolds that
+  carry two modules each turn up under both; unfolds the OCR's multi-column parts grids into one
+  table per component class; drops the component locator grids; and reads each module's "Related"
+  list off the site's own back-links, so it cannot go stale without the link going stale too.
+- **26 module pages plus the section index, about 36 400 words.** Every page carries the ten
+  sections the phase 3 stubs specified. All **57 chapter 4 sheets** are referenced and all **44
+  module photographs** are placed. `just check` — 13 396 links, 0 errors.
+- **Twenty-two data sheets read at 300 dpi** and their parts and adjustment blocks cropped at
+  native resolution. **Eleven transcription errors corrected**, including two that would have
+  mislead an engineer at the bench: module A's audio demodulator level is **1.8 Vpp**, not 1.6,
+  and module H's third delay measurement is at **+5 V**, not +6 V. Six sheets whose parts columns
+  the OCR could not be trusted on at all were transcribed from the scan, and each page says so.
+- Module-specific extras all landed: the module J erratum as a danger admonition (and the devices
+  identified from the circuit diagram — 6210 is a **BD436**, 6211 a **BD437**), the RGB
+  calibration guide linked prominently from module B, firmware tables with Philips sums on R, S
+  and W, the 8041 ambiguity stated as an open question on S, W and — in phase 6 — the firmware
+  page, Ua/Ub/Uc on module U, the six deck potentiometers tabulated on module Z, and the
+  connector reference on module V.
+
+**One deviation from the plan above:** *location in the player* is prose plus a link to the
+[module and connector lay-out](../docs/system/module-layout.md) page, not a per-module crop of the
+annotated photograph. Twenty-six crops of one 1200 px image would each be a hundred pixels across
+and would carry less than the sentence they replaced; the layout page already shows every module
+labelled in a real chassis. Module V is the exception that keeps a drawing of its own, because the
+connector positions *are* its content.
+
+Six findings, in full in [phase-5-findings.md](phase-5-findings.md):
+
+1. **The module J erratum is real, and the parts are power transistors.** `CS 6 876` at 300 dpi
+   identifies 6210 and 6211 as a **BD436 / BD437** complementary pair driving the objective coil.
+   Fitted to the printed BCE order the focus amplifier cannot work.
+2. **Sheet 032 lost a whole item-number column in the OCR.** Module A's first capacitor block came
+   through with codes and values intact and no item numbers; read off the scan it is 2001–2022 in
+   order, and `import_modules.py` restores them rather than publishing the block unnumbered.
+3. **Module Q is barely in the manual, and two `CS` sheets are missing.** No data sheet, no parts
+   list, no mod-level sheet, no chapter 7 description — and `CS 6 881` and `CS 6 882`, which fall
+   exactly where its circuit diagram would sit, are absent from this printing entirely.
+4. **Module H's adjustment 5 may not apply to the board in front of you** — a level-5 change
+   deletes TS7029, which is the transistor that adjustment measures on.
+5. **Module W's parts list is the only one giving both codings** side by side, which is what made
+   the importer accept letter-coded items — and so what makes supply module T's list parse.
+6. **`--force` now refuses to run without named modules.** An early run with no arguments
+   re-drafted every page and destroyed the editing pass on seven of them. `import_ocr.py` has the
+   same footgun and deserves the same guard.
 
 ---
 
