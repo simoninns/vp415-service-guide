@@ -1,0 +1,13 @@
+Hi Ian,
+
+Here's the two ROM images you were after. "6807" is the descrambler (marked 
+as 7224 in your parts list) and "6808" is the sequencer (marked as 7201 in 
+your list).
+
+Hopefully they do what you need - I know there were a few releases of the 
+VP415 with various changes, so I'm not sure if there were tweaks done that 
+mean the firmware has to match up with the board!
+
+cheers
+
+Jules
