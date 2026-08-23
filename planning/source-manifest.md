@@ -158,12 +158,11 @@ is not legible at survey resolution. **Flagged for verification in Phase 2.**
 
 `unsorted-source-material/ocr-markdown-service-manual/`
 
-Seven `ocr-playground-download-*` folders, each holding one source PDF's output as
+Six `ocr-playground-download-*` folders, each holding one source PDF's output as
 `pages/page-N/markdown.md` + `page-metadata.json`, plus a whole-document `markdown.md`.
 
 | Folder timestamp | Document | Pages | Global page offset |
 | --- | --- | --- | --- |
-| `…T145947Z` | BBC Master AIV User Guide | 78 | n/a (separate document) |
 | `…T150015Z` | Philips VP415 Operating Instructions | 46 | n/a (separate document) |
 | `…T150529Z` | Service Manual part 1 of 5 | 44 | pages 001–044 |
 | `…T150604Z` | Service Manual part 2 of 5 | 28 | pages 045–072 |
@@ -307,7 +306,6 @@ Destination: Chapter 1 (controls, indicators, connections) and the site landing 
 | `misc/Disc information bytes from a real VP415.docx` + `.pdf` | F-code `?D`/`?P`/`?U`/`?=` responses captured from a real player for each Domesday/BBC disc side |
 | `misc/vp415Fcode.xlsx` | F-code reference table |
 | `misc/MB88303-Fujitsu.pdf` | Fujitsu MB88303 datasheet |
-| `ocr-markdown…/BBC-Master-AIV-User-Guide-1.pdf/` | BBC Master AIV User Guide, OCR'd (78 pages) — context for the Domesday system |
 
 ---
 
@@ -339,11 +337,13 @@ re-verified as resolving.
 
 | Item | Size | Why it was left |
 | --- | --- | --- |
-| `VP415 ROM dumps/` — 4 duplicate groups spanning 12 files | ~200 KB | Byte-identical, but the *filenames* carry provenance (`domesday_6807_descrambler` ↔ `W 3104 103 6807 0 CPU V1_0 0x1FBE.BIN`). Record the equivalences on the firmware page in Phase 6, then delete. Not a size concern |
-| `Microcontroller dumps/` — 6 identical `.hex` files | ~30 KB | Same, and see §11.4 — there is a substantive question here to settle first |
+| Firmware dumps — 28 files, 11 distinct images | 0.5 MB | **Kept as-is by decision.** The filenames carry provenance (`domesday_6807_descrambler` ↔ `W 3104 103 6807 0 CPU V1_0 0x1FBE.BIN`), and publishing SHA-256 for every file makes the aliasing self-evident without deleting anything. See §11.5 |
 | `*.zip` | 6 files, 0.1 MB | Contents already present unpacked |
 | `pdfs/…Operating Instructions - uncompressed.pdf` | 20 MB | Superseded by the compressed PDF plus the 27 page scans — but confirm the compressed copy is legible first |
 | `ocr-markdown-service-manual/**/img-*.jpeg` | 271 files, ~10 MB | Downscaled by the OCR vendor; never published. Delete once the OCR text has been imported in Phase 4 |
+
+Also deleted since: the **BBC Master AIV User Guide** OCR (1.4 MB, 78 pages) — out of scope for a
+VP415 service guide.
 
 ### 11.2 Not redundant despite appearances — keep
 
@@ -383,4 +383,36 @@ Every VP415 8041 microcontroller dump in the collection decodes to the **same 1 
 So either the two 8041s genuinely run the same UPI-41 bus-interface firmware, or one dump was
 saved under both names. **The files alone cannot settle it** — it needs a read from a real
 player. Do not assert either way on the firmware page; state what the dumps show and flag the
-ambiguity. This is also why the duplicate `.hex` files in §11.1 have not been deleted.
+ambiguity.
+
+### 11.5 Firmware checksums
+
+[firmware-checksums.csv](firmware-checksums.csv) covers all **28** firmware files with: file size,
+decoded image size and address range, the Philips 16-bit byte sum, and **SHA-256 of both the raw
+file and the decoded image**. Intel HEX files are decoded before hashing, so a HEX and a raw BIN
+holding the same firmware hash alike.
+
+Two useful results:
+
+- **The checksum embedded in each Philips filename is a 16-bit sum of all bytes.** Verified on all
+  14 files that carry one — 14 match, 0 mismatch. Anyone dumping their own ROM can check it the
+  same way, so the firmware page should publish this column.
+- **28 files, 11 distinct images.** The duplication is now self-evident from the hashes, which is
+  why every file is kept rather than pruned:
+
+| # | Image | sum16 | SHA-256 | Files |
+| --- | --- | --- | --- | --- |
+| 1 | 8041 slave CPU, 1 KB | `0xFC62` | `35d258eb…` | **8** — every VP415 S-Control and W-CPU dump (see §11.4) |
+| 2 | Module R drive, 16 KB | `0x68FF` | `6ec09eeb…` | 4 |
+| 3 | Module W descrambler (6807), 16 KB | `0x1FBE` | `85049833…` | 3 |
+| 4 | Module W sequencer (6808), 16 KB | `0xD120` | `bc7eb8ca…` | 3 |
+| 5 | Module S control V1.8, 64 KB | `0x6728` | `e372542b…` | 2 |
+| 6 | Module W CPU V1.3 (6805), 16 KB | `0xB42D` | `d929bc98…` | 2 |
+| 7 | Module W CPU V1.3 (6806), 16 KB | `0x1A1C` | `e230f04b…` | 2 |
+| 8 | VP410 8041 S-Control, 1 KB | `0xC014` | `b061c815…` | 1 |
+| 9 | VP410 S-Control, 64 KB | `0xFC6F` | `9dee7647…` | 1 |
+| 10 | Module W CPU V1.4 (6805), 16 KB | `0x8F90` | `ecdd68a6…` | 1 |
+| 11 | Module W CPU V1.4 (6806), 16 KB | `0x56D7` | `d87e81e1…` | 1 |
+
+The firmware page should group its table this way — by image, with the filenames listed as
+aliases beneath — so a reader sees eleven pieces of firmware rather than twenty-eight downloads.

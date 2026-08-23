@@ -309,9 +309,10 @@ manifest JSON accounts for every emitted file, and `git status` shows no untrack
   content, admonitions, footnotes and improved tables
 - Explicit `nav:` mirroring the target layout — no directory-order surprises
 - All ~120 markdown files created as stubs with front-matter titles and a one-line description
-- Landing page: what the VP415 is, what the site covers, how to navigate it, a prominent safety
-  warning about the Class 1 laser and mains-side servicing, and provenance/copyright wording for
-  the Philips material
+- Landing page: what the VP415 is, what the site covers, how to navigate it, and a prominent
+  safety warning about the Class 1 laser and mains-side servicing. No provenance or copyright
+  boilerplate — the manual is from 1986 and freely circulated; this is a working reference for
+  engineers repairing forty-year-old equipment, not a republication project
 - Custom CSS: full-width figure treatment for fold-out schematics, a caption style carrying the
   Philips sheet code and source page number
 
@@ -385,6 +386,12 @@ Module-specific extras:
 - **J (Focus)** — carry the erratum: *the service manual prints the 6210/6211 pinout as BCE; it
   should be ECB*, sourced from the error-7 investigation
 - **R, S, W** — firmware tables with part numbers, versions and checksums, linking to Phase 6
+- **S (Control)** — **required note:** all eight VP415 8041 slave-CPU dumps in the collection are
+  byte-identical after decoding — the module S Control and module W CPU images are the *same*
+  1 KB image (sum16 `0xFC62`, SHA-256 `35d258eb…`). State plainly on the page that these dumps
+  are duplicates and that this needs investigating: either the two modules genuinely share
+  UPI-41 firmware, or one dump was saved under both names. Do not present either as fact. Carry
+  the same note on module W's page and on the firmware page. See manifest §11.4
 - **U (Analog I/O)** — three sub-sections Ua/Ub/Uc, matching the manual's own division
 - **Z (Deck electronics)** — the annotated potentiometer photograph and the six scope traces
 - **V (Module carrier)** — connector/backplane reference
@@ -409,9 +416,13 @@ Module-specific extras:
 - **Repair case studies** — the error-7 (focus) and error-9 (frame lock) investigations, written
   up as worked diagnostic examples with their scope traces, cross-linked to the chapter 6 error
   codes and to modules G, J, L and D.
-- **Firmware** — a table of every ROM and microcontroller dump: module, item number, part number,
-  version, checksum (verified, not just taken from the filename), and a download link. Include
-  the ROM version survey image and the provenance note. Publish the NEC/Intel datasheets.
+- **Firmware** — a table of every ROM and microcontroller dump, built from
+  [firmware-checksums.csv](firmware-checksums.csv): module, item number, part number, version,
+  image size and address range, the Philips 16-bit sum, **SHA-256**, and a download link.
+  Publishing SHA-256 per file makes the aliasing self-evident: **28 files, 11 distinct images.**
+  Group the table by image so the duplicates read as aliases rather than separate firmware.
+  Include the ROM version survey image and the provenance note from `Rom descriptions.txt`, and
+  publish the NEC/Intel datasheets.
 - **F-codes** — `vp415Fcode.xlsx` as a searchable table, plus the real-player `?D`/`?P`/`?U`/`?=`
   responses per Domesday disc side from `misc/`.
 - **Operating instructions** — the user manual as its own section, from the OCR markdown with the
@@ -431,8 +442,9 @@ Module-specific extras:
 - A "Where do I start?" page routing common symptoms to the right chapter
 - Search tuned: boost module names and signal mnemonics
 - `lychee` link check in CI; alt text on every image; captions carrying page and sheet numbers
-- Copyright and provenance page: the Philips material is reproduced for repair and preservation;
-  the site's own writing is separately licensed
+- Issue and pull-request templates: a repair-report issue template (symptom, error code, modules
+  suspected, measurements taken), a correction/erratum template, and a PR template prompting for
+  which source page a change is based on
 - Optional: OpenSeadragon deep-zoom for the twelve densest fold-out schematics, if the lightbox
   proves insufficient in practice
 
@@ -534,27 +546,27 @@ end of phase 6.
 
 ---
 
-## Open questions for the repo owner
+## Decisions taken
 
-1. **Licensing.** The Philips service manual is copyright Philips. What wording do you want on the
-   provenance page — reproduction for repair and preservation, with a takedown contact? And what
-   licence covers the site's own writing? (The repo carries a full licence file already; worth
-   confirming it is intended to cover the whole thing.)
-2. **Scope of the operating instructions and the BBC Master AIV guide.** Both are OCR'd and ready.
-   Do you want them on this site, or should it stay strictly a service and repair guide with those
-   linked out?
-3. **Domain.** `simoninns.github.io/vp415-service-guide/` or a custom domain (which changes
-   `site_url` and needs a `CNAME`)?
-4. **Contributions.** If you want community repair reports, that argues for an issue template and
-   a contribution guide in Phase 7.
-5. **History rewrite.** The cleanup took the working tree from 2477 MB to 1041 MB, but the
-   1.68 GiB pack is unchanged — git already deduplicates blobs, so the deleted copies cost nothing
-   in history and removing them reclaims nothing from it. Committing the WebP files will grow the
-   pack slightly, since both encodings then exist in history. Only `git filter-repo` plus a
-   force-push shrinks the clone, to roughly 0.8 GB. With three commits and a single author it is
-   low-risk and this is the cheapest moment. Do you want it? (It rewrites already-pushed commit
-   hashes.)
-6. **Module S vs module W 8041 firmware.** Every VP415 8041 dump in the collection is the same
-   1 KB image — see manifest §11.4. Do the two modules genuinely share firmware, or was one dump
-   saved under both names? If you have a player to read from, that settles it; otherwise the
-   firmware page should state the ambiguity rather than pick a side.
+1. **No provenance or licensing pages.** The service manual dates from 1986 and circulates freely.
+   This site is a working reference for engineers repairing forty-year-old equipment, so it carries
+   no copyright boilerplate, no takedown page, and no "about Philips" material. Chapter content is
+   presented as reference, not as a republication.
+2. **Operating instructions: in, as their own section.** Kept clearly separate from the service
+   manual so the two are never confused. **BBC Master AIV guide: out** — its OCR has been deleted.
+3. **Domain:** `https://simoninns.github.io/vp415-service-guide/`. No custom domain, so no `CNAME`
+   and `site_url` is the default Pages URL.
+4. **Issue and PR templates: yes.** Scoped in Phase 7.
+5. **History rewrite: yes.** Carried out — see Phase 1b.
+6. **Firmware: keep every file, publish SHA-256 for all of them.** Done —
+   [firmware-checksums.csv](firmware-checksums.csv) covers all 28 files with size, decoded image
+   range, the Philips 16-bit sum, and SHA-256 of both the file and the decoded image. The hashes
+   make the aliasing obvious without deleting anything: **28 files, 11 distinct images.**
+
+### Still genuinely open
+
+- **Module S vs module W 8041 firmware.** All eight VP415 8041 dumps decode to the *same* 1 KB
+  image (sum16 `0xFC62`, SHA-256 `35d258eb…`) — see manifest §11.4. Whether the two modules really
+  share firmware, or one dump was saved under both names, cannot be settled from the files. If you
+  can read a real player that answers it; otherwise the firmware page should state the ambiguity
+  rather than pick a side.
