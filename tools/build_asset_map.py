@@ -145,6 +145,15 @@ def classify(path: str):
         if p.suffix.lower() == '.pdf':
             return ('download', 'docs/reference/assets/originals/datasheets', slugify(name),
                     'none', 'device datasheet')
+        if name.startswith('VP415 ROM version survey'):
+            # Not a ROM survey at all: both files are the manual's CS 8 284
+            # 'Survey of software releases', rotated upright. The .png is the
+            # whole page, the .jpg a crop of it. Distinct names so their
+            # derivatives cannot collide - see planning/phase-2-findings.md.
+            crop = 'cropped' if p.suffix.lower() == '.jpg' else 'upright'
+            return ('publish', 'docs/reference/assets/originals',
+                    f'cs-8-284-software-release-survey-{crop}{p.suffix.lower()}', 'photo',
+                    'CS 8 284 rotated upright; duplicates manual sheet 187')
         if p.suffix.lower() in ('.png', '.jpg'):
             return ('publish', 'docs/reference/assets/originals', slugify(name), 'photo',
                     'ROM version survey')

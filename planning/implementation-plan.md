@@ -216,8 +216,8 @@ Also in this phase:
   out** and the workflow is `workflow_dispatch`-only. There is no `mkdocs.yml` until Phase 3, so
   an enabled trigger would only paint `main` red. Uncomment it when Phase 3 lands.
 
-`packages.site` evaluates but does not build yet — it wants `tools/derive_assets.py` (Phase 2) and
-`mkdocs.yml` (Phase 3). The dev shell is Phase 0's actual deliverable.
+`packages.site` evaluates but does not build yet — it wants `mkdocs.yml` (Phase 3);
+`tools/derive_assets.py` landed in Phase 2. The dev shell is Phase 0's actual deliverable.
 
 ---
 
@@ -316,7 +316,7 @@ A pre-rewrite backup bundle of the original history exists in the session scratc
 
 ---
 
-## Phase 2 — Migration and asset pipeline
+## Phase 2 — Migration and asset pipeline ✅ *done*
 
 **Goal:** originals live in `docs/**/assets/originals/` as the single copy; `just derive` builds
 the web derivatives beside them.
@@ -353,6 +353,41 @@ references.
 
 **Done when:** `just derive` from clean completes, `docs/**/assets/web/` totals under 350 MB, the
 manifest JSON accounts for every emitted file, and `git status` shows no untracked originals.
+— **verified.** Full record: [phase-2-findings.md](phase-2-findings.md).
+
+**Landed:**
+
+- `tools/migrate.py` — **400 files moved** (180 sheets from the page map, 220 from the asset map),
+  every move logged to `planning/migration-log.csv`. `--section` scopes a run to one section or
+  one module, so migration stays incremental; `just migrate` wraps it.
+  `unsorted-source-material/` went **1041 MB → 32 MB**, 1155 → 755 files. What remains is what
+  phase 4 still needs (492 vendor-OCR files) plus 263 `exclude` rows.
+- `tools/derive_assets.py` — **714 derivatives, 189 MB**, 54 % of the 350 MB budget. From clean:
+  **44 s** on 16 cores; a warm re-run is **1.9 s**. Every save strips metadata, so no EXIF reaches
+  the site — `exiftool` was not needed. Each `web/` directory carries a `.manifest.json` recording
+  source SHA-256, profile, and the byte count and dimensions of each output; the byte counts are
+  what caught finding 5.3 below.
+- Sheets are named for their Philips code, content and scan page —
+  `cs-7-846-module-sheet-p053.webp`. A sheet is one file even when its panels span two modules:
+  `CS 7 850` is filed under N, `CS 7 851` under R, each cross-referenced from the other module.
+  Module Q therefore owns no originals of its own.
+- A fold-out always takes the `schematic` profile whatever it carries, because a bifold table is
+  half-size on the page and needs native resolution as much as a bifold schematic does.
+
+Four findings, in full in [phase-2-findings.md](phase-2-findings.md):
+
+1. **`CS 8 284` exists three times.** The two "VP415 ROM version survey" files are not a ROM
+   survey — both are the manual's `CS 8 284` *Survey of software releases*, rotated upright, and
+   sheet 187 is a third copy. Kept under honest names pending an owner decision; recommendation is
+   to keep the upright PNG and drop the cropped JPG. **Carried to phase 6.**
+2. **Two stale titles from phase 1 corrected** — sheets 052 and 039_040 still carried the titles of
+   the modules they had been misattributed to. `migrate.py` writes these into the log and phase 4
+   writes them into captions, so they mattered.
+3. **Derivative names could silently collide.** Two originals sharing a stem overwrite each
+   other's output. `derive_assets.py` now fails loudly and names both files.
+4. **`build_asset_map.py` is no longer re-runnable** — 400 of the paths it classifies are gone.
+   Inherent to the one-copy design. `migration-log.csv` is now the live index of what is where,
+   and it, not `asset_map.csv`, is what `derive_assets.py` reads profiles from.
 
 ---
 
