@@ -2,6 +2,8 @@
 title: Remote control transmitter
 description: >-
   The RC53 infrared remote control handset shipped with the player.
+search:
+  boost: 2
 ---
 
 # Remote control transmitter
@@ -172,3 +174,5 @@ sheet** — it is ordered complete, as 4822 218 20607.
 - [Special play functions](../../operating-instructions/special-play-functions.md) — the keys in use
 - [F-code programming](../../operating-instructions/f-code-programming.md) — the `GO TO` and numeric keys
 - [Electrical parts](../../parts/electrical-parts.md) — the transmitter and receiver service codes
+- [Module circuit descriptions](../../circuit-description/modules.md) — chapter 7 does not describe the handset; the player's end of the link is [module Q](../q-rc5-receiver/index.md)
+- [Modification levels per module](../../service-information/modification-levels.md) — the handset is not in the survey; no modification level is recorded for it

@@ -84,7 +84,15 @@ extra:
       name: This site on GitHub
 
 plugins:
-  - search
+  # Signal mnemonics are punctuated - FOC-EN, TX/RX, AUD1+2, CS-S/NS - and a
+  # reader at a bench types the name off the diagram. Splitting the index on
+  # that punctuation as well as on whitespace means `CV-DOC` is findable whole
+  # and by either half, and the same for connector and component references.
+  # Pages that answer a mnemonic or a module letter carry `search.boost` in
+  # their front matter: the module pages, the signal listing, the error codes
+  # and the symptom router.
+  - search:
+      separator: '[\s\-\+/,:!=\[\]()"`]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # Click-to-zoom for the scanned sheets. Figures link their -preview
   # derivative to the -zoom derivative; glightbox intercepts the link.
   - glightbox:
@@ -146,6 +154,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Where do I start?: start-here.md
 
   - Overview:
       - overview/index.md
@@ -249,3 +258,5 @@ nav:
       - Firmware: reference/firmware.md
       - F-codes: reference/f-codes.md
       - Downloads: reference/downloads.md
+
+  - Contributing: contributing.md

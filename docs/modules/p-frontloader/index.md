@@ -2,6 +2,8 @@
 title: Module P - Frontloader
 description: >-
   Front-loader tray mechanics and its sensors.
+search:
+  boost: 2
 ---
 
 # Module P - Frontloader
@@ -134,3 +136,5 @@ are fixed on
 - [Demounting](../../general-service/demounting.md) — getting the front loader out
 - [Fault-finding charts](../../repair/fault-finding.md) — loading and eject faults
 - [Exploded views](../../parts/exploded-views.md) — the front-loader mechanics
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — module P has no mod-level sheet: the survey shows it at level 4 in every production batch
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

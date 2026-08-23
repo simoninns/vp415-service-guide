@@ -2,6 +2,8 @@
 title: Modules
 description: >-
   Chapter 4 and the heart of this site: one page per plug-in module, A to Z, plus the remote control.
+search:
+  boost: 2
 ---
 
 # Modules
@@ -11,6 +13,15 @@ the player has a page here carrying, in one place: what the module does, both
 sides of the board photographed, where it sits, the circuit description from
 chapter 7, the adjustment procedure, the circuit diagram, the PCB lay-out, the
 list of electrical parts, and what changed at each modification level.
+
+Every module page ends with a **Related** list that reaches the same four
+places: its [chapter 7 circuit description](../circuit-description/modules.md),
+its [chapter 8 modification levels](../service-information/modification-levels.md),
+the [collective parts lists](../parts/index.md), and the modules at the other
+end of its signals. It works in the other direction too — the
+[signal listing](../system/signal-listing.md) names the modules that carry each
+mnemonic, and the [error codes](../repair/error-codes.md) name the modules to
+look at when the player reports one.
 
 ## Survey of modules
 

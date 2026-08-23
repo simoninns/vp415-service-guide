@@ -2,6 +2,8 @@
 title: Module H - ETBC-B
 description: >-
   ETBC-B, the first half of the electronic timebase corrector.
+search:
+  boost: 2
 ---
 
 # Module H - ETBC-B
@@ -283,3 +285,4 @@ Full tables, with service code numbers:
 - [The LaserVision system](../../circuit-description/laservision-system.md) — why the time base needs correcting at all
 - [Modification levels per module](../../service-information/modification-levels.md#mod-h) — the four level-5 changes
 - [Adjustments](../../general-service/adjustments.md) — check `CVBS OUT` after replacing this module
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

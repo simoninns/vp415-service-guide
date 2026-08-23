@@ -18,8 +18,14 @@ serve: derive
 build: derive
     mkdocs build --strict
 
-# Strict build plus an offline link check of the rendered site
-check: build
+# Page checks that do not need a build: figures, and the generated signal index
+lint:
+    python3 tools/check_figures.py
+    python3 tools/build_signal_index.py --check
+
+# Everything CI runs on a pull request: the page checks, a strict build, and an
+# offline link check of the rendered site
+check: lint build
     @just _lychee --offline
 
 # As `check`, but also resolves external URLs - needs network, slower

@@ -748,7 +748,7 @@ excluded.
 
 ---
 
-## Phase 7 — Cross-linking and polish
+## Phase 7 — Cross-linking and polish ✅ *done*
 
 - Signal listing entries link to the modules that produce and consume them
 - Error codes link to the modules implicated and to the case studies
@@ -759,8 +759,44 @@ excluded.
 - Issue and pull-request templates: a repair-report issue template (symptom, error code, modules
   suspected, measurements taken), a correction/erratum template, and a PR template prompting for
   which source page a change is based on
-- Optional: OpenSeadragon deep-zoom for the twelve densest fold-out schematics, if the lightbox
-  proves insufficient in practice
+- Include an example of how to add additional information such as a repair guide for a module
+
+**Done when:** every page is reachable from the symptom a reader arrives with, and every link the
+site makes is checked by the build rather than by hand.
+— **verified.** Full record: [phase-7-findings.md](phase-7-findings.md).
+
+**Landed:**
+
+- `tools/build_signal_index.py` — the signal listing's new **modules** column, generated rather
+  than written: **135 of the 243 mnemonics** now name the modules whose pages describe them, and
+  **28** carry a direction, bold for the module the manual states as the source. `--check` runs in
+  CI so the column cannot drift from the pages it points at.
+- `tools/check_figures.py` — alt text, captions, the CS code and page number under every figure
+  derived from a manual sheet, and the `-preview` → `-zoom` pairing. **295 images on 85 pages, all
+  passing**, and now enforced rather than habitual.
+- `docs/repair/error-codes.md` — a **where to look** column on all 77 codes: 13 of them the
+  manual's own answer from the two fault-finding charts, 46 this site's reading of the function the
+  code names, 18 deliberately blank. The distinction is stated on the page.
+- **All 26 module pages** reach chapter 7, chapter 8 and the parts lists from their Related list.
+- `docs/start-here.md` — *Where do I start?*, a symptom-to-page router, second in the nav.
+- `docs/contributing.md` — the house rules and a worked example of adding a repair guide to a
+  module page, with the issue and pull-request templates behind it.
+- `.github/workflows/check.yml` — `just check` on every pull request, and a weekly external sweep.
+- `just check` — **14 823 links, 0 errors**, up from 13 735 at the end of phase 6.
+
+Four findings, in full in [phase-7-findings.md](phase-7-findings.md):
+
+1. **There is no netlist to link.** `CS 7 830` never names a module, and the two wiring diagrams
+   that do are fold-out scans whose OCR is three characters long. The modules column is therefore
+   an index of where each signal is *described*, not of where it is wired, and the page says so.
+2. **Chapter 8 contradicts its own survey.** It says modules D, E, N, P, Q, V, W and X have no
+   mod-level sheet because nothing changed on them — but the survey table above has module V going
+   from level 1 to 3 and module W from 2 to 3, with no sheet saying what changed. Published as the
+   gap it is.
+3. **`LA-STIA` is not a signal.** Service manual page 148 prints it once for `LA-STA`. The chapter 7
+   transcription keeps the manual's spelling; module J's own prose no longer repeats it.
+4. **Chapter 6 has two fault-finding charts, not four.** Three sheets of chart ② had been read as
+   three separate trees. Corrected on both pages that said so.
 
 ---
 
@@ -848,9 +884,9 @@ and the build is green.
 | 2 — Migration and asset pipeline ✅ | 1, 1b | medium |
 | 3 — Site skeleton ✅ | 0, 2 | medium |
 | 4 — Chapter content ✅ | 2, 3 | large |
-| 5 — Module pages | 2, 3, 4 (ch. 7 & 8 text) | largest |
-| 6 — Original material | 3 | medium |
-| 7 — Cross-linking | 4, 5, 6 | medium |
+| 5 — Module pages ✅ | 2, 3, 4 (ch. 7 & 8 text) | largest |
+| 6 — Original material ✅ | 3 | medium |
+| 7 — Cross-linking ✅ | 4, 5, 6 | medium |
 | 8 — Deployment | 0, 3 | small |
 
 Phases 0–3 are mechanical and can run back to back. Phase 8's workflow is worth landing early —
@@ -873,7 +909,9 @@ end of phase 6.
    manual so the two are never confused. **BBC Master AIV guide: out** — its OCR has been deleted.
 3. **Domain:** `https://simoninns.github.io/vp415-service-guide/`. No custom domain, so no `CNAME`
    and `site_url` is the default Pages URL.
-4. **Issue and PR templates: yes.** Scoped in Phase 7.
+4. **Issue and PR templates: yes.** Landed in Phase 7: a repair report, a correction, and a pull
+   request template whose first question is which source page the change is based on. The site's
+   [contributing page](../docs/contributing.md) carries the worked example.
 5. **History rewrite: yes.** Carried out and force-pushed — pack 1.68 GiB → 1.04 GiB. See Phase 1b. Closed.
 6. **Firmware: keep every file, publish SHA-256 for all of them.** Done —
    [firmware-checksums.csv](firmware-checksums.csv) covers all 28 files with size, decoded image
@@ -889,8 +927,10 @@ end of phase 6.
    Phase 3 and the first run went green:
    <https://simoninns.github.io/vp415-service-guide/> is published and serving. Pages was already
    configured to deploy from GitHub Actions. Verified against the live site — module pages and
-   `-zoom` derivatives serve, `assets/originals/` returns 404 as intended. What remains of Phase 8
-   is the pull-request check workflow and `README.md` — the latter now links the published site.
+   `-zoom` derivatives serve, `assets/originals/` returns 404 as intended. The pull-request check
+   workflow — `just check` on every PR, plus a weekly external-link sweep — landed with Phase 7 as
+   `.github/workflows/check.yml`, and `README.md` documents both. Phase 8 has nothing outstanding
+   beyond watching the first pull request go green.
 
 ### Still genuinely open
 

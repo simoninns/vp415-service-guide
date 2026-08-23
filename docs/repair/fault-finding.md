@@ -3,12 +3,16 @@ title: Fault-finding charts
 description: >-
   The manual's test procedure and fault-finding trees, transcribed as tables:
   which signal fails, which error code it raises, and which module to check.
+search:
+  boost: 2
 ---
 
 # Fault-finding
 
-Four flow charts: a top-level test procedure, and three trees it branches into.
-Each chart ends by naming a module — that is the answer it is trying to give
+Two flow charts and the procedure that leads into them, printed across five
+sheets: a top-level test procedure, chart ① for a player that shows nothing,
+and chart ② — three sheets of it — for a start-up that stops with a code below
+60. Each chart ends by naming a module: that is the answer it is trying to give
 you.
 
 Everything here assumes the player is in

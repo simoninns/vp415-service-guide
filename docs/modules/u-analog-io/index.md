@@ -2,6 +2,8 @@
 title: Module U - Analog I/O
 description: >-
   Analog I/O in three parts - Ua audio/CVBS, Ub video, Uc teletext.
+search:
+  boost: 2
 ---
 
 # Module U - Analog I/O
@@ -414,3 +416,4 @@ Full tables, with service code numbers:
 - [Modification levels per module](../../service-information/modification-levels.md#mod-u) — the level-4 changes
 - [Demounting](../../general-service/demounting.md) — removing module U to reach the rest of the player
 - [Module B — RGB](../b-rgb/index.md) — supplies the signals this board re-encodes
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

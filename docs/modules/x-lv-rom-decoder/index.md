@@ -2,6 +2,8 @@
 title: Module X - LV-ROM decoder
 description: >-
   LV-ROM decoder: recovering data from the disc's data tracks.
+search:
+  boost: 2
 ---
 
 # Module X - LV-ROM decoder
@@ -244,3 +246,5 @@ which the survey does not record — read the board, not the sheet.
 - [SCSI operation](../../operating-instructions/scsi-operation.md) — what the host does with the data
 - [Interactive play](../../operating-instructions/interactive-play.md) — what LV-ROM discs are for
 - [Demounting](../../general-service/demounting.md) — getting the sandwich out
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — module X has no mod-level sheet: the survey shows it at level 2 in every production batch
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

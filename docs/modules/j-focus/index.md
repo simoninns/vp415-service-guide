@@ -2,6 +2,8 @@
 title: Module J - Focus
 description: >-
   Focus servo for the objective lens.
+search:
+  boost: 2
 ---
 
 # Module J - Focus
@@ -66,7 +68,7 @@ and [M](../m-radial/index.md) — see the
 **Start-up.** With the motor not yet turning, `FOC-EN` is low and `FPI` from
 the deck electronics is high, so the objective sits at 0 V. When the drive
 module has seen a disc reflection (`DR`), a correct slide position (`SPI`) and
-laser on (`LA-STIA`), it takes `FOC-EN` high. `FPI` is still high, so the drive
+laser on (`LA-STA`), it takes `FOC-EN` high. `FPI` is still high, so the drive
 voltage goes negative and the objective moves up; filters 2006, 2007, 3015,
 3016 and 3017 feed back to slow that movement. Switch 6205 is still open, so
 the loop is at maximum gain.
@@ -163,3 +165,4 @@ Full tables, with service code numbers:
 - [Modification levels per module](../../service-information/modification-levels.md#mod-j) — the level-3 and level-4 changes
 - [The LaserVision system](../../circuit-description/laservision-system.md) — the optics the focus loop is holding
 - [Module Z — Deck electronics](../z-deck-electronics/index.md) — supplies `FPI` and `FOC-ER`
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

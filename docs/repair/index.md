@@ -37,8 +37,8 @@ module.
 
     ---
 
-    The test procedure and the three fault-finding trees, transcribed as
-    step-by-step tables.
+    The test procedure and the two fault-finding trees, transcribed as
+    step-by-step tables, each ending at a module.
 
     [:octicons-arrow-right-24: Fault-finding charts](fault-finding.md)
 

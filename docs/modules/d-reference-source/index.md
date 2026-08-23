@@ -2,6 +2,8 @@
 title: Module D - Reference source
 description: >-
   The player's master reference source: system clocks and sync.
+search:
+  boost: 2
 ---
 
 # Module D - Reference source
@@ -181,3 +183,5 @@ documenting.
 - [Fault-finding charts](../../repair/fault-finding.md) — the "no sync" paths come back here
 - [VP400 series architecture](../../circuit-description/vp400-series.md) — where the reference timing fits
 - [Module and connector lay-out](../../system/module-layout.md) — connector positions
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — module D has no mod-level sheet: the survey shows it at level 2 in every production batch
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

@@ -2,6 +2,8 @@
 title: Module K - HF processor
 description: >-
   HF processing of the raw signal off the disc.
+search:
+  boost: 2
 ---
 
 # Module K - HF processor
@@ -227,3 +229,4 @@ Full table, with service code numbers:
 - [Modification levels per module](../../service-information/modification-levels.md#mod-k) — the level-1 change
 - [Module L — Video drop-out correction](../l-video-dropout-correction/index.md) — takes `CV-DEM` from here
 - [The LaserVision system](../../circuit-description/laservision-system.md) — what is on the HF signal in the first place
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

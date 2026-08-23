@@ -2,6 +2,8 @@
 title: Module W - CPU + data grabber
 description: >-
   CPU and data grabber, with the SCSI interface to the host.
+search:
+  boost: 2
 ---
 
 # Module W - CPU + data grabber
@@ -291,3 +293,5 @@ and late boards.
 - [SCSI operation](../../operating-instructions/scsi-operation.md) — what this board presents to the host
 - [Connector pinning](../../overview/connector-pinning.md) — the SCSI connector
 - [Demounting](../../general-service/demounting.md) — getting the sandwich out
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — the survey has module W going from level 2 to level 3, but chapter 8 carries no mod-level sheet for it: what changed is not documented
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

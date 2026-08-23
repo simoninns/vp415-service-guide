@@ -2,6 +2,8 @@
 title: Module V - Module carrier
 description: >-
   The module carrier: backplane wiring and connector pinning.
+search:
+  boost: 2
 ---
 
 # Module V - Module carrier
@@ -112,3 +114,6 @@ what changed between them is not documented.
 - [Connector pinning](../../overview/connector-pinning.md) — the external sockets
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptom D 2 adds a link to this board
 - [Module B — RGB](../b-rgb/index.md) — whose level-8 modification needs it
+- [Module circuit descriptions](../../circuit-description/modules.md) — chapter 7 describes no circuit here: the carrier is a backplane, and every signal on it belongs to another module
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — the survey has module V going from level 1 to level 3, but chapter 8 carries no mod-level sheet for it: what changed is not documented
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

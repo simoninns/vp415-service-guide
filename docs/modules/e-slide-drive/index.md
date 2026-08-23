@@ -2,6 +2,8 @@
 title: Module E - Slide drive
 description: >-
   Slide (carriage) drive for coarse radial positioning.
+search:
+  boost: 2
 ---
 
 # Module E - Slide drive
@@ -114,3 +116,5 @@ documenting.
 - [The optical deck](../../circuit-description/optical-deck.md) — what the slide is moving, and why
 - [Fault-finding charts](../../repair/fault-finding.md) — slide and start-up faults
 - [Module and connector lay-out](../../system/module-layout.md) — connector positions
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — module E has no mod-level sheet: the survey shows it at level 3 in every production batch
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

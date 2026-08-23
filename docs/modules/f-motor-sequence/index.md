@@ -2,6 +2,8 @@
 title: Module F - Motor + sequence
 description: >-
   Disc motor drive with the start-up and braking sequence.
+search:
+  boost: 2
 ---
 
 # Module F - Motor + sequence
@@ -236,3 +238,4 @@ Full tables, with service code numbers:
 - [Fault-finding charts](../../repair/fault-finding.md) — motor-speed and error-8 paths
 - [Module G — Gen lock](../g-genlock/index.md) — supplies `MCO`, the motor control signal
 - [The optical deck](../../circuit-description/optical-deck.md) — what the turntable motor turns
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

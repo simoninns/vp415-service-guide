@@ -3,6 +3,8 @@ title: Fault symptoms
 description: >-
   Known fault symptoms in the VP415, the modification that fixes each, and the
   modification level at which it was introduced.
+search:
+  boost: 2
 ---
 
 # Fault symptoms and solutions

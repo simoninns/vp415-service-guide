@@ -2,6 +2,8 @@
 title: Module B - RGB
 description: >-
   PAL-to-RGB decoding and the RGB TTL output.
+search:
+  boost: 2
 ---
 
 # Module B - RGB
@@ -276,3 +278,4 @@ Full tables, with service code numbers:
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptom A 4 involves this module
 - [Fault-finding charts](../../repair/fault-finding.md) — the no-colour and no-picture charts
 - [Adjustments](../../general-service/adjustments.md) — replacing module B means adjusting R3305 and R3315 on module U
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

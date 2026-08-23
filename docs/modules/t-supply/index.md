@@ -2,6 +2,8 @@
 title: Module T - Supply
 description: >-
   Switched-mode power supply.
+search:
+  boost: 2
 ---
 
 # Module T - Supply
@@ -258,3 +260,5 @@ Full table, with the service code number:
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptom A 5, VP410 only
 - [Fault-finding charts](../../repair/fault-finding.md) — dead-set and supply paths
 - [Technical data](../../overview/technical-data.md) — mains voltage range and power consumption
+- [Modification levels per module](../../service-information/modification-levels.md#mod-t) — what changed at each level, with service code numbers
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

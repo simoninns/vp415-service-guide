@@ -2,6 +2,8 @@
 title: Module M - Radial
 description: >-
   Radial servo: fine tracking and jump control.
+search:
+  boost: 2
 ---
 
 # Module M - Radial
@@ -157,3 +159,4 @@ Full tables, with service code numbers:
 - [Software releases](../../service-information/software-releases.md) — drive software 6803.5, which the level-2 change depends on
 - [The optical deck](../../circuit-description/optical-deck.md) — the radial mirror itself
 - [Module R — Drive processor](../r-drive-processor/index.md) — supplies `RLS`, `CP1` and `CP2`
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

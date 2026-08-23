@@ -1,0 +1,66 @@
+name: Check site
+
+on:
+  pull_request:
+  workflow_dispatch:
+  # The offline check on a pull request cannot see rot in an outbound link, so
+  # the external sweep runs weekly instead of on every change.
+  schedule:
+    - cron: '0 6 * * 1'
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Strict build and link check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+      # Same key as the deploy workflow, so a pull request starts from the
+      # derivatives the last build produced and re-derives only what changed.
+      - name: Cache derived assets
+        uses: actions/cache@v4
+        with:
+          path: docs/**/assets/web
+          key: assets-${{ github.sha }}
+          restore-keys: assets-
+      # Figure checks and the generated signal index first, so a page problem
+      # fails in seconds rather than after a full build.
+      - run: nix develop -c just lint
+      # `just check` derives the assets, builds with --strict, then runs lychee
+      # over the rendered site: every internal link and every #anchor, offline.
+      - run: nix develop -c just check
+
+  external-links:
+    name: External links
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+      - name: Cache derived assets
+        uses: actions/cache@v4
+        with:
+          path: docs/**/assets/web
+          key: assets-${{ github.sha }}
+          restore-keys: assets-
+      # Outbound URLs go stale on their own schedule; a failure here is a
+      # notification, not a broken tree.
+      - run: nix develop -c just check-external
+        continue-on-error: true

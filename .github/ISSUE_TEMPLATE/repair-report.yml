@@ -1,0 +1,127 @@
+name: Repair report
+description: A fault you traced on a real player - what it did, what you measured, what it was
+title: "[repair] "
+labels: ["repair report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you - this is the most useful thing anyone can add to the site.
+        An **unfinished** diagnosis is welcome too: both of the published
+        [case studies](https://simoninns.github.io/vp415-service-guide/repair/case-studies/)
+        started as one. Fill in what you have and leave the rest blank.
+
+  - type: input
+    id: player
+    attributes:
+      label: The player
+      description: Type and version, and anything unusual about it.
+      placeholder: VP415/00, sandwich fitted, ex-Domesday
+    validations:
+      required: false
+
+  - type: textarea
+    id: symptom
+    attributes:
+      label: The symptom
+      description: What the player does, from the mains switch onwards.
+      placeholder: |
+        Tray loads, disc spins up, picture appears for about two seconds,
+        then the drive goes to stand-by.
+    validations:
+      required: true
+
+  - type: input
+    id: error-code
+    attributes:
+      label: Error code
+      description: >-
+        The number in the corner of the picture in
+        [self-test mode](https://simoninns.github.io/vp415-service-guide/repair/diagnostic-mode/),
+        or `- - -` if there is none.
+      placeholder: "007"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: modules
+    attributes:
+      label: Modules suspected or ruled out
+      multiple: true
+      options:
+        - A - Audio processor
+        - B - RGB
+        - C - Video processor
+        - D - Reference source
+        - E - Slide drive
+        - F - Motor + sequence
+        - G - Gen lock
+        - H - ETBC-B
+        - I - ETBC-C
+        - J - Focus
+        - K - HF processor
+        - L - Video drop-out correction
+        - M - Radial
+        - N - Display + keyboard
+        - P - Frontloader
+        - Q - RC5 receiver
+        - R - Drive processor
+        - S - Control
+        - T - Supply
+        - U - Analog I/O
+        - V - Module carrier
+        - W - CPU + data grabber
+        - X - LV-ROM decoder
+        - Y - Video mixer
+        - Z - Deck electronics
+        - The optical deck itself
+        - Not known yet
+    validations:
+      required: false
+
+  - type: textarea
+    id: measurements
+    attributes:
+      label: Measurements
+      description: >-
+        Signal or pin, what it should be, what it was. Connector references
+        like `3G2` and mnemonics from the
+        [signal listing](https://simoninns.github.io/vp415-service-guide/system/signal-listing/)
+        make this checkable by someone else.
+      value: |
+        | Point | Should be | Was |
+        | --- | --- | --- |
+        |  |  |  |
+      render: markdown
+    validations:
+      required: false
+
+  - type: input
+    id: mod-level
+    attributes:
+      label: Modification level and software release
+      description: >-
+        The level printed on the board, and the drive / control ROM numbers if
+        you know them. Several known faults are cured by a modification rather
+        than a component.
+      placeholder: Module R mod level 5, DRIVE 6803.5
+    validations:
+      required: false
+
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What it turned out to be
+      description: The fix, or where the trail stopped.
+    validations:
+      required: false
+
+  - type: textarea
+    id: pictures
+    attributes:
+      label: Photographs and scope traces
+      description: >-
+        Drag them in here. Full resolution please - the site derives its own
+        web-sized copies, and the original is what someone will want later.
+    validations:
+      required: false

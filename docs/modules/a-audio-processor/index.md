@@ -2,6 +2,8 @@
 title: Module A - Audio processor
 description: >-
   Audio demodulation and the audio output stages.
+search:
+  boost: 2
 ---
 
 # Module A - Audio processor
@@ -220,3 +222,4 @@ Full table, with service code numbers:
 - [Adjustments](../../general-service/adjustments.md) — the general adjustment rules
 - [VP400 series architecture](../../circuit-description/vp400-series.md) — where the audio path sits in the player
 - [Module and connector lay-out](../../system/module-layout.md) — connector positions
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

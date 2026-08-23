@@ -2,6 +2,8 @@
 title: Module S - Control
 description: >-
   Control: the player's main microcontroller and watchdog.
+search:
+  boost: 2
 ---
 
 # Module S - Control
@@ -252,3 +254,4 @@ Full tables, with service code numbers:
 - [Modification levels per module](../../service-information/modification-levels.md#mod-s) — the firmware steps
 - [SCSI operation](../../operating-instructions/scsi-operation.md) — what the host end of this interface looks like
 - [Fault-finding charts](../../repair/fault-finding.md) — communication faults start here
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

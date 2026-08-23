@@ -2,6 +2,8 @@
 title: Module G - Gen lock
 description: >-
   Genlock: locking the player's timing to an external video reference.
+search:
+  boost: 2
 ---
 
 # Module G - Gen lock
@@ -223,3 +225,4 @@ Full table, with service code numbers:
 - [Fault-finding charts](../../repair/fault-finding.md) — the frame-lock paths
 - [Module F — Motor + sequence](../f-motor-sequence/index.md) — receives `MCO` from here
 - [The LaserVision system](../../circuit-description/laservision-system.md) — why locking matters at all
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

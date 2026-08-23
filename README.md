@@ -20,10 +20,12 @@ circuit descriptions, parts lists, the diagnostic software and its error codes �
 material the manual does not have: firmware dumps with checksums, the F-code command set and
 repair case studies.
 
-**Every page is written.** The service manual is transcribed in full — the seven non-module
-chapters and all twenty-six module pages — along with the VP415 *operating instructions* as a
-separate section, the firmware survey, the F-code reference and two repair case studies. What is
-left is cross-linking, polish and deployment. See
+**Every page is written, and cross-linked.** The service manual is transcribed in full — the seven
+non-module chapters and all twenty-six module pages — along with the VP415 *operating instructions*
+as a separate section, the firmware survey, the F-code reference and two repair case studies. Each
+error code names the modules to look at, each signal mnemonic names the modules that carry it, and
+each module page reaches its circuit description, its modification levels and its parts. What is
+left is the pull-request check and the last of the deployment work. See
 [planning/implementation-plan.md](planning/implementation-plan.md) for what is done and what is next.
 
 ## Repository layout
@@ -56,7 +58,8 @@ nix develop          # enter the shell
 just                 # list the available tasks
 just serve           # derive the web assets, then serve with live reload
 just build           # strict build into site/
-just check           # strict build plus an offline link check
+just lint            # figure checks and the generated signal index
+just check           # lint, strict build, and an offline link check of the result
 ```
 
 Or without entering the shell: `nix develop -c just serve`.
@@ -65,17 +68,28 @@ Or without entering the shell: `nix develop -c just serve`.
 and skips unchanged files, so a warm re-run takes about two seconds; from clean it takes under a
 minute. `nix build .#site` produces the whole site as a reproducible derivation.
 
-## Deployment
+## Deployment and checks
 
 Every push to `main` builds and publishes the site through
 [.github/workflows/deploy.yml](.github/workflows/deploy.yml): `just derive`, then
 `mkdocs build --strict`, then GitHub Pages.
+
+Every pull request runs [.github/workflows/check.yml](.github/workflows/check.yml) instead, which
+is `just check` — the figure checks, the strict build, and `lychee` over the rendered site
+including every `#anchor`. The same workflow sweeps outbound links weekly, where a failure is a
+notification rather than a broken tree.
 
 ## Contributing
 
 Corrections are welcome, particularly from anyone with a real player on the bench. If you are
 correcting transcribed text, please say which service manual page and Philips `CS` sheet your
 correction is based on — every page on the site carries both.
+
+There are issue templates for a [repair report](.github/ISSUE_TEMPLATE/repair-report.yml) and a
+[correction](.github/ISSUE_TEMPLATE/correction.yml), and the site's
+[contributing page](https://simoninns.github.io/vp415-service-guide/contributing/) walks through
+adding a repair guide to a module page — where the photographs go, how the derivatives are built,
+and the figure rules the build enforces.
 
 ## Licence
 

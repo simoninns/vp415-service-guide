@@ -2,6 +2,8 @@
 title: Module N - Display + keyboard
 description: >-
   Front-panel display and keyboard.
+search:
+  boost: 2
 ---
 
 # Module N - Display + keyboard
@@ -128,3 +130,5 @@ documenting.
 - [Module S — Control](../s-control/index.md) — drives this board over the P-bus
 - [Module P — Frontloader](../p-frontloader/index.md) — shares this data sheet
 - [Fault-finding charts](../../repair/fault-finding.md) — dead-display paths
+- [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — module N has no mod-level sheet: the survey shows it at level 1 in every production batch
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

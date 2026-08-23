@@ -2,6 +2,8 @@
 title: Module Z - Deck electronics
 description: >-
   Deck electronics: laser supply and the laser detection unit.
+search:
+  boost: 2
 ---
 
 # Module Z - Deck electronics
@@ -197,3 +199,4 @@ Full tables, with service code numbers:
 - [Module J — Focus](../j-focus/index.md) — takes `FOC-ER` and `FPI` from here
 - [Module M — Radial](../m-radial/index.md) — takes `RAD-ER` from here
 - [Module K — HF processor](../k-hf-processor/index.md) — takes the HF signal from here
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

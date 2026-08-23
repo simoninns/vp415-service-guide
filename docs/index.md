@@ -47,6 +47,10 @@ and the original Philips `CS` sheet codes kept together on every page.
 
 ## Where to start
 
+If you know what the player is doing wrong but not which chapter deals with it,
+start at **[where do I start?](start-here.md)** — a symptom-by-symptom router
+into the rest of the site.
+
 <div class="grid cards" markdown>
 
 -   :material-alert-circle-outline: **The player reports an error code**
@@ -145,5 +149,12 @@ per sheet, for anyone who wants them.
     F-code command set, and two
     [repair case studies](repair/case-studies/index.md) traced on a real player.
 
-    What remains is cross-linking and polish, and the corrections that come
-    from people using it at a bench. Errata are welcome.
+    The pages are cross-linked in both directions: every
+    [error code](repair/error-codes.md) names the modules to look at, every
+    [signal mnemonic](system/signal-listing.md) names the modules that carry
+    it, and every module page reaches its circuit description, its modification
+    levels and its parts.
+
+    What remains is the corrections that come from people using it at a bench,
+    and the repairs they write up. Both are welcome —
+    [contributing](contributing.md) has the templates and a worked example.

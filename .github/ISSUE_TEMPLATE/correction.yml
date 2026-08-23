@@ -1,0 +1,69 @@
+name: Correction or erratum
+description: Something on the site is wrong, or the manual itself is
+title: "[correction] "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections are welcome even when you are not certain. Every page is
+        transcribed from a 300 dpi scan that is in the repository, so a claim
+        that names the sheet can be checked in a minute.
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page
+      description: The URL, or the path under `docs/`.
+      placeholder: https://simoninns.github.io/vp415-service-guide/modules/j-focus/
+    validations:
+      required: true
+
+  - type: textarea
+    id: says
+    attributes:
+      label: What it says now
+      description: Quote it, so it can be found.
+    validations:
+      required: true
+
+  - type: textarea
+    id: should
+    attributes:
+      label: What it should say
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Where the mistake is
+      options:
+        - This site transcribed the sheet wrongly
+        - The service manual itself is wrong - the player disagrees with it
+        - A link or an anchor is broken
+        - The scan is unreadable or missing
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: sheet
+    attributes:
+      label: Which sheet
+      description: >-
+        The Philips CS code and the service manual page number, both printed
+        under every figure on the site.
+      placeholder: CS 7 846, service manual page 053
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: How you know
+      description: >-
+        A measurement, a photograph of the board, another sheet that
+        contradicts it - whatever you have.
+    validations:
+      required: false

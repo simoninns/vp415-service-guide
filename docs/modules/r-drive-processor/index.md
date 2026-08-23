@@ -2,6 +2,8 @@
 title: Module R - Drive processor
 description: >-
   Drive processor: the microcontroller running the deck servos.
+search:
+  boost: 2
 ---
 
 # Module R - Drive processor
@@ -226,3 +228,4 @@ Full tables, with service code numbers:
 - [Modification levels per module](../../service-information/modification-levels.md#mod-r) — five levels of changes
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptoms A 1 and A 2 are fixed here
 - [Module Q — RC5 receiver](../q-rc5-receiver/index.md) — shares this data sheet
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

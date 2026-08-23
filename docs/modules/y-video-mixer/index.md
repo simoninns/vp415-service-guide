@@ -2,6 +2,8 @@
 title: Module Y - Video mixer
 description: >-
   Video mixer: mode switching, clamping and mixing of video sources.
+search:
+  boost: 2
 ---
 
 # Module Y - Video mixer
@@ -213,3 +215,4 @@ Full tables, with service code numbers:
 - [Interactive play](../../operating-instructions/interactive-play.md) — the modes seen from the user's side
 - [Module S — Control](../s-control/index.md) — sends `VP0`–`VP2`
 - [Module U — Analog I/O](../u-analog-io/index.md) — feeds the disc RGB in and takes the mixed RGB out
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

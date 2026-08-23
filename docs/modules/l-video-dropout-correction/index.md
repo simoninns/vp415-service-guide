@@ -2,6 +2,8 @@
 title: Module L - Video drop-out correction
 description: >-
   Video drop-out detection and correction.
+search:
+  boost: 2
 ---
 
 # Module L - Video drop-out correction
@@ -235,3 +237,5 @@ Full tables, with service code numbers:
 - [Fault symptoms](../../service-information/fault-symptoms.md) — the playability entries reach this module
 - [Module K — HF processor](../k-hf-processor/index.md) — sends `CV-DEM`, receives `MTF`
 - [Module H — ETBC B](../h-etbc-b/index.md) — takes `CV-DOC` from here
+- [Modification levels per module](../../service-information/modification-levels.md#mod-l) — what changed at each level, with service code numbers
+- [Electrical parts](../../parts/electrical-parts.md) — the collective list of standard components by service code number; the connectors are in [mechanical parts](../../parts/mechanical-parts.md#module-connectors)

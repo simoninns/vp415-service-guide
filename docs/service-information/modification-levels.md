@@ -77,8 +77,11 @@ the second row.
 ## What changed at each level
 
 Eighteen sheets, one or two per module, dated 1987-04-15. Modules D, E, N, P,
-Q, V, W and X have no mod-level sheet: nothing changed on them that needed
-documenting.
+Q, V, W and X have no mod-level sheet. For six of them the survey above agrees
+that nothing changed — each sits at one level across every batch. **Modules V
+and W are the exception**: the survey has the module carrier going from level 1
+to 3 and the CPU + data grabber from 2 to 3, and no sheet in this chapter says
+what those changes were.
 
 Component references use the four-number diagram coding — see
 [remarks](../general-service/remarks.md), section 6.
