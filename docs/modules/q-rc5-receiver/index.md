@@ -74,6 +74,15 @@ The sheet below is the whole of `CS 7 851`. Module Q is its **left-hand
 panel**: the RC5 circuit and the small lay-out of the RC5 mirror board. Panels
 2 and 3 are [drive processor module R](../r-drive-processor/index.md).
 
+<figure class="sheet sheet--fold" markdown>
+[![RC5 circuit module Q on panel 1 of the sheet, with the IR receiver, the RC5 mirror stage and the wired remote control input; panels 2 and 3 carry the drive processor parts list and PCB lay-out](../r-drive-processor/assets/web/cs-7-851-circuit-p063-064-preview.webp)](../r-drive-processor/assets/web/cs-7-851-circuit-p063-064-zoom.webp)
+<figcaption>
+  RC5 circuit module Q — panel 1 of the drive processor sheet.
+  <span class="cs">CS 7 851</span>
+  <span class="src">service manual pages 063, 064</span>
+</figcaption>
+</figure>
+
 ## List of electrical parts
 
 The manual prints **no parts list for module Q**. The components named on the

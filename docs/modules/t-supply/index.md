@@ -4,20 +4,45 @@ description: >-
   Switched-mode power supply.
 ---
 
-<!-- drafted by tools/import_modules.py - hand-edited afterwards -->
-
 # Module T - Supply
 
 Switched-mode power supply.
 
 ## Overview
 
+The supply module produces the four stabilised rails the player runs on —
+**+12 V, −12 V, +5 V and −5 V** — from a **parallel switched-mode** circuit,
+with a current monitor protecting it against overload and an auxiliary supply
+generating the starting voltage for the driver stage.
+
+!!! danger "Mains-side servicing"
+
+    Most of this board is at mains potential and is **not** isolated from it.
+    The primary side carries rectified mains on large reservoir capacitors that
+    stay charged after the player is switched off and unplugged.
+
+    Read [warnings](../../general-service/warnings.md) before working on this
+    module — including the isolating-transformer rule and the earthing checks
+    that follow any repair on it.
+
 | | |
 | --- | --- |
-| Designation | **T** |
-| Modification levels | 1 |
-| Data sheet | `CS 7 853`, pages 071, 072 |
+| Designation | **T** — supply |
+| Modification levels | 1 (unchanged through production) |
+| Data sheet | `CS 7 853`, pages 071–072 |
 | Circuit diagram | `CS 6 885`, page 073 |
+| Connectors | `T1`, `T2` |
+| Rails | +12 V, −12 V, +5 V, −5 V, plus the `+12SB` / `+5SB` / `−5SB` standby rails |
+| Mains selector | `X002` 110 V / `X003` 240 V, on the board |
+| Fuses | F911 and F912 **T1.6 A 250 V**, F913 **3.15 A** |
+
+!!! note "This module is numbered differently from every other"
+
+    Supply module T is listed in the **board's own letter/number coding** —
+    `C001`, `R101`, `V203`, `F911` — not the four-number diagram coding used
+    everywhere else in the manual. See
+    [remarks, section 6](../../general-service/remarks.md), which calls this
+    module out by name.
 
 ## The board
 
@@ -30,31 +55,42 @@ Switched-mode power supply.
 
 ## Where it sits in the player
 
-See the [module and connector lay-out](../../system/module-layout.md).
+At the right-hand rear of the chassis behind its perforated screen, beside
+[control module S](../s-control/index.md) — see the
+[module and connector lay-out](../../system/module-layout.md). Only one
+photograph of this board exists in the collection, the component side.
 
 ## Circuit description
 
-[Chapter 7, module T](../../circuit-description/modules.md#module-t).
+Bridge rectifier V001 rectifies the mains. Its output — unstabilised against
+mains variation — supplies the parallel switched-mode circuit built around
+transformer T901 and switching transistor V203. The switching pulses on T901's
+primary are transformed to the secondary windings 12-1, 11-2, 10-3 and
+x921–x922, each with the usual forward rectifier — series and freewheel diode,
+coil and smoothing capacitor — producing the four stabilised rails.
+
+V203 is controlled from pin 5 of the command circuit D501 (a hybrid SMPS
+circuit) through driver transistor V303 and driver transformer T201. The
+driver stage's own supply is made by rectifying pulses from winding 10-3 with
+V301 and C301; the +15 V starting voltage comes from the auxiliary supply.
+
+The full text, including the current monitor and the standby rails, is in
+[chapter 7, module T](../../circuit-description/modules.md#module-t).
 
 ## Adjustments
 
-Required
+One adjustment: the +5 V rail.
 
-Test disc
+!!! info "Required"
 
-Voltmeter
+    Test disc · voltmeter
 
-Adjustment conditions
+    Rotating disc.
 
-Rotating disc
+**1) R503 — DC voltage**
 
-# Adjustments
-
-1) R503 (DC Voltage)
-
--Measure the DC voltage on 3T2 (+5)
-
--Adjust R503 for 5.2V (±0.1V)
+- Measure the DC voltage on `3T2` (`+5`).
+- Adjust R503 for **5.2 V ± 0.1 V**.
 
 ## Circuit diagram
 
@@ -206,14 +242,19 @@ Rotating disc
 
 ## Modification levels
 
-[Chapter 8, module T](../../service-information/modification-levels.md#mod-t).
+Module T carried **modification level 1 in every production batch**. The
+mod-level sheet records one change at that level, and it is **VP410 only**: a
+0.15 Ω / 1 W resistor added in series with fuse F913, curing horizontal stripes
+in the picture at start-up — fault symptom **A 5**.
+
+Full table, with the service code number:
+[chapter 8, module T](../../service-information/modification-levels.md#mod-t).
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md)
-- [Remarks](../../general-service/remarks.md)
-- [Warnings](../../general-service/warnings.md)
-- [Fault-finding charts](../../repair/fault-finding.md)
-- [Fault symptoms](../../service-information/fault-symptoms.md)
-- [Modification levels per module](../../service-information/modification-levels.md)
-- [Module and connector lay-out](../../system/module-layout.md)
+- [Warnings](../../general-service/warnings.md) — **read first**: mains-side servicing, isolating transformer, earthing checks
+- [Module circuit descriptions](../../circuit-description/modules.md#module-t) — the chapter 7 text in full
+- [Remarks](../../general-service/remarks.md) — why this board's component numbering differs
+- [Fault symptoms](../../service-information/fault-symptoms.md) — symptom A 5, VP410 only
+- [Fault-finding charts](../../repair/fault-finding.md) — dead-set and supply paths
+- [Technical data](../../overview/technical-data.md) — mains voltage range and power consumption
