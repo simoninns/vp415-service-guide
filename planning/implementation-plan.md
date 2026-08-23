@@ -12,7 +12,8 @@ Read [source-manifest.md](source-manifest.md) first — this plan assumes its fi
 ### Site structure follows the service manual
 
 The manual's eight chapters become eight top-level sections, plus a ninth for material that has no
-manual equivalent (firmware dumps, F-codes, repair case studies, the RGB calibration guide).
+manual equivalent (firmware dumps, F-codes, repair case studies, the RGB calibration guide) and a
+tenth for the operating instructions.
 Chapter 4 — modules A to Z — is the heart of the site and gets one page per module.
 
 ### Assets live beside their markdown
@@ -137,13 +138,22 @@ docs/
   service-information/          # chapter 8
     index.md  modification-levels.md  software-releases.md  fault-symptoms.md
     assets/originals/  assets/web/
+  operating-instructions/       # the USER manual - deliberately its own section
+    index.md                    # 8 sections: installation, playing a disc, special play
+    …                           # functions, interactive play, F-code programming, F-code
+    …                           # commands, SCSI operation, maintenance, technical data
+    assets/originals/  assets/web/
   reference/                    # material with no manual equivalent
-    index.md  firmware.md  f-codes.md  operating-instructions.md
+    index.md  firmware.md  f-codes.md
     calibration/rgb-module.md   # the owner's RGB calibration guide
     calibration/deck-electronics.md
     downloads.md
     assets/originals+web/  calibration/assets/originals+web/
 ```
+
+The operating instructions are a **separate top-level section**, not folded into the service
+manual, so the two are never confused: one tells you how to use the player, the other how to
+repair it.
 
 Each module `index.md` is one page with anchored sections: Overview · Photographs · Circuit
 description · Adjustments · Circuit diagram · PCB lay-out · Electrical parts · Modification
@@ -226,7 +236,7 @@ Remaining work:
 
 ---
 
-## Phase 1b — Reclaim space, one copy of everything ✅ *mostly done*
+## Phase 1b — Reclaim space, one copy of everything ✅ *done*
 
 **Goal:** the working tree holds exactly one copy of every distinct piece of source material.
 
@@ -242,21 +252,28 @@ Remaining work:
    its PNG was deleted; 214 of 214 passed. Page map `publish_source` updated to `.webp` and all
    180 canonical paths re-verified.
 
-**Outstanding:**
+4. ✅ **Deleted the BBC Master AIV User Guide OCR** (1.4 MB) as out of scope.
+5. ✅ **Rewrote history** with `git filter-repo`, stripping from all six commits: the `A4/` and
+   `A4 bifold/` trees, the 214 superseded PNG blobs, the hires PDF, and the AIV OCR.
+   **Pack: 1.68 GiB → 1.04 GiB.** All six commits preserved, working tree clean and unchanged,
+   all target paths verified absent from every object in the rewritten history.
+   1.04 GiB against a 1041 MB working tree means the pack is now essentially just current content
+   — the floor, without deleting more live files.
 
-4. **Small duplicate groups** — ~230 KB across the ROM and microcontroller dumps. Deferred rather
-   than deleted, because the filenames carry provenance worth recording on the firmware page
-   first, and because of the finding in manifest §11.4. Resolve during Phase 6.
-5. **Optionally rewrite history.** The steps above shrink the working tree but not `.git` — git
-   stores blobs by content hash, so the duplicates already cost nothing in the 1.68 GiB pack, and
-   deleting a file never reclaims its history. Committing the WebP files will in fact grow the
-   pack slightly, since both encodings then exist in history. Only `git filter-repo` plus a
-   force-push shrinks the clone. With three commits and a single author this is low-risk, and now
-   is the cheapest moment. **Repo owner's call** — it rewrites published commit hashes.
-   Expected result: roughly **1.7 GB → 0.8 GB**.
+**Firmware duplicates kept by decision** — see the decisions list. Publishing SHA-256 per file
+makes the aliasing visible without pruning anything.
 
-**Done when:** step 5 is decided either way, and the source tree's remaining duplicate groups are
-limited to the firmware files pending §11.4.
+**Remaining:** the rewrite is local only. `origin` still holds the old history until a
+force-push:
+
+```
+git push --force-with-lease origin main
+```
+
+Two caveats: anyone with an existing clone must re-clone or hard-reset, and GitHub does not
+reclaim the space immediately — old objects linger until their own garbage collection runs.
+A pre-rewrite backup bundle of the original history exists in the session scratchpad, and
+`origin` itself is a backup until the force-push lands.
 
 ---
 
@@ -425,9 +442,9 @@ Module-specific extras:
   publish the NEC/Intel datasheets.
 - **F-codes** — `vp415Fcode.xlsx` as a searchable table, plus the real-player `?D`/`?P`/`?U`/`?=`
   responses per Domesday disc side from `misc/`.
-- **Operating instructions** — the user manual as its own section, from the OCR markdown with the
-  3500×4956 page scans as figures.
-- **Downloads** — one page linking the full-resolution service manual PDF, the operating
+- **Operating instructions** — the user manual as its own top-level section (see the layout),
+  from the OCR markdown with the 3500×4956 page scans as figures.
+- **Downloads** — one page linking the operating
   instructions PDF, the firmware images and the datasheets.
 
 **Done when:** every item in manifest §5–§10 is published or explicitly listed as excluded.
@@ -557,7 +574,7 @@ end of phase 6.
 3. **Domain:** `https://simoninns.github.io/vp415-service-guide/`. No custom domain, so no `CNAME`
    and `site_url` is the default Pages URL.
 4. **Issue and PR templates: yes.** Scoped in Phase 7.
-5. **History rewrite: yes.** Carried out — see Phase 1b.
+5. **History rewrite: yes.** Carried out — pack 1.68 GiB → 1.04 GiB. See Phase 1b; needs a force-push to take effect on GitHub.
 6. **Firmware: keep every file, publish SHA-256 for all of them.** Done —
    [firmware-checksums.csv](firmware-checksums.csv) covers all 28 files with size, decoded image
    range, the Philips 16-bit sum, and SHA-256 of both the file and the decoded image. The hashes
