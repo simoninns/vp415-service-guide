@@ -1,0 +1,50 @@
+name: Deploy site
+
+on:
+  # The push trigger is enabled once phase 3 lands mkdocs.yml and the build is
+  # green; until then the workflow is manual-only so main does not run red.
+  # push:
+  #   branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: |
+            experimental-features = nix-command flakes
+      - name: Cache derived assets
+        uses: actions/cache@v4
+        with:
+          path: docs/**/assets/web
+          key: assets-${{ github.sha }}
+          restore-keys: assets-
+      - run: nix develop -c just derive
+      - run: nix develop -c mkdocs build --strict
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

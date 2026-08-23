@@ -162,7 +162,7 @@ repairer working on one module wants everything about it in one place.
 
 ---
 
-## Phase 0 — Toolchain
+## Phase 0 — Toolchain ✅ *done*
 
 **Goal:** `nix develop` gives every tool this project needs, on any machine and in CI.
 
@@ -198,7 +198,26 @@ Also in this phase:
 - `justfile` — `derive`, `serve`, `build`, `check`, `clean`
 - `.github/workflows/deploy.yml` skeleton (Phase 8 hardens it)
 
-**Done when:** `nix develop -c mkdocs --version` works from a clean checkout.
+**Done when:** `nix develop -c mkdocs --version` works from a clean checkout. — **verified.**
+
+**Landed:**
+
+- `flake.nix` / `flake.lock` — dev shell with all 19 tools above, plus `packages.site`.
+  nixpkgs is pinned to `nixos-26.05`, the same channel the development host tracks; every package
+  resolves and every mkdocs plugin registers (`glightbox`, `minify`, `redirects`, `search`).
+- `.gitignore` — `site/`, `docs/**/assets/web/`, `.cache/`, `__pycache__/`, `result*`.
+  Verified that the `web/` pattern catches both `docs/assets/web/` and
+  `docs/modules/x/assets/web/`, and that `assets/originals/` stays tracked.
+- `justfile` — `derive`, `serve`, `build`, `check`, `check-external`, `clean`.
+  `check` is the offline link check of the rendered site; `check-external` also resolves
+  external URLs. `clean` removes `site/` and every `assets/web/` directory, leaving the
+  originals alone.
+- `.github/workflows/deploy.yml` — the Phase 8 skeleton, but **the `push` trigger is commented
+  out** and the workflow is `workflow_dispatch`-only. There is no `mkdocs.yml` until Phase 3, so
+  an enabled trigger would only paint `main` red. Uncomment it when Phase 3 lands.
+
+`packages.site` evaluates but does not build yet — it wants `tools/derive_assets.py` (Phase 2) and
+`mkdocs.yml` (Phase 3). The dev shell is Phase 0's actual deliverable.
 
 ---
 
@@ -542,7 +561,7 @@ and the build is green.
 
 | Phase | Depends on | Rough size |
 | --- | --- | --- |
-| 0 — Toolchain | — | small |
+| 0 — Toolchain ✅ | — | small |
 | 1 — Lock page attribution | 0 | small |
 | 1b — Reclaim space | 1 | small |
 | 2 — Migration and asset pipeline | 1, 1b | medium |
