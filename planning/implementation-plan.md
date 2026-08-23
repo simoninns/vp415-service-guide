@@ -723,9 +723,11 @@ end of phase 6.
    and for every schematic, photograph and scope trace that is the scan at native resolution. The
    originals stay in the repository as the single copy of each file.
 8. **Deployment is live.** The `push` trigger on `.github/workflows/deploy.yml` was enabled in
-   Phase 3, so `main` publishes continuously from here on. One thing still gates a green run:
-   Pages must be set to deploy **from GitHub Actions**, not from a branch, in the repository
-   settings.
+   Phase 3 and the first run went green:
+   <https://simoninns.github.io/vp415-service-guide/> is published and serving. Pages was already
+   configured to deploy from GitHub Actions. Verified against the live site — module pages and
+   `-zoom` derivatives serve, `assets/originals/` returns 404 as intended. What remains of Phase 8
+   is the pull-request check workflow and `README.md` — the latter now links the published site.
 
 ### Still genuinely open
 

@@ -1,5 +1,4 @@
 ---
-title: VP415 service guide
 description: >-
   A working repair and servicing reference for the Philips VP415 LaserVision
   ROM disc drive, built around the original Philips service manual.
