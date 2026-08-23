@@ -1,0 +1,111 @@
+{
+  "index": 19,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 16,
+      "topLeftY": 64,
+      "bottomRightX": 94,
+      "bottomRightY": 78,
+      "content": "# 3. Faultfinding",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 16,
+      "topLeftY": 89,
+      "bottomRightX": 182,
+      "bottomRightY": 103,
+      "content": "# a. Meaning of the symbols used",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 29,
+      "topLeftY": 112,
+      "bottomRightX": 306,
+      "bottomRightY": 140,
+      "content": "The symbols used in the test procedure and in the fault-finding tree have the following meaning:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 12,
+      "topLeftY": 147,
+      "bottomRightX": 156,
+      "bottomRightY": 496,
+      "content": "![img-27.jpeg](img-27.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-27.jpeg"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 175,
+      "bottomRightX": 358,
+      "bottomRightY": 191,
+      "content": "- action/operation to be carried out",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 176,
+      "topLeftY": 265,
+      "bottomRightX": 230,
+      "bottomRightY": 278,
+      "content": "- decision",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 341,
+      "bottomRightX": 416,
+      "bottomRightY": 357,
+      "content": "- Check module T or the circuits on this module",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 379,
+      "bottomRightX": 380,
+      "bottomRightY": 393,
+      "content": "- Go on to block 1 in the faultfinding tree",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 172,
+      "topLeftY": 415,
+      "bottomRightX": 417,
+      "bottomRightY": 441,
+      "content": "- Error code on the picture screen (no error = - - - )",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 170,
+      "topLeftY": 463,
+      "bottomRightX": 417,
+      "bottomRightY": 512,
+      "content": "- Switch on the drive by pressing STANDBY + EJECT and MAINS together.\nRelease buttons when display DIAGNOSTICS is visible",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 980,
+      "bottomRightX": 58,
+      "bottomRightY": 993,
+      "content": "CS 8 115",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

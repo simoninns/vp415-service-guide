@@ -1,0 +1,733 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 379,
+      "topLeftY": 36,
+      "bottomRightX": 472,
+      "bottomRightY": 50,
+      "content": "RGB MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 484,
+      "topLeftY": 34,
+      "bottomRightX": 500,
+      "bottomRightY": 52,
+      "content": "B",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 53,
+      "bottomRightX": 468,
+      "bottomRightY": 64,
+      "content": "(MOD LEVEL 5)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 66,
+      "bottomRightX": 126,
+      "bottomRightY": 75,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 84,
+      "bottomRightX": 103,
+      "bottomRightY": 92,
+      "content": "# Required",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 93,
+      "bottomRightX": 103,
+      "bottomRightY": 100,
+      "content": "Test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 100,
+      "bottomRightX": 253,
+      "bottomRightY": 108,
+      "content": "Scope (dual beam) with X-deflection via B-channel",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 109,
+      "bottomRightX": 170,
+      "bottomRightY": 117,
+      "content": "Or vector scope, if available",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 125,
+      "bottomRightX": 152,
+      "bottomRightY": 134,
+      "content": "# Adjustment conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 134,
+      "bottomRightX": 121,
+      "bottomRightY": 142,
+      "content": "Load test disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 142,
+      "bottomRightX": 229,
+      "bottomRightY": 151,
+      "content": "Still picture, colour pattern (picture no. 6200).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 159,
+      "bottomRightX": 116,
+      "bottomRightY": 168,
+      "content": "# Adjustments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 175,
+      "bottomRightX": 188,
+      "bottomRightY": 184,
+      "content": "1) L5002 and L5003 (notch filter)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 184,
+      "bottomRightX": 275,
+      "bottomRightY": 202,
+      "content": "- Using the scope, measure the luminance signal on 10B3, line triggered (see fig. B1)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 207,
+      "bottomRightX": 248,
+      "bottomRightY": 288,
+      "content": "![img-40.jpeg](img-40.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-40.jpeg"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 293,
+      "bottomRightX": 202,
+      "bottomRightY": 302,
+      "content": "LUMINANCE SIGNAL",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 237,
+      "topLeftY": 296,
+      "bottomRightX": 273,
+      "bottomRightY": 311,
+      "content": "MDA-30595\nT28/711",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 158,
+      "topLeftY": 309,
+      "bottomRightX": 184,
+      "bottomRightY": 319,
+      "content": "Fig. B1",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 334,
+      "bottomRightX": 275,
+      "bottomRightY": 369,
+      "content": "- Adjust L5002 until the chroma rests in the luminance signal have disappeared.\n- Adjust L5003 until overshoot a and undershoot b have the same amplitude.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 376,
+      "bottomRightX": 146,
+      "bottomRightY": 385,
+      "content": "2) L5004 (Bandpass)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 385,
+      "bottomRightX": 275,
+      "bottomRightY": 420,
+      "content": "- Measure the chroma signal on 15-IC7201 with the scope.\n- Adjust L5004 for minimum overshoots in the chroma signal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 435,
+      "bottomRightX": 184,
+      "bottomRightY": 444,
+      "content": "3) R3015 and L5007 (Delay line)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 444,
+      "bottomRightX": 275,
+      "bottomRightY": 495,
+      "content": "- Measure with the scope the (R-Y) signal at 9B2 with the A-channel and the (B-Y) signal on 10B2 with the B-channel, both AC coupled.\n- Switch the scope to X-deflection and adjust it until the vector diagram below appears (see Fig. B2).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 96,
+      "topLeftY": 505,
+      "bottomRightX": 247,
+      "bottomRightY": 631,
+      "content": "![img-41.jpeg](img-41.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-41.jpeg"
+    },
+    {
+      "topLeftX": 119,
+      "topLeftY": 635,
+      "bottomRightX": 223,
+      "bottomRightY": 643,
+      "content": "VECTOR DIAGRAM COLOUR BAR",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 159,
+      "topLeftY": 658,
+      "bottomRightX": 187,
+      "bottomRightY": 668,
+      "content": "Fig. B2",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 218,
+      "topLeftY": 654,
+      "bottomRightX": 247,
+      "bottomRightY": 667,
+      "content": "MDA-30585\nT28/711",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 315,
+      "topLeftY": 81,
+      "bottomRightX": 501,
+      "bottomRightY": 99,
+      "content": "The colour spots visible on the scope screen are lying at a certain distance B from origin O.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 99,
+      "bottomRightX": 501,
+      "bottomRightY": 174,
+      "content": "- Short-circuit pins 1-2 or 3-4 of delay line L5008. The spots in the vector diagram will lie closer to the origin now, at distance A from the origin. When the short-circuit is removed, the spots move outwards again (B).\n- Adjust L5007 until the dimensions of the spots (in B) are minimal.\n- Adjust R3015 until distance OB is twice distance OA in case of alternate short-circuiting of the delay line.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 296,
+      "topLeftY": 190,
+      "bottomRightX": 409,
+      "bottomRightY": 200,
+      "content": "4) C2015 (Oscillator frequency)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 207,
+      "bottomRightX": 501,
+      "bottomRightY": 242,
+      "content": "- Connect the scope as described sub 3).\n- Short-circuit pins 1-2 or 3-4 of delay line L5008.\n- Adjust C2015 until the dimensions of the colour spots of the vector diagram are minimal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 296,
+      "topLeftY": 257,
+      "bottomRightX": 437,
+      "bottomRightY": 266,
+      "content": "5) R3080 (Luminance signal amplitude)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 306,
+      "topLeftY": 266,
+      "bottomRightX": 501,
+      "bottomRightY": 284,
+      "content": "- Measure the G-signal on 3B3 (line freq.) with the scope. See fig. B3.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 309,
+      "topLeftY": 294,
+      "bottomRightX": 491,
+      "bottomRightY": 553,
+      "content": "![img-42.jpeg](img-42.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-42.jpeg"
+    },
+    {
+      "topLeftX": 387,
+      "topLeftY": 557,
+      "bottomRightX": 415,
+      "bottomRightY": 568,
+      "content": "Fig. B3",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 460,
+      "topLeftY": 556,
+      "bottomRightX": 487,
+      "bottomRightY": 569,
+      "content": "MDA-30580\nT28/711",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 307,
+      "topLeftY": 582,
+      "bottomRightX": 501,
+      "bottomRightY": 601,
+      "content": "- Adjust R3080 for an average amplitude of 700 mV ± 7 mV.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 298,
+      "topLeftY": 617,
+      "bottomRightX": 486,
+      "bottomRightY": 626,
+      "content": "6) R3082, R3084 (colour difference signal amplitude)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 307,
+      "topLeftY": 626,
+      "bottomRightX": 503,
+      "bottomRightY": 686,
+      "content": "- Using the scope, measure the R-signal on 2B3 and adjust R3082 to the same amplitude of yellow, magenta and red.\n- Using the scope, measure the B-signal on 4B3 and adjust R3084 to the same amplitude of cyan, magenta and blue (see Fig. B3).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 80,
+      "bottomRightX": 598,
+      "bottomRightY": 89,
+      "content": "7) R3045 (black level)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 530,
+      "topLeftY": 89,
+      "bottomRightX": 725,
+      "bottomRightY": 114,
+      "content": "- Measure output B-signal on 4B3 with the scope.\n- Adjust R3045 for a black level of 0V ± 50 mV (see Fig. B3).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 122,
+      "bottomRightX": 638,
+      "bottomRightY": 132,
+      "content": "# Adjustment when item replaced",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 139,
+      "bottomRightX": 555,
+      "bottomRightY": 147,
+      "content": "replaced",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 139,
+      "bottomRightX": 616,
+      "bottomRightY": 147,
+      "content": "adjust",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 147,
+      "bottomRightX": 547,
+      "bottomRightY": 156,
+      "content": "IC7201",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 147,
+      "bottomRightX": 725,
+      "bottomRightY": 163,
+      "content": "R3015, R3082, R3084, C2015, L5006, L5007",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 164,
+      "bottomRightX": 547,
+      "bottomRightY": 172,
+      "content": "IC7202",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 164,
+      "bottomRightX": 616,
+      "bottomRightY": 172,
+      "content": "R3080",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 172,
+      "bottomRightX": 547,
+      "bottomRightY": 181,
+      "content": "IC7203",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 172,
+      "bottomRightX": 698,
+      "bottomRightY": 181,
+      "content": "R3055, R3080, R3082, R3084",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 181,
+      "bottomRightX": 547,
+      "bottomRightY": 189,
+      "content": "R3080",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 181,
+      "bottomRightX": 620,
+      "bottomRightY": 189,
+      "content": "R3207 )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 189,
+      "bottomRightX": 547,
+      "bottomRightY": 198,
+      "content": "R3082",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 189,
+      "bottomRightX": 708,
+      "bottomRightY": 198,
+      "content": "R3305 ) on analog I/O module U",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 520,
+      "topLeftY": 198,
+      "bottomRightX": 547,
+      "bottomRightY": 207,
+      "content": "R3084",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 590,
+      "topLeftY": 198,
+      "bottomRightX": 620,
+      "bottomRightY": 207,
+      "content": "R3315 )",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 737,
+      "topLeftY": 40,
+      "bottomRightX": 1009,
+      "bottomRightY": 60,
+      "content": "|   | 2008 A 1 | 2018 A 4 | 2028 B 5 | 2039 A 5 | 3010 B 1 | 3080 A 3 | 5001  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  2001 B 2 | 2011 B 2 | 2021 A 4 | 2028 B 5 | 2040 A 5 | 3015 A 2 | 3082 A 3 | 5002  |\n|  2002 B 4 | 2015 B 2 | 2022 A 4 | 2028 A 5 | 2039 B 1 | 3045 A 7 | 3084 A 3 | 5003  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 737,
+      "topLeftY": 65,
+      "bottomRightX": 1009,
+      "bottomRightY": 247,
+      "content": "![img-43.jpeg](img-43.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-43.jpeg"
+    },
+    {
+      "topLeftX": 748,
+      "topLeftY": 268,
+      "bottomRightX": 1009,
+      "bottomRightY": 299,
+      "content": "|  2001 B 2 | 2009 A 2 | 2015 A 2 | 2024 A 4 | 2031 A 5 | 3002 A 3 | 3007 B 4 | 3013  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  2004 B 2 | 2012 A 2 | 2017 A 1 | 2025 A 4 | 2032 A 5 | 3003 B 3 | 3008 A 3 | 3014  |\n|  2005 A 3 | 2012 A 2 | 2019 A 4 | 2027 A 5 | 2032 A 5 | 3004 B 3 | 3011 A 2 | 3016  |\n|  2006 B 4 | 2013 A 2 | 2020 A 4 | 2029 A 5 | 2034 A 5 | 3005 B 4 | 3012 A 2 | 3017  |\n|  2007 B 2 | 2014 A 2 | 2023 A 4 | 2030 A 5 | 2051 B 3 | 3006 B 3 |  | 3018  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 737,
+      "topLeftY": 304,
+      "bottomRightX": 1009,
+      "bottomRightY": 487,
+      "content": "![img-44.jpeg](img-44.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-44.jpeg"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 496,
+      "bottomRightX": 900,
+      "bottomRightY": 505,
+      "content": "LIST OF ELECTRICAL PARTS MODULE B",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 965,
+      "topLeftY": 496,
+      "bottomRightX": 1009,
+      "bottomRightY": 513,
+      "content": "Trimcapaci\n2015",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 514,
+      "bottomRightX": 779,
+      "bottomRightY": 522,
+      "content": "Crystals",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 522,
+      "bottomRightX": 912,
+      "bottomRightY": 531,
+      "content": "|  5005 | 4822 242 70304 | 8.867238 MHz  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 530,
+      "bottomRightX": 974,
+      "bottomRightY": 537,
+      "content": "2001",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 540,
+      "bottomRightX": 791,
+      "bottomRightY": 547,
+      "content": "Delay lines",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 547,
+      "bottomRightX": 884,
+      "bottomRightY": 556,
+      "content": "|  5008 | 4822 320 40051 | DL711  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 547,
+      "bottomRightX": 974,
+      "bottomRightY": 555,
+      "content": "2002",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 565,
+      "bottomRightX": 768,
+      "bottomRightY": 572,
+      "content": "Coils",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 572,
+      "bottomRightX": 888,
+      "bottomRightY": 624,
+      "content": "|  5001 | 4822 156 10993 | 150 μH  |\n| --- | --- | --- |\n|  5002 | 4822 157 52873 | 5.5 μH  |\n|  5003 | 4822 157 52875 | 66 μH  |\n|  5004 | 4822 157 52874 | 12.5 μH  |\n|  5006 | 4822 156 10995 | 10 μH  |\n|  5007 | 5322 156 21341 | 10 μH  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 624,
+      "bottomRightX": 974,
+      "bottomRightY": 632,
+      "content": "2012",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 632,
+      "bottomRightX": 806,
+      "bottomRightY": 640,
+      "content": "Potentiometers",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 747,
+      "topLeftY": 640,
+      "bottomRightX": 886,
+      "bottomRightY": 682,
+      "content": "|  3015 | 4822 100 10359 | 220 Ω  |\n| --- | --- | --- |\n|  3045 | 5322 101 14066 | 10 kΩ  |\n|  3080 | 5322 100 10117 | 2.2 kΩ  |\n|  3082 | 5322 100 10117 | 2.2 kΩ  |\n|  3084 | 5322 100 10117 | 2.2 kΩ  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 633,
+      "bottomRightX": 974,
+      "bottomRightY": 640,
+      "content": "2013",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 640,
+      "bottomRightX": 974,
+      "bottomRightY": 648,
+      "content": "2014",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 648,
+      "bottomRightX": 974,
+      "bottomRightY": 656,
+      "content": "2015",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 656,
+      "bottomRightX": 974,
+      "bottomRightY": 664,
+      "content": "2016",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 664,
+      "bottomRightX": 974,
+      "bottomRightY": 672,
+      "content": "2017",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 672,
+      "bottomRightX": 974,
+      "bottomRightY": 680,
+      "content": "2018",
+      "confidenceScores": null,
+      "type": "caption"
+    }
+  ]
+}

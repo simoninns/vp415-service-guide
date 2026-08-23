@@ -1,0 +1,49 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 114,
+      "topLeftY": 33,
+      "bottomRightX": 243,
+      "bottomRightY": 42,
+      "content": "APPLICATION OF SERVICE TOOLS",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 44,
+      "bottomRightX": 555,
+      "bottomRightY": 668,
+      "content": "![img-23.jpeg](img-23.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-23.jpeg"
+    },
+    {
+      "topLeftX": 557,
+      "topLeftY": 44,
+      "bottomRightX": 995,
+      "bottomRightY": 668,
+      "content": "![img-24.jpeg](img-24.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-24.jpeg"
+    },
+    {
+      "topLeftX": 960,
+      "topLeftY": 684,
+      "bottomRightX": 996,
+      "bottomRightY": 693,
+      "content": "CS 7 826",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

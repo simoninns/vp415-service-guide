@@ -1,0 +1,337 @@
+{
+  "index": 39,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 73,
+      "topLeftY": 31,
+      "bottomRightX": 277,
+      "bottomRightY": 44,
+      "content": "The following Group 0 commands are supported:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 53,
+      "bottomRightX": 263,
+      "bottomRightY": 147,
+      "content": "|  Byte 0 (operation code) | Command name  |\n| --- | --- |\n|  00H | Test unit ready  |\n|  01H | Rezero unit  |\n|  08H | Read  |\n|  0AH | Write  |\n|  1BH | Start/Stop unit  |\n|  03H | Request sense  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 146,
+      "bottomRightX": 157,
+      "bottomRightY": 159,
+      "content": "# 00H Test unit ready",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 165,
+      "bottomRightX": 364,
+      "bottomRightY": 203,
+      "content": "Allows the initiator to verify that the player is running, the disc is logged in, and that the player is ready for commands from the initiator through the logic unit selected by the host.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 204,
+      "bottomRightX": 364,
+      "bottomRightY": 254,
+      "content": "If the volume associated to that logic unit is open then the status byte returned will be 0. If the logic unit is not open, or the target is not ready, the status byte will be 02H. More detailed information can be obtained using a Request sense command (03H).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 265,
+      "bottomRightX": 145,
+      "bottomRightY": 276,
+      "content": "# 01H Rezero unit",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 283,
+      "bottomRightX": 365,
+      "bottomRightY": 322,
+      "content": "Displays the logical picture zero of the volume that is accessed through the logic unit number of the command. If successful, the status returned is 0; otherwise the status returned is 02H.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 332,
+      "bottomRightX": 118,
+      "bottomRightY": 344,
+      "content": "# 08H Read",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 351,
+      "bottomRightX": 365,
+      "bottomRightY": 440,
+      "content": "Allows the initiator to read blocks of data from the disc. The block number of the first block to be read is a logical block address, and is relative to the beginning of the data of the selected volume. There is an offset between the logical blocks within a volume and the physical blocks on the disc. This offset is added by LV-DOS to the logical block address, thus making the physical location of a volume on a disc transparent to the initiator.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 441,
+      "bottomRightX": 365,
+      "bottomRightY": 491,
+      "content": "If successful, a status of 0 is returned; otherwise 02H is returned. A subsequent Request sense data command reveals more information such as 'unit not ready' or 'media error'. A data in phase is required to read the logical block(s).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 492,
+      "bottomRightX": 365,
+      "bottomRightY": 554,
+      "content": "In search mode R1 (see later in this section) this command causes the video to switch off, since after a search the system will stop at a random picture. The video will also be switched off if the requested data is in cache. In search mode R0 the video is only muted during data retrieval, after which the previous displayed picture is shown.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 565,
+      "bottomRightX": 124,
+      "bottomRightY": 576,
+      "content": "# 0AH Write",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 583,
+      "bottomRightX": 366,
+      "bottomRightY": 711,
+      "content": "The Write command is implemented so that the system may be used with operating systems that perform, for example, time and date stamping on file level when a file has been accessed. To prevent error messages from the operating system, write commands are implemented as dummy write commands without data being written to a medium. Consequently communication is enabled with operating systems with drivers for read/write media without patching of the operating system. If successful, a status of 0 is returned; otherwise 02H is returned. A data out phase is required unless the number of data blocks specified in the command is zero.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 721,
+      "bottomRightX": 161,
+      "bottomRightY": 735,
+      "content": "# 1BH Start/Stop-unit",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 741,
+      "bottomRightX": 360,
+      "bottomRightY": 754,
+      "content": "Bit 0 of byte 1 = 1. Bit 0 of byte 4 = 1 for Start-unit and 0 for Stop-unit.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 766,
+      "bottomRightX": 366,
+      "bottomRightY": 843,
+      "content": "In response to the Stop-unit command, the disc is logged off, volumes close down, and the player goes into the standby mode. All switches are reset to their default conditions e.g. front panel controls enabled, etc. The Stop-unit command is always executed without error status. An additional 'Eject' command is required if the disc has to be changed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 855,
+      "bottomRightX": 367,
+      "bottomRightY": 920,
+      "content": "The Start-unit command logs a disc on to LV-DOS and as such gives a means to perform a disc reset to default. Logging on means that the system table will be read from the disc and that volumes are opened. If the Start-unit command is successful, the status byte is 0; otherwise the status byte is 02H (sense key = 2 for 'unit not ready').",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 32,
+      "bottomRightX": 697,
+      "bottomRightY": 122,
+      "content": "If the disc has been replaced, or a Stop-unit command issued, then a Start-unit command must be issued to ensure that LV-DOS is logged on. If for any reason the Start-unit command fails, LV-DOS will respond with a 'check condition' status byte and a Request sense command will have either sense key = 02 (unit not ready) if the drive is physically not ready, or sense key = 03 (media error) if the drive is spinning but no data can be read from the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 133,
+      "bottomRightX": 697,
+      "bottomRightY": 185,
+      "content": "It is mandatory that these commands are used if the media has to be changed. They can be issued to any logic unit, open or closed. The Test unit ready command can be used to determine whether the player is ready with the disc running or not.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 195,
+      "bottomRightX": 486,
+      "bottomRightY": 208,
+      "content": "# 03H Request sense",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 214,
+      "bottomRightX": 697,
+      "bottomRightY": 252,
+      "content": "Allows the initiator to obtain more detailed information about the execution of the previous command to the specified logic unit, regardless of whether it was successful or not.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 253,
+      "bottomRightX": 697,
+      "bottomRightY": 329,
+      "content": "If a command is executed for a specified logic unit, the relevant sense information is stored and will be available for a subsequent Request sense command for that logic unit only. In other words, separate sense data is maintained for each logic unit. This command can be issued to any logic unit, open or closed. It will always be executed without error status. A data in phase is required to read the sense data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 342,
+      "bottomRightX": 697,
+      "bottomRightY": 367,
+      "content": "The fourth command byte specifies the allocation length for the sense data in the host; this byte should be set to zero.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 377,
+      "bottomRightX": 648,
+      "bottomRightY": 391,
+      "content": "Non-extended sense data (length 4 bytes) will be returned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 401,
+      "bottomRightX": 463,
+      "bottomRightY": 412,
+      "content": "# Data format:",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 425,
+      "bottomRightX": 699,
+      "bottomRightY": 576,
+      "content": "|   | (MS bit) |   | (LS bit)  |   |\n| --- | --- | --- | --- | --- |\n|  Byte | 7 | 6 | 5 | 4  |\n|  0 | Valid | Error class (0) | Error code  |   |\n|  1 | Logic unit number |   | Logical block address (MSB)  |   |\n|  2 | Logical block address  |   |   |   |\n|  3 | Logical block address (LSB)  |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 590,
+      "bottomRightX": 699,
+      "bottomRightY": 617,
+      "content": "The valid bit is 1 if the logical block address bytes are valid (indicating the block where the error occurred).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 629,
+      "bottomRightX": 627,
+      "bottomRightY": 642,
+      "content": "LV-DOS supports the following error codes (in hex):",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 655,
+      "bottomRightX": 537,
+      "bottomRightY": 743,
+      "content": "0 No error\n2 Unit not ready\n3 Media error\n4 Hardware error\n5 Illegal request\nB Command aborted\nD Volume exceeded",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 754,
+      "bottomRightX": 461,
+      "bottomRightY": 766,
+      "content": "# 0 No error",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 773,
+      "bottomRightX": 694,
+      "bottomRightY": 787,
+      "content": "No error means that the previous command was carried out correctly.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 796,
+      "bottomRightX": 485,
+      "bottomRightY": 809,
+      "content": "# 2 Unit not ready",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 815,
+      "bottomRightX": 699,
+      "bottomRightY": 868,
+      "content": "Unit not ready means that there is no volume associated with the specified logic unit after a Test unit ready, Read or Write command. This reply will also occur after a Start-unit command has failed because the drive is physically not ready (no disc, not spinning etc.).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 877,
+      "bottomRightX": 474,
+      "bottomRightY": 889,
+      "content": "# 3 Media error",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 896,
+      "bottomRightX": 699,
+      "bottomRightY": 936,
+      "content": "Media error occurs if it is not possible to read data from the disc, either after a Start-unit command when the disc is CLV or CAV without digital data, or when it is attempted to read from a logged on disc of the",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 969,
+      "bottomRightX": 87,
+      "bottomRightY": 979,
+      "content": "39",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

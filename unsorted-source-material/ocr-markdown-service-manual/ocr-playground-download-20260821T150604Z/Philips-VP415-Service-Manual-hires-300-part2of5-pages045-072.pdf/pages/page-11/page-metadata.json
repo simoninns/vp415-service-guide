@@ -1,0 +1,39 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 198,
+      "topLeftY": 46,
+      "bottomRightX": 983,
+      "bottomRightY": 72,
+      "content": "0001 0 0 2008 0 0 2011 0 0 2010 0 0 2007 0 1 2006 0 0 2001 0 1 2000 0 0 2004 0 0 2003 0 0 2002 0 0 2003 0 0 2004 0 0 2003 0 0 2004 0 0 2003 0 0 2004 0 0 2003 0 0 2004 0 0 2003 0 0 2004 0 0 2003 0 0 2004 0 0 2003 0 1 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 1 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004 0 0 2004",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 193,
+      "topLeftY": 81,
+      "bottomRightX": 997,
+      "bottomRightY": 457,
+      "content": "![img-21.jpeg](img-21.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-21.jpeg"
+    },
+    {
+      "topLeftX": 958,
+      "topLeftY": 691,
+      "bottomRightX": 994,
+      "bottomRightY": 700,
+      "content": "CS 6 877",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 19,
+      "topLeftY": 86,
+      "bottomRightX": 102,
+      "bottomRightY": 98,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 110,
+      "bottomRightX": 76,
+      "bottomRightY": 121,
+      "content": "# 1. General",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 122,
+      "bottomRightX": 303,
+      "bottomRightY": 147,
+      "content": "For each module an adjustment procedure is given for components that are replaced during repair.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 147,
+      "bottomRightX": 303,
+      "bottomRightY": 194,
+      "content": "If an entire module is replaced, in principle adjustment should not take place, with the exception of HF PROC module K, VIDEO DO CORR module L and ANALOG I/O module U.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 194,
+      "bottomRightX": 280,
+      "bottomRightY": 220,
+      "content": "Module K : in case of replacement, adjust R3043 (video ampl.)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 33,
+      "topLeftY": 229,
+      "bottomRightX": 303,
+      "bottomRightY": 245,
+      "content": "Module L : in case of replacement, adjust R3050 (MTF)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 33,
+      "topLeftY": 254,
+      "bottomRightX": 308,
+      "bottomRightY": 280,
+      "content": "Module U : in case of replacement, adjust R3305 (R-Y gain) and R3315 (B-Y gain).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 33,
+      "topLeftY": 289,
+      "bottomRightX": 302,
+      "bottomRightY": 316,
+      "content": "Module B : in case of replacement, adjust R3305 and R3315 on Analog I/O module U.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 326,
+      "bottomRightX": 302,
+      "bottomRightY": 386,
+      "content": "When module H, K, L or Z is replaced, it is advisable to check the CVBS OUT signal (NOT ENCODED) on BNC3 for correct amplitude and correct VITS signals MBI and MBIV. The CVBS OUT signal is described in adjustment 1 of Ananlog I/O module U.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 386,
+      "bottomRightX": 303,
+      "bottomRightY": 411,
+      "content": "The VITS signals are described in adjustment 2 of Video D.O. Corr. module L.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 422,
+      "bottomRightX": 213,
+      "bottomRightY": 436,
+      "content": "For amplitude adjustments see Fig 2.1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 446,
+      "bottomRightX": 308,
+      "bottomRightY": 483,
+      "content": "The adjustments take place without connection of a computer (video overlay) or external video source, unless stated otherwise.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 494,
+      "bottomRightX": 80,
+      "bottomRightY": 506,
+      "content": "# 2. Required",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 506,
+      "bottomRightX": 295,
+      "bottomRightY": 530,
+      "content": "To perform the adjustments the following equipment is required:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 48,
+      "topLeftY": 531,
+      "bottomRightX": 274,
+      "bottomRightY": 566,
+      "content": "Test disc 6\" or 8\"\n- Dual-beam scope with Delayed Timebase If available: - vector scope or",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 122,
+      "topLeftY": 567,
+      "bottomRightX": 295,
+      "bottomRightY": 602,
+      "content": "- dual-beam scope with X-deflection via B-channel (e.g. PM3226P)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 48,
+      "topLeftY": 603,
+      "bottomRightX": 308,
+      "bottomRightY": 639,
+      "content": "- Scope probes with 1:10 attenuator, preferable FET probes or probes with a capacitance \\(< 3\\mathrm{pF}\\)\n- BNC 75Ω terminator (4822 263 60037).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 995,
+      "bottomRightX": 61,
+      "bottomRightY": 1007,
+      "content": "CS 7 821",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

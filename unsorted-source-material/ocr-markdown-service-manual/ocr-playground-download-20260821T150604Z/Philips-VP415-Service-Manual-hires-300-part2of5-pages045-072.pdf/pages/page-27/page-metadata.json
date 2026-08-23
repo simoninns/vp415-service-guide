@@ -1,0 +1,768 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 332,
+      "topLeftY": 37,
+      "bottomRightX": 426,
+      "bottomRightY": 51,
+      "content": "# SUPPLY MODULE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 444,
+      "topLeftY": 36,
+      "bottomRightX": 460,
+      "bottomRightY": 51,
+      "content": "1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 400,
+      "topLeftY": 54,
+      "bottomRightX": 456,
+      "bottomRightY": 64,
+      "content": "(MOD LEVEL 1)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 63,
+      "bottomRightX": 312,
+      "bottomRightY": 71,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 80,
+      "bottomRightX": 289,
+      "bottomRightY": 89,
+      "content": "Required",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 89,
+      "bottomRightX": 288,
+      "bottomRightY": 96,
+      "content": "Test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 97,
+      "bottomRightX": 289,
+      "bottomRightY": 105,
+      "content": "Voltmeter",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 114,
+      "bottomRightX": 337,
+      "bottomRightY": 122,
+      "content": "Adjustment conditions",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 123,
+      "bottomRightX": 302,
+      "bottomRightY": 132,
+      "content": "Rotating disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 139,
+      "bottomRightX": 301,
+      "bottomRightY": 148,
+      "content": "# Adjustments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 467,
+      "topLeftY": 149,
+      "bottomRightX": 1010,
+      "bottomRightY": 455,
+      "content": "![img-51.jpeg](img-51.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-51.jpeg"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 155,
+      "bottomRightX": 332,
+      "bottomRightY": 164,
+      "content": "1) R503 (DC Voltage)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 164,
+      "bottomRightX": 400,
+      "bottomRightY": 173,
+      "content": "-Measure the DC voltage on 3T2 (+5)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 173,
+      "bottomRightX": 375,
+      "bottomRightY": 182,
+      "content": "-Adjust R503 for 5.2V (±0.1V)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 196,
+      "bottomRightX": 405,
+      "bottomRightY": 205,
+      "content": "# LIST OF ELECTRICAL PARTS MODULE T",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 214,
+      "bottomRightX": 278,
+      "bottomRightY": 222,
+      "content": "Fuses",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 222,
+      "bottomRightX": 385,
+      "bottomRightY": 230,
+      "content": "F911 4822 253 30024 1.6 A",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 231,
+      "bottomRightX": 385,
+      "bottomRightY": 239,
+      "content": "F912 4822 253 30024 1.6 A",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 239,
+      "bottomRightX": 389,
+      "bottomRightY": 247,
+      "content": "F913 4822 253 10048 3.15 A",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 255,
+      "bottomRightX": 283,
+      "bottomRightY": 263,
+      "content": "Circuits",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 264,
+      "bottomRightX": 442,
+      "bottomRightY": 272,
+      "content": "D501 5322 209 82349 Hybride circuit SMPS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 280,
+      "bottomRightX": 281,
+      "bottomRightY": 288,
+      "content": "Diodes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 289,
+      "bottomRightX": 430,
+      "bottomRightY": 297,
+      "content": "V001 4822 130 50438 Rectifier KBU8-K",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 306,
+      "bottomRightX": 304,
+      "bottomRightY": 314,
+      "content": "Transformers",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 314,
+      "bottomRightX": 398,
+      "bottomRightY": 322,
+      "content": "T101 5322 146 40322 aux trafo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 323,
+      "bottomRightX": 408,
+      "bottomRightY": 330,
+      "content": "T201 5322 142 60363 impuls trafo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 331,
+      "bottomRightX": 409,
+      "bottomRightY": 339,
+      "content": "T401 4822 142 70056 current trafo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 339,
+      "bottomRightX": 407,
+      "bottomRightY": 347,
+      "content": "T901 5322 146 30531 power trafo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 356,
+      "bottomRightX": 274,
+      "bottomRightY": 363,
+      "content": "Coils",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 364,
+      "bottomRightX": 391,
+      "bottomRightY": 372,
+      "content": "L001 4822 157 52981 350 µH",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 372,
+      "bottomRightX": 411,
+      "bottomRightY": 380,
+      "content": "L002 4822 158 30208 Mains choke",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 381,
+      "bottomRightX": 410,
+      "bottomRightY": 389,
+      "content": "L701 4822 157 52979 Triple choke",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 397,
+      "bottomRightX": 310,
+      "bottomRightY": 405,
+      "content": "Potentiometers",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 406,
+      "bottomRightX": 384,
+      "bottomRightY": 414,
+      "content": "R402 4822 101 10793 5 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 415,
+      "bottomRightX": 384,
+      "bottomRightY": 422,
+      "content": "R503 4822 101 10792 1 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 431,
+      "bottomRightX": 307,
+      "bottomRightY": 438,
+      "content": "NTC Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 439,
+      "bottomRightX": 379,
+      "bottomRightY": 447,
+      "content": "R001 5322 116 40077 7 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 456,
+      "bottomRightX": 307,
+      "bottomRightY": 464,
+      "content": "PTC Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 465,
+      "bottomRightX": 409,
+      "bottomRightY": 472,
+      "content": "R801 4822 116 40032 2.3 Ω - 5 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 481,
+      "bottomRightX": 335,
+      "bottomRightY": 489,
+      "content": "Wire wound Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 490,
+      "bottomRightX": 384,
+      "bottomRightY": 497,
+      "content": "R201 4822 112 41107 1 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 507,
+      "bottomRightX": 315,
+      "bottomRightY": 514,
+      "content": "NFR25 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 515,
+      "bottomRightX": 388,
+      "bottomRightY": 522,
+      "content": "R101 4822 111 30544 220 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 523,
+      "bottomRightX": 384,
+      "bottomRightY": 530,
+      "content": "R202 4822 111 30526 47 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 531,
+      "bottomRightX": 384,
+      "bottomRightY": 539,
+      "content": "R301 4822 111 30499 4.7 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 540,
+      "bottomRightX": 384,
+      "bottomRightY": 547,
+      "content": "R701 4822 111 30526 47 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 548,
+      "bottomRightX": 384,
+      "bottomRightY": 556,
+      "content": "R702 4822 111 30526 47 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 557,
+      "bottomRightX": 384,
+      "bottomRightY": 565,
+      "content": "R706 4822 111 30526 47 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 573,
+      "bottomRightX": 310,
+      "bottomRightY": 581,
+      "content": "VR25 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 582,
+      "bottomRightX": 387,
+      "bottomRightY": 590,
+      "content": "R901 5322 116 64132 1 MΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 599,
+      "bottomRightX": 310,
+      "bottomRightY": 606,
+      "content": "PR37 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 607,
+      "bottomRightX": 384,
+      "bottomRightY": 615,
+      "content": "R703 5322 116 55063 39 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 615,
+      "bottomRightX": 384,
+      "bottomRightY": 623,
+      "content": "R704 5322 116 54909 1 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 624,
+      "bottomRightX": 384,
+      "bottomRightY": 632,
+      "content": "R707 5322 116 54909 1 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 640,
+      "bottomRightX": 310,
+      "bottomRightY": 648,
+      "content": "PR52 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 649,
+      "bottomRightX": 384,
+      "bottomRightY": 657,
+      "content": "R203 5322 116 51093 15 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 665,
+      "bottomRightX": 310,
+      "bottomRightY": 673,
+      "content": "VR68 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 674,
+      "bottomRightX": 392,
+      "bottomRightY": 682,
+      "content": "R103 5322 116 53075 220 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 472,
+      "bottomRightX": 640,
+      "bottomRightY": 480,
+      "content": "C001 4822 122 33042 3.3 nF",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 481,
+      "bottomRightX": 640,
+      "bottomRightY": 489,
+      "content": "C002 4822 122 33042 3.3 nF",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 490,
+      "bottomRightX": 685,
+      "bottomRightY": 497,
+      "content": "C004 5322 121 41721 470 nF 10% 275 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 498,
+      "bottomRightX": 685,
+      "bottomRightY": 506,
+      "content": "C006 5322 124 21798 220 µF 10% 200 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 507,
+      "bottomRightX": 685,
+      "bottomRightY": 515,
+      "content": "C007 5322 124 21798 220 µF 10% 200 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 515,
+      "bottomRightX": 685,
+      "bottomRightY": 523,
+      "content": "C101 4822 124 10367 4.7 µF 25 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 524,
+      "bottomRightX": 685,
+      "bottomRightY": 532,
+      "content": "C102 4822 121 40483 10 nF 10% 400 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 532,
+      "bottomRightX": 685,
+      "bottomRightY": 540,
+      "content": "C103 4822 122 31125 4.7 nF 100 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 541,
+      "bottomRightX": 685,
+      "bottomRightY": 549,
+      "content": "C104 4822 124 40744 68 µF 40 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 550,
+      "bottomRightX": 685,
+      "bottomRightY": 557,
+      "content": "C201 5322 121 44286 1 nF 10% 630 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 558,
+      "bottomRightX": 685,
+      "bottomRightY": 566,
+      "content": "C202 5322 121 44286 1 nF 10% 630 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 567,
+      "bottomRightX": 685,
+      "bottomRightY": 575,
+      "content": "C301 4822 121 40516 22 nF 10% 250 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 575,
+      "bottomRightX": 685,
+      "bottomRightY": 583,
+      "content": "C501 5322 121 40308 22 nF 10% 400 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 584,
+      "bottomRightX": 685,
+      "bottomRightY": 592,
+      "content": "C502 4822 121 40232 220 nF 10% 100 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 592,
+      "bottomRightX": 685,
+      "bottomRightY": 600,
+      "content": "C503 4822 121 40232 220 nF 10% 100 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 601,
+      "bottomRightX": 685,
+      "bottomRightY": 609,
+      "content": "C504 4822 122 30103 22 nF 63 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 610,
+      "bottomRightX": 685,
+      "bottomRightY": 617,
+      "content": "C506 4822 124 21314 10 µF 16 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 618,
+      "bottomRightX": 685,
+      "bottomRightY": 625,
+      "content": "C701 4822 121 40337 4.7 nF 10% 630 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 625,
+      "bottomRightX": 685,
+      "bottomRightY": 633,
+      "content": "C702 4822 121 40338 2.2 nF 10% 630 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 634,
+      "bottomRightX": 685,
+      "bottomRightY": 642,
+      "content": "C703 4822 124 40723 2.2 mF 16 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 643,
+      "bottomRightX": 685,
+      "bottomRightY": 650,
+      "content": "C704 4822 124 40723 2.2 mF 16 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 651,
+      "bottomRightX": 685,
+      "bottomRightY": 658,
+      "content": "C706 4822 121 40338 2.2 nF 10% 630 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 659,
+      "bottomRightX": 685,
+      "bottomRightY": 666,
+      "content": "C707 4822 124 40723 2.2 mF 16 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 667,
+      "bottomRightX": 685,
+      "bottomRightY": 675,
+      "content": "C801 5322 124 14081 6.8 µF 25 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 506,
+      "topLeftY": 675,
+      "bottomRightX": 685,
+      "bottomRightY": 683,
+      "content": "C802 5322 124 14081 6.8 µF 25 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 26,
+      "topLeftY": 690,
+      "bottomRightX": 60,
+      "bottomRightY": 698,
+      "content": "CS 7 853",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

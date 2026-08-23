@@ -1,0 +1,113 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 291,
+      "topLeftY": 44,
+      "bottomRightX": 437,
+      "bottomRightY": 59,
+      "content": "SLIDE DRIVE MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 478,
+      "topLeftY": 43,
+      "bottomRightX": 493,
+      "bottomRightY": 61,
+      "content": "E",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 428,
+      "topLeftY": 63,
+      "bottomRightX": 490,
+      "bottomRightY": 73,
+      "content": "(MOD LEVEL 3)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 513,
+      "topLeftY": 51,
+      "bottomRightX": 865,
+      "bottomRightY": 267,
+      "content": "![img-58.jpeg](img-58.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-58.jpeg"
+    },
+    {
+      "topLeftX": 513,
+      "topLeftY": 284,
+      "bottomRightX": 865,
+      "bottomRightY": 512,
+      "content": "![img-59.jpeg](img-59.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-59.jpeg"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 536,
+      "bottomRightX": 441,
+      "bottomRightY": 546,
+      "content": "LIST OF ELECTRICAL PARTS MODULE E",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 553,
+      "bottomRightX": 353,
+      "bottomRightY": 562,
+      "content": "NFR25 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 562,
+      "bottomRightX": 416,
+      "bottomRightY": 571,
+      "content": "3026 4822 111 30483 1 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 290,
+      "topLeftY": 571,
+      "bottomRightX": 416,
+      "bottomRightY": 580,
+      "content": "3027 4822 111 30483 1 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 513,
+      "topLeftY": 537,
+      "bottomRightX": 723,
+      "bottomRightY": 572,
+      "content": "|  2001 | 4822 122 30053 | 680 pF | 100 V  |\n| --- | --- | --- | --- |\n|  2002 | 4822 121 50959 | 3.9 nF | 63 V  |\n|  2007 | 4822 124 22027 | 47 μF | 25 V  |\n|  2008 | 4822 124 22027 | 47 μF | 25 V  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 699,
+      "bottomRightX": 98,
+      "bottomRightY": 708,
+      "content": "CS 7 841",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

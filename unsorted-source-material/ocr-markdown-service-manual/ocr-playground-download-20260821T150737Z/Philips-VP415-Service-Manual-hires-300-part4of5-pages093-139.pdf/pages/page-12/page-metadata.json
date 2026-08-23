@@ -1,0 +1,86 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 118,
+      "topLeftY": 63,
+      "bottomRightX": 237,
+      "bottomRightY": 81,
+      "content": "# FRONTLOADER",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 71,
+      "bottomRightX": 543,
+      "bottomRightY": 457,
+      "content": "![img-18.jpeg](img-18.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-18.jpeg"
+    },
+    {
+      "topLeftX": 543,
+      "topLeftY": 63,
+      "bottomRightX": 965,
+      "bottomRightY": 623,
+      "content": "![img-19.jpeg](img-19.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-19.jpeg"
+    },
+    {
+      "topLeftX": 393,
+      "topLeftY": 453,
+      "bottomRightX": 563,
+      "bottomRightY": 687,
+      "content": "![img-20.jpeg](img-20.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-20.jpeg"
+    },
+    {
+      "topLeftX": 920,
+      "topLeftY": 636,
+      "bottomRightX": 961,
+      "bottomRightY": 645,
+      "content": "EVA 00180",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 920,
+      "topLeftY": 646,
+      "bottomRightX": 961,
+      "bottomRightY": 655,
+      "content": "VP410/415",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 920,
+      "topLeftY": 655,
+      "bottomRightX": 951,
+      "bottomRightY": 664,
+      "content": "T28/716",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 958,
+      "topLeftY": 698,
+      "bottomRightX": 995,
+      "bottomRightY": 708,
+      "content": "CS 7 865",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

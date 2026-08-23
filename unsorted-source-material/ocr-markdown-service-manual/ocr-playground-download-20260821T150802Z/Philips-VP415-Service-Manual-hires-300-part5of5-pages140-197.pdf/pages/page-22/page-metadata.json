@@ -1,0 +1,365 @@
+{
+  "index": 21,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 690,
+      "topLeftY": 55,
+      "bottomRightX": 706,
+      "bottomRightY": 67,
+      "content": "35",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 69,
+      "bottomRightX": 185,
+      "bottomRightY": 83,
+      "content": "### LV-ROM decoder",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 88,
+      "bottomRightX": 384,
+      "bottomRightY": 126,
+      "content": "The LV-ROM decoder accepts the signal from module Z (HFOUT2). This signal is of sinusoidal form and carries digital data for the host computer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 126,
+      "bottomRightX": 384,
+      "bottomRightY": 162,
+      "content": "The data rate is 4.3218 mbits/sec but owing to the protection overhead carried the useable data rate is 153.6 kbytes/sec.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 162,
+      "bottomRightX": 384,
+      "bottomRightY": 198,
+      "content": "The family of IC's used in the LV-ROM decoder is common to the Compact Disc system and so is organised to output data in 16 bit words on two channels.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 198,
+      "bottomRightX": 384,
+      "bottomRightY": 257,
+      "content": "Data is output in serial form as - left (DLCF) and right (DRCF) with appropriate timing signals - Bit clock (CLCF), Byte clock (STR2) and word clock (STR1). This latter references 16 bit values which are the basic units in Compact Disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 257,
+      "bottomRightX": 384,
+      "bottomRightY": 282,
+      "content": "In addition LV-ROM outputs error flags (ELCF, ERCF) to indicate if uncorrected errors remain in the data.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 250,
+      "topLeftY": 311,
+      "bottomRightX": 364,
+      "bottomRightY": 322,
+      "content": "LV-ROM DECODER MODULE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 95,
+      "topLeftY": 334,
+      "bottomRightX": 389,
+      "bottomRightY": 492,
+      "content": "![img-36.jpeg](img-36.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-36.jpeg"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 524,
+      "bottomRightX": 189,
+      "bottomRightY": 538,
+      "content": "### Circuit description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 542,
+      "bottomRightX": 384,
+      "bottomRightY": 603,
+      "content": "The incoming signal from the deck is amplified (Ts6701, 6702, 6703, 6706) to give the required input level (1vpp.) then applied to the input of DEMOD (DEMODulator) IC6501. The signal is also applied to the HF level detector (Ts6530, 6531, IC6508).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 603,
+      "bottomRightX": 384,
+      "bottomRightY": 641,
+      "content": "When the signal is of adequate amplitude HFL, from 6508.14 enables DEMOD. This occurs when the signal is greater than 0.65Vpp.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 650,
+      "bottomRightX": 298,
+      "bottomRightY": 663,
+      "content": "The functions of DEMOD are as follows :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 666,
+      "bottomRightX": 384,
+      "bottomRightY": 729,
+      "content": "- a) To regenerate a bit clock in synchronism with the bit rate from the disc.\n- b) To demodulate the data. (On the disc each byte is represented as a 14 bit word.)\n- c) To output the data with corresponding timing signals.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 738,
+      "bottomRightX": 384,
+      "bottomRightY": 763,
+      "content": "The bit clock is formed as a phase locked loop with varicap diode 6540 as the control element.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 773,
+      "bottomRightX": 221,
+      "bottomRightY": 788,
+      "content": "### Signals from DEMOD are",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 792,
+      "bottomRightX": 139,
+      "bottomRightY": 804,
+      "content": "Table X2",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 807,
+      "bottomRightX": 352,
+      "bottomRightY": 871,
+      "content": "|  DADE | Data DEMOD to ERCO  |\n| --- | --- |\n|  FSDE | Frame sync DEMOD to ERCO  |\n|  SSDE | Symbol (8 bit) sync DEMOD to ERCO  |\n|  CLDE | Bit clock DEMOD to ERCO  |\n|  CRI | Mutes ERCO if no data present  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 880,
+      "bottomRightX": 382,
+      "bottomRightY": 905,
+      "content": "ERCO provides de-interleaving of the data, error detection, and error correction of up to two error bits in any word.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 905,
+      "bottomRightX": 382,
+      "bottomRightY": 941,
+      "content": "De-interleaving is achieved by storing the data as recieved from DEMOD in buffer RAM 6502 then picking out in the correct order.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 941,
+      "bottomRightX": 381,
+      "bottomRightY": 965,
+      "content": "Uncorrected errors are flagged on pin 36 of ERCO as UNEC (UNcorrected errors ERCO to CIM).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 91,
+      "topLeftY": 965,
+      "bottomRightX": 284,
+      "bottomRightY": 977,
+      "content": "The parity bits are discarded in ERCO.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 71,
+      "bottomRightX": 557,
+      "bottomRightY": 86,
+      "content": "### The signals from ERCO are",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 90,
+      "bottomRightX": 463,
+      "bottomRightY": 102,
+      "content": "Table X3",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 105,
+      "bottomRightX": 636,
+      "bottomRightY": 155,
+      "content": "|  DAEC | Data ERCO to CIM  |\n| --- | --- |\n|  UNEC | Unreliable data ERCO to CIM  |\n|  CLEC | Bit clock ERCO to CIM  |\n|  FSEC | Frame sync ERCO to CIM  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 413,
+      "topLeftY": 165,
+      "bottomRightX": 706,
+      "bottomRightY": 191,
+      "content": "CLOX is the master clock from CIM to ERCO which determines the rate at which data is read from RAM 6502.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 413,
+      "topLeftY": 202,
+      "bottomRightX": 706,
+      "bottomRightY": 250,
+      "content": "CIM (Concealment, Interpolation and Muting) separates the data into left and right streams (DLCF, DRCF) and again provides the necessary timing signals STR1, STR2, CLCF (Bit clock).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 413,
+      "topLeftY": 250,
+      "bottomRightX": 706,
+      "bottomRightY": 275,
+      "content": "There are other functions built into CIM for the Compact Disc system which are not used in this application.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 285,
+      "bottomRightX": 515,
+      "bottomRightY": 298,
+      "content": "### UNEC descrambler",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 413,
+      "topLeftY": 304,
+      "bottomRightX": 706,
+      "bottomRightY": 340,
+      "content": "The error flags from ERCO do not correspond in time with the data leaving CIM. To restore the correct time relationship a further SAA7000 (CIM) is used, IC6604.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 340,
+      "bottomRightX": 667,
+      "bottomRightY": 353,
+      "content": "IC6604 provides error flags for both data streams.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 413,
+      "topLeftY": 363,
+      "bottomRightX": 565,
+      "bottomRightY": 376,
+      "content": "Data- DLCF error flags ELCF.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 376,
+      "bottomRightX": 568,
+      "bottomRightY": 388,
+      "content": "Data- DRCF error flags ERCF.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 414,
+      "topLeftY": 398,
+      "bottomRightX": 517,
+      "bottomRightY": 413,
+      "content": "### Frequency of CLOX",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 412,
+      "topLeftY": 417,
+      "bottomRightX": 706,
+      "bottomRightY": 489,
+      "content": "In the Compact Disc application of this chip set the bit clock (DEMOD) runs in lock with the data from the disc which itself runs at a continually varying speed. CLOX determines the sample play rate and operates as a fixed frequency master clock. The disc is driven at a rate to maintain the contents of RAM 6512.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 412,
+      "topLeftY": 489,
+      "bottomRightX": 706,
+      "bottomRightY": 526,
+      "content": "In this Laservision application the disc (CAV) is driven at a constant controlled speed which may be locked to an outside reference by Genlock.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 412,
+      "topLeftY": 526,
+      "bottomRightX": 706,
+      "bottomRightY": 548,
+      "content": "CIOX therefore must run in sync with the data rate from the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 412,
+      "topLeftY": 549,
+      "bottomRightX": 706,
+      "bottomRightY": 647,
+      "content": "Provision is made to pull CLOX to the precise frequency by varicap diode 6606. The control voltage for 6606 is developed from MCES (motor control error signal from ERCO). MCES is a variable mark/space ratio signal. The mark/space ratio is determined in ERCO by the difference between the bit clock (CLDE) and CLOX. MCES is integrated by IC6602-2a and controls 6606 via 6602-2b. D6605 limits the excursions to protect 6606.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 652,
+      "topLeftY": 986,
+      "bottomRightX": 701,
+      "bottomRightY": 999,
+      "content": "CS 7 907",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,263 @@
+{
+  "index": 15,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 24,
+      "topLeftY": 56,
+      "bottomRightX": 138,
+      "bottomRightY": 69,
+      "content": "# Repair Method VP415",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 24,
+      "topLeftY": 81,
+      "bottomRightX": 102,
+      "bottomRightY": 93,
+      "content": "# 1. Introduction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 104,
+      "bottomRightX": 316,
+      "bottomRightY": 225,
+      "content": "The object of this repair method is to facilitate faultfinding in a defective set for the service technician. The method is set up in such a way that the fault diagnosis in a set under repair is made via a test procedure. In this test procedure several operations should be carried out sequentially and decisions should be made on various points. Via a yes/no decision, the technician is led to a defective module or part of it. A central role in the repair method is played by the Diagnostic Software, which has been implemented in the Drive Processor.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 249,
+      "bottomRightX": 143,
+      "bottomRightY": 262,
+      "content": "# 2. Diagnostic Software",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 273,
+      "bottomRightX": 316,
+      "bottomRightY": 322,
+      "content": "In the control of the various functions in the set, an important role is played by Drive Processor module R. For this reason the diagnostic software forms an integral part of the drive software of this module.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 333,
+      "bottomRightX": 76,
+      "bottomRightY": 346,
+      "content": "# a. Set-up",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 35,
+      "topLeftY": 357,
+      "bottomRightX": 316,
+      "bottomRightY": 418,
+      "content": "The diagnostic software has been integrated in the drive software in such a way that many of the tasks of the drive are checked for proper performance. If a fault is detected in the execution of a task, an error code is shown on the screen as video overlay.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 418,
+      "bottomRightX": 280,
+      "bottomRightY": 432,
+      "content": "The error code meets the following priority rule:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 49,
+      "topLeftY": 441,
+      "bottomRightX": 134,
+      "bottomRightY": 453,
+      "content": "1 - 30 fatal fault",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 454,
+      "bottomRightX": 141,
+      "bottomRightY": 466,
+      "content": "31 - 59 major fault",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 466,
+      "bottomRightX": 161,
+      "bottomRightY": 478,
+      "content": "60 - 80 behaviour fault",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 43,
+      "topLeftY": 479,
+      "bottomRightX": 141,
+      "bottomRightY": 489,
+      "content": "81 - 99 minor fault",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 37,
+      "topLeftY": 490,
+      "bottomRightX": 174,
+      "bottomRightY": 502,
+      "content": "100 - 254 for development",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 37,
+      "topLeftY": 502,
+      "bottomRightX": 197,
+      "bottomRightY": 515,
+      "content": "255 initial value (Display - - - )",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 36,
+      "topLeftY": 525,
+      "bottomRightX": 303,
+      "bottomRightY": 538,
+      "content": "The lower the error code, the more serious the fault.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 549,
+      "bottomRightX": 228,
+      "bottomRightY": 562,
+      "content": "# b. Switching on the Diagnostic Software",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 35,
+      "topLeftY": 573,
+      "bottomRightX": 275,
+      "bottomRightY": 586,
+      "content": "A fault can be detected in two different modes:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 35,
+      "topLeftY": 597,
+      "bottomRightX": 115,
+      "bottomRightY": 608,
+      "content": "# 1. Check mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 609,
+      "bottomRightX": 313,
+      "bottomRightY": 634,
+      "content": "The error code is shown on the screen during manual- or computercontrolled use.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 634,
+      "bottomRightX": 313,
+      "bottomRightY": 695,
+      "content": "You can enable this check mode by switching on the mains switch while keeping the STAND-BY key on the front panel depressed. Do not release the STAND-BY key until 3 horizontal stripes are visible in the right-hand bottom corner of the picture screen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 705,
+      "bottomRightX": 129,
+      "bottomRightY": 717,
+      "content": "# 2. Self-test mode",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 718,
+      "bottomRightX": 313,
+      "bottomRightY": 743,
+      "content": "Now the drive is controlled in a programme loop while the normal operating functions are inoperative.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 743,
+      "bottomRightX": 313,
+      "bottomRightY": 802,
+      "content": "You can enable the self-test mode by pressing the mains switch while keeping both the EJECT and the STAND-BY key depressed. Do not release the two keys until the word DIAGNOSTICS appears on the screen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 803,
+      "bottomRightX": 313,
+      "bottomRightY": 838,
+      "content": "Now the screen not only shows the error code, but also the position of the loop counter and the text DIAGNOSTICS.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 839,
+      "bottomRightX": 313,
+      "bottomRightY": 911,
+      "content": "The occurrence of minor faults (error code > 60) does not influence the execution of the programme loops; on the other hand, faults having an error code < 60 will interrupt the programme loop and switch the drive into position STAND-BY while keeping the last LDU-slide position.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 922,
+      "bottomRightX": 313,
+      "bottomRightY": 947,
+      "content": "Both modes are reset again after the mains switch is switched off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 947,
+      "bottomRightX": 313,
+      "bottomRightY": 971,
+      "content": "It is advisable to switch off the set only when it is in STAND-BY mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 12,
+      "topLeftY": 980,
+      "bottomRightX": 59,
+      "bottomRightY": 994,
+      "content": "CS 8 111",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

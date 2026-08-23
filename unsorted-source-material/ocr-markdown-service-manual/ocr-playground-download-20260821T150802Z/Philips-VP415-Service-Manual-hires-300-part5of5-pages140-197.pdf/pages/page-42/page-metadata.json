@@ -1,0 +1,49 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 208,
+      "topLeftY": 184,
+      "bottomRightX": 443,
+      "bottomRightY": 202,
+      "content": "# DRIVE PROC MODULE R(CONT'D)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 118,
+      "topLeftY": 207,
+      "bottomRightX": 689,
+      "bottomRightY": 380,
+      "content": "|  Mod. level | Description | Reason | Mod. documents  |\n| --- | --- | --- | --- |\n|  7 | Added : -R3064 1E5 4822 111 30487 -R3065 220k 4822 111 90197 -R3066 100k 4822 111 90214 -R3067 100k 4822 111 90214 -C2019 10μF 5322 124 21749 -TS7007 BC858B 5322 130 41983 -TS7008 BC848B 5322 130 41982 | Finger protection circuit front loader | AHT9030  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 391,
+      "bottomRightX": 648,
+      "bottomRightY": 568,
+      "content": "![img-44.jpeg](img-44.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-44.jpeg"
+    },
+    {
+      "topLeftX": 659,
+      "topLeftY": 981,
+      "bottomRightX": 708,
+      "bottomRightY": 995,
+      "content": "CS 8 278",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

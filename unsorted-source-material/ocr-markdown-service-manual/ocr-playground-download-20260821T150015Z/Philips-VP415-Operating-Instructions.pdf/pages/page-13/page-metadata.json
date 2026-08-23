@@ -1,0 +1,299 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 70,
+      "topLeftY": 31,
+      "bottomRightX": 157,
+      "bottomRightY": 47,
+      "content": "SECTION 3",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 668,
+      "topLeftY": 36,
+      "bottomRightX": 692,
+      "bottomRightY": 49,
+      "content": "Page",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 65,
+      "bottomRightX": 694,
+      "bottomRightY": 79,
+      "content": "# SPECIAL PLAY FUNCTIONS 13",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 85,
+      "bottomRightX": 693,
+      "bottomRightY": 97,
+      "content": "Standby 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 98,
+      "bottomRightX": 693,
+      "bottomRightY": 110,
+      "content": "Play forward 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 112,
+      "bottomRightX": 693,
+      "bottomRightY": 123,
+      "content": "Play reverse 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 124,
+      "bottomRightX": 693,
+      "bottomRightY": 135,
+      "content": "Still 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 136,
+      "bottomRightX": 693,
+      "bottomRightY": 148,
+      "content": "Step forward and reverse 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 149,
+      "bottomRightX": 693,
+      "bottomRightY": 162,
+      "content": "Picture number, chapter number and time code display 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 162,
+      "bottomRightX": 693,
+      "bottomRightY": 174,
+      "content": "Fig. 4: Picture number display 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 174,
+      "bottomRightX": 693,
+      "bottomRightY": 184,
+      "content": "Fig. 5: Chapter number display 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 184,
+      "bottomRightX": 693,
+      "bottomRightY": 194,
+      "content": "Fig. 6: Time code display 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 194,
+      "bottomRightX": 693,
+      "bottomRightY": 207,
+      "content": "Player and disc status display 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 208,
+      "bottomRightX": 693,
+      "bottomRightY": 220,
+      "content": "Fig. 7: Player and disc status display 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 221,
+      "bottomRightX": 693,
+      "bottomRightY": 232,
+      "content": "Search 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 232,
+      "bottomRightX": 693,
+      "bottomRightY": 243,
+      "content": "Pause 13",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 246,
+      "bottomRightX": 693,
+      "bottomRightY": 258,
+      "content": "Slow 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 258,
+      "bottomRightX": 693,
+      "bottomRightY": 269,
+      "content": "Fast 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 271,
+      "bottomRightX": 693,
+      "bottomRightY": 283,
+      "content": "Audio 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 283,
+      "bottomRightX": 693,
+      "bottomRightY": 295,
+      "content": "Goto picture number 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 297,
+      "bottomRightX": 693,
+      "bottomRightY": 309,
+      "content": "Goto chapter number 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 309,
+      "bottomRightX": 693,
+      "bottomRightY": 320,
+      "content": "Goto time position 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 322,
+      "bottomRightX": 693,
+      "bottomRightY": 334,
+      "content": "Programming 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 335,
+      "bottomRightX": 693,
+      "bottomRightY": 348,
+      "content": "Fig. 8: Programming display 14",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 349,
+      "bottomRightX": 693,
+      "bottomRightY": 359,
+      "content": "Picture segment program entry 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 360,
+      "bottomRightX": 693,
+      "bottomRightY": 371,
+      "content": "Chapter program entry 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 373,
+      "bottomRightX": 693,
+      "bottomRightY": 385,
+      "content": "Time segment program entry 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 386,
+      "bottomRightX": 693,
+      "bottomRightY": 397,
+      "content": "Playing a programmed sequence 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 399,
+      "bottomRightX": 693,
+      "bottomRightY": 410,
+      "content": "Start/repeat 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 410,
+      "bottomRightX": 693,
+      "bottomRightY": 423,
+      "content": "Replay 15",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 425,
+      "bottomRightX": 693,
+      "bottomRightY": 435,
+      "content": "TXT button 16",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 682,
+      "topLeftY": 966,
+      "bottomRightX": 694,
+      "bottomRightY": 977,
+      "content": "12",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

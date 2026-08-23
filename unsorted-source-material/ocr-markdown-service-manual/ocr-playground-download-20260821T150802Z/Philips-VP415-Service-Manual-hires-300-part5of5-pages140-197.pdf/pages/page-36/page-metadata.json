@@ -1,0 +1,39 @@
+{
+  "index": 35,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 336,
+      "topLeftY": 183,
+      "bottomRightX": 468,
+      "bottomRightY": 199,
+      "content": "# ETBC-C MODULE I",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 204,
+      "bottomRightX": 687,
+      "bottomRightY": 448,
+      "content": "|  Mod. level | Description | Reason | Mod. documents  |\n| --- | --- | --- | --- |\n|  7 | **Changed :** -C2046 was 56PF becomes 47PF 4822 122 31772 | Decrease of disturbation on time fault measuring | AHT9061 FA2945  |\n|  7 | **Changed :** -C2015 was Pol 100nF becomes Cr chip 100nF 5322 122 32839 -C2023 was Pol 33nF becomes Cr chip 33nF 5322 122 31848 -C2024 was Pol 270nF becomes Cr chip 270nF 5322 122 32839 | Improvement of HF filtering in sync sepa- rator | AHT9348  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 980,
+      "bottomRightX": 703,
+      "bottomRightY": 993,
+      "content": "CS 8 272",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

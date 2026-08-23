@@ -1,0 +1,65 @@
+{
+  "index": 57,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 307,
+      "topLeftY": 70,
+      "bottomRightX": 504,
+      "bottomRightY": 88,
+      "content": "# COMMUNICATION PROBLEMS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 123,
+      "topLeftY": 112,
+      "bottomRightX": 276,
+      "bottomRightY": 129,
+      "content": "Number : E 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 123,
+      "topLeftY": 142,
+      "bottomRightX": 675,
+      "bottomRightY": 203,
+      "content": "Problem : Disc drive does not accept any commands from ext.\ncomputer after printer command <LF><CR> or\n<CR><LF>.\nFor instance : LPRINT \"F500R\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 122,
+      "topLeftY": 214,
+      "bottomRightX": 553,
+      "bottomRightY": 277,
+      "content": "Solution : -Change mentioned command in :\nLPRINT \"F500R\" ; CHR$(13) ;\n-Adaptation of CONTROL software.\n(will be released in later stage).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 122,
+      "topLeftY": 286,
+      "bottomRightX": 257,
+      "bottomRightY": 304,
+      "content": "Introduced : -",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 661,
+      "topLeftY": 955,
+      "bottomRightX": 711,
+      "bottomRightY": 968,
+      "content": "CS 8 294",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

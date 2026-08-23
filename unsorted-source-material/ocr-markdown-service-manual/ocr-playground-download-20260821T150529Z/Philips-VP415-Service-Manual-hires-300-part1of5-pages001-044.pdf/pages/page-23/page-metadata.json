@@ -1,0 +1,48 @@
+{
+  "index": 22,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 798,
+      "topLeftY": 51,
+      "bottomRightX": 911,
+      "bottomRightY": 61,
+      "content": "WIRING DIAGRAM SANDWICH",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 920,
+      "topLeftY": 49,
+      "bottomRightX": 951,
+      "bottomRightY": 63,
+      "content": "WDS",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 203,
+      "topLeftY": 86,
+      "bottomRightX": 877,
+      "bottomRightY": 557,
+      "content": "![img-29.jpeg](img-29.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-29.jpeg"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 685,
+      "bottomRightX": 146,
+      "bottomRightY": 693,
+      "content": "CS 7 832",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

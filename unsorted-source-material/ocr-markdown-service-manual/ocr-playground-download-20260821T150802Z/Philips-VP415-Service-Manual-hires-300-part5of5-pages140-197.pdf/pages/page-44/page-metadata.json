@@ -1,0 +1,39 @@
+{
+  "index": 43,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 406,
+      "topLeftY": 183,
+      "bottomRightX": 549,
+      "bottomRightY": 199,
+      "content": "# SUPPLY MODULE T",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 118,
+      "topLeftY": 204,
+      "bottomRightX": 687,
+      "bottomRightY": 436,
+      "content": "|  Mod. level | Description | Reason | Mod. documents  |\n| --- | --- | --- | --- |\n|  1 | **Added :** -Res. 0.15E/1W 5322 113 41136 in series with fuse F913. Only for VP410. | Stripes in picture at start up of disc drive | FA2954  |\n|  |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 655,
+      "topLeftY": 979,
+      "bottomRightX": 704,
+      "bottomRightY": 992,
+      "content": "CS 8 280",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

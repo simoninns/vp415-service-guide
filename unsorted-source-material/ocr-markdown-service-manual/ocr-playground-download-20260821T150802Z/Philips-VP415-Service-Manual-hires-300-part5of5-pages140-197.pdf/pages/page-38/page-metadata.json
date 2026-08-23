@@ -1,0 +1,39 @@
+{
+  "index": 37,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 324,
+      "topLeftY": 186,
+      "bottomRightX": 468,
+      "bottomRightY": 203,
+      "content": "# HF PROC MODULE K",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 208,
+      "bottomRightX": 685,
+      "bottomRightY": 440,
+      "content": "|  Mod. level | Description | Reason | Mod. documents  |\n| --- | --- | --- | --- |\n|  1 | **Changed :** -R3015 was 470E becomes 120E 4822 111 90339 | Avoid limiting of HF ampli- fier at max. resonant rise | AHT9286  |\n|  |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 655,
+      "topLeftY": 984,
+      "bottomRightX": 703,
+      "bottomRightY": 997,
+      "content": "CS 8 274",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

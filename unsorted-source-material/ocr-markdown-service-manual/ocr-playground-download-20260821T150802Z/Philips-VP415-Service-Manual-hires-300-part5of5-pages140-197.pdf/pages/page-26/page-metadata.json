@@ -1,0 +1,92 @@
+{
+  "index": 25,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 131,
+      "topLeftY": 58,
+      "bottomRightX": 401,
+      "bottomRightY": 160,
+      "content": "# Service Information",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 615,
+      "topLeftY": 66,
+      "bottomRightX": 675,
+      "bottomRightY": 79,
+      "content": "1987-05-18",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 575,
+      "topLeftY": 108,
+      "bottomRightX": 711,
+      "bottomRightY": 122,
+      "content": "L V Rom disc drive VP415",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 614,
+      "topLeftY": 145,
+      "bottomRightX": 659,
+      "bottomRightY": 158,
+      "content": "VP87-01",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 313,
+      "bottomRightX": 435,
+      "bottomRightY": 327,
+      "content": "SURVEY OF MODIFICATIONS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 349,
+      "bottomRightX": 341,
+      "bottomRightY": 362,
+      "content": "CONTENTS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 373,
+      "bottomRightX": 446,
+      "bottomRightY": 448,
+      "content": "1. Modification levels VP415\n- survey of mod levels\n- Mod. levels per module\n2. Survey of software releases\n3. Fault symptoms and solutions",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 930,
+      "bottomRightX": 164,
+      "bottomRightY": 994,
+      "content": "Service Service Service",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 660,
+      "topLeftY": 981,
+      "bottomRightX": 710,
+      "bottomRightY": 995,
+      "content": "CS 8 262",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

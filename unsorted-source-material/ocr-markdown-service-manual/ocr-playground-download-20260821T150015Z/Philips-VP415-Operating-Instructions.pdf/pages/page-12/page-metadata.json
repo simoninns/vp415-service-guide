@@ -1,0 +1,146 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 65,
+      "topLeftY": 40,
+      "bottomRightX": 267,
+      "bottomRightY": 56,
+      "content": "# PLAYING A DISC (Refer to Fig. 1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 74,
+      "bottomRightX": 144,
+      "bottomRightY": 85,
+      "content": "# SWITCHING ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 93,
+      "bottomRightX": 355,
+      "bottomRightY": 131,
+      "content": "Switch on the player using the mains ON/OFF switch located at the rear. Check that the REPLAY switch is in the OFF position. The STANDBY indicator will light.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 132,
+      "bottomRightX": 355,
+      "bottomRightY": 169,
+      "content": "Press the ON/STANDBY button; the STANDBY indicator will then flash. A warning 'beep' is given to indicate that no disc has yet been loaded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 182,
+      "bottomRightX": 355,
+      "bottomRightY": 232,
+      "content": "Note: The VP415 contains a fan to maintain correct operating temperature. If a certain temperature is exceeded, the speed of this fan will automatically increase; this is quite normal and not a fault indication.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 251,
+      "bottomRightX": 159,
+      "bottomRightY": 262,
+      "content": "# INSERTING A DISC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 270,
+      "bottomRightX": 355,
+      "bottomRightY": 308,
+      "content": "Press the EJECT button; the disc-tray will partly open. Pull out the disc-tray all the way. Remove the disc from its packaging and place it on the disc-tray with the desired label uppermost.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 325,
+      "bottomRightX": 162,
+      "bottomRightY": 338,
+      "content": "# AUTOMATIC PLAY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 345,
+      "bottomRightX": 355,
+      "bottomRightY": 395,
+      "content": "Gently push the disc-tray forward; it will be drawn inside automatically. The disc will build up to speed (1500 r.p.m.) in approx. 10 seconds. During the start-up period, the STANDBY indicator flashes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 409,
+      "bottomRightX": 355,
+      "bottomRightY": 459,
+      "content": "As soon as the correct speed has been reached, the STANDBY indicator goes out and either the CAV or CLV indicator lights, according to the type of disc loaded. Play then commences. Also refer to Section 3 - 'Special play functions'.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 473,
+      "bottomRightX": 355,
+      "bottomRightY": 510,
+      "content": "When the end of the disc is reached, the player returns rapidly to the first track, gives a warning 'beep', and enters the pause mode. If no further command is given within 2 minutes, the player goes to standby.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 523,
+      "bottomRightX": 355,
+      "bottomRightY": 572,
+      "content": "If repeated playing of the disc is required, the REPLAY switch should be in the ON position. This will be confirmed by the REPLAY indicator. In this case, the controls on the front of the player are disabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 590,
+      "bottomRightX": 263,
+      "bottomRightY": 603,
+      "content": "# TO STOP PLAY AND REMOVE THE DISC",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 611,
+      "bottomRightX": 355,
+      "bottomRightY": 649,
+      "content": "To terminate play at any time, press the EJECT button on the front of the player. When the disc comes to a standstill, the player ejects the disc and goes to the standby condition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 975,
+      "bottomRightX": 80,
+      "bottomRightY": 985,
+      "content": "11",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 725,
+      "topLeftY": 38,
+      "bottomRightX": 898,
+      "bottomRightY": 50,
+      "content": "CPU+DATA GRABBER MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 930,
+      "topLeftY": 36,
+      "bottomRightX": 948,
+      "bottomRightY": 51,
+      "content": "W",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 895,
+      "topLeftY": 54,
+      "bottomRightX": 948,
+      "bottomRightY": 62,
+      "content": "(MOD LEVEL 2)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 71,
+      "bottomRightX": 898,
+      "bottomRightY": 101,
+      "content": "2051 A1 2054 A B 2057 A B 2011 D1 2010 C B 2023 D B 2020 E B 2025 D B 2041 C A 2047 C B 2053 F S 2062 M D 2071 C D 2077 F S 2058 C 1 2047 M B 2057 D F 7253 G1 7258 B10 7215 D B 7211 C B 7227 D B 7233 E10 7235 E A 7246 A F 7251 B G 7258 A C 7266 M I 7275 C D\n2161 D12 2159 D12 2157 C D 2013 D11 2016 E B 2054 C B 2050 D12 2058 D13 2062 C B 2048 C D 2054 E A 2054 B D 2072 D D 2031 A10 2027 D 1 2044 B D 2069 F A 7256 B11 7210 D10 7210 D B 7231 D B 7228 F B 7241 D B 7240 A D 7247 C A 7255 A B 7255 F S 7259 F S 7259 C D 7259 C D\n2002 A11 2005 B A 2008 B A 2010 B A 2010 B A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2021 D A 2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 105,
+      "bottomRightX": 947,
+      "bottomRightY": 605,
+      "content": "![img-14.jpeg](img-14.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-14.jpeg"
+    },
+    {
+      "topLeftX": 924,
+      "topLeftY": 605,
+      "bottomRightX": 946,
+      "bottomRightY": 615,
+      "content": "FEB 1994\nTID 11",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

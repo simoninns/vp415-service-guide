@@ -1,0 +1,39 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 69,
+      "topLeftY": 62,
+      "bottomRightX": 154,
+      "bottomRightY": 79,
+      "content": "# SANDWICH",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 62,
+      "bottomRightX": 667,
+      "bottomRightY": 648,
+      "content": "![img-17.jpeg](img-17.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-17.jpeg"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 698,
+      "bottomRightX": 97,
+      "bottomRightY": 708,
+      "content": "CS 7 864",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

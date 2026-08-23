@@ -1,0 +1,338 @@
+{
+  "index": 34,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 22,
+      "topLeftY": 56,
+      "bottomRightX": 30,
+      "bottomRightY": 67,
+      "content": "2",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 73,
+      "bottomRightX": 313,
+      "bottomRightY": 194,
+      "content": "2. The track length of each frame on the disc is constant. This implies that the rotational speed of the disc decreases when scanning the disc from the inside to the outside, and that from 1500 rpm at the inside to 565 rpm at the outside of the disc. This type of disc is referred to as CLV disc (Constant Linear Velocity disc). No special playing modes can be realised with this type of disc, because the frame sync pulses and frame blanking are no longer on a diagonal, thus putting jumping from one track to the other out of the question.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 364,
+      "topLeftY": 161,
+      "bottomRightX": 594,
+      "bottomRightY": 287,
+      "content": "![img-42.jpeg](img-42.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-42.jpeg"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 194,
+      "bottomRightX": 313,
+      "bottomRightY": 219,
+      "content": "The maximum playing time of a CLV disc is 54 minutes per side. The disc drive is suited for both types of discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 229,
+      "bottomRightX": 313,
+      "bottomRightY": 266,
+      "content": "In addition to the video and audio information, the disc contains a number of special codes, inserted in the frame blanking periods.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 266,
+      "bottomRightX": 313,
+      "bottomRightY": 302,
+      "content": "Test signals have been inserted during the lines 19, 20, 332, 333. Digital codes for various purposes have been inserted during the lines 16, 17, 18, 329, 330, 331.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 302,
+      "bottomRightX": 240,
+      "bottomRightY": 315,
+      "content": "These signals have the following functions:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 320,
+      "bottomRightX": 102,
+      "bottomRightY": 332,
+      "content": "# Lead-in tracks",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 337,
+      "bottomRightX": 313,
+      "bottomRightY": 387,
+      "content": "A minimum of 900 tracks prior to the start of the actual programme contain a start code which sends the read-out objective to the beginning of the programme at nine times the normal speed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 397,
+      "bottomRightX": 109,
+      "bottomRightY": 410,
+      "content": "# Lead-out tracks",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 416,
+      "bottomRightX": 313,
+      "bottomRightY": 477,
+      "content": "A minimum of 600 tracks immediately after the end of the programme contain an end code which sends the read-out objective back to the beginning at 75 times normal speed. Video and audio signals are muted during the return period.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 488,
+      "bottomRightX": 109,
+      "bottomRightY": 500,
+      "content": "# Programme area",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 505,
+      "bottomRightX": 313,
+      "bottomRightY": 531,
+      "content": "Here a distinction has to be made between CAV and CLV types of discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 541,
+      "bottomRightX": 78,
+      "bottomRightY": 553,
+      "content": "# CAV discs",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 558,
+      "bottomRightX": 313,
+      "bottomRightY": 595,
+      "content": "1. Picture code consisting of a picture number by means of which each individual picture of a programme can be identified.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 595,
+      "bottomRightX": 313,
+      "bottomRightY": 620,
+      "content": "The number may be displayed on the monitor screen, if desired.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 620,
+      "bottomRightX": 313,
+      "bottomRightY": 667,
+      "content": "The picture number code is always present in the first field of each complete television frame. The second field may contain a stop code to switch the disc drive to STILL PICTURE mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 667,
+      "bottomRightX": 313,
+      "bottomRightY": 728,
+      "content": "2. Chapter code consisting of a chapter number by means of which a search action can be automatically stopped as soon as the start of the relevant chapter is reached. The chapter number may also be displayed on the monitor screen, if desired.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 34,
+      "topLeftY": 728,
+      "bottomRightX": 313,
+      "bottomRightY": 753,
+      "content": "The presence of stop code and chapter code is optional and depends on the programme content.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 764,
+      "bottomRightX": 76,
+      "bottomRightY": 776,
+      "content": "# CLV discs",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 782,
+      "bottomRightX": 313,
+      "bottomRightY": 879,
+      "content": "1. A normal play code is always present in CLV discs. This code disables the special modes of operation of the disc drive.\n2. Instead of a picture number code a time code is present in LV discs. It contains a time coding with hour and minutes indication showing the time elapsed since the start of the programme. This time may be displayed on the monitor screen, if desired.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 332,
+      "topLeftY": 867,
+      "bottomRightX": 561,
+      "bottomRightY": 937,
+      "content": "![img-43.jpeg](img-43.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-43.jpeg"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 891,
+      "bottomRightX": 71,
+      "bottomRightY": 903,
+      "content": "# Focusing",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 908,
+      "bottomRightX": 313,
+      "bottomRightY": 982,
+      "content": "The objective used to read the information on the disc has a very small depth of focus, that is, maximum 1.5 µm. In view of tolerances in disc and in disc drive construction this accuracy can only be realised by means of a servo-control system that continuously verifies and corrects the focusing of the objective. For this purpose the objective is",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 73,
+      "bottomRightX": 634,
+      "bottomRightY": 146,
+      "content": "mounted in a magnet so as to allow vertical motion. Around the objective and firmly attached to it, a coil has been mounted. By feeding a current through the coil, the objective will move more or less upwards, depending on the current intensity. Fig. 6 shows a cross-sectional view of the objective plus coil and magnet.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 146,
+      "bottomRightX": 628,
+      "bottomRightY": 158,
+      "content": "The system is very much similar to a loudspeaker system.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 474,
+      "topLeftY": 289,
+      "bottomRightX": 504,
+      "bottomRightY": 303,
+      "content": "Fig. 6",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 576,
+      "topLeftY": 299,
+      "bottomRightX": 606,
+      "bottomRightY": 307,
+      "content": "27623A19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 314,
+      "bottomRightX": 564,
+      "bottomRightY": 326,
+      "content": "The objective is driven in the following way:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 326,
+      "bottomRightX": 634,
+      "bottomRightY": 374,
+      "content": "The light reflected by the disc is focused on the photodiodes by the objective. On its way to the diodes the reflected beam passes an astigmatic lens system, like a cylinder lens.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 374,
+      "bottomRightX": 634,
+      "bottomRightY": 542,
+      "content": "Unlike a spherical lens, an astigmatic lens does not have one single focal point, but two focal lines at some distance from each other and at right angles to each other. Between the focal lines a plane exists where a circular picture is formed. When the disc is out of focus with respect to the objective, that is too far from or too close to the objective, the astigmatism will modify the shape of the picture from the focused state (circular picture) to an elliptical picture. The direction of the ellipsis' axes is determined by the fact whether the disc is too far from or too close to the objective. The photodiode that converts the light variations into an RF signal is composed of four quadrants A, B, C and D (refer to Fig. 7). When the objective is in focus, all four quadrants receive equal amounts of light.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 542,
+      "bottomRightX": 634,
+      "bottomRightY": 627,
+      "content": "When the objective is out of focus, either A and B or C and D receive more light. The quadrants are interconnected crosswise. The sum of the signals over A, B, C and D receive more light. The quadrants are interconnected crosswise. The sum of the signals over A, B, C and D constitutes the RF signal. The difference signal (A+B) - (C+D) is the drive signal for the objective.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 325,
+      "topLeftY": 631,
+      "bottomRightX": 637,
+      "bottomRightY": 825,
+      "content": "![img-44.jpeg](img-44.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-44.jpeg"
+    },
+    {
+      "topLeftX": 471,
+      "topLeftY": 951,
+      "bottomRightX": 502,
+      "bottomRightY": 964,
+      "content": "Fig. 7",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 600,
+      "topLeftY": 971,
+      "bottomRightX": 639,
+      "bottomRightY": 980,
+      "content": "27620C19A",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 987,
+      "bottomRightX": 71,
+      "bottomRightY": 1000,
+      "content": "CS 7 876",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 66,
+      "topLeftY": 42,
+      "bottomRightX": 357,
+      "bottomRightY": 64,
+      "content": "TABLE 2 - RESPONSES TO COMPUTER ON COMMANDS FROM REMOTE CONTROL HANDSET",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 74,
+      "bottomRightX": 357,
+      "bottomRightY": 100,
+      "content": "Player commands from remote control handset when routed to host computer, after H1 command (RC to computer on), are of the form:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 112,
+      "bottomRightX": 164,
+      "bottomRightY": 133,
+      "content": "|  dec | hex | syntax  |\n| --- | --- | --- |\n|  76 | 4C | L x  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 142,
+      "bottomRightX": 233,
+      "bottomRightY": 155,
+      "content": "Where x is given by the following codes:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 163,
+      "bottomRightX": 179,
+      "bottomRightY": 430,
+      "content": "|  STANDBY | ;  |\n| --- | --- |\n|  DISPLAY | !  |\n|  NEXT | *  |\n|  CLEAR | X  |\n|  ENTER | P  |\n|  START/REPEAT | F  |\n|  AUDIO1 | A  |\n|  AUDIO2 | B  |\n|  CNR | R  |\n|  PNR | D  |\n|  CORR | C  |\n|  GOTO | K  |\n|  FAST▶ | W  |\n|  FAST◀ | Z  |\n|  SLOW▶ | T  |\n|  SLOW◀ | U  |\n|  SPEED + | H  |\n|  SPEED - | G  |\n|  TXT | Y  |\n|  PAUSE | V  |\n|  SEARCH▶ | >  |\n|  SEARCH◀ | <  |\n|  STILL▶ | L  |\n|  STILL◀ | M  |\n|  PLAY▶ | N  |\n|  PLAY◀ | O  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 441,
+      "bottomRightX": 359,
+      "bottomRightY": 479,
+      "content": "Similarly, when an H1 command routes RC commands to the host computer, the numeric keys of the remote control handset, will give a response of the form:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 491,
+      "bottomRightX": 165,
+      "bottomRightY": 512,
+      "content": "|  dec | hex | syntax  |\n| --- | --- | --- |\n|  86 | 56 | V x  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 521,
+      "bottomRightX": 213,
+      "bottomRightY": 533,
+      "content": "Where x is the key value in ASCII:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 67,
+      "topLeftY": 540,
+      "bottomRightX": 179,
+      "bottomRightY": 645,
+      "content": "|  DIGIT0 | 0  |\n| --- | --- |\n|  DIGIT1 | 1  |\n|  DIGIT2 | 2  |\n|  DIGIT3 | 3  |\n|  DIGIT4 | 4  |\n|  DIGIT5 | 5  |\n|  DIGIT6 | 6  |\n|  DIGIT7 | 7  |\n|  DIGIT8 | 8  |\n|  DIGIT9 | 9  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 653,
+      "bottomRightX": 321,
+      "bottomRightY": 666,
+      "content": "Note: Each response is terminated by a carriage return(CR).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 977,
+      "bottomRightX": 81,
+      "bottomRightY": 987,
+      "content": "23",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

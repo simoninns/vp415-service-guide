@@ -1,0 +1,101 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 200,
+      "topLeftY": 143,
+      "bottomRightX": 292,
+      "bottomRightY": 165,
+      "content": "Remarks",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 167,
+      "bottomRightX": 295,
+      "bottomRightY": 191,
+      "content": "Warnings",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 191,
+      "bottomRightX": 381,
+      "bottomRightY": 211,
+      "content": "Modification levels",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 213,
+      "bottomRightX": 324,
+      "bottomRightY": 235,
+      "content": "Adjustments",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 236,
+      "bottomRightX": 437,
+      "bottomRightY": 259,
+      "content": "Demounting instructions",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 259,
+      "bottomRightX": 327,
+      "bottomRightY": 279,
+      "content": "Service hints",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 281,
+      "bottomRightX": 328,
+      "bottomRightY": 302,
+      "content": "Service tools",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 304,
+      "bottomRightX": 405,
+      "bottomRightY": 327,
+      "content": "List of used symbols",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 327,
+      "bottomRightX": 508,
+      "bottomRightY": 349,
+      "content": "Connections of semiconductors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 597,
+      "topLeftY": 143,
+      "bottomRightX": 701,
+      "bottomRightY": 169,
+      "content": "Chapter 2",
+      "confidenceScores": null,
+      "type": "text"
+    }
+  ]
+}

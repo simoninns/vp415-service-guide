@@ -1,0 +1,39 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 313,
+      "topLeftY": 189,
+      "bottomRightX": 481,
+      "bottomRightY": 205,
+      "content": "# VIDEO CORR MODULE L",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 210,
+      "bottomRightX": 681,
+      "bottomRightY": 443,
+      "content": "|  Mod. level | Description | Reason | Mod. documents  |\n| --- | --- | --- | --- |\n|  1 | **Changed :** -R3096 was 470E becomes 560E 5322 111 90113 | Adaption of video amplitudes | AHT9062  |\n|  1 | **Changed :** -R3046 was 3k3 becomes 2k7 4822 111 90157 | MTF-regulation is not good | AHT9287  |\n|  |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 651,
+      "topLeftY": 987,
+      "bottomRightX": 700,
+      "bottomRightY": 1000,
+      "content": "CS 8 275",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

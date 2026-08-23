@@ -1,0 +1,422 @@
+{
+  "index": 36,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 88,
+      "topLeftY": 41,
+      "bottomRightX": 243,
+      "bottomRightY": 57,
+      "content": "VIDEO PROC. MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 151,
+      "topLeftY": 59,
+      "bottomRightX": 214,
+      "bottomRightY": 69,
+      "content": "(MOD LEVEL 3)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 254,
+      "topLeftY": 39,
+      "bottomRightX": 273,
+      "bottomRightY": 58,
+      "content": "C",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 109,
+      "bottomRightX": 123,
+      "bottomRightY": 118,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 126,
+      "bottomRightX": 99,
+      "bottomRightY": 134,
+      "content": "# Required",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 135,
+      "bottomRightX": 99,
+      "bottomRightY": 143,
+      "content": "Test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 144,
+      "bottomRightX": 100,
+      "bottomRightY": 152,
+      "content": "Voltmeter",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 152,
+      "bottomRightX": 89,
+      "bottomRightY": 160,
+      "content": "Scope",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 168,
+      "bottomRightX": 148,
+      "bottomRightY": 177,
+      "content": "# Adjustment conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 177,
+      "bottomRightX": 117,
+      "bottomRightY": 184,
+      "content": "Load test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 185,
+      "bottomRightX": 212,
+      "bottomRightY": 194,
+      "content": "Still picture, colour bar (picture no. 6200).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 202,
+      "bottomRightX": 112,
+      "bottomRightY": 211,
+      "content": "# Adjustments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 218,
+      "bottomRightX": 142,
+      "bottomRightY": 227,
+      "content": "1) R3035 (frequency)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 227,
+      "bottomRightX": 255,
+      "bottomRightY": 244,
+      "content": "- Measure the DC voltage on 18-IC7202.\n- Adjust R3035 for a DC voltage of 5.5V ± 0.5 V.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 64,
+      "topLeftY": 252,
+      "bottomRightX": 173,
+      "bottomRightY": 261,
+      "content": "2) R3045 (horizontal blanking)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 261,
+      "bottomRightX": 270,
+      "bottomRightY": 320,
+      "content": "- Search for a white picture (e.g. picture no. 7500).\n- Measure sandcastle pulse SC on 3C2 with the scope (A-channel).\n- Measure the G-signal on 3B3 with the scope (B-channel) and trigger on this signal.\n- Adjust R3045 for a difference of 0.5μs between the SC and the G-signal (see Fig. C1).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 92,
+      "topLeftY": 326,
+      "bottomRightX": 218,
+      "bottomRightY": 451,
+      "content": "![img-51.jpeg](img-51.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-51.jpeg"
+    },
+    {
+      "topLeftX": 149,
+      "topLeftY": 460,
+      "bottomRightX": 177,
+      "bottomRightY": 470,
+      "content": "Fig. C1",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 482,
+      "bottomRightX": 184,
+      "bottomRightY": 491,
+      "content": "# Adjustment when item replaced",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 499,
+      "bottomRightX": 101,
+      "bottomRightY": 507,
+      "content": "replaced",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 508,
+      "bottomRightX": 94,
+      "bottomRightY": 515,
+      "content": "IC7202",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 516,
+      "bottomRightX": 94,
+      "bottomRightY": 524,
+      "content": "IC7203",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 137,
+      "topLeftY": 499,
+      "bottomRightX": 163,
+      "bottomRightY": 507,
+      "content": "adjust",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 137,
+      "topLeftY": 508,
+      "bottomRightX": 190,
+      "bottomRightY": 515,
+      "content": "R3035, R3045",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 137,
+      "topLeftY": 516,
+      "bottomRightX": 163,
+      "bottomRightY": 524,
+      "content": "R3045",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 264,
+      "topLeftY": 44,
+      "bottomRightX": 785,
+      "bottomRightY": 64,
+      "content": "|  2001 A 1 | 2005 A 2 | 2017 A 4 | 2022 A 3 | 2005 A 1 | 6002 A 2 | 7000 B 2 | 7011 B 2 | 7001 A 1 | 2015 A 3 | 1102 B 0 | 2105 A 6 | 6004 A 5 | 7101 B 5  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2002 B 2 | 2010 A 3 | 2016 B 3 | 2026 A 3 | 6001 A 2 | 6003 B 4 | 7007 A 2 | 7012 B 3 | 7202 A 4 | 2101 B 6 | 3103 B 0 | 2106 B 6 | 6005 A 5 | 7102 A 6  |\n|  2004 A 1 | 2011 A 3 | 2019 B 3 | 2045 A 4 | 6001 A 2 | 7004 A 2 | 7010 B 2 | 7017 B 3 | 7202 A 4 | 3101 B 5 | 3104 B 0 | 2107 B 6 | 6006 A 5 | 7103 B 6  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 70,
+      "bottomRightX": 893,
+      "bottomRightY": 257,
+      "content": "![img-52.jpeg](img-52.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-52.jpeg"
+    },
+    {
+      "topLeftX": 309,
+      "topLeftY": 271,
+      "bottomRightX": 854,
+      "bottomRightY": 307,
+      "content": "|  2003 A 1 | 2014 B 4 | 2024 B 4 | 2032 A 1 | 2008 A 2 | 2015 B 3 | 2021 B 2 | 2027 A 2 | 2034 B 3 | 2041 A 4 | 2049 B 4 | 2057 A 3 | 2063 A 2 | 2077 A 1 | 7008 B 3 | 7104 A 1  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2007 B 2 | 2018 A 3 | 2025 A 5 | 2033 A 2 | 2009 A 2 | 2016 A 2 | 2022 B 2 | 2028 A 2 | 2036 A 4 | 2042 A 4 | 2050 B 4 | 2056 A 3 | 2064 A 3 | 2066 A 2 | 7009 B 3 |   |\n|  2008 B 3 | 2020 B 3 | 2026 A 3 | 2034 A 2 | 2010 B 1 | 2017 A 2 | 2023 B 2 | 2029 A 2 | 2037 B 4 | 2043 B 4 | 2051 B 4 | 2058 A 2 | 2066 B 1 | 7011 A 2 | 7014 B 4 |   |\n|  2009 B 3 | 2021 A 4 | 2027 B 5 | 2035 A 2 | 2011 B 1 | 2018 A 2 | 2024 A 3 | 2030 A 3 | 2038 A 3 | 2044 B 4 | 2052 B 4 | 2060 A 3 | 2067 B 1 | 7002 A 2 | 7015 A 3 |   |\n|  2012 B 4 | 2022 B 4 | 2028 A 2 | 2036 B 2 | 2012 B 3 | 2019 B 2 | 2025 A 2 | 2031 A 2 | 2039 A 3 | 2046 B 4 | 2053 B 4 | 2061 A 3 | 2068 B 2 | 7003 B 1 | 7016 A 3 |   |\n|  2013 B 4 | 2023 B 4 | 2031 A 1 | 2037 A 2 | 2013 B 3 | 2020 B 2 | 2026 A 2 | 2032 A 3 | 2040 A 3 | 2047 B 4 | 2059 A 3 | 2062 B 5 | 2069 A 1 | 7006 B 2 | 7018 A 3 |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 295,
+      "topLeftY": 312,
+      "bottomRightX": 893,
+      "bottomRightY": 499,
+      "content": "![img-53.jpeg](img-53.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-53.jpeg"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 511,
+      "bottomRightX": 411,
+      "bottomRightY": 522,
+      "content": "LIST OF ELECTRICAL PARTS MODULE C",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 530,
+      "bottomRightX": 279,
+      "bottomRightY": 537,
+      "content": "Cells",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 538,
+      "bottomRightX": 397,
+      "bottomRightY": 547,
+      "content": "5001 4822 156 10992 117 μH",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 555,
+      "bottomRightX": 315,
+      "bottomRightY": 563,
+      "content": "Potentiometers",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 563,
+      "bottomRightX": 393,
+      "bottomRightY": 572,
+      "content": "3035 5322 101 10666 47 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 572,
+      "bottomRightX": 393,
+      "bottomRightY": 580,
+      "content": "3045 5322 101 10666 47 kΩ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 588,
+      "bottomRightX": 312,
+      "bottomRightY": 596,
+      "content": "NTC Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 597,
+      "bottomRightX": 418,
+      "bottomRightY": 605,
+      "content": "3105 4822 116 30251 150 kΩ 0.5W",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 613,
+      "bottomRightX": 315,
+      "bottomRightY": 621,
+      "content": "Fuse Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 622,
+      "bottomRightX": 389,
+      "bottomRightY": 630,
+      "content": "3065 4822 111 10165 10 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 630,
+      "bottomRightX": 389,
+      "bottomRightY": 639,
+      "content": "3108 4822 111 90357 33 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 647,
+      "bottomRightX": 322,
+      "bottomRightY": 655,
+      "content": "NFR25 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 655,
+      "bottomRightX": 389,
+      "bottomRightY": 664,
+      "content": "3033 4822 111 30508 10 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 258,
+      "topLeftY": 664,
+      "bottomRightX": 391,
+      "bottomRightY": 672,
+      "content": "3107 4822 111 30593 3.3 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 483,
+      "topLeftY": 512,
+      "bottomRightX": 910,
+      "bottomRightY": 689,
+      "content": "|  2001 | 4822 124 22027 | 47 μF | 25 V | 2023 | 4822 122 32974 | 100 pF  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  2002 | 4822 124 22027 | 47 μF | 25 V | 2024 | 4822 122 32974 | 100 pF  |\n|  2003 | 4822 122 31759 | 22 nF |  | 2025 | 4822 122 31759 | 22 nF  |\n|  2004 | 4822 121 42688 | 68 nF | 100 V | 2026 | 5322 122 32839 | 100 nF  |\n|  2005 | 4822 124 22027 | 47 μF | 25 V | 2027 | 4822 122 31965 | 220 pF  |\n|  2007 | 4822 122 31759 | 22 nF |  | 2028 | 4822 122 31316 | 100 pF  |\n|  2008 | 4822 122 31769 | 18 pF |  | 2101 | 4822 124 22027 | 47 μF  |\n|  2009 | 4822 122 31759 | 22 nF |  |  |  |   |\n|  2010 | 5322 124 21749 | 10 μF | 63 V |  |  |   |\n|  2011 | 5322 124 21711 | 100 μF | 25 V |  |  |   |\n|  2012 | 4822 122 31759 | 22 nF |  |  |  |   |\n|  2013 | 4822 122 32442 | 10 nF |  |  |  |   |\n|  2014 | 5322 122 32839 | 100 nF |  |  |  |   |\n|  2015 | 4822 121 51051 | 4.7 nF | 63 V |  |  |   |\n|  2016 | 4822 122 32442 | 10 nF |  |  |  |   |\n|  2017 | 4822 121 41876 | 220 nF | 20% 63 V |  |  |   |\n|  2018 | 4822 124 22031 | 4.7 μF | 63 V |  |  |   |\n|  2019 | 4822 121 41837 | 560 nF | 20% 100 V |  |  |   |\n|  2020 | 5322 122 32839 | 100 nF |  |  |  |   |\n|  2021 | 4822 122 31971 | 10 pF |  |  |  |   |\n|  2022 | 4822 122 31759 | 22 nF |  |  |  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 936,
+      "topLeftY": 561,
+      "bottomRightX": 955,
+      "bottomRightY": 571,
+      "content": "25 V",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

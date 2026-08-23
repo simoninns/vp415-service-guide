@@ -1,0 +1,39 @@
+{
+  "index": 21,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 49,
+      "topLeftY": 108,
+      "bottomRightX": 184,
+      "bottomRightY": 133,
+      "content": "# ① NO DISPLAY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 80,
+      "topLeftY": 175,
+      "bottomRightX": 613,
+      "bottomRightY": 828,
+      "content": "![img-29.jpeg](img-29.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-29.jpeg"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 987,
+      "bottomRightX": 68,
+      "bottomRightY": 1000,
+      "content": "CS 8 117",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "index": 50,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 330,
+      "topLeftY": 141,
+      "bottomRightX": 462,
+      "bottomRightY": 158,
+      "content": "# SYNC (on mod.W)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 112,
+      "topLeftY": 168,
+      "bottomRightX": 683,
+      "bottomRightY": 246,
+      "content": "|  Progr. no. 3104 103 ... | changed with respect to earlier release | Ref.doc | SW Rev level  |\n| --- | --- | --- | --- |\n|  6808.0 | -First release. | - | 1.0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 649,
+      "topLeftY": 985,
+      "bottomRightX": 697,
+      "bottomRightY": 998,
+      "content": "CS 8 287",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

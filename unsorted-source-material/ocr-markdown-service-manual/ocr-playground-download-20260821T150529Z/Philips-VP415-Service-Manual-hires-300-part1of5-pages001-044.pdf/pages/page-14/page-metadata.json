@@ -1,0 +1,167 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 86,
+      "topLeftY": 64,
+      "bottomRightX": 171,
+      "bottomRightY": 76,
+      "content": "# SERVICE HINTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 79,
+      "bottomRightX": 141,
+      "bottomRightY": 92,
+      "content": "# WARNING",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 110,
+      "bottomRightX": 117,
+      "bottomRightY": 122,
+      "content": "# ESD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 92,
+      "topLeftY": 168,
+      "bottomRightX": 321,
+      "bottomRightY": 193,
+      "content": "All ICs and many other semi-conductors are susceptible to electrostatic discharges (ESD).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 194,
+      "bottomRightX": 329,
+      "bottomRightY": 217,
+      "content": "Careless handling during repair can reduce life drastically.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 217,
+      "bottomRightX": 355,
+      "bottomRightY": 253,
+      "content": "When repairing, make sure that you are connected with the same potential as the mass of the set via a wrist wrap with resistance.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 253,
+      "bottomRightX": 344,
+      "bottomRightY": 266,
+      "content": "Keep components and tools also at this potential.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 92,
+      "topLeftY": 271,
+      "bottomRightX": 358,
+      "bottomRightY": 296,
+      "content": "The photodiodes and the laser are more sensitive to electrostatic discharges than MOS IC's.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 296,
+      "bottomRightX": 348,
+      "bottomRightY": 320,
+      "content": "Careless handling during servicing may reduce life expectancy drastically.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 93,
+      "topLeftY": 320,
+      "bottomRightX": 357,
+      "bottomRightY": 357,
+      "content": "For this reason care should be taken that during servicing the potentials of the tools and yourself are equal to that of the screening of the set",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 85,
+      "topLeftY": 377,
+      "bottomRightX": 213,
+      "bottomRightY": 390,
+      "content": "# Chip components (SMD)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 84,
+      "topLeftY": 394,
+      "bottomRightX": 359,
+      "bottomRightY": 433,
+      "content": "Chip components have been applied in the set. For the insertion and removal of chip components see the figure below.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 495,
+      "bottomRightX": 298,
+      "bottomRightY": 937,
+      "content": "![img-19.jpeg](img-19.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-19.jpeg"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 495,
+      "bottomRightX": 492,
+      "bottomRightY": 937,
+      "content": "![img-20.jpeg](img-20.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-20.jpeg"
+    },
+    {
+      "topLeftX": 500,
+      "topLeftY": 496,
+      "bottomRightX": 686,
+      "bottomRightY": 937,
+      "content": "![img-21.jpeg](img-21.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-21.jpeg"
+    },
+    {
+      "topLeftX": 645,
+      "topLeftY": 939,
+      "bottomRightX": 684,
+      "bottomRightY": 948,
+      "content": "27 012C12",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 649,
+      "topLeftY": 980,
+      "bottomRightX": 697,
+      "bottomRightY": 993,
+      "content": "CS 7 824",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "index": 6,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 147,
+      "topLeftY": 43,
+      "bottomRightX": 923,
+      "bottomRightY": 683,
+      "content": "![img-8.jpeg](img-8.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-8.jpeg"
+    },
+    {
+      "topLeftX": 925,
+      "topLeftY": 53,
+      "bottomRightX": 994,
+      "bottomRightY": 678,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 688,
+      "bottomRightX": 990,
+      "bottomRightY": 697,
+      "content": "CS 6 887",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

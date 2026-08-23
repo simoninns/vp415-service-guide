@@ -1,0 +1,48 @@
+{
+  "index": 41,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 116,
+      "topLeftY": 46,
+      "bottomRightX": 125,
+      "bottomRightY": 56,
+      "content": "8",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 508,
+      "topLeftY": 67,
+      "bottomRightX": 761,
+      "bottomRightY": 81,
+      "content": "Fig. CR 1 BLOCKDIAGRAM CONTROL ROUTES",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 91,
+      "bottomRightX": 981,
+      "bottomRightY": 692,
+      "content": "![img-53.jpeg](img-53.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-53.jpeg"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 695,
+      "bottomRightX": 151,
+      "bottomRightY": 706,
+      "content": "CS 7 882",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

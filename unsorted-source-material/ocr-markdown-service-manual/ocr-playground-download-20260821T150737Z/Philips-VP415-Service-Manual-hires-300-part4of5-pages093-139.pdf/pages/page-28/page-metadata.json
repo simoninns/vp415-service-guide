@@ -1,0 +1,104 @@
+{
+  "index": 27,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 22,
+      "topLeftY": 69,
+      "bottomRightX": 123,
+      "bottomRightY": 83,
+      "content": "22VP415/00/05/35 *",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 93,
+      "bottomRightX": 243,
+      "bottomRightY": 106,
+      "content": "* For differences see item 301 and item 368",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 117,
+      "bottomRightX": 179,
+      "bottomRightY": 129,
+      "content": "# LIST OF MECHANICAL PARTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 142,
+      "bottomRightX": 125,
+      "bottomRightY": 153,
+      "content": "# FIXING MATERIALS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 165,
+      "bottomRightX": 271,
+      "bottomRightY": 703,
+      "content": "|  Item | Service codenr | Description  |\n| --- | --- | --- |\n|  1 | 4822 502 12555 | Screw M 2 x 10  |\n|  2 | 4822 502 12797 | Screw M 2.5 x 4  |\n|  3 | 4822 502 11715 | Screw M 2.5 x 5  |\n|  4 | 4822 502 12795 | Screw M 2.5 x 6  |\n|  6 | 4822 502 12798 | Screw M 2.5 x 6  |\n|  7 | 4822 502 12799 | Screw M 2.5 x 8  |\n|  8 | 4822 502 11549 | Screw M 2.5 x 10  |\n|  9 | 4822 502 12796 | Screw M 2.5 x 12  |\n|  11 | 4822 502 12794 | Screw M 3 x 5  |\n|  12 | 4822 502 11667 | Screw M 3 x 6  |\n|  13 | 4822 502 11678 | Screw M 3 x 8  |\n|  14 | 4822 502 11679 | Screw M 3 x 16  |\n|  16 | 4822 502 30438 | Screw 3 M x 6  |\n|  17 | 4822 502 30439 | Screw 3 M x 8  |\n|  18 | 4822 502 12863 | Screw 3 M x 8  |\n|  19 | 4822 502 30408 | Screw 3 M x 10  |\n|  21 | 4822 502 30409 | Screw 3 M x 12  |\n|  22 | 4822 502 30412 | Screw 3 M x 20  |\n|  24 | 4822 502 30331 | Screw 2 N x 6.5  |\n|  26 | 4822 502 30303 | Screw 4 N x 6.5  |\n|  27 | 4822 502 30085 | Screw 4 N x 9.5  |\n|  28 | 4822 502 30314 | Screw 4 N x 22  |\n|  31 | 4822 505 10888 | Nut M 2.5 Hex nut  |\n|  32 | 4822 505 10891 | Nut M 3 Press in nut  |\n|  33 | 4822 505 10892 | Nut M 3 Speed nut  |\n|  34 | 4822 505 10717 | Nut M 3 Hex nut  |\n|  36 | 4822 505 10635 | Nut M 3 Lock nut  |\n|  37 | 4822 505 10893 | Nut M 4 Speed nut  |\n|  41 | 4822 532 10215 | Washer 2.7 x 6  |\n|  43 | 4822 532 10332 | Washer 3.2 x 7  |\n|  44 | 4822 532 51843 | Washer 3.2 x 9  |\n|  47 | 4822 532 51844 | Washer  |\n|  51 | 4822 530 70121 | Retaining ring 1.5  |\n|  52 | 4822 530 70122 | Retaining ring 1.9  |\n|  53 | 4822 530 70043 | Retaining ring 2.3  |\n|  61 | 4822 462 40155 | Stopper  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 724,
+      "bottomRightX": 102,
+      "bottomRightY": 736,
+      "content": "# OPTICAL DECK",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 748,
+      "bottomRightX": 246,
+      "bottomRightY": 835,
+      "content": "|  101 | 4822 691 30185 | Slide drive assy  |\n| --- | --- | --- |\n|  103 | 4822 361 20963 | Motor assy  |\n|  132 | 4822 358 20264 | Toothbelt  |\n|  152 | 4822 361 20964 | ATC Motor assy  |\n|  154 | 4822 358 10107 | Belt  |\n|  157 | 4822 691 30186 | ATC drive assy  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 88,
+      "bottomRightX": 426,
+      "bottomRightY": 99,
+      "content": "# FRONTLOADER",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 111,
+      "bottomRightX": 600,
+      "bottomRightY": 641,
+      "content": "|  201 | 4822 418 40547 | Tray assy  |\n| --- | --- | --- |\n|  202 | 4822 691 30184 | Front tray assy  |\n|  203 | 4822 532 61051 | Disc carrier  |\n|  204 | 4822 466 82136 | Guide section  |\n|  206 | 4822 691 20403 | Frontloading drive  |\n|  207 | 4822 358 30741 | Belt  |\n|  208 | 4822 528 81143 | Pulley  |\n|  209 | 4822 361 20933 | Motor assy  |\n|  211 | 4822 532 61049 | Mounting bush  |\n|  212 | 4822 528 90636 | Friction wheel  |\n|  213 | 4822 522 32254 | Gear wheel  |\n|  214 | 4822 492 32671 | Tension spring  |\n|  216 | 4822 466 82139 | Slide block  |\n|  217 | 4822 535 92288 | Pin  |\n|  218 | 4822 528 90637 | Roller  |\n|  219 | 4822 535 92289 | Pin  |\n|  221 | 4822 402 61074 | Bracket assy  |\n|  222 | 4822 402 61075 | Guide support  |\n|  223 | 4822 402 61072 | Guide bracket  |\n|  224 | 4822 528 90634 | Wheel  |\n|  226 | 4822 466 82137 | Block  |\n|  227 | 4822 522 32253 | Gear wheel  |\n|  228 | 4822 522 32252 | Gear wheel  |\n|  229 | 4822 532 51845 | Catch ring  |\n|  231 | 4822 402 61073 | Pressure bracket assy  |\n|  232 | 4822 466 82139 | Slide block  |\n|  233 | 4822 535 92288 | Pin  |\n|  234 | 4822 528 90635 | Nave  |\n|  236 | 4822 466 82138 | Guide support  |\n|  237 | 4822 528 30324 | Rise cam  |\n|  238 | 4822 528 90634 | Wheel  |\n|  239 | 4822 466 82137 | Block  |\n|  241 | 4822 402 61072 | Guide bracket  |\n|  242 | 4822 214 51583 | Printed board assy  |\n|  243 | 4822 276 11897 | Switch assy  |\n|  244 | 4822 402 61074 | Bracket assy  |\n|  246 | 4822 528 30324 | Rise cam  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 995,
+      "bottomRightX": 68,
+      "bottomRightY": 1007,
+      "content": "CS 7 868",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

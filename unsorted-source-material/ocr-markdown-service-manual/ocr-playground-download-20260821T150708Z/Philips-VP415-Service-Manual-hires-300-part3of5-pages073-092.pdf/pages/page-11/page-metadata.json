@@ -1,0 +1,96 @@
+{
+  "index": 10,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 346,
+      "topLeftY": 101,
+      "bottomRightX": 564,
+      "bottomRightY": 114,
+      "content": "# LIST OF ELECTRICAL PARTS MODULE W",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 125,
+      "bottomRightX": 463,
+      "bottomRightY": 139,
+      "content": "Eproms (programmed)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 139,
+      "bottomRightX": 630,
+      "bottomRightY": 185,
+      "content": "|  7201 IC1 | 4822 209 51258 | TMS 27128 sync  |\n| --- | --- | --- |\n|  7224 IC24 | 4822 209 51259 | TMS 27128 descrambler  |\n|  7247 IC47 | 4822 209 51261 | TMS 27128 LV DOS 1  |\n|  7248 IC48 | 4822 209 51262 | TMS 27128 LV DOS 2  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 198,
+      "bottomRightX": 390,
+      "bottomRightY": 209,
+      "content": "Crystals",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 210,
+      "bottomRightX": 535,
+      "bottomRightY": 221,
+      "content": "|  5001 X1 | 4822 242 71628 | 8MHz  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 233,
+      "bottomRightX": 441,
+      "bottomRightY": 245,
+      "content": "Resistor networks",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 246,
+      "bottomRightX": 553,
+      "bottomRightY": 306,
+      "content": "|  3003 R3 | 4822 116 90247 | 9x 220 Ω  |\n| --- | --- | --- |\n|  3004 R4 | 4822 116 90248 | 9x 330 Ω  |\n|  3005 R5 | 4822 116 90247 | 9x 220 Ω  |\n|  3006 R6 | 4822 116 90248 | 9x 330 Ω  |\n|  3007 R7 | 4822 116 90251 | 9x 3.3kΩ  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 346,
+      "topLeftY": 330,
+      "bottomRightX": 646,
+      "bottomRightY": 438,
+      "content": "|  2001 | c1 | 4822 122 31413 | 150 pF |   |\n| --- | --- | --- | --- | --- |\n|  2002 | c2 | 5322 122 32072 | 33 pF |   |\n|  2003 | c3 | 5322 124 21749 | 10 μF | 63 V  |\n|  2004 | c4 | 4822 124 22027 | 47 μF | 25 V  |\n|  2005 | c5 | 5322 122 32072 | 33 pF |   |\n|  2006 | c6 | 4822 122 30103 | 22 nF | 63 V  |\n|  2007 | c7 | 4822 124 22027 | 47 μF | 25 V  |\n|  2102 | c39.. | 4822 122 30103 | 22 nF | 63 V  |\n|  2177 | ..c77 |  |  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 30,
+      "topLeftY": 983,
+      "bottomRightX": 79,
+      "bottomRightY": 996,
+      "content": "CS 7 857",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

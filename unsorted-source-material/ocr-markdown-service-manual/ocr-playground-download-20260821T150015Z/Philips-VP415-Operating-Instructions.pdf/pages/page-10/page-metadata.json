@@ -1,0 +1,569 @@
+{
+  "index": 9,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 31,
+      "bottomRightX": 318,
+      "bottomRightY": 68,
+      "content": "# CONTROLS, INDICATORS AND CONNECTIONS (Fig. 1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 82,
+      "bottomRightX": 204,
+      "bottomRightY": 95,
+      "content": "# SUMMARY OF CONTROLS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 102,
+      "bottomRightX": 137,
+      "bottomRightY": 116,
+      "content": "# Front of player",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 122,
+      "bottomRightX": 147,
+      "bottomRightY": 133,
+      "content": "- EJECT button",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 134,
+      "bottomRightX": 322,
+      "bottomRightY": 147,
+      "content": "For opening the disc-tray and ejecting a disc if one is loaded.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 160,
+      "bottomRightX": 181,
+      "bottomRightY": 171,
+      "content": "- ON/STANDBY button",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 172,
+      "bottomRightX": 364,
+      "bottomRightY": 197,
+      "content": "For switching between 'standby' and 'on' modes. This button also effects a CPU reset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 209,
+      "bottomRightX": 237,
+      "bottomRightY": 223,
+      "content": "# Rear of player (numbers refer to Fig. 1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 228,
+      "bottomRightX": 168,
+      "bottomRightY": 240,
+      "content": "- ON/OFF switch (1)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 241,
+      "bottomRightX": 193,
+      "bottomRightY": 254,
+      "content": "Primary mains power switch.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 267,
+      "bottomRightX": 196,
+      "bottomRightY": 279,
+      "content": "- REPLAY on/off switch (3)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 279,
+      "bottomRightX": 338,
+      "bottomRightY": 293,
+      "content": "Switches the replay function on or off. See 'Replay' in Section 3.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 305,
+      "bottomRightX": 189,
+      "bottomRightY": 317,
+      "content": "- RC IR/EURO switch (4)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 318,
+      "bottomRightX": 364,
+      "bottomRightY": 344,
+      "content": "To switch between remote control commands being received directly by the VP415 (IR) or via the monitor (EURO).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 356,
+      "bottomRightX": 212,
+      "bottomRightY": 368,
+      "content": "- BAUD RATE dip switches (7)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 369,
+      "bottomRightX": 364,
+      "bottomRightY": 395,
+      "content": "For selecting the baud rate for RS232-C communication. See Section 5 - 'F-code programming'.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 407,
+      "bottomRightX": 178,
+      "bottomRightY": 419,
+      "content": "- H-SHIFT control (11)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 420,
+      "bottomRightX": 364,
+      "bottomRightY": 457,
+      "content": "To shift the horizontal position of the picture when using an external sync signal (connected to either of the SYNC IN sockets). See 'Genlock' in Section 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 471,
+      "bottomRightX": 213,
+      "bottomRightY": 483,
+      "content": "- SCSI address dip switches (17)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 484,
+      "bottomRightX": 364,
+      "bottomRightY": 508,
+      "content": "To set the SCSI bus address of the player. See Section 7 - 'SCSI operation'.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 525,
+      "bottomRightX": 288,
+      "bottomRightY": 537,
+      "content": "# SUMMARY OF FRONT-PANEL INDICATORS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 545,
+      "bottomRightX": 343,
+      "bottomRightY": 559,
+      "content": "The following indicators give status information about the VP415:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 570,
+      "bottomRightX": 336,
+      "bottomRightY": 596,
+      "content": "STANDBY (red) Lights in standby mode and flashes during start-up.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 609,
+      "bottomRightX": 260,
+      "bottomRightY": 623,
+      "content": "EJECT (green) Flashes during eject.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 634,
+      "bottomRightX": 260,
+      "bottomRightY": 649,
+      "content": "PAUSE (green) Lights during pause.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 660,
+      "bottomRightX": 326,
+      "bottomRightY": 673,
+      "content": "REPLAY (green) Lights when replay function is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 685,
+      "bottomRightX": 326,
+      "bottomRightY": 699,
+      "content": "REPEAT (green) Lights when repeat function is active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 711,
+      "bottomRightX": 335,
+      "bottomRightY": 724,
+      "content": "AUDIO 1 (green) Lights when audio channel 1 is enabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 737,
+      "bottomRightX": 335,
+      "bottomRightY": 750,
+      "content": "AUDIO 2 (green) Lights when audio channel 2 is enabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 762,
+      "bottomRightX": 305,
+      "bottomRightY": 775,
+      "content": "CAV (green) Lights when playing CAV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 787,
+      "bottomRightX": 304,
+      "bottomRightY": 801,
+      "content": "CLV (green) Lights when playing CLV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 812,
+      "bottomRightX": 344,
+      "bottomRightY": 838,
+      "content": "REMOTE CONTROL (green) Flashes to confirm that player is receiving a remote control command.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 31,
+      "bottomRightX": 659,
+      "bottomRightY": 44,
+      "content": "# SUMMARY OF CONNECTIONS (numbers refer to Fig. 1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 51,
+      "bottomRightX": 515,
+      "bottomRightY": 63,
+      "content": "- MAINS lead socket (2)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 64,
+      "bottomRightX": 545,
+      "bottomRightY": 76,
+      "content": "For connection of the mains lead.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 89,
+      "bottomRightX": 513,
+      "bottomRightY": 101,
+      "content": "- WIRED RC socket (5)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 102,
+      "bottomRightX": 699,
+      "bottomRightY": 153,
+      "content": "For wired connection of the remote control handset, using the remote control cable supplied. This permits the remote control to be used when the VP415 is hidden from view. (See 'Wired remote control' in Section 1.)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 166,
+      "bottomRightX": 497,
+      "bottomRightY": 178,
+      "content": "- RS232C socket (6)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 179,
+      "bottomRightX": 630,
+      "bottomRightY": 191,
+      "content": "Provides a serial connection for an external computer.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 204,
+      "bottomRightX": 553,
+      "bottomRightY": 216,
+      "content": "- AUDIO IN (1 and 2) sockets (8)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 217,
+      "bottomRightX": 691,
+      "bottomRightY": 240,
+      "content": "Used for connection of an external stereo or 2-channel sound source. AUDIO L = AUDIO 1;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 241,
+      "bottomRightX": 511,
+      "bottomRightY": 254,
+      "content": "AUDIO R = AUDIO 2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 267,
+      "bottomRightX": 563,
+      "bottomRightY": 280,
+      "content": "- AUDIO OUT (1 and 2) sockets (9)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 280,
+      "bottomRightX": 691,
+      "bottomRightY": 293,
+      "content": "Used for connection of an external stereo or 2-channel sound source.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 294,
+      "bottomRightX": 511,
+      "bottomRightY": 305,
+      "content": "AUDIO L = AUDIO 1;",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 306,
+      "bottomRightX": 511,
+      "bottomRightY": 317,
+      "content": "AUDIO R = AUDIO 2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 331,
+      "bottomRightX": 519,
+      "bottomRightY": 344,
+      "content": "- A/V Euroconnector (10)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 345,
+      "bottomRightX": 697,
+      "bottomRightY": 369,
+      "content": "Provides connection for variety of inputs and outputs for a monitor. See Section 8 - 'Technical data' for full details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 383,
+      "bottomRightX": 518,
+      "bottomRightY": 395,
+      "content": "- CVBS OUT socket (12)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 396,
+      "bottomRightX": 698,
+      "bottomRightY": 420,
+      "content": "Provides a video signal output suitable for a monitor. For further information, refer to 'CVBS output / RGB-PAL encoder' in Section 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 433,
+      "bottomRightX": 517,
+      "bottomRightY": 446,
+      "content": "- SYNC OUT socket (13)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 447,
+      "bottomRightX": 698,
+      "bottomRightY": 472,
+      "content": "Provides a synchronising signal for the host computer or a second VP415 connected in parallel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 484,
+      "bottomRightX": 511,
+      "bottomRightY": 496,
+      "content": "- CVBS IN sockets (14)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 497,
+      "bottomRightX": 699,
+      "bottomRightY": 586,
+      "content": "These two sockets are internally connected; either of them may be used. They accept an external video input signal, e.g. from a second VP415. The signal may be looped through to other equipment using the second CVBS IN socket. If no such loop is used, the second socket must be properly terminated with a 75 ohm plug. To lock the CVBS signal to an external RGB signal (for mixing purposes), it must be looped through to one of the SYNC IN sockets.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 598,
+      "bottomRightX": 511,
+      "bottomRightY": 611,
+      "content": "- SYNC IN sockets (15)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 612,
+      "bottomRightX": 699,
+      "bottomRightY": 675,
+      "content": "These two sockets are internally connected; either of them may be used. They accept an external video synchronising signal which may be looped through to other equipment using the second SYNC IN socket. If no such loop is used, the second socket must be properly terminated with a 75 ohm plug.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 675,
+      "bottomRightX": 698,
+      "bottomRightY": 701,
+      "content": "Note: The reference signal must conform to broadcast standards in respect of pulse-shape and timing (a standard CVBS signal is suitable).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 713,
+      "bottomRightX": 532,
+      "bottomRightY": 725,
+      "content": "- RGB (TTL) IN socket (16)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 726,
+      "bottomRightX": 699,
+      "bottomRightY": 751,
+      "content": "DIN RGB input socket for video and sync input from an external computer. Refer to Section 8 - 'Technical data' for further details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 764,
+      "bottomRightX": 490,
+      "bottomRightY": 776,
+      "content": "- SCSI socket (18)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 777,
+      "bottomRightX": 698,
+      "bottomRightY": 802,
+      "content": "Provides a connection to an external computer according to SCSI standards. Refer to Section 8 - 'Technical data' for further details.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 967,
+      "bottomRightX": 84,
+      "bottomRightY": 976,
+      "content": "9",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+BLOCKDIAGRAM AUDIO/VIDEO PATH
+
+![img-31.jpeg](img-31.jpeg)
+
+CS 7 834

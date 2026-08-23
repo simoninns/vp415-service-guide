@@ -1,0 +1,79 @@
+{
+  "index": 8,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 70,
+      "topLeftY": 33,
+      "bottomRightX": 694,
+      "bottomRightY": 197,
+      "content": "![img-5.jpeg](img-5.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-5.jpeg"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 205,
+      "bottomRightX": 694,
+      "bottomRightY": 360,
+      "content": "![img-6.jpeg](img-6.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-6.jpeg"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 366,
+      "bottomRightX": 694,
+      "bottomRightY": 541,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 547,
+      "bottomRightX": 694,
+      "bottomRightY": 620,
+      "content": "![img-8.jpeg](img-8.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-8.jpeg"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 626,
+      "bottomRightX": 694,
+      "bottomRightY": 730,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 731,
+      "bottomRightX": 232,
+      "bottomRightY": 745,
+      "content": "Fig. 2: Connection and adaptor cables.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 687,
+      "topLeftY": 968,
+      "bottomRightX": 695,
+      "bottomRightY": 977,
+      "content": "8",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

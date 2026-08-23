@@ -1,0 +1,92 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 68,
+      "topLeftY": 31,
+      "bottomRightX": 155,
+      "bottomRightY": 47,
+      "content": "SECTION 4",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 670,
+      "topLeftY": 35,
+      "bottomRightX": 694,
+      "bottomRightY": 48,
+      "content": "Page",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 64,
+      "bottomRightX": 695,
+      "bottomRightY": 79,
+      "content": "# INTERACTIVE PLAY OPERATION 19",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 84,
+      "bottomRightX": 695,
+      "bottomRightY": 96,
+      "content": "Introduction 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 97,
+      "bottomRightX": 695,
+      "bottomRightY": 109,
+      "content": "F-code operation via RS232-C. 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 110,
+      "bottomRightX": 695,
+      "bottomRightY": 122,
+      "content": "Mode selection 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 123,
+      "bottomRightX": 695,
+      "bottomRightY": 135,
+      "content": "SCSI operation 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 136,
+      "bottomRightX": 695,
+      "bottomRightY": 146,
+      "content": "Mode selection 19",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 686,
+      "topLeftY": 964,
+      "bottomRightX": 698,
+      "bottomRightY": 974,
+      "content": "18",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

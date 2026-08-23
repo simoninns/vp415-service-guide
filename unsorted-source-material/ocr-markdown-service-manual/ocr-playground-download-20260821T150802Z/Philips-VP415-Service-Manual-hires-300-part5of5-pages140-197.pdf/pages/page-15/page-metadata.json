@@ -1,0 +1,166 @@
+{
+  "index": 14,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 17,
+      "topLeftY": 49,
+      "bottomRightX": 32,
+      "bottomRightY": 61,
+      "content": "28",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 122,
+      "topLeftY": 56,
+      "bottomRightX": 272,
+      "bottomRightY": 86,
+      "content": "Fig. Ua2 ANALOG I/O MODULE Ub\n(AUDIO PART)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 91,
+      "bottomRightX": 296,
+      "bottomRightY": 369,
+      "content": "![img-30.jpeg](img-30.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-30.jpeg"
+    },
+    {
+      "topLeftX": 16,
+      "topLeftY": 382,
+      "bottomRightX": 246,
+      "bottomRightY": 396,
+      "content": "# MODULE UB - ANALOGUE I/O VIDEO PART",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 400,
+      "bottomRightX": 308,
+      "bottomRightY": 476,
+      "content": "This part of module U re-encodes -(R-Y) and -(B-Y) as a PAL chroma signal, mixes luminance and chroma and re-inserts text from disc if it is present. New syncs are inserted then and the resulting signal output goes as CVBS to SCART and encoded CVBS to the BNC outlet socket. See the block diagram in Fig. Ub1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 16,
+      "topLeftY": 485,
+      "bottomRightX": 114,
+      "bottomRightY": 499,
+      "content": "# Circuit description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 16,
+      "topLeftY": 503,
+      "bottomRightX": 135,
+      "bottomRightY": 517,
+      "content": "# Luminance processing",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 520,
+      "bottomRightX": 308,
+      "bottomRightY": 605,
+      "content": "On plug 9aU1 the luminance signal LUM arrives from the RGB demodulator module (B). The LUM signal will go via an adjustable gain buffer amplifier T 7201/7202/7203 to C 2204. The luminance signal will be clamped by the BPCLP signal. This signal is available on the gate of FET 7204 and will clamp the black level of the luminance signal to about OV.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 336,
+      "topLeftY": 76,
+      "bottomRightX": 628,
+      "bottomRightY": 211,
+      "content": "The clamped luminance signal is present on the base of T 7205. Because the base of T 7206 is at GND level T 7205 will not pass on signals of negative level. In this way the syncs are removed and the luminance signal without syncs is available on the emitters of T 7205/7206. This removing of the syncs is blocked if the NS-VID signal (plug 6cU1) is high. Because this signal can let T 7217 conduct and pull the base of T7206 to a negative voltage level. The original syncs will remain in the luminance signal. The luminance signal will be buffered by T 7207 and is then present on the base of T 7209.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 336,
+      "topLeftY": 221,
+      "bottomRightX": 628,
+      "bottomRightY": 282,
+      "content": "The signal at the base of T 7209 will be shorted to GND if FET 7208 is conducting. This is only possible via a high level of the CBL (composite blanking) signal, which only arises in the signal parts without luminance information (line syncs, frame syncs, burst period).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 282,
+      "bottomRightX": 628,
+      "bottomRightY": 306,
+      "content": "This blanking is blocked again by the NS-VID signal via T 7221.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 336,
+      "topLeftY": 312,
+      "bottomRightX": 628,
+      "bottomRightY": 396,
+      "content": "The processed luminance signal will via emitter follower T 7209 go to the base of T 7211. In the meanwhile the luminance signal will be mixed with the encoded chroma signal via L 5202. Unwanted chroma in the luminance signal will be filtered out via C 2206, L 5202 and T 7223. The encoded chroma will be added to the luminance signal via T 7210 and T 7223.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 336,
+      "topLeftY": 401,
+      "bottomRightX": 628,
+      "bottomRightY": 499,
+      "content": "To the signal at the base of T 7211 TXT information will be added via the T 7211/7212 circuit. The amplitude of the INS-TXT signal can be adjusted by potmeter R 3240. The insertion of TXT signals can be blocked too. If wanted, the NS-VID signal will make T 7222 conducting. In that case the INS-TXT is shorted to GND, so the video signal will pass T 7211 without TXT insert. The video signal will be available at the base of T 7213.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 336,
+      "topLeftY": 503,
+      "bottomRightX": 628,
+      "bottomRightY": 577,
+      "content": "New syncs are now added to the signal at the base of T 7213 from the CS-REF signal (generated on the REFsource module (D)), via T 7216/7219. The amplitude of the offered sync signal can be adjusted with potmeter R 3263, via T 7220. Also, the insertion of CS-REF can be blocked by the NS-VID signal via T 7218.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 99,
+      "topLeftY": 581,
+      "bottomRightX": 586,
+      "bottomRightY": 967,
+      "content": "![img-31.jpeg](img-31.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-31.jpeg"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 981,
+      "bottomRightX": 63,
+      "bottomRightY": 994,
+      "content": "CS 7 900",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 498,
+      "topLeftY": 982,
+      "bottomRightX": 525,
+      "bottomRightY": 997,
+      "content": "PRS 01700\nT32-709",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "index": 44,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 69,
+      "topLeftY": 37,
+      "bottomRightX": 81,
+      "bottomRightY": 47,
+      "content": "10",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 381,
+      "topLeftY": 54,
+      "bottomRightX": 549,
+      "bottomRightY": 68,
+      "content": "Fig. SE 1 BLOCKDIAGRAM SERVO",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 184,
+      "topLeftY": 110,
+      "bottomRightX": 876,
+      "bottomRightY": 548,
+      "content": "![img-56.jpeg](img-56.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-56.jpeg"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 691,
+      "bottomRightX": 100,
+      "bottomRightY": 701,
+      "content": "CS 8 123",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

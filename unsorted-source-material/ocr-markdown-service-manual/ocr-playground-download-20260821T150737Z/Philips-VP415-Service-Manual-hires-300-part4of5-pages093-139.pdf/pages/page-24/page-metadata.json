@@ -1,0 +1,66 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 74,
+      "topLeftY": 176,
+      "bottomRightX": 342,
+      "bottomRightY": 782,
+      "content": "![img-31.jpeg](img-31.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-31.jpeg"
+    },
+    {
+      "topLeftX": 437,
+      "topLeftY": 325,
+      "bottomRightX": 584,
+      "bottomRightY": 376,
+      "content": "TIME OUT TILT\n-CHECK ATC CIRCUIT IN\nOPTICAL DECK",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 437,
+      "topLeftY": 477,
+      "bottomRightX": 535,
+      "bottomRightY": 526,
+      "content": "LASER NOT ON\nR Z",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 437,
+      "topLeftY": 630,
+      "bottomRightX": 569,
+      "bottomRightY": 679,
+      "content": "NOT OUT OF FOCUS\nR J",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 515,
+      "topLeftY": 739,
+      "bottomRightX": 572,
+      "bottomRightY": 764,
+      "content": "MDA.00617\nT27/716",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 13,
+      "topLeftY": 980,
+      "bottomRightX": 61,
+      "bottomRightY": 994,
+      "content": "CS 8 119",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "index": 22,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 23,
+      "topLeftY": 49,
+      "bottomRightX": 1009,
+      "bottomRightY": 658,
+      "content": "![img-45.jpeg](img-45.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-45.jpeg"
+    },
+    {
+      "topLeftX": 23,
+      "topLeftY": 685,
+      "bottomRightX": 59,
+      "bottomRightY": 694,
+      "content": "CS 6 884",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

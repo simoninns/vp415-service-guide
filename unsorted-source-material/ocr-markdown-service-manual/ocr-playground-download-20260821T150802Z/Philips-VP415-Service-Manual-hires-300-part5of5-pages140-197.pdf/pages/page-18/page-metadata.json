@@ -1,0 +1,315 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 696,
+      "topLeftY": 57,
+      "bottomRightX": 711,
+      "bottomRightY": 70,
+      "content": "31",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 427,
+      "topLeftY": 78,
+      "bottomRightX": 608,
+      "bottomRightY": 90,
+      "content": "DATA GRABBER DATA PROCESSING MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 624,
+      "topLeftY": 77,
+      "bottomRightX": 642,
+      "bottomRightY": 91,
+      "content": "Wa",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 96,
+      "bottomRightX": 645,
+      "bottomRightY": 352,
+      "content": "![img-34.jpeg](img-34.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-34.jpeg"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 359,
+      "bottomRightX": 180,
+      "bottomRightY": 372,
+      "content": "# Header register",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 96,
+      "topLeftY": 374,
+      "bottomRightX": 389,
+      "bottomRightY": 436,
+      "content": "Header bytes are loaded into the header register IC's 19,20 when HWE=0 (Header write enable). Header reading by the CPU is accomplished with HRE=0, IORD=0 and SEL4=0. The CPU can then determine if the header is from the desired data block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 446,
+      "bottomRightX": 166,
+      "bottomRightY": 460,
+      "content": "# Byte counter",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 96,
+      "topLeftY": 464,
+      "bottomRightX": 389,
+      "bottomRightY": 537,
+      "content": "The byte counter uses 4 counters, IC's 31,32,36,38. It generates addresses for the descrambler EPROM and the RAM. The byte counter must be synchronised with the blocks. At the end of each sync pattern the counter is reset by SYN and so is rapidly pulled into lock. RDY indicates to the CPU that 3 blocks (3 x 2352) blocks are in the RAM.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 547,
+      "bottomRightX": 196,
+      "bottomRightY": 561,
+      "content": "# RDY (ready signal)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 96,
+      "topLeftY": 565,
+      "bottomRightX": 389,
+      "bottomRightY": 615,
+      "content": "RDY informs the CPU that 3 blocks are in the RAM. RDY is generated when TCNT(Terminate count ) occurs ( 3 x 2352-1) from IC 35. The RDY circuit is built around IC's14,13 it is reset by RES.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 626,
+      "bottomRightX": 302,
+      "bottomRightY": 639,
+      "content": "# Read/write of header register and RAM",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 643,
+      "bottomRightX": 389,
+      "bottomRightY": 669,
+      "content": "The read signal comes from the CPU. The write signal is DST2=0 for the ram, HDR for the header register.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 680,
+      "bottomRightX": 177,
+      "bottomRightY": 694,
+      "content": "# Status register",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 697,
+      "bottomRightX": 381,
+      "bottomRightY": 712,
+      "content": "The CPU can read the status of the data grabber- port 34.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 721,
+      "bottomRightX": 149,
+      "bottomRightY": 735,
+      "content": "Table W4",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 740,
+      "bottomRightX": 355,
+      "bottomRightY": 817,
+      "content": "|  Bit | Signal |   |\n| --- | --- | --- |\n|  0 | LCK | =1, Data grabber in lock  |\n|  1 | RDY | =1, Three blocks in RAM  |\n|  2 | HDR | =1, Header in register  |\n|  3 | ERR | =0, Error is present  |\n|  4-7 | Not used |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 827,
+      "bottomRightX": 389,
+      "bottomRightY": 865,
+      "content": "The status register is a tri-state octal buffer IC 18. It is enabled when ENA=0. ENA is derived from SEL4 and IORD in IC 66.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 875,
+      "bottomRightX": 302,
+      "bottomRightY": 890,
+      "content": "# Processor control lines to data grabber",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 894,
+      "bottomRightX": 149,
+      "bottomRightY": 906,
+      "content": "Table W5",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 909,
+      "bottomRightX": 319,
+      "bottomRightY": 983,
+      "content": "|  -MEMRD | Read RAM  |\n| --- | --- |\n|  -MEMWR | Write to RAM  |\n|  -IORD | Read I/O ports  |\n|  -ENA | Enable status register  |\n|  -PRO4 | Chip select RAM 8000h - 9FFFh  |\n|  -SEL4 | Chip select I/O ports 40h - 4Fh  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 362,
+      "bottomRightX": 467,
+      "bottomRightY": 375,
+      "content": "# I/O ports",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 379,
+      "bottomRightX": 470,
+      "bottomRightY": 391,
+      "content": "Table W6",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 395,
+      "bottomRightX": 594,
+      "bottomRightY": 470,
+      "content": "|  -34h | Status register input  |\n| --- | --- |\n|  34h | Control register output  |\n|  40h | Header register (Mins)  |\n|  41h | Header register (Secs)  |\n|  42h | Header register (Block)  |\n|  43h | Header register (Mode)  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 481,
+      "bottomRightX": 557,
+      "bottomRightY": 494,
+      "content": "# RAM (8k shared with CPU)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 499,
+      "bottomRightX": 469,
+      "bottomRightY": 510,
+      "content": "Table W7",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 514,
+      "bottomRightX": 625,
+      "bottomRightY": 659,
+      "content": "|  8000h-8003h | Header block 1  |\n| --- | --- |\n|  8004h-8803h | Data block 1  |\n|  8804h-8923h | CRC block 1  |\n|  8924h-892Fh | Sync pattern block 2  |\n|  8930h-8933h | Header block 2  |\n|  8934h-9133h | Data block 2  |\n|  9134h-9253h | CRC block 2  |\n|  9254h-925Fh | Sync pattern block 3  |\n|  9260h-9263h | Header block 3  |\n|  9264h-9A63h | Data block 3  |\n|  9A64h-9B83h | CRC block 3  |\n|  9B84h-9B8Fh | Sync block 4  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 671,
+      "bottomRightX": 501,
+      "bottomRightY": 684,
+      "content": "# Control register",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 689,
+      "bottomRightX": 469,
+      "bottomRightY": 700,
+      "content": "Table W8",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 704,
+      "bottomRightX": 672,
+      "bottomRightY": 781,
+      "content": "|  Bit | Function  |\n| --- | --- |\n|  1 | INTR=0 Reset interupt flip flops  |\n|  0 - 4 | Not used  |\n|  5 | RES=1 Reset LCK and RDY  |\n|  6 | ERD=1 Read header of first data block  |\n|  7 | ENW=1 CPU can write to RAM  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 792,
+      "bottomRightX": 603,
+      "bottomRightY": 805,
+      "content": "# Sequence to get data from the disc",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 810,
+      "bottomRightX": 469,
+      "bottomRightY": 821,
+      "content": "Table W9",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 419,
+      "topLeftY": 825,
+      "bottomRightX": 688,
+      "bottomRightY": 898,
+      "content": "|  1 | Make RES=1 to reset  |\n| --- | --- |\n|  2 | Wait for lock (LCK)  |\n|  3 | Wait for header  |\n|  4 | Make ERD=1 to read header when HDR arrives  |\n|  5 | Wait for ready signal (RDY)  |\n|  6 | Make ENW=1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 663,
+      "topLeftY": 989,
+      "bottomRightX": 712,
+      "bottomRightY": 1002,
+      "content": "CS 7 903",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

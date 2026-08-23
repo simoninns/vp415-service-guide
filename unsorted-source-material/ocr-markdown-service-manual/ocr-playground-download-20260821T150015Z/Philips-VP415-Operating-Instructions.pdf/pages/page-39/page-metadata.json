@@ -1,0 +1,363 @@
+{
+  "index": 38,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 70,
+      "topLeftY": 31,
+      "bottomRightX": 364,
+      "bottomRightY": 95,
+      "content": "The data phase is followed by the status phase in which the player returns a single byte to the host computer indicating the success or failure of the command. In the latter case, the host computer may be able to ask the player for further information with a request sense command to determine what has gone wrong.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 107,
+      "bottomRightX": 364,
+      "bottomRightY": 160,
+      "content": "Finally, the player sends a command complete message to the host computer before releasing the SCSI bus. This is required by the SCSI standard, but serves no purpose for LV-DOS as all operations are synchronous (i.e. complete before the status is returned).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 176,
+      "bottomRightX": 130,
+      "bottomRightY": 188,
+      "content": "# VP415 issues",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 195,
+      "bottomRightX": 364,
+      "bottomRightY": 248,
+      "content": "The VP415 SCSI interface adheres strictly to SCSI specifications for both hardware and software. The bus cable is daisy-chained in single ended mode; parity is ignored. The connector pin TERMPWR is not connected to an internal power supply.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 259,
+      "bottomRightX": 364,
+      "bottomRightY": 324,
+      "content": "LV-DOS supports all SCSI bus phases except the optional Reselection phase and Message Out phase, and supports arbitrary systems with multiple initiators. The 'hard reset' condition is supported by LV-DOS. Asynchronous transfer mode is the default; optional synchronous transfer mode and linked commands are not supported.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 336,
+      "bottomRightX": 364,
+      "bottomRightY": 451,
+      "content": "One of the values specified in the command descriptor block is the Logic Unit Number (0 - 7). This is provided by the SCSI standard to address different logic units within the same device. In the case of LV-DOS, the logic unit number is used to specify which of the volumes is to be accessed by the current command (rather like specifying one of two or more floppy drives attached to the same controller). Logic unit 7 is used for all commands not pertaining to a particular volume, including reading the volume directory. A logic unit number is assigned to a volume when it is opened.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 470,
+      "bottomRightX": 191,
+      "bottomRightY": 481,
+      "content": "# DEFAULT CONDITIONS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 488,
+      "bottomRightX": 188,
+      "bottomRightY": 500,
+      "content": "# Default start-up conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 506,
+      "bottomRightX": 364,
+      "bottomRightY": 570,
+      "content": "At power-up or reset the system is in the standby condition. To log the disc onto LV-DOS, an initial Start-unit command should be issued to the player before any other SCSI command. If, however, the first command after a hard reset is a Read command, then the Start-unit function is automatically performed prior to the read action.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 582,
+      "bottomRightX": 364,
+      "bottomRightY": 608,
+      "content": "After a successful execution of the Start-unit command the player will have a start-up default mode as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 124,
+      "topLeftY": 621,
+      "bottomRightX": 168,
+      "bottomRightY": 632,
+      "content": "Audio off",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 634,
+      "bottomRightX": 240,
+      "bottomRightY": 646,
+      "content": "Remote control handset on",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 647,
+      "bottomRightX": 196,
+      "bottomRightY": 659,
+      "content": "Index display off",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 660,
+      "bottomRightX": 196,
+      "bottomRightY": 671,
+      "content": "Normal video on",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 672,
+      "bottomRightX": 198,
+      "bottomRightY": 683,
+      "content": "Video mode VP3",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 684,
+      "bottomRightX": 246,
+      "bottomRightY": 697,
+      "content": "Front panel controls enabled",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 698,
+      "bottomRightX": 194,
+      "bottomRightY": 709,
+      "content": "Search mode R1",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 722,
+      "bottomRightX": 364,
+      "bottomRightY": 761,
+      "content": "In addition, F-code commands issued to logic unit 7 will be executed fully transparent and F-code commands issued to other logic units will apply to the volume associated to that logic unit.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 773,
+      "bottomRightX": 364,
+      "bottomRightY": 863,
+      "content": "If the disc has no digital data, such as a CLV or CAV but without data, or if the execution of the automatic Start-unit command fails for any reason, then the player will be reset to the default conditions (according to the F-code specifications) and fully transparent F-code control is possible via all logic units. It is the responsibility of the initiator to select the desired player mode for the particular application. See 'Mode selection' in Section 4.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 875,
+      "bottomRightX": 364,
+      "bottomRightY": 915,
+      "content": "If the Start-unit command is given via SCSI, the video mode will be VP3 even if the command fails. This enables the host computer to display an error message.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 401,
+      "topLeftY": 31,
+      "bottomRightX": 521,
+      "bottomRightY": 44,
+      "content": "# Default stop-unit conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 400,
+      "topLeftY": 50,
+      "bottomRightX": 695,
+      "bottomRightY": 127,
+      "content": "A Stop-unit command from the initiator is received as an 'unload' command at the VP415, and all switches are reset to their default values (see F-code command 'Reset to default'). It is the responsibility of the initiator to send an Eject command if necessary. After a Stop-unit command, all the volumes are closed; a subsequent Start-unit command is needed to open the volumes again.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 401,
+      "topLeftY": 146,
+      "bottomRightX": 507,
+      "bottomRightY": 158,
+      "content": "# LV-DOS COMMANDS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 400,
+      "topLeftY": 163,
+      "bottomRightX": 695,
+      "bottomRightY": 227,
+      "content": "LV-DOS supports: all mandatory commands for read-only direct-access devices, some extended commands, and some vendor-unique commands. It should be noted that the SCSI command and reply formats supported by LV-DOS are a subset of the general SCSI definition (ANSI standard X3T9.2).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 400,
+      "topLeftY": 239,
+      "bottomRightX": 695,
+      "bottomRightY": 292,
+      "content": "The first field in the command descriptor block is a group code (value 0 - 7). The group code defines the format of the rest of the command. LV-DOS supports Group 0 commands for reading disc data and Group 6 (vendor-unique) commands for F-code read/write commands.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 309,
+      "bottomRightX": 469,
+      "bottomRightY": 321,
+      "content": "# The status byte",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 401,
+      "topLeftY": 327,
+      "bottomRightX": 696,
+      "bottomRightY": 366,
+      "content": "A single status byte is returned to the host computer on completion of a command. The SCSI standard assigns meanings to each bit in this byte, of which LV-DOS uses the following subset:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 379,
+      "bottomRightX": 494,
+      "bottomRightY": 391,
+      "content": "bit 0 reserved, 0",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 393,
+      "bottomRightX": 591,
+      "bottomRightY": 404,
+      "content": "bit 1 command failed, check sense status",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 405,
+      "bottomRightX": 493,
+      "bottomRightY": 416,
+      "content": "bit 2 - 7 reserved, 0",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 430,
+      "bottomRightX": 696,
+      "bottomRightY": 469,
+      "content": "A return value of 0 indicates that the command was successful. If a non-zero value is returned, the host computer should use the Request sense command for more details of what went wrong.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 486,
+      "bottomRightX": 524,
+      "bottomRightY": 499,
+      "content": "# Group 0 (6-byte) commands",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 505,
+      "bottomRightX": 674,
+      "bottomRightY": 517,
+      "content": "The format of a Group 0 command descriptor block is as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 528,
+      "bottomRightX": 699,
+      "bottomRightY": 735,
+      "content": "|   | (MS bit) |   |   |   |   |   |   |   | (LS bit)  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|   | 7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |   |\n|  Byte 0 | Group code (0) |   |   | Command code  |   |   |   |   |   |\n|  1 | Logic unit number |   |   | Logical block address (MSB)  |   |   |   |   |   |\n|  2 | Logical block address  |   |   |   |   |   |   |   |   |\n|  3 | Logical block address (LSB)  |   |   |   |   |   |   |   |   |\n|  4 | No. of data blocks to transfer (transfer length)  |   |   |   |   |   |   |   |   |\n|  5 | Control byte (0)  |   |   |   |   |   |   |   |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 747,
+      "bottomRightX": 697,
+      "bottomRightY": 771,
+      "content": "The group code + the command code together form the operation code.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 785,
+      "bottomRightX": 698,
+      "bottomRightY": 823,
+      "content": "The logical block address parameter bytes apply only to Read and Write block commands. For other commands they are in general meaningless and should be set to zero unless otherwise stated.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 836,
+      "bottomRightX": 698,
+      "bottomRightY": 861,
+      "content": "The vendor-unique bits, reserved bits, flag bit and link bit in the control byte are not supported and should be set to zero.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 874,
+      "bottomRightX": 658,
+      "bottomRightY": 886,
+      "content": "There is no data in or data out phase unless otherwise stated.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 685,
+      "topLeftY": 968,
+      "bottomRightX": 697,
+      "bottomRightY": 977,
+      "content": "38",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

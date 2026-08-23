@@ -1,0 +1,370 @@
+{
+  "index": 30,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 69,
+      "topLeftY": 31,
+      "bottomRightX": 311,
+      "bottomRightY": 109,
+      "content": "|  bit 3: | 0 = no program dump | 1 = program dump in audio channel 2  |\n| --- | --- | --- |\n|  bit 2: | 0 = normal video | 1 = video contains digital information  |\n|  bit 1: | (see table below) |   |\n|  bit 0: | (see table below) |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 119,
+      "bottomRightX": 157,
+      "bottomRightY": 131,
+      "content": "Fifth status byte (x5)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 141,
+      "bottomRightX": 284,
+      "bottomRightY": 241,
+      "content": "|  bit 7: | 0  |\n| --- | --- |\n|  bit 6: | 0  |\n|  bit 5: | 1  |\n|  bit 4: | 1  |\n|  bit 3: | even parity check with bits 3, 2 & 0 of x4  |\n|  bit 2: | even parity check with bits 3, 1 & 0 of x4  |\n|  bit 1: | even parity check with bits 2, 1 & 0 of x4  |\n|  bit 0: | 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 256,
+      "bottomRightX": 361,
+      "bottomRightY": 281,
+      "content": "x4 bit 3, x3 bit 0, x4 bit 1 and x4 bit 0 (respectively in the table below) indicate the status of the analogue audio channels:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 298,
+      "bottomRightX": 362,
+      "bottomRightY": 554,
+      "content": "|   | program dump | FM multiplex | channel 1 | channel 2  |\n| --- | --- | --- | --- | --- |\n|  0000 | off | off | stereo  |   |\n|  0001 | off | off | mono  |   |\n|  0010 | off | off | no sound carriers  |   |\n|  0011 | off | off | bilingual  |   |\n|  0100 | off | on | stereo | stereo  |\n|  0101 | off | on | stereo | bilingual  |\n|  0110 | off | on | cross-channel stereo  |   |\n|  0111 | off | on | bilingual | bilingual  |\n|  1000 | on | off | mono | dump  |\n|  1001 | on | off | mono | dump  |\n|  1010 | on | off | (for future use)  |   |\n|  1011 | on | off | mono | dump  |\n|  1100 | on | on | stereo | dump  |\n|  1101 | on | on | stereo | dump  |\n|  1110 | on | on | bilingual | dump  |\n|  1111 | on | on | bilingual | dump  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 578,
+      "bottomRightX": 208,
+      "bottomRightY": 590,
+      "content": "### PLAYER STATUS REQUEST",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 598,
+      "bottomRightX": 135,
+      "bottomRightY": 609,
+      "content": "Syntax: ?P",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 609,
+      "bottomRightX": 185,
+      "bottomRightY": 620,
+      "content": "Codes: ? (63D = 3FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 123,
+      "topLeftY": 620,
+      "bottomRightX": 185,
+      "bottomRightY": 630,
+      "content": "P(80D = 50H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 630,
+      "bottomRightX": 240,
+      "bottomRightY": 640,
+      "content": "Response: Positive ack: P x1 x2 x3 x4 x5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 123,
+      "topLeftY": 640,
+      "bottomRightX": 264,
+      "bottomRightY": 652,
+      "content": "Negative ack: O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 651,
+      "bottomRightX": 234,
+      "bottomRightY": 662,
+      "content": "Function: To return the player status.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 672,
+      "bottomRightX": 362,
+      "bottomRightY": 710,
+      "content": "Each status byte (x1 to x5) is in the form 01yyyyyy, where y represents a status bit. The status bytes are specified below. Zero status bits are reserved for future use.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 728,
+      "bottomRightX": 168,
+      "bottomRightY": 741,
+      "content": "#### Response specification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 747,
+      "bottomRightX": 158,
+      "bottomRightY": 759,
+      "content": "First status byte (x1)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 764,
+      "bottomRightX": 233,
+      "bottomRightY": 867,
+      "content": "|  bit 7: | 0  |\n| --- | --- |\n|  bit 6: | 1  |\n|  bit 5: | 1 = normal mode (loaded)  |\n|  bit 4: | 0  |\n|  bit 3: | 0  |\n|  bit 2: | 1 = chapter play  |\n|  bit 1: | 1 = Goto action  |\n|  bit 0: | 1 = Goto action  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 32,
+      "bottomRightX": 501,
+      "bottomRightY": 44,
+      "content": "Second status byte (x2)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 50,
+      "bottomRightX": 593,
+      "bottomRightY": 151,
+      "content": "|  bit 7: | 0  |\n| --- | --- |\n|  bit 6: | 1  |\n|  bit 5: | 0  |\n|  bit 4: | 0  |\n|  bit 3: | 0  |\n|  bit 2: | 1 = chapter numbers exist on disc  |\n|  bit 1: | 1 = CLV detected  |\n|  bit 0: | 1 = CAV detected  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 162,
+      "bottomRightX": 494,
+      "bottomRightY": 175,
+      "content": "Third status byte (x3)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 182,
+      "bottomRightX": 629,
+      "bottomRightY": 295,
+      "content": "|  bit 7: | 0  |\n| --- | --- |\n|  bit 6: | 1  |\n|  bit 5: | 0  |\n|  bit 4: | 0  |\n|  bit 3: | 0  |\n|  bit 2: | 1 = replay function active (switch is on and enabled)  |\n|  bit 1: | 0  |\n|  bit 0: | 1 = frame lock  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 307,
+      "bottomRightX": 499,
+      "bottomRightY": 319,
+      "content": "Fourth status byte (x4)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 324,
+      "bottomRightX": 632,
+      "bottomRightY": 450,
+      "content": "|  bit 7: | 0  |\n| --- | --- |\n|  bit 6: | 1  |\n|  bit 5: | 0  |\n|  bit 4: | 1 = RS232-C transmission delay (50 char/s)  |\n|  bit 3: | 1 = Remote control handset enabled for player control  |\n|  bit 2: | 1 = Remote control commands routed to computer  |\n|  bit 1: | 1 = Local front-panel controls enabled  |\n|  bit 0: | 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 462,
+      "bottomRightX": 491,
+      "bottomRightY": 476,
+      "content": "Fifth status byte (x5)",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 481,
+      "bottomRightX": 572,
+      "bottomRightY": 582,
+      "content": "|  bit 7: | 0  |\n| --- | --- |\n|  bit 6: | 1  |\n|  bit 5: | 1 = audio channel 2 enabled  |\n|  bit 4: | 1 = audio channel 1 enabled  |\n|  bit 3: | 1 = TXT from disc enabled  |\n|  bit 2: | 0  |\n|  bit 1: | 0  |\n|  bit 0: | 0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 601,
+      "bottomRightX": 515,
+      "bottomRightY": 613,
+      "content": "#### USER CODE REQUEST",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 621,
+      "bottomRightX": 471,
+      "bottomRightY": 632,
+      "content": "Syntax: ?U",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 632,
+      "bottomRightX": 519,
+      "bottomRightY": 653,
+      "content": "Codes: ? (63D = 3FH)\nU (85D = 55H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 653,
+      "bottomRightX": 624,
+      "bottomRightY": 683,
+      "content": "Response: Positive ack: U x1 x2 x3 x4 x5\nNegative ack: X if user code not available\nO if disc-tray open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 683,
+      "bottomRightX": 650,
+      "bottomRightY": 695,
+      "content": "Function: To return the user code, as recorded on the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 705,
+      "bottomRightX": 695,
+      "bottomRightY": 730,
+      "content": "One line of user code is read during lead-in at player start-up. This is saved for subsequent requests.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 743,
+      "bottomRightX": 612,
+      "bottomRightY": 768,
+      "content": "Each status byte (x1 to x5) has the following form: 0011yyyy (y = status bit).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 769,
+      "bottomRightX": 522,
+      "bottomRightY": 781,
+      "content": "The status bits (in Hex) are:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 418,
+      "topLeftY": 782,
+      "bottomRightX": 481,
+      "bottomRightY": 818,
+      "content": "x1: 0...7\nx2: D\nx3,x4,x5: 0...F",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 837,
+      "bottomRightX": 542,
+      "bottomRightY": 849,
+      "content": "#### REVISION LEVEL REQUEST",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 857,
+      "bottomRightX": 470,
+      "bottomRightY": 868,
+      "content": "Syntax: ?=",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 868,
+      "bottomRightX": 519,
+      "bottomRightY": 888,
+      "content": "Codes: ? (63D = 3FH)\n= (61D = 3DH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 888,
+      "bottomRightX": 565,
+      "bottomRightY": 899,
+      "content": "Response: Positive ack: x1 x2 x3 x4 x5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 899,
+      "bottomRightX": 636,
+      "bottomRightY": 910,
+      "content": "Function: To return the player firmware revision level.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 683,
+      "topLeftY": 969,
+      "bottomRightX": 695,
+      "bottomRightY": 978,
+      "content": "30",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

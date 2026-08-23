@@ -1,0 +1,281 @@
+{
+  "index": 4,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 68,
+      "topLeftY": 31,
+      "bottomRightX": 155,
+      "bottomRightY": 47,
+      "content": "# SECTION 1",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 670,
+      "topLeftY": 37,
+      "bottomRightX": 693,
+      "bottomRightY": 50,
+      "content": "Page",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 59,
+      "bottomRightX": 695,
+      "bottomRightY": 73,
+      "content": "Fig. 1: VP415 controls and connections 2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 89,
+      "bottomRightX": 695,
+      "bottomRightY": 102,
+      "content": "# INTRODUCTION 5",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 109,
+      "bottomRightX": 695,
+      "bottomRightY": 122,
+      "content": "The LaserVision System 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 123,
+      "bottomRightX": 695,
+      "bottomRightY": 135,
+      "content": "Types of LaserVision disc . . . 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 136,
+      "bottomRightX": 695,
+      "bottomRightY": 147,
+      "content": "Interactive use 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 164,
+      "bottomRightX": 695,
+      "bottomRightY": 177,
+      "content": "# FEATURES OF THE VP415 5",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 184,
+      "bottomRightX": 695,
+      "bottomRightY": 196,
+      "content": "RGB output / PAL-RGB decoder 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 197,
+      "bottomRightX": 695,
+      "bottomRightY": 210,
+      "content": "Sync pulse generator 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 211,
+      "bottomRightX": 695,
+      "bottomRightY": 222,
+      "content": "Genlock 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 223,
+      "bottomRightX": 695,
+      "bottomRightY": 235,
+      "content": "CVBS output / RGB-PAL encoder 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 236,
+      "bottomRightX": 695,
+      "bottomRightY": 248,
+      "content": "Electronic timebase corrector 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 249,
+      "bottomRightX": 695,
+      "bottomRightY": 261,
+      "content": "Video mixing 6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 262,
+      "bottomRightX": 695,
+      "bottomRightY": 274,
+      "content": "Instant jump 6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 275,
+      "bottomRightX": 695,
+      "bottomRightY": 285,
+      "content": "Fast random access 6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 286,
+      "bottomRightX": 695,
+      "bottomRightY": 299,
+      "content": "Wired remote control 6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 316,
+      "bottomRightX": 695,
+      "bottomRightY": 329,
+      "content": "# INSTALLATION 7",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 337,
+      "bottomRightX": 695,
+      "bottomRightY": 349,
+      "content": "Siting the player 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 350,
+      "bottomRightX": 695,
+      "bottomRightY": 361,
+      "content": "Connecting the player to the mains 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 362,
+      "bottomRightX": 695,
+      "bottomRightY": 374,
+      "content": "Connecting the player to a monitor 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 375,
+      "bottomRightX": 695,
+      "bottomRightY": 387,
+      "content": "Fig. 2: Connection and adaptor cables 8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 388,
+      "bottomRightX": 695,
+      "bottomRightY": 399,
+      "content": "Connection to peripheral audio equipment 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 400,
+      "bottomRightX": 695,
+      "bottomRightY": 411,
+      "content": "Remote control handset 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 412,
+      "bottomRightX": 695,
+      "bottomRightY": 425,
+      "content": "Fig. 3: Inserting batteries in remote control handset 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 442,
+      "bottomRightX": 695,
+      "bottomRightY": 454,
+      "content": "# CONTROLS, INDICATORS AND CONNECTIONS 9",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 462,
+      "bottomRightX": 695,
+      "bottomRightY": 474,
+      "content": "Summary of controls 9",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 475,
+      "bottomRightX": 695,
+      "bottomRightY": 487,
+      "content": "Summary of front-panel indicators 9",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 83,
+      "topLeftY": 488,
+      "bottomRightX": 695,
+      "bottomRightY": 500,
+      "content": "Summary of connections 9",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 685,
+      "topLeftY": 970,
+      "bottomRightX": 693,
+      "bottomRightY": 980,
+      "content": "4",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

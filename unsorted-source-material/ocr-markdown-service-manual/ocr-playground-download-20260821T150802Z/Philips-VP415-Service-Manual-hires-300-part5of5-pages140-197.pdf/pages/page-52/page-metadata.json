@@ -1,0 +1,39 @@
+{
+  "index": 51,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 303,
+      "topLeftY": 137,
+      "bottomRightX": 495,
+      "bottomRightY": 153,
+      "content": "# DESCRAMBLER (on mod.W)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 165,
+      "bottomRightX": 689,
+      "bottomRightY": 240,
+      "content": "|  Progr. no. 3104 103 ... | changed with respect to earlier release | Ref.doc | SW Rev level  |\n| --- | --- | --- | --- |\n|  6807.0 | -First release. | - | 1.0  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 662,
+      "topLeftY": 980,
+      "bottomRightX": 711,
+      "bottomRightY": 993,
+      "content": "CS 8 288",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

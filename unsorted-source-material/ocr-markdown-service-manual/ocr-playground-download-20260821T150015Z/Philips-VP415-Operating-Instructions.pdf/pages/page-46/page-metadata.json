@@ -1,0 +1,319 @@
+{
+  "index": 45,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 77,
+      "topLeftY": 31,
+      "bottomRightX": 201,
+      "bottomRightY": 43,
+      "content": "# RGB (TTL) IN socket (DIN)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 44,
+      "bottomRightX": 233,
+      "bottomRightY": 57,
+      "content": "6-pole female connector, 270 degrees",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 68,
+      "bottomRightX": 94,
+      "bottomRightY": 80,
+      "content": "# pin",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 90,
+      "bottomRightX": 179,
+      "bottomRightY": 165,
+      "content": "1 Red signal\n2 Green signal\n3 Blue signal\n4 Composite sync\n5 Ground\n6 Not connected",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 176,
+      "bottomRightX": 369,
+      "bottomRightY": 215,
+      "content": "(Logic 0: 0 - 1 V, logic 1: 2.2. - 4.2 V. Sync instability better than +/- 100 ppm, interlaced, with or without equalising pulses, negative-going.)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 225,
+      "bottomRightX": 155,
+      "bottomRightY": 237,
+      "content": "# RS232-C interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 245,
+      "bottomRightX": 369,
+      "bottomRightY": 269,
+      "content": "Serial computer interface, in accordance with international communication standards.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 270,
+      "bottomRightX": 128,
+      "bottomRightY": 282,
+      "content": "Full duplex",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 283,
+      "bottomRightX": 207,
+      "bottomRightY": 296,
+      "content": "8 data bits, 1 stop bit, no parity",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 306,
+      "bottomRightX": 369,
+      "bottomRightY": 345,
+      "content": "Data transmission speed may be set to 1200/2400/4800/9600 baud according to the positions of the two baud rate dip switches (numbers 1 and 2) at the rear of the player.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 354,
+      "bottomRightX": 269,
+      "bottomRightY": 418,
+      "content": "|  baud rate | switch 1 | switch 2  |\n| --- | --- | --- |\n|  1200 | UP | UP  |\n|  2400 | UP | DOWN  |\n|  4800 | DOWN | UP  |\n|  9600 | DOWN | DOWN  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 429,
+      "bottomRightX": 369,
+      "bottomRightY": 454,
+      "content": "The player is fitted with a 25-pole female D-connector with the following pin connections:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 464,
+      "bottomRightX": 173,
+      "bottomRightY": 478,
+      "content": "# pin signal",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 484,
+      "bottomRightX": 338,
+      "bottomRightY": 558,
+      "content": "\\(\\wedge 2\\) (TxD) transmitted data from player to computer\n\\(\\times 3\\) (RxD) received data from computer to player\n\\(\\times 5\\) (CTS) clear to send: a signal from computer to player indicating the computer is ready to receive data \\((\\geq +3\\mathrm{V}\\) means O.K. to transmit)",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 564,
+      "bottomRightX": 201,
+      "bottomRightY": 578,
+      "content": "7 (GND) logic ground",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 82,
+      "topLeftY": 585,
+      "bottomRightX": 210,
+      "bottomRightY": 597,
+      "content": "9 +12 V/100 mA",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 79,
+      "topLeftY": 606,
+      "bottomRightX": 206,
+      "bottomRightY": 618,
+      "content": "10 -12 V/10 mA",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 68,
+      "topLeftY": 625,
+      "bottomRightX": 335,
+      "bottomRightY": 660,
+      "content": "20 (DTR) data terminal ready: a signal from player to computer indicating that player is ready to receive data (≥ + 3 V means O.K. for data)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 407,
+      "topLeftY": 32,
+      "bottomRightX": 471,
+      "bottomRightY": 43,
+      "content": "# SCSI interface",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 50,
+      "bottomRightX": 645,
+      "bottomRightY": 89,
+      "content": "A computer interface in accordance with SCSI standards. The player is fitted with a 50-pole unshielded connector consisting of two rows of 25 male pins on 100 mil centres.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 407,
+      "topLeftY": 101,
+      "bottomRightX": 559,
+      "bottomRightY": 115,
+      "content": "Single-ended cable pin assignments:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 407,
+      "topLeftY": 124,
+      "bottomRightX": 471,
+      "bottomRightY": 137,
+      "content": "# pin signal",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 410,
+      "topLeftY": 144,
+      "bottomRightX": 669,
+      "bottomRightY": 400,
+      "content": "2 -DB(0)\n4 -DB(1)\n6 -DB(2)\n8 -DB(3)\n10 -DB(4)\n12 -DB(5)\n14 -DB(6)\n16 -DB(7)\n18 -DB(P)\n20 GROUND\n22 GROUND\n24 GROUND\n26 \\*TERMPWR (not connected to internal power supply)\n28 GROUND\n30 GROUND\n32 -ATN\n34 GROUND\n36 -BSY\n38 -ACK\n40 -RST\n42 -MSG\n44 -SEL\n46 -C/D\n48 -REQ\n50 -I/O",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 413,
+      "bottomRightX": 437,
+      "bottomRightY": 425,
+      "content": "# Notes",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 432,
+      "bottomRightX": 624,
+      "bottomRightY": 444,
+      "content": "All odd pins except pin 25 are connected to ground.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 445,
+      "bottomRightX": 658,
+      "bottomRightY": 457,
+      "content": "Pin 25 should be left open, but may be connected to ground.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 471,
+      "bottomRightX": 551,
+      "bottomRightY": 483,
+      "content": "A minus sign indicates active low.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 495,
+      "bottomRightX": 536,
+      "bottomRightY": 508,
+      "content": "Maximum cable length is 6 m.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 407,
+      "topLeftY": 520,
+      "bottomRightX": 702,
+      "bottomRightY": 559,
+      "content": "Address dip switches at rear of player. Dip switch in up position = OFF. Switches 1 - 4 and switch 8 should be OFF. Switches 5 - 7 determine the SCSI bus address of the player as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 567,
+      "bottomRightX": 650,
+      "bottomRightY": 672,
+      "content": "|  address | switch 5 | switch 6 | switch 7  |\n| --- | --- | --- | --- |\n|  0 | OFF | OFF | OFF  |\n|  1 | OFF | OFF | ON  |\n|  2 | OFF | ON | OFF  |\n|  3 | OFF | ON | ON  |\n|  4 | ON | OFF | OFF  |\n|  5 | ON | OFF | ON  |\n|  6 | ON | ON | OFF  |\n|  7 | ON | ON | ON  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 680,
+      "bottomRightX": 526,
+      "bottomRightY": 694,
+      "content": "(Factory setting: address 0)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 700,
+      "bottomRightX": 626,
+      "bottomRightY": 722,
+      "content": "Termination according to SCSI: 330 ohms to +5 V\n220 ohms to 0 V",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 730,
+      "bottomRightX": 702,
+      "bottomRightY": 764,
+      "content": "If you have more than one device connected to the host computer via the SCSI bus, the SCSI bus termination in the player has to be altered. Refer to Philips Service for further information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 966,
+      "bottomRightX": 93,
+      "bottomRightY": 976,
+      "content": "45",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

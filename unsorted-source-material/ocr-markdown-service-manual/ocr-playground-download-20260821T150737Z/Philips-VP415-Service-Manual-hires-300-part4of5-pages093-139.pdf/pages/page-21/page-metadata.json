@@ -1,0 +1,48 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 671,
+      "topLeftY": 11,
+      "bottomRightX": 685,
+      "bottomRightY": 25,
+      "content": "7",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 147,
+      "topLeftY": 73,
+      "bottomRightX": 265,
+      "bottomRightY": 86,
+      "content": "b. TEST PROCEDURE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 143,
+      "topLeftY": 120,
+      "bottomRightX": 670,
+      "bottomRightY": 947,
+      "content": "![img-28.jpeg](img-28.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-28.jpeg"
+    },
+    {
+      "topLeftX": 650,
+      "topLeftY": 981,
+      "bottomRightX": 699,
+      "bottomRightY": 994,
+      "content": "CS 8 116",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

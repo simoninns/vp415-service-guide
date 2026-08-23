@@ -1,0 +1,416 @@
+{
+  "index": 12,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 108,
+      "topLeftY": 38,
+      "bottomRightX": 315,
+      "bottomRightY": 56,
+      "content": "VIDEO DO CORR MODULE L",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 253,
+      "topLeftY": 57,
+      "bottomRightX": 316,
+      "bottomRightY": 68,
+      "content": "(MOD LEVEL 0)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 45,
+      "bottomRightX": 882,
+      "bottomRightY": 64,
+      "content": "2002 A 2 2006 B 1 2020 B 6 2007 A 6 3000 B 4 5003 B 3 5006 A 5 6002 B 1 6005 B 2 6008 B 7 6011 A 7 7006 A 3 7011 B 3 7020 A 4 7024 B 3 7203 A 6\n2004 A 3 2015 B 2 2024 A 6 2031 A 5 3000 B 6 5004 B 6 5007 A 7 6003 B 1 6006 A 2 6009 B 7 6012 A 7 7006 B 3 7012 B 2 7022 A 6 7201 A 4\n2005 A 3 2016 B 2 2025 A 6 2032 A 5 3002 A 2 5000 A 5 6001 A 5 6004 B 2 5007 A 4 5010 B 7 7007 A 2 7010 B 3 7017 A 5 7023 A 7 7202 B 2",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 91,
+      "bottomRightX": 170,
+      "bottomRightY": 99,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 105,
+      "bottomRightX": 147,
+      "bottomRightY": 114,
+      "content": "# Required",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 114,
+      "bottomRightX": 136,
+      "bottomRightY": 122,
+      "content": "Scope",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 123,
+      "bottomRightX": 146,
+      "bottomRightY": 130,
+      "content": "Test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 135,
+      "bottomRightX": 194,
+      "bottomRightY": 144,
+      "content": "# Adjustment conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 144,
+      "bottomRightX": 165,
+      "bottomRightY": 152,
+      "content": "Load test disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 152,
+      "bottomRightX": 219,
+      "bottomRightY": 161,
+      "content": "Still picture, picture no. 10800.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 166,
+      "bottomRightX": 159,
+      "bottomRightY": 174,
+      "content": "# Adjustments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 182,
+      "bottomRightX": 220,
+      "bottomRightY": 192,
+      "content": "1) R3065, L5007 (Delay 64 µs)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 192,
+      "bottomRightX": 315,
+      "bottomRightY": 209,
+      "content": "- Picture no. 10800 is visible on the picture screen as shown in fig. L1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 212,
+      "bottomRightX": 282,
+      "bottomRightY": 311,
+      "content": "![img-22.jpeg](img-22.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-22.jpeg"
+    },
+    {
+      "topLeftX": 178,
+      "topLeftY": 315,
+      "bottomRightX": 243,
+      "bottomRightY": 323,
+      "content": "DROP OUT SIGNALS",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 327,
+      "bottomRightX": 226,
+      "bottomRightY": 336,
+      "content": "Fig. L1",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 257,
+      "topLeftY": 329,
+      "bottomRightX": 284,
+      "bottomRightY": 342,
+      "content": "MDA:00589\nT28/711",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 351,
+      "bottomRightX": 316,
+      "bottomRightY": 411,
+      "content": "- Adjust L5007 until drop-out A gives a white completion of the vertical lines at the right place and drop-out B gives minimum distortion at the place indicated.\n- Adjust R3065 until drop-out B is invisible and drop-out C causes a black line without any white stripes or dots.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 418,
+      "bottomRightX": 195,
+      "bottomRightY": 427,
+      "content": "2) L5003, R3050 (MTF)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 427,
+      "bottomRightX": 316,
+      "bottomRightY": 529,
+      "content": "- Search for picture no. 1000 (blue).\n- Using the scope, measure the CVBS OUT-signal on BNC3 (rear), 75Ω terminated, triggered line frequent.\n- Switch SK2 on Analog I/O module U in pos. NOT ENCODED (pressed).\n- Adjust L5003 for min. amplitude of the chroma signal.\n- Measure the CVBS OUT-signal (NOT ENCODED) on BNC3 with the scope and search the multi-burst signal in the VITS (line 20) by means of the delayed time base (see fig. L2).",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 149,
+      "topLeftY": 530,
+      "bottomRightX": 292,
+      "bottomRightY": 597,
+      "content": "![img-23.jpeg](img-23.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-23.jpeg"
+    },
+    {
+      "topLeftX": 188,
+      "topLeftY": 600,
+      "bottomRightX": 261,
+      "bottomRightY": 608,
+      "content": "VITS SIGNALS LINE 20",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 200,
+      "topLeftY": 611,
+      "bottomRightX": 227,
+      "bottomRightY": 620,
+      "content": "Fig. L2",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 281,
+      "topLeftY": 611,
+      "bottomRightX": 316,
+      "bottomRightY": 626,
+      "content": "MDA:00589\nT28/711",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 121,
+      "topLeftY": 635,
+      "bottomRightX": 305,
+      "bottomRightY": 645,
+      "content": "- Adjust R3050 until the amplitude of MBI = MBIV.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 654,
+      "bottomRightX": 228,
+      "bottomRightY": 663,
+      "content": "# Adjustment when item replaced",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 671,
+      "bottomRightX": 146,
+      "bottomRightY": 679,
+      "content": "replaced",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 680,
+      "bottomRightX": 216,
+      "bottomRightY": 688,
+      "content": "Components in CLOCK GEN.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 688,
+      "bottomRightX": 140,
+      "bottomRightY": 696,
+      "content": "IC7203",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 222,
+      "topLeftY": 671,
+      "bottomRightX": 248,
+      "bottomRightY": 679,
+      "content": "adjust",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 222,
+      "topLeftY": 680,
+      "bottomRightX": 247,
+      "bottomRightY": 688,
+      "content": "L5007",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 222,
+      "topLeftY": 688,
+      "bottomRightX": 275,
+      "bottomRightY": 696,
+      "content": "R3065, R3050",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 329,
+      "topLeftY": 66,
+      "bottomRightX": 994,
+      "bottomRightY": 249,
+      "content": "![img-24.jpeg](img-24.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-24.jpeg"
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 259,
+      "bottomRightX": 917,
+      "bottomRightY": 306,
+      "content": "![img-25.jpeg](img-25.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-25.jpeg"
+    },
+    {
+      "topLeftX": 329,
+      "topLeftY": 307,
+      "bottomRightX": 994,
+      "bottomRightY": 489,
+      "content": "![img-26.jpeg](img-26.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-26.jpeg"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 497,
+      "bottomRightX": 501,
+      "bottomRightY": 507,
+      "content": "LIST OF ELECTRICAL PARTS MODULE L",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 515,
+      "bottomRightX": 393,
+      "bottomRightY": 524,
+      "content": "Delay lines",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 524,
+      "bottomRightX": 497,
+      "bottomRightY": 532,
+      "content": "|  5001 | 4822 320 40081 | DL470NS  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 541,
+      "bottomRightX": 371,
+      "bottomRightY": 549,
+      "content": "Coils",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 549,
+      "bottomRightX": 488,
+      "bottomRightY": 600,
+      "content": "|  5002 | 4822 157 52869 | 34 µH  |\n| --- | --- | --- |\n|  5003 | 4822 156 11003 | 12 µH  |\n|  5004 | 4822 156 11007 | 212 µH  |\n|  5005 | 4822 156 11007 | 212 µH  |\n|  5006 | 4822 156 21324 | 100 µH  |\n|  5007 | 4822 156 10997 | 1.7 µH  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 608,
+      "bottomRightX": 407,
+      "bottomRightY": 616,
+      "content": "Potentiometers",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 616,
+      "bottomRightX": 487,
+      "bottomRightY": 633,
+      "content": "|  3050 | 4822 100 11087 | 2.2 kΩ  |\n| --- | --- | --- |\n|  3065 | 4822 100 20151 | 1 kΩ  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 543,
+      "topLeftY": 497,
+      "bottomRightX": 995,
+      "bottomRightY": 684,
+      "content": "|  2001 | 4822 122 32082 | 4.7 µF |  | 2023 | 4822 122 31759 | 22 nF |   |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  2002 | 4822 124 22027 | 47 µF | 25 V | 2024 | 4822 124 22031 | 4.7 µF | 63 V  |\n|  2003 | 4822 122 31759 | 22 nF |  | 2025 | 4822 124 22028 | 1 µF | 63 V  |\n|  2004 | 5322 124 21749 | 10 µF | 63 V | 2026 | 4822 122 31759 | 22 nF |   |\n|  2005 | 5322 124 21749 | 10 µF | 63 V | 2027 | 4822 121 41608 | 100 nF | 100 V  |\n|  2006 | 4822 121 41608 | 100 nF | 100 V | 2028 | 4822 122 32974 | 100 pF |   |\n|  2007 | 4822 122 31759 | 22 nF |  | 2029 | 4822 122 32974 | 100 pF |   |\n|  2008 | 4822 122 31759 | 22 nF |  | 2030 | 4822 122 31759 | 22 nF |   |\n|  2009 | 4822 122 32975 | 470 pF |  | 2031 | 4822 124 22027 | 47 µF | 25 V  |\n|  2010 | 4822 122 32974 | 100 pF |  | 2032 | 4822 121 41785 | 270 nF | 10% 100 V  |\n|  2011 | 4822 122 31759 | 22 nF |  | 2033 | 4822 122 31759 | 22 nF |   |\n|  2012 | 4822 122 31839 | 82 pF |  | 2034 | 4822 122 32482 | 22 pF |   |\n|  2013 | 5322 122 31847 | 1 nF |  | 2035 | 4822 122 31759 | 22 nF |   |\n|  2014 | 4822 122 31759 | 22 nF |  | 2036 | 4822 122 31759 | 22 nF |   |\n|  2015 | 4822 124 22027 | 47 µF | 25 V | 2037 | 4822 122 31759 | 22 nF |   |\n|  2016 | 4822 124 22029 | 2.2 µF | 63 V | 2038 | 4822 122 31839 | 82 pF |   |\n|  2017 | 4822 122 32974 | 100 pF |  | 2039 | 4822 122 31759 | 22 nF |   |\n|  2018 | 4822 122 32974 | 100 pF |  |  |  |  |   |\n|  2019 | 4822 122 31759 | 22 nF |  |  |  |  |   |\n|  2020 | 4822 121 41719 | 1 µF | 10% 100 V |  |  |  |   |\n|  2021 | 4822 122 32442 | 10 nF |  |  |  |  |   |\n|  2022 | 4822 122 32442 | 10 nF |  |  |  |  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 957,
+      "topLeftY": 695,
+      "bottomRightX": 993,
+      "bottomRightY": 703,
+      "content": "CS 7 848",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

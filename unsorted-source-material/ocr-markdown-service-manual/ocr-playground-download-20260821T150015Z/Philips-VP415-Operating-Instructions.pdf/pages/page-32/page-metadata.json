@@ -1,0 +1,884 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 73,
+      "topLeftY": 31,
+      "bottomRightX": 308,
+      "bottomRightY": 44,
+      "content": "The response bytes x1 to x5 are made up of ASCII digits.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 57,
+      "bottomRightX": 103,
+      "bottomRightY": 68,
+      "content": "x1 = 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 71,
+      "bottomRightX": 250,
+      "bottomRightY": 82,
+      "content": "x2 = major revision level of drive software",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 83,
+      "bottomRightX": 250,
+      "bottomRightY": 94,
+      "content": "x3 = minor revision level of drive software",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 95,
+      "bottomRightX": 258,
+      "bottomRightY": 107,
+      "content": "x4 = major revision level of control software",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 108,
+      "bottomRightX": 258,
+      "bottomRightY": 120,
+      "content": "x5 = minor revision level of control software",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 138,
+      "bottomRightX": 141,
+      "bottomRightY": 149,
+      "content": "# AUDIO 1 OFF",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 159,
+      "bottomRightX": 141,
+      "bottomRightY": 169,
+      "content": "Syntax: A0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 169,
+      "bottomRightX": 189,
+      "bottomRightY": 180,
+      "content": "First code: A (65D = 41H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 180,
+      "bottomRightX": 150,
+      "bottomRightY": 190,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 189,
+      "bottomRightX": 304,
+      "bottomRightY": 201,
+      "content": "Function: Disable internal audio channel 1 (from disc)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 211,
+      "bottomRightX": 364,
+      "bottomRightY": 235,
+      "content": "If audio channel 2 is on, both audio outputs are supplied by audio channel 2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 254,
+      "bottomRightX": 137,
+      "bottomRightY": 265,
+      "content": "# AUDIO 1 ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 274,
+      "bottomRightX": 141,
+      "bottomRightY": 285,
+      "content": "Syntax: A1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 285,
+      "bottomRightX": 189,
+      "bottomRightY": 296,
+      "content": "First code: A (65D = 41H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 296,
+      "bottomRightX": 150,
+      "bottomRightY": 306,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 306,
+      "bottomRightX": 302,
+      "bottomRightY": 317,
+      "content": "Function: Enable internal audio channel 1 (from disc)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 326,
+      "bottomRightX": 365,
+      "bottomRightY": 352,
+      "content": "This is the power-on default state. Audio is on only during normal play forward.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 369,
+      "bottomRightX": 142,
+      "bottomRightY": 381,
+      "content": "# AUDIO 2 OFF",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 390,
+      "bottomRightX": 141,
+      "bottomRightY": 400,
+      "content": "Syntax: B0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 400,
+      "bottomRightX": 189,
+      "bottomRightY": 411,
+      "content": "First code: B (66D = 42H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 411,
+      "bottomRightX": 150,
+      "bottomRightY": 421,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 421,
+      "bottomRightX": 304,
+      "bottomRightY": 433,
+      "content": "Function: Disable internal audio channel 2 (from disc)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 443,
+      "bottomRightX": 366,
+      "bottomRightY": 468,
+      "content": "If audio channel 1 is on, both audio outputs are supplied by audio channel 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 486,
+      "bottomRightX": 138,
+      "bottomRightY": 497,
+      "content": "# AUDIO 2 ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 505,
+      "bottomRightX": 141,
+      "bottomRightY": 516,
+      "content": "Syntax: B1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 516,
+      "bottomRightX": 189,
+      "bottomRightY": 527,
+      "content": "First code: B (66D = 42H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 527,
+      "bottomRightX": 150,
+      "bottomRightY": 537,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 536,
+      "bottomRightX": 303,
+      "bottomRightY": 547,
+      "content": "Function: Enable internal audio channel 2 (from disc)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 558,
+      "bottomRightX": 366,
+      "bottomRightY": 582,
+      "content": "This is the power-on default state. Audio is on only during normal play forward.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 601,
+      "bottomRightX": 244,
+      "bottomRightY": 612,
+      "content": "# CHAPTER NUMBER DISPLAY OFF",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 621,
+      "bottomRightX": 141,
+      "bottomRightY": 632,
+      "content": "Syntax: C0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 632,
+      "bottomRightX": 189,
+      "bottomRightY": 642,
+      "content": "First code: C (67D = 43H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 642,
+      "bottomRightX": 150,
+      "bottomRightY": 653,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 653,
+      "bottomRightX": 257,
+      "bottomRightY": 664,
+      "content": "Function: Cancel chapter number display.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 674,
+      "bottomRightX": 216,
+      "bottomRightY": 685,
+      "content": "This is the power-on default state.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 703,
+      "bottomRightX": 238,
+      "bottomRightY": 714,
+      "content": "# CHAPTER NUMBER DISPLAY ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 723,
+      "bottomRightX": 138,
+      "bottomRightY": 735,
+      "content": "Syntax: C1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 735,
+      "bottomRightX": 189,
+      "bottomRightY": 745,
+      "content": "First code: C (67D = 43H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 745,
+      "bottomRightX": 150,
+      "bottomRightY": 755,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 755,
+      "bottomRightX": 267,
+      "bottomRightY": 766,
+      "content": "Function: Display chapter number on screen.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 775,
+      "bottomRightX": 364,
+      "bottomRightY": 801,
+      "content": "This is disabled during lead-in/lead-out and during Goto. The picture number/time code display (if on) is switched off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 818,
+      "bottomRightX": 299,
+      "bottomRightY": 831,
+      "content": "# PICTURE NUMBER/TIME CODE DISPLAY OFF",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 839,
+      "bottomRightX": 141,
+      "bottomRightY": 850,
+      "content": "Syntax: D0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 850,
+      "bottomRightX": 189,
+      "bottomRightY": 860,
+      "content": "First code: D (68D = 44H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 860,
+      "bottomRightX": 150,
+      "bottomRightY": 871,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 871,
+      "bottomRightX": 279,
+      "bottomRightY": 881,
+      "content": "Function: CAV - Cancel picture number display",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 126,
+      "topLeftY": 881,
+      "bottomRightX": 255,
+      "bottomRightY": 892,
+      "content": "CLV - Cancel time code display",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 902,
+      "bottomRightX": 216,
+      "bottomRightY": 916,
+      "content": "This is the power-on default state.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 31,
+      "bottomRightX": 626,
+      "bottomRightY": 42,
+      "content": "# PICTURE NUMBER/TIME CODE DISPLAY ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 50,
+      "bottomRightX": 470,
+      "bottomRightY": 61,
+      "content": "Syntax: D1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 61,
+      "bottomRightX": 520,
+      "bottomRightY": 73,
+      "content": "First code: D (68D = 44H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 73,
+      "bottomRightX": 481,
+      "bottomRightY": 83,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 83,
+      "bottomRightX": 623,
+      "bottomRightY": 93,
+      "content": "Function: CAV - Display picture number on screen",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 455,
+      "topLeftY": 93,
+      "bottomRightX": 598,
+      "bottomRightY": 103,
+      "content": "CLV - Display time code on screen",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 114,
+      "bottomRightX": 695,
+      "bottomRightY": 139,
+      "content": "This is disabled during lead-in/lead-out and during Goto. The chapter number display (if on) is switched off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 158,
+      "bottomRightX": 464,
+      "bottomRightY": 169,
+      "content": "# VIDEO OFF",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 177,
+      "bottomRightX": 471,
+      "bottomRightY": 188,
+      "content": "Syntax: E0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 188,
+      "bottomRightX": 520,
+      "bottomRightY": 199,
+      "content": "First code: E (69D = 45H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 199,
+      "bottomRightX": 481,
+      "bottomRightY": 210,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 210,
+      "bottomRightX": 604,
+      "bottomRightY": 220,
+      "content": "Function: Switch off internal video (from disc)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 237,
+      "bottomRightX": 460,
+      "bottomRightY": 249,
+      "content": "# VIDEO ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 258,
+      "bottomRightX": 470,
+      "bottomRightY": 268,
+      "content": "Syntax: E1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 268,
+      "bottomRightX": 520,
+      "bottomRightY": 279,
+      "content": "First code: E (69D = 45H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 279,
+      "bottomRightX": 481,
+      "bottomRightY": 290,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 290,
+      "bottomRightX": 604,
+      "bottomRightY": 300,
+      "content": "Function: Switch on internal video (from disc)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 310,
+      "bottomRightX": 697,
+      "bottomRightY": 348,
+      "content": "This is the power-on default state. The video is also switched off by the player when not in the active area of the disc, or when pause, ready or Goto are active.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 366,
+      "bottomRightX": 668,
+      "bottomRightY": 379,
+      "content": "# LOAD PICTURE NUMBER INFO REGISTER (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 386,
+      "bottomRightX": 492,
+      "bottomRightY": 397,
+      "content": "Syntax: FxxxxxI",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 398,
+      "bottomRightX": 519,
+      "bottomRightY": 410,
+      "content": "Codes: F (70D = 46H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 411,
+      "bottomRightX": 518,
+      "bottomRightY": 424,
+      "content": "I (73D = 49H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 425,
+      "bottomRightX": 525,
+      "bottomRightY": 436,
+      "content": "Response: Positive ack: A3",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 437,
+      "bottomRightX": 580,
+      "bottomRightY": 448,
+      "content": "Negative ack: AN if CLV disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 449,
+      "bottomRightX": 542,
+      "bottomRightY": 461,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 462,
+      "bottomRightX": 661,
+      "bottomRightY": 500,
+      "content": "Function: The positive acknowledge signal is given when the specified picture number is passed by any play or step action.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 512,
+      "bottomRightX": 604,
+      "bottomRightY": 525,
+      "content": "The INFO register is cleared after the response.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 537,
+      "bottomRightX": 694,
+      "bottomRightY": 550,
+      "content": "If a CLV disc is loaded, the negative acknowledge (AN) will be given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 568,
+      "bottomRightX": 669,
+      "bottomRightY": 580,
+      "content": "# LOAD PICTURE NUMBER STOP REGISTER (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 587,
+      "bottomRightX": 495,
+      "bottomRightY": 598,
+      "content": "Syntax: FxxxxxS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 599,
+      "bottomRightX": 520,
+      "bottomRightY": 612,
+      "content": "Codes: F (70D = 46H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 613,
+      "bottomRightX": 519,
+      "bottomRightY": 624,
+      "content": "S (83D = 53H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 625,
+      "bottomRightX": 525,
+      "bottomRightY": 637,
+      "content": "Response: Positive ack: A2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 638,
+      "bottomRightX": 580,
+      "bottomRightY": 650,
+      "content": "Negative ack: AN if CLV disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 651,
+      "bottomRightX": 542,
+      "bottomRightY": 663,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 664,
+      "bottomRightX": 675,
+      "bottomRightY": 702,
+      "content": "Function: The player halts at the specified picture number when reached by any play or step action. The positive acknowledge signal is then given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 714,
+      "bottomRightX": 605,
+      "bottomRightY": 727,
+      "content": "The STOP register is cleared after the response.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 740,
+      "bottomRightX": 695,
+      "bottomRightY": 753,
+      "content": "If a CLV disc is loaded, the negative acknowledge (AN) will be given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 770,
+      "bottomRightX": 643,
+      "bottomRightY": 783,
+      "content": "# GOTO PICTURE NUMBER AND HALT (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 790,
+      "bottomRightX": 497,
+      "bottomRightY": 801,
+      "content": "Syntax: FxxxxxR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 802,
+      "bottomRightX": 520,
+      "bottomRightY": 814,
+      "content": "Codes: F (70D = 46H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 815,
+      "bottomRightX": 522,
+      "bottomRightY": 827,
+      "content": "R (82D = 52H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 829,
+      "bottomRightX": 525,
+      "bottomRightY": 840,
+      "content": "Response: Positive ack: A0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 841,
+      "bottomRightX": 582,
+      "bottomRightY": 852,
+      "content": "Negative ack: AN if Goto fails",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 853,
+      "bottomRightX": 542,
+      "bottomRightY": 865,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 867,
+      "bottomRightX": 667,
+      "bottomRightY": 879,
+      "content": "Function: Search for picture number and display in still mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 892,
+      "bottomRightX": 699,
+      "bottomRightY": 931,
+      "content": "The specified picture is searched for. When found, the picture is displayed in still mode and the positive acknowledge signal is given. If the picture number is not found, the negative response (AN) is given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 966,
+      "bottomRightX": 86,
+      "bottomRightY": 976,
+      "content": "31",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

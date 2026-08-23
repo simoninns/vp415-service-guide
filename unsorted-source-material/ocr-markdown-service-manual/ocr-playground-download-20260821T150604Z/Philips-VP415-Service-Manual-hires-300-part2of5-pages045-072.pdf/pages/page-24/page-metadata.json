@@ -1,0 +1,30 @@
+{
+  "index": 23,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 43,
+      "topLeftY": 49,
+      "bottomRightX": 605,
+      "bottomRightY": 656,
+      "content": "![img-46.jpeg](img-46.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-46.jpeg"
+    },
+    {
+      "topLeftX": 605,
+      "topLeftY": 57,
+      "bottomRightX": 641,
+      "bottomRightY": 557,
+      "content": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1",
+      "confidenceScores": null,
+      "type": "text"
+    }
+  ]
+}

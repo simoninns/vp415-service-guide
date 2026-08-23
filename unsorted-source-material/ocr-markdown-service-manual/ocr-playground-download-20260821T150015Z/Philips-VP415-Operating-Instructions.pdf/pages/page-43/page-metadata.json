@@ -1,0 +1,191 @@
+{
+  "index": 42,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 66,
+      "topLeftY": 31,
+      "bottomRightX": 153,
+      "bottomRightY": 47,
+      "content": "# SECTION 8",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 669,
+      "topLeftY": 35,
+      "bottomRightX": 692,
+      "bottomRightY": 48,
+      "content": "Page",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 65,
+      "bottomRightX": 692,
+      "bottomRightY": 78,
+      "content": "# MAINTENANCE 43",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 86,
+      "bottomRightX": 692,
+      "bottomRightY": 98,
+      "content": "Care of the player 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 99,
+      "bottomRightX": 692,
+      "bottomRightY": 109,
+      "content": "Care of discs 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 110,
+      "bottomRightX": 692,
+      "bottomRightY": 123,
+      "content": "Trouble symptoms and possible causes 43",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 140,
+      "bottomRightX": 692,
+      "bottomRightY": 152,
+      "content": "# TECHNICAL DATA 44",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 161,
+      "bottomRightX": 692,
+      "bottomRightY": 172,
+      "content": "LaserVision Disc 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 81,
+      "topLeftY": 174,
+      "bottomRightX": 692,
+      "bottomRightY": 185,
+      "content": "Professional LaserVision Player VP415 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 186,
+      "bottomRightX": 692,
+      "bottomRightY": 197,
+      "content": "General 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 198,
+      "bottomRightX": 692,
+      "bottomRightY": 210,
+      "content": "Video 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 212,
+      "bottomRightX": 692,
+      "bottomRightY": 223,
+      "content": "Audio 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 224,
+      "bottomRightX": 692,
+      "bottomRightY": 235,
+      "content": "Genlock 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 237,
+      "bottomRightX": 692,
+      "bottomRightY": 249,
+      "content": "Video mixer 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 250,
+      "bottomRightX": 692,
+      "bottomRightY": 261,
+      "content": "LV-ROM 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 263,
+      "bottomRightX": 692,
+      "bottomRightY": 274,
+      "content": "A/V Euroconnector 44",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 275,
+      "bottomRightX": 692,
+      "bottomRightY": 286,
+      "content": "RGB (TTL) IN socket 45",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 288,
+      "bottomRightX": 692,
+      "bottomRightY": 299,
+      "content": "RS232-C interface 45",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 97,
+      "topLeftY": 301,
+      "bottomRightX": 692,
+      "bottomRightY": 312,
+      "content": "SCSI interface 45",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 685,
+      "topLeftY": 963,
+      "bottomRightX": 697,
+      "bottomRightY": 974,
+      "content": "42",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "index": 31,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 346,
+      "topLeftY": 183,
+      "bottomRightX": 453,
+      "bottomRightY": 199,
+      "content": "# VIDEO PROC C",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 106,
+      "topLeftY": 204,
+      "bottomRightX": 680,
+      "bottomRightY": 434,
+      "content": "|  Mod. level | Description | Reason | Mod. documents  |\n| --- | --- | --- | --- |\n|  4 | **Changed :** -R3007 was 130E becomes 120E 4822 111 90339 **Added :** -C2006 22N 4822 122 31797 -R3014 Fus car Flm rst 22E 4822 111 40847 -R3077 Chip rst 22K 4822 111 90251 -R3078 Chip rst 22k 4822 111 90251 | Amplification extern CVBS signal is to small | AHT 9198  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 131,
+      "topLeftY": 438,
+      "bottomRightX": 314,
+      "bottomRightY": 595,
+      "content": "![img-41.jpeg](img-41.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-41.jpeg"
+    },
+    {
+      "topLeftX": 324,
+      "topLeftY": 443,
+      "bottomRightX": 690,
+      "bottomRightY": 669,
+      "content": "![img-42.jpeg](img-42.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-42.jpeg"
+    },
+    {
+      "topLeftX": 146,
+      "topLeftY": 630,
+      "bottomRightX": 432,
+      "bottomRightY": 859,
+      "content": "![img-43.jpeg](img-43.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-43.jpeg"
+    },
+    {
+      "topLeftX": 648,
+      "topLeftY": 979,
+      "bottomRightX": 697,
+      "bottomRightY": 993,
+      "content": "CS 8 268",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

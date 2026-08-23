@@ -1,0 +1,172 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 349,
+      "topLeftY": 41,
+      "bottomRightX": 455,
+      "bottomRightY": 54,
+      "content": "CONTROL MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 476,
+      "topLeftY": 39,
+      "bottomRightX": 491,
+      "bottomRightY": 55,
+      "content": "S",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 435,
+      "topLeftY": 58,
+      "bottomRightX": 490,
+      "bottomRightY": 66,
+      "content": "(MOD. LEVEL 3)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 86,
+      "bottomRightX": 437,
+      "bottomRightY": 95,
+      "content": "LIST OF ELECTRICAL PARTS MODULE 5",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 103,
+      "bottomRightX": 466,
+      "bottomRightY": 122,
+      "content": "|  Eproms (programmed)  |   |   |\n| --- | --- | --- |\n|  7202 | 4822 209 51256 | TMS 27512_control  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 129,
+      "bottomRightX": 320,
+      "bottomRightY": 137,
+      "content": "Batteries",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 137,
+      "bottomRightX": 445,
+      "bottomRightY": 146,
+      "content": "|  1002 | 4822 138 10032 | Battery 2.4 V  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 154,
+      "bottomRightX": 317,
+      "bottomRightY": 162,
+      "content": "Crystals",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 162,
+      "bottomRightX": 441,
+      "bottomRightY": 179,
+      "content": "|  5101 | 4822 242 70917 | 11.059 MHz  |\n| --- | --- | --- |\n|  5102 | 4822 242 70668 | 4 MHz  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 187,
+      "bottomRightX": 306,
+      "bottomRightY": 195,
+      "content": "Coils",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 195,
+      "bottomRightX": 422,
+      "bottomRightY": 222,
+      "content": "|  5001 | 4822 158 10101 | 5.3 μH  |\n| --- | --- | --- |\n|  5002 | 4822 158 10101 | 5.3 μH  |\n|  5003 | 4822 158 10101 | 5.3 μH  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 229,
+      "bottomRightX": 349,
+      "bottomRightY": 237,
+      "content": "NFR25 Resistors",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 285,
+      "topLeftY": 237,
+      "bottomRightX": 411,
+      "bottomRightY": 246,
+      "content": "|  3028 | 4822 111 30483 | 1 Ω  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 283,
+      "topLeftY": 260,
+      "bottomRightX": 496,
+      "bottomRightY": 588,
+      "content": "|  2001 | 4822 124 22027 | 47 μF | 25 V  |\n| --- | --- | --- | --- |\n|  2002 | 5322 124 21749 | 10 μF | 63 V  |\n|  2003 | 5322 124 21749 | 10 μF | 63 V  |\n|  2004 | 4822 122 31759 | 22 nF |   |\n|  2005 | 4822 122 31759 | 22 nF |   |\n|  2006 | 4822 122 31759 | 22 nF |   |\n|  2007 | 4822 124 22027 | 47 μF | 25 V  |\n|  2008 | 4822 124 22029 | 2.2 μF | 63 V  |\n|  2009 | 4822 124 22027 | 47 μF | 25 V  |\n|  2010 | 4822 122 31759 | 22 nF |   |\n|  2011 | 4822 122 31644 | 2.2 nF |   |\n|  2012 | 4822 122 31966 | 27 pF |   |\n|  2013 | 4822 122 31966 | 27 pF |   |\n|  2014 | 4822 122 32976 | 470 pF |   |\n|  2015 | 4822 122 32976 | 470 pF |   |\n|  2016 | 4822 122 32975 | 33 pF |   |\n|  2017 | 4822 122 32975 | 33 pF |   |\n|  2018 | 4822 122 33009 | 270 nF | 25 V  |\n|  2019 | 4822 122 31644 | 2.2 nF |   |\n|  2020 | 4822 122 32482 | 22 pF |   |\n|  2021 | 4822 122 32482 | 22 pF |   |\n|  2023 | 4822 124 22028 | 1 μF | 63 V  |\n|  2101 | 4822 122 31759 | 22 nF |   |\n|  2102 | 4822 122 31759 | 22 nF |   |\n|  2103 | 4822 122 31759 | 22 nF |   |\n|  2104 | 4822 122 31759 | 22 nF |   |\n|  2105 | 4822 122 31759 | 22 nF |   |\n|  2106 | 4822 122 31759 | 22 nF |   |\n|  2107 | 4822 122 31759 | 22 nF |   |\n|  2108 | 4822 122 31759 | 22 nF |   |\n|  2109 | 4822 122 31759 | 22 nF |   |\n|  2110 | 4822 122 31759 | 22 nF |   |\n|  2111 | 4822 122 31759 | 22 nF |   |\n|  2112 | 4822 122 31759 | 22 nF |   |\n|  2113 | 4822 122 31759 | 22 nF |   |\n|  2114 | 4822 122 31759 | 22 nF |   |\n|  2115 | 4822 122 31759 | 22 nF |   |\n|  2116 | 4822 122 31759 | 22 nF |   |\n|  2117 | 4822 122 31759 | 22 nF |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 531,
+      "topLeftY": 43,
+      "bottomRightX": 1008,
+      "bottomRightY": 54,
+      "content": "1002 Q 6 1104 A 8 2001 A 7 2003 A 3 2008 Q 7 2009 Q 7 3001 B 3 3003 C 3 3001 A 7 3003 A 3 3001 Q 1 3003 Q 3 3009 Q 8 7201 B 7 7203 C 8 7205 Q 7 7201\n1102 A 8 1104 C 1 2002 A 2 2007 Q 2 2009 C 7 2008 Q 5 3002 B 3 3004 C 3 3002 A 2 3102 A 1 3002 C 6 3004 C 1 7006 D 3 7202 A 8 7204 B 7 7206 B 8 7208",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 524,
+      "topLeftY": 59,
+      "bottomRightX": 1008,
+      "bottomRightY": 349,
+      "content": "![img-47.jpeg](img-47.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-47.jpeg"
+    },
+    {
+      "topLeftX": 541,
+      "topLeftY": 367,
+      "bottomRightX": 1008,
+      "bottomRightY": 679,
+      "content": "![img-48.jpeg](img-48.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-48.jpeg"
+    }
+  ]
+}

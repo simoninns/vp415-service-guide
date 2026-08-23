@@ -1,0 +1,74 @@
+{
+  "index": 17,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 200,
+      "topLeftY": 377,
+      "bottomRightX": 515,
+      "bottomRightY": 403,
+      "content": "Module- and connector lay-out",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 403,
+      "bottomRightX": 325,
+      "bottomRightY": 426,
+      "content": "Signal listing",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 426,
+      "bottomRightX": 349,
+      "bottomRightY": 448,
+      "content": "Wiring diagram",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 448,
+      "bottomRightX": 480,
+      "bottomRightY": 471,
+      "content": "Blockdiagram Control routes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 471,
+      "bottomRightX": 592,
+      "bottomRightY": 494,
+      "content": "Blockdiagram AUDIO/VIDEO signal path",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 494,
+      "bottomRightX": 398,
+      "bottomRightY": 518,
+      "content": "Blockdiagram Servo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 598,
+      "topLeftY": 378,
+      "bottomRightX": 701,
+      "bottomRightY": 405,
+      "content": "Chapter 3",
+      "confidenceScores": null,
+      "type": "text"
+    }
+  ]
+}

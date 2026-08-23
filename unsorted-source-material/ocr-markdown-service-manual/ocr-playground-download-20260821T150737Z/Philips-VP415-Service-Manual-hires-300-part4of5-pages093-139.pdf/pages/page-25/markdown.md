@@ -1,0 +1,21 @@
+![img-32.jpeg](img-32.jpeg)
+
+NOT IN FOCUS AFTER 5 ATTEMPT
+
+(NO ROTATION OF DISK)
+
+-CLEAN OBJECTIVE
+
+- R J Z
+
+MOTOR SPEED ERROR
+
+![img-33.jpeg](img-33.jpeg)
+
+FRAME LOCK
+
+MDA.00616
+
+T27/716
+
+CS 8 120

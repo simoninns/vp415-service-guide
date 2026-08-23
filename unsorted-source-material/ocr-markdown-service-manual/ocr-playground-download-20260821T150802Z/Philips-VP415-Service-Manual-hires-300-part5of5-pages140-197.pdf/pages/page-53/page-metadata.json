@@ -1,0 +1,57 @@
+{
+  "index": 52,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 254,
+      "topLeftY": 138,
+      "bottomRightX": 533,
+      "bottomRightY": 153,
+      "content": "LV-DOS# 1 + LV-DOS# 2 (on mod.W)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 114,
+      "topLeftY": 165,
+      "bottomRightX": 685,
+      "bottomRightY": 385,
+      "content": "|  Progr. no. 3104 103 ... | changed with respect to earlier release | Ref.doc AR33 | SW Rev level  |\n| --- | --- | --- | --- |\n|  6805.2 + 6806.2 | -First release. | - | 1.3  |\n|  6805.3 + 6806.3 | -Prevent hang-up of drive at internal communication between LV-DOS and CONTROL -\"Reset to default command\" replaced by setting the defaults with separate F-code commands. | 2125-088 | 1.4  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 115,
+      "topLeftY": 397,
+      "bottomRightX": 204,
+      "bottomRightY": 413,
+      "content": "# **IMPORTANT:**",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 114,
+      "topLeftY": 426,
+      "bottomRightX": 597,
+      "bottomRightY": 516,
+      "content": "When ordering a service codenumber for LV-DOS EPROM,\nthe program number in the set should be checked.\nThe delivered EPROM is always equipped with the latest\nsoftware release. If your set to be repaired is equipped\nwith a lower release level, both LV-DOS# 1 and\nLV-DOS# 2 should be ordered and replaced.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 980,
+      "bottomRightX": 704,
+      "bottomRightY": 993,
+      "content": "CS 8 289",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

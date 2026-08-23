@@ -1,0 +1,158 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 115,
+      "topLeftY": 46,
+      "bottomRightX": 226,
+      "bottomRightY": 61,
+      "content": "RADIAL MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 250,
+      "topLeftY": 44,
+      "bottomRightX": 269,
+      "bottomRightY": 63,
+      "content": "M",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 201,
+      "topLeftY": 65,
+      "bottomRightX": 267,
+      "bottomRightY": 75,
+      "content": "(MOD. LEVEL 1)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 288,
+      "topLeftY": 53,
+      "bottomRightX": 730,
+      "bottomRightY": 66,
+      "content": "2004 A 5 2011 A 6 2020 A 1 3033 A 7 3093 B 1 6002 A 5 6034 A 6 6008 B 3 7001 B 5 7002 A 7 7003 B 5 7004 B 6 7015 A 7\n2010 A 5 2014 B 6 2021 A 1 3090 B 1 6001 A 2 6003 A 5 6005 A 3 6009 A 3 7101 A 4 7102 A 2 7103 A 3 7012 A 7 7109 A 6",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 73,
+      "bottomRightX": 947,
+      "bottomRightY": 257,
+      "content": "![img-27.jpeg](img-27.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-27.jpeg"
+    },
+    {
+      "topLeftX": 288,
+      "topLeftY": 284,
+      "bottomRightX": 868,
+      "bottomRightY": 314,
+      "content": "2001 A 2 2015 B 4 3003 A 1 3008 B 5 3013 A 2 3023 A 6 3024 A 7 3025 A 7 3038 A 4 3054 A 3 3059 A 5 3070 A 4 3075 A 4 3080 A 4 3085 B 3 7010 A 7 7022 A 4\n2002 A 2 2022 A 7 3004 B 2 3009 A 5 3014 A 2 3024 A 6 3025 A 7 3034 A 7 3050 B 3 3053 B 3 3060 A 5 3071 A 4 3076 A 4 3081 A 4 3086 B 4 7011 A 7 7023 B 3\n2003 A 5 2023 A 7 3005 A 2 3010 A 5 3020 A 5 3025 A 7 3026 A 7 3035 B 5 3051 A 2 3056 A 2 3061 A 5 3072 A 4 3077 A 4 3082 A 4 3087 B 7 7015 A 4 7024 A 3\n2012 A 6 3001 B 2 3008 A 2 3011 A 5 3021 A 6 3028 A 6 3031 A 7 3036 B 4 3052 A 3 3057 B 5 3062 B 6 3073 A 5 3078 B 4 3083 A 3 3088 B 7 7020 A 4\n2013 B 6 3002 A 2 3007 A 1 3012 A 4 3022 A 6 3027 A 6 3032 B 6 3037 B 4 3053 B 3 3058 A 5 3063 A 5 3074 A 6 3079 B 3 3084 A 6 3097 B 6 7021 A 4",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 279,
+      "topLeftY": 320,
+      "bottomRightX": 947,
+      "bottomRightY": 504,
+      "content": "![img-28.jpeg](img-28.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-28.jpeg"
+    },
+    {
+      "topLeftX": 912,
+      "topLeftY": 504,
+      "bottomRightX": 936,
+      "bottomRightY": 515,
+      "content": "PCB-2/009\n102/115",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 517,
+      "bottomRightX": 217,
+      "bottomRightY": 526,
+      "content": "LIST OF ELECTRICAL PARTS MODULE M",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 534,
+      "bottomRightX": 118,
+      "bottomRightY": 542,
+      "content": "PTC Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 543,
+      "bottomRightX": 197,
+      "bottomRightY": 551,
+      "content": "3033 4822 116 40026 5.6 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 560,
+      "bottomRightX": 118,
+      "bottomRightY": 567,
+      "content": "NFR Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 568,
+      "bottomRightX": 197,
+      "bottomRightY": 576,
+      "content": "3090 4822 111 30492 2.2 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 65,
+      "topLeftY": 577,
+      "bottomRightX": 197,
+      "bottomRightY": 585,
+      "content": "3093 4822 111 30492 2.2 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 287,
+      "topLeftY": 517,
+      "bottomRightX": 493,
+      "bottomRightY": 636,
+      "content": "|  2001 | 5322 122 31647 | 1 nF |   |\n| --- | --- | --- | --- |\n|  2002 | 5322 122 31647 | 1 nF |   |\n|  2003 | 4822 122 31768 | 180 pF |   |\n|  2004 | 4822 121 50538 | 6.8 nF | 63 V  |\n|  2010 | 4822 121 50538 | 6.8 nF | 63 V  |\n|  2011 | 4822 121 41874 | 270 nF | 63 V  |\n|  2012 | 4822 122 31644 | 2.2 nF |   |\n|  2013 | 4822 122 32975 | 33 pF |   |\n|  2014 | 4822 121 41876 | 220 nF | 20% 63 V  |\n|  2015 | 5322 122 31848 | 33 nF |   |\n|  2020 | 4822 124 22027 | 47 μF | 25 V  |\n|  2021 | 4822 124 22027 | 47 μF | 25 V  |\n|  2022 | 5322 122 31848 | 33 nF |   |\n|  2023 | 5322 122 31848 | 33 nF |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 702,
+      "bottomRightX": 98,
+      "bottomRightY": 710,
+      "content": "CS 7 849",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

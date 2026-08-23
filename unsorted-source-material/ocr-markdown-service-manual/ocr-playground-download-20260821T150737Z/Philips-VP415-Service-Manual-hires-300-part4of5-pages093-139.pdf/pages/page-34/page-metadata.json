@@ -1,0 +1,322 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 691,
+      "topLeftY": 59,
+      "bottomRightX": 699,
+      "bottomRightY": 71,
+      "content": "1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 76,
+      "bottomRightX": 298,
+      "bottomRightY": 90,
+      "content": "# CHAPTER 1 THE LASERVISION SYSTEM",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 101,
+      "bottomRightX": 151,
+      "bottomRightY": 114,
+      "content": "# Introduction",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 118,
+      "bottomRightX": 378,
+      "bottomRightY": 144,
+      "content": "In the LaserVision system the video and audio information are stored on a disc in encoded form.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 144,
+      "bottomRightX": 378,
+      "bottomRightY": 239,
+      "content": "The information on the disc is scanned optically on a LaserVision disc drive and then converted into a CVBS signal as well as RGB signals suitable for a standard colour television receiver with Euroconnector. The information is stored on the disc along a spiral track in the form of pits; the disc is scanned from the centre to the outside. The length of the pits and their spacing are determined by the stored information.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 86,
+      "topLeftY": 239,
+      "bottomRightX": 378,
+      "bottomRightY": 288,
+      "content": "The pits are 0.4 µm wide and approximately 0.1 µm deep. The track-to-track spacing is 1.6 to 1.8 µm (refer to Fig. 1). The overall length of the track on a 30 cm disc is about 34 kilometres!",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 161,
+      "topLeftY": 296,
+      "bottomRightX": 316,
+      "bottomRightY": 362,
+      "content": "![img-37.jpeg](img-37.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-37.jpeg"
+    },
+    {
+      "topLeftX": 218,
+      "topLeftY": 363,
+      "bottomRightX": 248,
+      "bottomRightY": 375,
+      "content": "Fig. 1",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 385,
+      "bottomRightX": 380,
+      "bottomRightY": 461,
+      "content": "The disc is made of a transparent plastic into which the pits are pressed. An extremely thin reflective layer of aluminium is added on top, followed by a protective coating that covers the whole. Two of these discs are glued together to form a double-sided disc. A cross section of the disc is shown in Fig. 2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 89,
+      "topLeftY": 465,
+      "bottomRightX": 375,
+      "bottomRightY": 523,
+      "content": "![img-38.jpeg](img-38.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-38.jpeg"
+    },
+    {
+      "topLeftX": 219,
+      "topLeftY": 525,
+      "bottomRightX": 249,
+      "bottomRightY": 539,
+      "content": "Fig. 2",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 549,
+      "bottomRightX": 380,
+      "bottomRightY": 658,
+      "content": "A great advantage of the optical system is the contactless readout of the information on the disc, as a result of which wear of disc and read-out device is non-existent. A second advantage is the effective protection of the information on the disc against dust, fingerprints, etc. When taking a closer look at the beam path from the objective to the disc (refer to Fig. 3), we notice that at the place where the light cone enters the transparent base section the light cone's diameter is still fairly large.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 658,
+      "bottomRightX": 380,
+      "bottomRightY": 707,
+      "content": "Dust particles, etc. at this place exert very little influence; the light passes, as it were, around the dust particle. This highly effective protection of the information enables normal handling of the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 177,
+      "topLeftY": 713,
+      "bottomRightX": 311,
+      "bottomRightY": 753,
+      "content": "![img-39.jpeg](img-39.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-39.jpeg"
+    },
+    {
+      "topLeftX": 219,
+      "topLeftY": 755,
+      "bottomRightX": 249,
+      "bottomRightY": 769,
+      "content": "Fig. 3",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 780,
+      "bottomRightX": 380,
+      "bottomRightY": 804,
+      "content": "Optical read-out of the information on the disc takes place as follows:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 804,
+      "bottomRightX": 380,
+      "bottomRightY": 901,
+      "content": "The light beam from a ALGaAs semiconductor laser is focused on the disc by a lens (objective). In the absence of a pit practically the full amount of light is reflected. The reflected light passes through the objective and is then separated from the light beam going to the disc. The reflected light now falls on a photodiode; the amount of current that starts flowing through the diode is proportional to the amount of light falling on it.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 901,
+      "bottomRightX": 380,
+      "bottomRightY": 949,
+      "content": "When the light beam hits a pit, practically no light will be reflected due to the properties of the laser light and the depth of the pit; consequently, the current passing through the photodiode will be reduced.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 87,
+      "topLeftY": 949,
+      "bottomRightX": 380,
+      "bottomRightY": 986,
+      "content": "In this way it is possible to convert the information on the disc into an electrical signal that is suitable for further processing to a standard videosignal in the disc drive.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 408,
+      "topLeftY": 76,
+      "bottomRightX": 593,
+      "bottomRightY": 90,
+      "content": "# Encoding of the signals on the disc",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 95,
+      "bottomRightX": 699,
+      "bottomRightY": 155,
+      "content": "The videosignal is frequency modulated on a carrier (refer to Fig. 4a). Top sync level is situated at a frequency of 6.76 MHz, black level at a frequency of 7.1 MHz and white level at a frequency of 7.9 MHz. This results in a total frequency swing of 7.9 - 6.76 = 1.14 MHz.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 155,
+      "bottomRightX": 699,
+      "bottomRightY": 191,
+      "content": "Including this side bands the video FM signal encompasses a frequency range up to approximately 2.5 MHz at the lower side.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 191,
+      "bottomRightX": 699,
+      "bottomRightY": 240,
+      "content": "The two audio signals are equally frequency modulated on carriers of 683 kHz and 1066 kHz respectively. The frequency swing of the two channels is ± 100 kHz (refer to Fig. 4b).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 245,
+      "bottomRightX": 699,
+      "bottomRightY": 306,
+      "content": "Summing these three signals and next limiting them results in a pulse-width modulated signal (refer to Fig. 4c). The negative half periods of this signal determine the length of the pits, the positive half periods determine the spacing of the pits (refer to Fig. 4d).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 407,
+      "topLeftY": 306,
+      "bottomRightX": 699,
+      "bottomRightY": 331,
+      "content": "Fig. 5 shows the entire frequency spectrum with associated recording levels of the video and audio RF signals.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 337,
+      "bottomRightX": 660,
+      "bottomRightY": 564,
+      "content": "![img-40.jpeg](img-40.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-40.jpeg"
+    },
+    {
+      "topLeftX": 541,
+      "topLeftY": 565,
+      "bottomRightX": 571,
+      "bottomRightY": 578,
+      "content": "Fig. 4",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 440,
+      "topLeftY": 578,
+      "bottomRightX": 699,
+      "bottomRightY": 721,
+      "content": "![img-41.jpeg](img-41.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-41.jpeg"
+    },
+    {
+      "topLeftX": 540,
+      "topLeftY": 727,
+      "bottomRightX": 570,
+      "bottomRightY": 741,
+      "content": "Fig. 5",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 661,
+      "topLeftY": 732,
+      "bottomRightX": 695,
+      "bottomRightY": 741,
+      "content": "27625A19A",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 409,
+      "topLeftY": 750,
+      "bottomRightX": 700,
+      "bottomRightY": 776,
+      "content": "The encoded RF signals may be stored on the disc in two different ways:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 410,
+      "topLeftY": 779,
+      "bottomRightX": 701,
+      "bottomRightY": 947,
+      "content": "1. The disc rotates at a constant speed (1500 rpm = 25 rps). At each revolution of the disc a complete TV picture is reproduced. This implies that the length of the track corresponding to one picture gradually increases from the centre of the disc to the outside. The frame sync pulses are situated on a diagonal. This type of disc is referred to as CAV disc (Constant Angular Velocity disc). Special playing modes like 'still picture', 'slow motion', 'fast forward' and 'reverse' are feasible with this type of disc only, since the frame sync pulses and, consequently, the frame blanking are situated on a diagonal. This allows jumping from one track to the next one or to the preceding one during the frame blanking period.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 423,
+      "topLeftY": 947,
+      "bottomRightX": 701,
+      "bottomRightY": 972,
+      "content": "The maximum playing time of a CAV disc is 36 minutes/ side.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 654,
+      "topLeftY": 989,
+      "bottomRightX": 703,
+      "bottomRightY": 1002,
+      "content": "CS 7 875",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

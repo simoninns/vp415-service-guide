@@ -1,0 +1,83 @@
+{
+  "index": 53,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 546,
+      "topLeftY": 58,
+      "bottomRightX": 688,
+      "bottomRightY": 72,
+      "content": "DATE : 1987-5-20",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 275,
+      "topLeftY": 100,
+      "bottomRightX": 523,
+      "bottomRightY": 116,
+      "content": "# FAULT SYMPTOMS AND SOLUTIONS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 129,
+      "bottomRightX": 688,
+      "bottomRightY": 158,
+      "content": "This survey describes a number of known fault symptoms or problems, that can occur in the disc drive.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 159,
+      "bottomRightX": 688,
+      "bottomRightY": 189,
+      "content": "A possible solution for mentioned problems is given and also is indicated when the solution has been introduced.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 202,
+      "bottomRightX": 688,
+      "bottomRightY": 231,
+      "content": "The problems have been divided into several categories, each with an increasing following order number.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 117,
+      "topLeftY": 232,
+      "bottomRightX": 511,
+      "bottomRightY": 247,
+      "content": "Undermentioned categories have been choosen :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 161,
+      "topLeftY": 260,
+      "bottomRightX": 391,
+      "bottomRightY": 333,
+      "content": "A = START UP PROBLEMS\nB = PLAYABILITY PROBLEMS\nC = AUDIO PROBLEMS\nD = VIDEO PROBLEMS\nE = COMMUNICATION PROBLEMS",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 655,
+      "topLeftY": 984,
+      "bottomRightX": 704,
+      "bottomRightY": 997,
+      "content": "CS 8 290",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

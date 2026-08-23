@@ -1,0 +1,956 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 75,
+      "topLeftY": 31,
+      "bottomRightX": 203,
+      "bottomRightY": 43,
+      "content": "# INSTANT JUMP REVERSE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 51,
+      "bottomRightX": 144,
+      "bottomRightY": 64,
+      "content": "Syntax: -yy",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 64,
+      "bottomRightX": 192,
+      "bottomRightY": 77,
+      "content": "First code: -(45D = 2DH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 78,
+      "bottomRightX": 152,
+      "bottomRightY": 89,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 90,
+      "bottomRightX": 241,
+      "bottomRightY": 102,
+      "content": "Function: Jump back over yy pictures.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 115,
+      "bottomRightX": 367,
+      "bottomRightY": 140,
+      "content": "The jump is performed at the end of the first video field. Small jumps are invisible, as they can be performed within the video blanking.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 152,
+      "bottomRightX": 344,
+      "bottomRightY": 166,
+      "content": "After this command, the player continues its previous operation.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 178,
+      "bottomRightX": 189,
+      "bottomRightY": 191,
+      "content": "The following limits apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 192,
+      "bottomRightX": 139,
+      "bottomRightY": 204,
+      "content": "yy = 1...50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 220,
+      "bottomRightX": 126,
+      "bottomRightY": 231,
+      "content": "# STANDBY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 240,
+      "bottomRightX": 136,
+      "bottomRightY": 251,
+      "content": "Syntax: ,0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 251,
+      "bottomRightX": 188,
+      "bottomRightY": 262,
+      "content": "First code: ,(44D = 2CH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 262,
+      "bottomRightX": 151,
+      "bottomRightY": 272,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 272,
+      "bottomRightX": 229,
+      "bottomRightY": 282,
+      "content": "Function: Enter standby condition.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 293,
+      "bottomRightX": 367,
+      "bottomRightY": 344,
+      "content": "The spinning motor is decelerated and the optical readout unit goes to 'lead-in' (home position). The player is then switched to standby. All defaults are reloaded except for communication protocol, and the STOP and INFO registers are cleared.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 361,
+      "bottomRightX": 94,
+      "bottomRightY": 372,
+      "content": "# ON",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 382,
+      "bottomRightX": 136,
+      "bottomRightY": 392,
+      "content": "Syntax: ,1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 392,
+      "bottomRightX": 189,
+      "bottomRightY": 403,
+      "content": "First code: ,(44D = 2CH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 403,
+      "bottomRightX": 188,
+      "bottomRightY": 412,
+      "content": "Response: Positive ack: S",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 412,
+      "bottomRightX": 276,
+      "bottomRightY": 424,
+      "content": "Negative ack: O (if disc-tray is open)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 424,
+      "bottomRightX": 237,
+      "bottomRightY": 434,
+      "content": "Function: CAV - Display first picture",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 434,
+      "bottomRightX": 195,
+      "bottomRightY": 445,
+      "content": "CLV - Start play",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 454,
+      "bottomRightX": 366,
+      "bottomRightY": 480,
+      "content": "CAV discs: The player is started and goes to the first picture after lead-in (still mode). The positive acknowledge signal is then given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 492,
+      "bottomRightX": 367,
+      "bottomRightY": 529,
+      "content": "CLV discs: The player is started and goes to the first time code after lead-in. The positive acknowledge signal is then given and normal play forward commences.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 541,
+      "bottomRightX": 367,
+      "bottomRightY": 581,
+      "content": "If the player is already on, this command performs a Goto the first picture, the positive acknowledge signal is given and then still (CAV) or play (CLV) occurs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 597,
+      "bottomRightX": 113,
+      "bottomRightY": 609,
+      "content": "# PAUSE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 618,
+      "bottomRightX": 133,
+      "bottomRightY": 628,
+      "content": "Syntax: /",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 628,
+      "bottomRightX": 188,
+      "bottomRightY": 639,
+      "content": "Code: /(47D = 2FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 639,
+      "bottomRightX": 152,
+      "bottomRightY": 650,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 650,
+      "bottomRightX": 337,
+      "bottomRightY": 660,
+      "content": "Function: CAV - Enter still mode with audio and video muted",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 660,
+      "bottomRightX": 278,
+      "bottomRightY": 669,
+      "content": "CLV - Pause, audio and video muted",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 669,
+      "bottomRightX": 315,
+      "bottomRightY": 680,
+      "content": "(optical readout unit stays in current position)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 698,
+      "bottomRightX": 179,
+      "bottomRightY": 710,
+      "content": "# RESET TO DEFAULT",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 718,
+      "bottomRightX": 133,
+      "bottomRightY": 729,
+      "content": "Syntax: :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 729,
+      "bottomRightX": 191,
+      "bottomRightY": 740,
+      "content": "Code: : (58D = 3AH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 740,
+      "bottomRightX": 152,
+      "bottomRightY": 750,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 750,
+      "bottomRightX": 236,
+      "bottomRightY": 760,
+      "content": "Function: Reset to initial conditions.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 770,
+      "bottomRightX": 368,
+      "bottomRightY": 809,
+      "content": "The player is reset to initial power-on conditions, except that the communication protocol remains unchanged. The STOP and INFO registers are not affected.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 827,
+      "bottomRightX": 274,
+      "bottomRightY": 840,
+      "content": "# PICTURE NUMBER REQUEST (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 846,
+      "bottomRightX": 141,
+      "bottomRightY": 858,
+      "content": "Syntax: ?F",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 859,
+      "bottomRightX": 190,
+      "bottomRightY": 872,
+      "content": "Codes: ? (63D = 3FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 872,
+      "bottomRightX": 190,
+      "bottomRightY": 884,
+      "content": "F (70D = 46H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 885,
+      "bottomRightX": 214,
+      "bottomRightY": 897,
+      "content": "Response: Positive ack: F xxxxx",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 898,
+      "bottomRightX": 185,
+      "bottomRightY": 910,
+      "content": "Negative ack:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 912,
+      "bottomRightX": 252,
+      "bottomRightY": 923,
+      "content": "X if picture no. is not available",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 924,
+      "bottomRightX": 213,
+      "bottomRightY": 936,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 32,
+      "bottomRightX": 636,
+      "bottomRightY": 58,
+      "content": "Function: To return the current picture number as five ASCII digits (00001...59999).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 70,
+      "bottomRightX": 697,
+      "bottomRightY": 96,
+      "content": "If this command is attempted when a CLV disc is loaded, a negative acknowledge signal (X) is returned.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 113,
+      "bottomRightX": 556,
+      "bottomRightY": 125,
+      "content": "# CHAPTER NUMBER REQUEST",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 133,
+      "bottomRightX": 471,
+      "bottomRightY": 143,
+      "content": "Syntax: ?C",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 143,
+      "bottomRightX": 520,
+      "bottomRightY": 154,
+      "content": "Codes: ? (63D = 3FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 154,
+      "bottomRightX": 521,
+      "bottomRightY": 165,
+      "content": "C (67D = 43H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 165,
+      "bottomRightX": 530,
+      "bottomRightY": 175,
+      "content": "Response: Positive ack: C xx",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 175,
+      "bottomRightX": 514,
+      "bottomRightY": 185,
+      "content": "Negative ack:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 185,
+      "bottomRightX": 583,
+      "bottomRightY": 195,
+      "content": "X if chapter no. is not available",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 195,
+      "bottomRightX": 542,
+      "bottomRightY": 206,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 206,
+      "bottomRightX": 638,
+      "bottomRightY": 216,
+      "content": "Function: To return the current chapter number as two",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 216,
+      "bottomRightX": 549,
+      "bottomRightY": 226,
+      "content": "ASCII digits (00...79).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 243,
+      "bottomRightX": 580,
+      "bottomRightY": 257,
+      "content": "# DISC PROGRAM STATUS REQUEST",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 264,
+      "bottomRightX": 471,
+      "bottomRightY": 274,
+      "content": "Syntax: ?D",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 274,
+      "bottomRightX": 520,
+      "bottomRightY": 285,
+      "content": "Codes: ? (63D = 3FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 285,
+      "bottomRightX": 522,
+      "bottomRightY": 296,
+      "content": "D (68D = 44H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 296,
+      "bottomRightX": 576,
+      "bottomRightY": 306,
+      "content": "Response: Positive ack: D x1 x2 x3 x4 x5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 306,
+      "bottomRightX": 514,
+      "bottomRightY": 316,
+      "content": "Negative ack:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 316,
+      "bottomRightX": 571,
+      "bottomRightY": 326,
+      "content": "X if disc status not available",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 326,
+      "bottomRightX": 542,
+      "bottomRightY": 337,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 337,
+      "bottomRightX": 593,
+      "bottomRightY": 347,
+      "content": "Function: To return the disc program status",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 457,
+      "topLeftY": 347,
+      "bottomRightX": 560,
+      "bottomRightY": 357,
+      "content": "(as recorded on the disc).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 367,
+      "bottomRightX": 616,
+      "bottomRightY": 381,
+      "content": "Each status byte (x1 to x5) is in the form 0011yyyy.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 382,
+      "bottomRightX": 542,
+      "bottomRightY": 393,
+      "content": "These bytes are specified below:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 411,
+      "bottomRightX": 504,
+      "bottomRightY": 425,
+      "content": "# Response specification",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 430,
+      "bottomRightX": 494,
+      "bottomRightY": 443,
+      "content": "# First status byte (x1)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 449,
+      "bottomRightX": 465,
+      "bottomRightY": 460,
+      "content": "bit 7: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 462,
+      "bottomRightX": 465,
+      "bottomRightY": 473,
+      "content": "bit 6: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 475,
+      "bottomRightX": 464,
+      "bottomRightY": 485,
+      "content": "bit 5: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 487,
+      "bottomRightX": 464,
+      "bottomRightY": 498,
+      "content": "bit 4: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 500,
+      "bottomRightX": 525,
+      "bottomRightY": 512,
+      "content": "bits 3-0: 1101 = D (Hex)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 514,
+      "bottomRightX": 419,
+      "bottomRightY": 523,
+      "content": "or",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 525,
+      "bottomRightX": 524,
+      "bottomRightY": 536,
+      "content": "bits 3-0: 1011 = B (Hex)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 547,
+      "bottomRightX": 505,
+      "bottomRightY": 560,
+      "content": "# Second status byte (x2)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 567,
+      "bottomRightX": 465,
+      "bottomRightY": 577,
+      "content": "bit 7: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 580,
+      "bottomRightX": 465,
+      "bottomRightY": 590,
+      "content": "bit 6: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 592,
+      "bottomRightX": 464,
+      "bottomRightY": 603,
+      "content": "bit 5: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 605,
+      "bottomRightX": 464,
+      "bottomRightY": 615,
+      "content": "bit 4: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 617,
+      "bottomRightX": 524,
+      "bottomRightY": 629,
+      "content": "bits 3-0: 1100 = C (Hex)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 631,
+      "bottomRightX": 419,
+      "bottomRightY": 640,
+      "content": "or",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 642,
+      "bottomRightX": 525,
+      "bottomRightY": 655,
+      "content": "bits 3-0: 1010 = A (Hex)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 668,
+      "bottomRightX": 476,
+      "bottomRightY": 679,
+      "content": "From x1 and x2:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 681,
+      "bottomRightX": 549,
+      "bottomRightY": 693,
+      "content": "DC = CX noise reduction present",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 694,
+      "bottomRightX": 532,
+      "bottomRightY": 705,
+      "content": "BA = No CX noise reduction",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 716,
+      "bottomRightX": 498,
+      "bottomRightY": 728,
+      "content": "# Third status byte (x3)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 736,
+      "bottomRightX": 465,
+      "bottomRightY": 746,
+      "content": "bit 7: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 749,
+      "bottomRightX": 465,
+      "bottomRightY": 759,
+      "content": "bit 6: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 761,
+      "bottomRightX": 465,
+      "bottomRightY": 771,
+      "content": "bit 5: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 774,
+      "bottomRightX": 465,
+      "bottomRightY": 785,
+      "content": "bit 4: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 787,
+      "bottomRightX": 606,
+      "bottomRightY": 798,
+      "content": "bit 3: 0 = 12\" disc 1 = 8\" disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 799,
+      "bottomRightX": 602,
+      "bottomRightY": 810,
+      "content": "bit 2: 0 = side 1 1 = side 2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 812,
+      "bottomRightX": 631,
+      "bottomRightY": 824,
+      "content": "bit 1: 0 = no TXT present 1 = TXT present",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 825,
+      "bottomRightX": 647,
+      "bottomRightY": 837,
+      "content": "bit 0: 0 = FM-FM mpx. off 1 = FM-FM mpx. on",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 847,
+      "bottomRightX": 505,
+      "bottomRightY": 860,
+      "content": "# Fourth status byte (x4)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 867,
+      "bottomRightX": 467,
+      "bottomRightY": 878,
+      "content": "bit 7: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 880,
+      "bottomRightX": 467,
+      "bottomRightY": 890,
+      "content": "bit 6: 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 893,
+      "bottomRightX": 467,
+      "bottomRightY": 903,
+      "content": "bit 5: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 906,
+      "bottomRightX": 467,
+      "bottomRightY": 917,
+      "content": "bit 4: 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 77,
+      "topLeftY": 967,
+      "bottomRightX": 92,
+      "bottomRightY": 977,
+      "content": "29",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

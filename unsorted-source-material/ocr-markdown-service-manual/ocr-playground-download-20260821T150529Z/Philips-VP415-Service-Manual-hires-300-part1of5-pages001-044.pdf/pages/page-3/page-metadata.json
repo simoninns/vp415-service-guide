@@ -1,0 +1,47 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 202,
+      "topLeftY": 45,
+      "bottomRightX": 346,
+      "bottomRightY": 67,
+      "content": "Technical data",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 69,
+      "bottomRightX": 520,
+      "bottomRightY": 92,
+      "content": "Controls, indicators, connections",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 93,
+      "bottomRightX": 381,
+      "bottomRightY": 117,
+      "content": "Connector pinning",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 598,
+      "topLeftY": 46,
+      "bottomRightX": 699,
+      "bottomRightY": 71,
+      "content": "Chapter 1",
+      "confidenceScores": null,
+      "type": "text"
+    }
+  ]
+}

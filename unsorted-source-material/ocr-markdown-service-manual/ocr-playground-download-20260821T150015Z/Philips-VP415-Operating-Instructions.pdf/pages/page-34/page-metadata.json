@@ -1,0 +1,812 @@
+{
+  "index": 33,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 73,
+      "topLeftY": 31,
+      "bottomRightX": 317,
+      "bottomRightY": 43,
+      "content": "# PLAY FORWARD AND JUMP REVERSE (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 49,
+      "bottomRightX": 175,
+      "bottomRightY": 61,
+      "content": "Syntax: Nxxxxx-yy",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 62,
+      "bottomRightX": 191,
+      "bottomRightY": 74,
+      "content": "Codes: N (78D = 4EH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 125,
+      "topLeftY": 75,
+      "bottomRightX": 189,
+      "bottomRightY": 87,
+      "content": "-(45D = 2DH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 88,
+      "bottomRightX": 150,
+      "bottomRightY": 99,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 100,
+      "bottomRightX": 358,
+      "bottomRightY": 126,
+      "content": "Function: After normal play forward of xxxxx pictures, a jump back of yy pictures is performed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 138,
+      "bottomRightX": 365,
+      "bottomRightY": 164,
+      "content": "This is repeated until a Clear command or another mode command is received, or lead-in or lead-out is reached.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 176,
+      "bottomRightX": 185,
+      "bottomRightY": 189,
+      "content": "The following limits apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 190,
+      "bottomRightX": 131,
+      "bottomRightY": 201,
+      "content": "xxxxx > 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 203,
+      "bottomRightX": 136,
+      "bottomRightY": 214,
+      "content": "yy = 1...50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 216,
+      "bottomRightX": 167,
+      "bottomRightY": 227,
+      "content": "yy <= 20 X xxxxx",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 239,
+      "bottomRightX": 264,
+      "bottomRightY": 253,
+      "content": "This command is not applicable to CLV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 271,
+      "bottomRightX": 206,
+      "bottomRightY": 284,
+      "content": "# PLAY REVERSE (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 290,
+      "bottomRightX": 136,
+      "bottomRightY": 302,
+      "content": "Syntax: O",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 303,
+      "bottomRightX": 191,
+      "bottomRightY": 315,
+      "content": "Code: O (79D = 4FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 316,
+      "bottomRightX": 150,
+      "bottomRightY": 327,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 328,
+      "bottomRightX": 213,
+      "bottomRightY": 341,
+      "content": "Function: Normal play reverse.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 353,
+      "bottomRightX": 264,
+      "bottomRightY": 366,
+      "content": "This command is not applicable to CLV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 384,
+      "bottomRightX": 318,
+      "bottomRightY": 397,
+      "content": "# PLAY REVERSE AND JUMP FORWARD (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 403,
+      "bottomRightX": 177,
+      "bottomRightY": 415,
+      "content": "Syntax: Oxxxxx+yy",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 416,
+      "bottomRightX": 192,
+      "bottomRightY": 428,
+      "content": "Codes: O (79D = 4FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 429,
+      "bottomRightX": 192,
+      "bottomRightY": 441,
+      "content": "+ (43D = 2BH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 442,
+      "bottomRightX": 150,
+      "bottomRightY": 453,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 454,
+      "bottomRightX": 335,
+      "bottomRightY": 479,
+      "content": "Function: After normal play reverse of xxxxx pictures, a jump forward of yy pictures is performed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 492,
+      "bottomRightX": 366,
+      "bottomRightY": 516,
+      "content": "This is repeated until a Clear command or another mode command is received, or lead-in/lead-out is reached.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 529,
+      "bottomRightX": 187,
+      "bottomRightY": 541,
+      "content": "The following limits apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 542,
+      "bottomRightX": 131,
+      "bottomRightY": 553,
+      "content": "xxxxx > 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 556,
+      "bottomRightX": 138,
+      "bottomRightY": 567,
+      "content": "yy = 1...50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 568,
+      "bottomRightX": 168,
+      "bottomRightY": 580,
+      "content": "yy <= 20 X xxxxx",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 592,
+      "bottomRightX": 265,
+      "bottomRightY": 606,
+      "content": "This command is not applicable to CLV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 623,
+      "bottomRightX": 313,
+      "bottomRightY": 637,
+      "content": "# PLAY REVERSE AND JUMP REVERSE (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 642,
+      "bottomRightX": 177,
+      "bottomRightY": 655,
+      "content": "Syntax: Oxxxxx-yy",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 656,
+      "bottomRightX": 192,
+      "bottomRightY": 667,
+      "content": "Codes: O (79D = 4FH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 127,
+      "topLeftY": 668,
+      "bottomRightX": 191,
+      "bottomRightY": 680,
+      "content": "-(45D = 2DH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 681,
+      "bottomRightX": 151,
+      "bottomRightY": 693,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 694,
+      "bottomRightX": 356,
+      "bottomRightY": 719,
+      "content": "Function: After normal play reverse of xxxxx pictures, a jump back of yy pictures is performed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 730,
+      "bottomRightX": 366,
+      "bottomRightY": 756,
+      "content": "This is repeated until a Clear command or another mode command is received, or lead-in is reached.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 769,
+      "bottomRightX": 187,
+      "bottomRightY": 783,
+      "content": "The following limits apply:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 784,
+      "bottomRightX": 131,
+      "bottomRightY": 794,
+      "content": "xxxxx > 0",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 796,
+      "bottomRightX": 138,
+      "bottomRightY": 807,
+      "content": "yy = 1...50",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 88,
+      "topLeftY": 808,
+      "bottomRightX": 168,
+      "bottomRightY": 820,
+      "content": "yy <= 20 X xxxxx",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 833,
+      "bottomRightX": 265,
+      "bottomRightY": 846,
+      "content": "This command is not applicable to CLV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 31,
+      "bottomRightX": 545,
+      "bottomRightY": 42,
+      "content": "# GOTO CHAPTER AND HALT",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 49,
+      "bottomRightX": 483,
+      "bottomRightY": 60,
+      "content": "Syntax: QxxR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 61,
+      "bottomRightX": 521,
+      "bottomRightY": 72,
+      "content": "Codes: Q (81D = 51H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 72,
+      "bottomRightX": 520,
+      "bottomRightY": 82,
+      "content": "R (82D = 52H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 82,
+      "bottomRightX": 525,
+      "bottomRightY": 92,
+      "content": "Response: Positive ack: A6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 92,
+      "bottomRightX": 580,
+      "bottomRightY": 102,
+      "content": "Negative ack: AN if Goto fails",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 102,
+      "bottomRightX": 540,
+      "bottomRightY": 113,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 113,
+      "bottomRightX": 666,
+      "bottomRightY": 133,
+      "content": "Function: Search for start of specified chapter and display first picture.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 143,
+      "bottomRightX": 695,
+      "bottomRightY": 168,
+      "content": "When found, the first picture of the chapter is displayed and the positive acknowledge signal is given.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 168,
+      "bottomRightX": 611,
+      "bottomRightY": 179,
+      "content": "Note: With CLV discs, play starts at that chapter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 197,
+      "bottomRightX": 545,
+      "bottomRightY": 209,
+      "content": "# GOTO CHAPTER AND PLAY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 216,
+      "bottomRightX": 483,
+      "bottomRightY": 227,
+      "content": "Syntax: QxxN",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 227,
+      "bottomRightX": 521,
+      "bottomRightY": 238,
+      "content": "Codes: Q (81D = 51H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 238,
+      "bottomRightX": 522,
+      "bottomRightY": 249,
+      "content": "N (78D = 4EH)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 249,
+      "bottomRightX": 525,
+      "bottomRightY": 259,
+      "content": "Response: Positive ack: A6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 259,
+      "bottomRightX": 580,
+      "bottomRightY": 269,
+      "content": "Negative ack: AN if Goto fails",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 269,
+      "bottomRightX": 540,
+      "bottomRightY": 279,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 278,
+      "bottomRightX": 685,
+      "bottomRightY": 291,
+      "content": "Function: Search for start of specified chapter and commence play.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 300,
+      "bottomRightX": 697,
+      "bottomRightY": 351,
+      "content": "Following a successful search, normal play forward starts from the first picture of the chapter and the positive acknowledge signal is given. If the search fails, the negative response (AN) is given. Video and audio are muted during the Goto.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 368,
+      "bottomRightX": 553,
+      "bottomRightY": 382,
+      "content": "# PLAY CHAPTER (SEQUENCE)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 388,
+      "bottomRightX": 499,
+      "bottomRightY": 399,
+      "content": "Syntax: QxxyyzzS",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 399,
+      "bottomRightX": 521,
+      "bottomRightY": 410,
+      "content": "Codes: Q (81D = 51H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 410,
+      "bottomRightX": 520,
+      "bottomRightY": 420,
+      "content": "S (83D = 53H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 419,
+      "bottomRightX": 525,
+      "bottomRightY": 430,
+      "content": "Response: Positive ack: A7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 430,
+      "bottomRightX": 580,
+      "bottomRightY": 440,
+      "content": "Negative ack: AN if Goto fails",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 440,
+      "bottomRightX": 540,
+      "bottomRightY": 451,
+      "content": "O if disc-tray is open",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 450,
+      "bottomRightX": 661,
+      "bottomRightY": 461,
+      "content": "Function: Play the specified chapter or sequence of chapters.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 471,
+      "bottomRightX": 697,
+      "bottomRightY": 546,
+      "content": "The start of the first specified chapter is searched for. When found, this chapter is played (normal play forward). When the end of the chapter is reached, the next specified chapter is searched for, and played, etc., until the last specified chapter has been played. The positive ack. signal is then given and the player either halts (CAV) or enters pause mode (CLV).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 560,
+      "bottomRightX": 697,
+      "bottomRightY": 585,
+      "content": "A maximum of 7 chapters is allowed in a sequence. If more than one chapter is specified, two digits per chapter must be specified.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 597,
+      "bottomRightX": 525,
+      "bottomRightY": 611,
+      "content": "e.g. Q3S plays chapter 3",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 426,
+      "topLeftY": 612,
+      "bottomRightX": 557,
+      "bottomRightY": 623,
+      "content": "Q0312S plays chapter 3 then 12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 636,
+      "bottomRightX": 697,
+      "bottomRightY": 661,
+      "content": "If a chapter search fails, a negative ack. signal is given and the chapter sequence is terminated.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 674,
+      "bottomRightX": 601,
+      "bottomRightY": 686,
+      "content": "During a Goto, the video and audio are muted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 705,
+      "bottomRightX": 542,
+      "bottomRightY": 718,
+      "content": "# SET FAST SPEED (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 723,
+      "bottomRightX": 485,
+      "bottomRightY": 736,
+      "content": "Syntax: SxxxF",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 737,
+      "bottomRightX": 519,
+      "bottomRightY": 749,
+      "content": "Codes: S (83D = 53H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 456,
+      "topLeftY": 750,
+      "bottomRightX": 520,
+      "bottomRightY": 761,
+      "content": "F (70D = 46H)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 762,
+      "bottomRightX": 482,
+      "bottomRightY": 773,
+      "content": "Response: None",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 774,
+      "bottomRightX": 612,
+      "bottomRightY": 788,
+      "content": "Function: Fast speed is set to the specified value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 800,
+      "bottomRightX": 491,
+      "bottomRightY": 811,
+      "content": "Limits: xxx = 2...40",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 813,
+      "bottomRightX": 507,
+      "bottomRightY": 825,
+      "content": "where 2 is normal speed",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 827,
+      "bottomRightX": 546,
+      "bottomRightY": 838,
+      "content": "3 is 3/2 times normal speed",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 433,
+      "topLeftY": 839,
+      "bottomRightX": 592,
+      "bottomRightY": 851,
+      "content": "40 is 40/2 (i.e. 20) times normal speed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 851,
+      "bottomRightX": 606,
+      "bottomRightY": 863,
+      "content": "The default value is 6, i.e. 3 times normal speed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 877,
+      "bottomRightX": 697,
+      "bottomRightY": 901,
+      "content": "Fast play action is initiated with command W for forward, or command Z for reverse.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 915,
+      "bottomRightX": 596,
+      "bottomRightY": 928,
+      "content": "This command is not applicable to CLV discs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 966,
+      "bottomRightX": 88,
+      "bottomRightY": 976,
+      "content": "33",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

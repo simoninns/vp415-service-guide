@@ -1,0 +1,443 @@
+{
+  "index": 4,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 155,
+      "topLeftY": 41,
+      "bottomRightX": 272,
+      "bottomRightY": 56,
+      "content": "ETBC-B MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 293,
+      "topLeftY": 37,
+      "bottomRightX": 313,
+      "bottomRightY": 58,
+      "content": "H",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 247,
+      "topLeftY": 59,
+      "bottomRightX": 312,
+      "bottomRightY": 69,
+      "content": "(MOD. LEVEL 5)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 72,
+      "bottomRightX": 170,
+      "bottomRightY": 81,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 89,
+      "bottomRightX": 146,
+      "bottomRightY": 97,
+      "content": "# Required",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 98,
+      "bottomRightX": 146,
+      "bottomRightY": 106,
+      "content": "Test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 106,
+      "bottomRightX": 136,
+      "bottomRightY": 114,
+      "content": "Scope",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 115,
+      "bottomRightX": 150,
+      "bottomRightY": 124,
+      "content": "DC supply",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 131,
+      "bottomRightX": 194,
+      "bottomRightY": 139,
+      "content": "# Adjustment conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 140,
+      "bottomRightX": 164,
+      "bottomRightY": 148,
+      "content": "Load test disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 149,
+      "bottomRightX": 258,
+      "bottomRightY": 157,
+      "content": "Still picture, colour bar (picture no. 6200).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 165,
+      "bottomRightX": 159,
+      "bottomRightY": 174,
+      "content": "# Adjustments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 174,
+      "bottomRightX": 314,
+      "bottomRightY": 192,
+      "content": "1) R3012, R3013 (CCD pass-through, limiter freq. sweep)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 192,
+      "bottomRightX": 314,
+      "bottomRightY": 293,
+      "content": "- Using the scope, measure signal CV-DOC on 2H2 (A channel) and CV-TBC on 2H1 (B channel).\n- Short-circuit C2003 (9-IC7206 to ground).\n- Display the first lines of the video signal on the scope by means of the DTB.\n- Adjust R3012 for a delay of 70 μsec ± 1 μsec between the two signals.\n- Remove the short-circuit of C2003.\n- Connect with the DC supply a variable voltage to junction R3001, R3002, C2001 (TANG-ER).\n- Measure the delay of the CV-DOC and CV-TBC signals as a function of the DC voltage presented:",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 293,
+      "bottomRightX": 232,
+      "bottomRightY": 302,
+      "content": "0V : 46 μsec ± 1.5 μsec",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 302,
+      "bottomRightX": 227,
+      "bottomRightY": 310,
+      "content": "+3V : 70 μsec ± 1 μsec",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 310,
+      "bottomRightX": 235,
+      "bottomRightY": 318,
+      "content": "+6V : 91 μsec ± 1.5 μsec",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 130,
+      "topLeftY": 318,
+      "bottomRightX": 268,
+      "bottomRightY": 327,
+      "content": "Correct deviations by adjusting R3013.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 331,
+      "bottomRightX": 192,
+      "bottomRightY": 339,
+      "content": "2) R3063 (CCD adjust)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 340,
+      "bottomRightX": 314,
+      "bottomRightY": 382,
+      "content": "- Search for pict. no. 470 (white).\n- Measure the CV-TBM signal on p.1-IC7201 with the scope.\n- Adjust R3063 for a black level amplitude of 3.2Vpp.\n- The CV-TBM signal on 7H1 is shown in fig. H1.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 108,
+      "topLeftY": 385,
+      "bottomRightX": 310,
+      "bottomRightY": 485,
+      "content": "![img-7.jpeg](img-7.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-7.jpeg"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 490,
+      "bottomRightX": 197,
+      "bottomRightY": 499,
+      "content": "3) R3087 (Video adjust)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 500,
+      "bottomRightX": 314,
+      "bottomRightY": 560,
+      "content": "- Measure the CVBS OUT-signal on BNC3 (rear) with the scope (75 Ω terminated).\n- Press switch SK2 on analog I/O module U (pos. NOT ENCODED).\n- Adjust R3087 for a CVBS amplitude (top white-sync bottom) of 1 Vpp.\n- Switch SK2 back into the earlier position.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 563,
+      "bottomRightX": 211,
+      "bottomRightY": 572,
+      "content": "4) R3134 (video time errors)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 572,
+      "bottomRightX": 314,
+      "bottomRightY": 615,
+      "content": "- Search picture no. 1000 (blue picture) and adjust R3134 for minimum dark bars.\n- Search picture no 1800 (yellow picture) and adjust R3134 for minimum red stripes.\n- Repeat these two adjustments if necessary.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 620,
+      "bottomRightX": 212,
+      "bottomRightY": 628,
+      "content": "5) R3122 (audio time errors)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 120,
+      "topLeftY": 628,
+      "bottomRightX": 314,
+      "bottomRightY": 662,
+      "content": "- Switch the player into the normal play mode with sound modulation.\n- Measure the AC signal on E-TS7029 and adjust R3122 for minimum AC.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 668,
+      "bottomRightX": 227,
+      "bottomRightY": 677,
+      "content": "# Adjustment when item replaced",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 679,
+      "bottomRightX": 145,
+      "bottomRightY": 687,
+      "content": "replaced",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 688,
+      "bottomRightX": 136,
+      "bottomRightY": 695,
+      "content": "IC7201",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 111,
+      "topLeftY": 696,
+      "bottomRightX": 136,
+      "bottomRightY": 704,
+      "content": "IC7206",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 182,
+      "topLeftY": 679,
+      "bottomRightX": 206,
+      "bottomRightY": 687,
+      "content": "adjust",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 182,
+      "topLeftY": 688,
+      "bottomRightX": 233,
+      "bottomRightY": 695,
+      "content": "R3063, R3087",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 182,
+      "topLeftY": 696,
+      "bottomRightX": 233,
+      "bottomRightY": 704,
+      "content": "R3012, R3013",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 46,
+      "bottomRightX": 986,
+      "bottomRightY": 72,
+      "content": "|  2001 A 4 | 2013 A 7 | 2022 A 2 | 2027 B 6 | 2033 A 2 | 2036 A 2 | 2045 A 3 | 2050 B 3 | 3013 A 5 | 3137 B 7 | 5003 B 1 | 5007 B 1 | 5011 B 3 | 6005 A 1 | 6009 A 1 | 6013 A 3 | 6017 B 4 | 7022 A 1 | 7263 B 4  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2006 B 7 | 2015 A 7 | 2023 B 6 | 2028 A 2 | 2034 B 6 | 2040 A 2 | 2043 B 4 | 2042 B 3 | 2062 B 5 | 3138 B 7 | 5004 B 1 | 5008 A 1 | 5001 A 7 | 5006 B 1 | 5010 A 1 | 5014 A 4 | 6016 A 5 | 7021 A 1 | 7264 A 4  |\n|  2007 B 7 | 2017 A 7 | 2024 B 1 | 2031 B 6 | 2036 B 1 | 2042 B 2 | 2051 B 4 | 2065 B 4 | 2082 B 4 | 3152 B 3 | 5001 B 1 | 5005 B 1 | 5009 B 3 | 5002 B 2 | 5007 B 1 | 5011 B 3 | 6016 A 4 | 7019 B 3 | 7201 A 7  |\n|  2011 B 5 | 2021 B 2 | 2026 B 7 | 2032 A 6 | 2037 A 1 | 2043 A 2 | 2057 B 4 | 2012 A 5 | 3134 A 3 | 5002 B 1 | 5006 B 1 | 5010 B 3 | 5003 A 2 | 5008 A 1 | 5012 A 6 | 6016 A 2 | 7019 B 5 | 7202 A 2 | 7266 B 5  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 72,
+      "bottomRightX": 986,
+      "bottomRightY": 252,
+      "content": "![img-8.jpeg](img-8.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-8.jpeg"
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 259,
+      "bottomRightX": 949,
+      "bottomRightY": 312,
+      "content": "|  2002 A 4 | 2016 A 7 | 2046 B 5 | 2060 A 4 | 3001 A 4 | 3010 A 5 | 3025 A 7 | 3045 B 5 | 3060 A 2 | 3070 A 6 | 3078 A 6 | 3087 A 2 | 3101 A 2 | 3112 B 4 | 3121 B 4 | 3131 B 3 | 7017 B 2 | 7028 A 5  |   |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2003 B 5 | 2018 B 7 | 2047 B 5 | 2061 B 2 | 2063 A 4 | 3011 A 5 | 3030 A 7 | 3047 B 5 | 3061 B 2 | 3071 B 6 | 3080 B 6 | 3086 A 1 | 3102 B 2 | 3113 A 4 | 3123 B 3 | 3132 A 3 | 7018 B 6 | 7030 A 5 |   |\n|  2004 B 5 | 2019 B 5 | 2048 B 4 | 2062 B 3 | 2063 A 5 | 3014 B 5 | 3031 A 7 | 3048 B 5 | 3062 A 2 | 3072 A 6 | 3081 A 2 | 3086 A 1 | 3103 A 1 | 3114 A 4 | 3124 A 3 | 3132 B 3 | 7019 A 6 | 7031 B 3 |   |\n|  2005 B 5 | 2020 B 4 | 2050 B 4 | 2064 A 3 | 2064 A 4 | 3015 A 5 | 3032 A 7 | 3050 B 2 | 3064 B 6 | 3070 B 6 | 3082 A 2 | 3090 A 1 | 3104 A 2 | 3115 B 3 | 3125 A 3 | 3138 A 1 | 7020 B 6 |  |   |\n|  2006 A 5 | 2021 A 7 | 2051 B 4 | 2066 A 2 | 2065 A 4 | 3016 B 7 | 3033 A 7 | 3051 A 2 | 3065 A 6 | 3070 B 6 | 3083 A 2 | 3091 A 1 | 3105 A 2 | 3116 B 3 | 3126 A 3 | 3140 A 1 | 7021 A 6 |  |   |\n|  2008 B 7 | 2028 A 6 | 2052 A 4 | 2067 A 1 | 2066 A 5 | 3025 B 7 | 3034 A 7 | 3052 B 2 | 3066 A 7 | 3075 A 6 | 3084 A 2 | 3092 B 1 | 3106 A 4 | 3117 A 4 | 3127 A 3 | 7001 B 5 | 7024 A 1 |  |   |\n|  2010 B 7 | 2030 B 2 | 2054 B 4 | 2068 B 5 | 2067 A 5 | 3026 B 7 | 3035 A 7 | 3053 A 2 | 3067 A 6 | 3076 A 6 | 3085 A 1 | 3092 B 1 | 3109 A 4 | 3118 A 4 | 3128 A 3 | 7002 A 5 | 7026 B 4 |  |   |\n|  2012 B 4 | 2055 A 2 | 2059 B 4 | 2069 B 1 | 2068 A 4 | 3027 B 1 | 3044 A 5 | 3054 A 1 | 3066 A 6 | 3077 A 6 | 3086 A 1 | 3094 A 5 | 3110 B 4 | 3119 A 4 | 3128 B 3 | 7013 B 7 | 7027 A 4 |  |   |\n|  2014 A 5 | 2044 B 2 | 2058 B 4 | 2070 B 1 | 2059 B 5 | 3028 B 7 | 3045 B 5 | 3055 B 2 | 3066 A 6 | 3078 B 6 |  | 3095 B 2 | 3111 A 4 | 3120 B 3 | 3130 A 3 | 7014 A 7 | 7028 A 3 |  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 312,
+      "bottomRightX": 986,
+      "bottomRightY": 495,
+      "content": "![img-9.jpeg](img-9.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-9.jpeg"
+    },
+    {
+      "topLeftX": 337,
+      "topLeftY": 499,
+      "bottomRightX": 485,
+      "bottomRightY": 507,
+      "content": "LIST OF ELECTRICAL PARTS MODULE H",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 514,
+      "bottomRightX": 369,
+      "bottomRightY": 521,
+      "content": "Cells",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 522,
+      "bottomRightX": 474,
+      "bottomRightY": 605,
+      "content": "|  5001 | 4822 156 11002 | 7.7 μH  |\n| --- | --- | --- |\n|  5002 | 4822 156 10998 | 3 μH  |\n|  5003 | 4822 156 11001 | 6 μH  |\n|  5004 | 4822 156 11001 | 6 μH  |\n|  5005 | 4822 156 11001 | 6 μH  |\n|  5006 | 4822 156 11001 | 6 μH  |\n|  5007 | 4822 156 11001 | 6 μH  |\n|  5008 | 4822 156 10998 | 3 μH  |\n|  5009 | 4822 156 11004 | 26.5 μH  |\n|  5010 | 4822 156 11006 | 54 μH  |\n|  5011 | 4822 156 11004 | 26.5 μH  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 612,
+      "bottomRightX": 400,
+      "bottomRightY": 619,
+      "content": "Potentiometers",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 619,
+      "bottomRightX": 469,
+      "bottomRightY": 665,
+      "content": "|  3012 | 5322 101 10627 | 10 kΩ  |\n| --- | --- | --- |\n|  3013 | 5322 101 10628 | 22 kΩ  |\n|  3063 | 4822 100 20151 | 1 kΩ  |\n|  3087 | 4822 100 10254 | 1 kΩ  |\n|  3122 | 5322 101 10628 | 22 kΩ  |\n|  3134 | 5322 101 10628 | 22 kΩ  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 672,
+      "bottomRightX": 400,
+      "bottomRightY": 679,
+      "content": "Fuse Resistors",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 349,
+      "topLeftY": 679,
+      "bottomRightX": 464,
+      "bottomRightY": 695,
+      "content": "|  3137 | 4822 111 10165 | 10Ω  |\n| --- | --- | --- |\n|  3138 | 4822 111 10165 | 10Ω  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 527,
+      "topLeftY": 499,
+      "bottomRightX": 986,
+      "bottomRightY": 703,
+      "content": "|  2001 | 4822 121 41874 | 270 nF | 63 V | 2028 | 4822 122 32442 | 10 nF | PCB 3/1/64  |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n|  2002 | 4822 122 32541 | 27 nF |  | 2029 | 4822 124 22027 | 47 μF | 25 V  |\n|  2003 | 4822 122 31916 | 5.6 nF |  | 2030 | 5322 122 31647 | 1 nF |   |\n|  2004 | 4822 122 31971 | 10 pF |  | 2031 | 5322 124 21643 | 22 μF | 40 V  |\n|  2005 | 4822 122 31758 | 22 nF |  | 2032 | 4822 124 22027 | 47 μF | 25 V  |\n|  2006 | 5322 124 21643 | 22 μF | 40 V | 2033 | 4822 124 22027 | 47 μF | 25 V  |\n|  2007 | 4822 124 22027 | 47 μF | 25 V | 2034 | 5322 124 21643 | 22 μF | 40 V  |\n|  2008 | 4822 122 31758 | 22 nF |  | 2035 | 4822 122 31759 | 22 nF |   |\n|  2009 | 4822 122 31767 | 150 pF |  | 2036 | 5322 124 21643 | 22 μF | 40 V  |\n|  2010 | 4822 122 31767 | 150 pF |  | 2037 | 4822 124 22027 | 47 μF | 25 V  |\n|  2011 | 4822 124 22027 | 47 μF | 25 V | 2038 | 4822 124 22027 | 47 μF | 25 V  |\n|  2012 | 5322 122 32839 | 100 nF |  | 2040 | 4822 124 22027 | 47 μF | 25 V  |\n|  2013 | 4822 121 41719 | 1 μF | 10% 100 V | 2042 | 4822 124 22027 | 47 μF | 25 V  |\n|  2014 | 5322 122 32839 | 100 nF |  | 2043 | 4822 124 22027 | 47 μF | 25 V  |\n|  2015 | 5322 124 21749 | 10 μF | 63 V | 2044 | 4822 122 31759 | 22 nF |   |\n|  2016 | 4822 122 32442 | 10 nF |  | 2045 | 5322 124 21749 | 10 μF | 63 V  |\n|  2017 | 4822 124 22188 | 3.3 μF | 63 V | 2046 | 4822 122 31759 | 22 nF |   |\n|  2018 | 4822 122 32442 | 10 nF |  | 2047 | 4822 122 31759 | 22 nF |   |\n|  2019 | 5322 122 32839 | 100 nF |  | 2050 | 4822 122 32142 | 270 pF |   |\n|  2020 | 5322 122 32839 | 100 nF |  | 2051 | 4822 122 31759 | 22 nF |   |\n|  2021 | 5322 124 21643 | 22 μF | 40 V | 2052 | 4822 122 31759 | 22 nF |   |\n|  2022 | 5322 124 21643 | 22 μF | 40 V | 2053 | 4822 124 22028 | 1 μF | 63 V  |\n|  2023 | 4822 124 22188 | 3.3 μF | 63 V | 2054 | 5322 122 32839 | 130 nF |   |\n|  2024 | 5322 124 21749 | 10 μF | 63 V | 2055 | 5322 124 21643 | 22 μF | 40 V  |\n|  2025 | 4822 122 32442 | 10 nF |  | 2057 | 4822 122 31759 | 22 nF |   |\n|  2026 | 5322 124 21749 | 10 μF | 63 V | 2057 | 5322 124 21643 | 22 μF | 40 V  |\n|  2027 | 5322 124 21749 | 10 μF | 63 V | 2058 | 4822 122 31759 | 22 nF |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 956,
+      "topLeftY": 699,
+      "bottomRightX": 992,
+      "bottomRightY": 707,
+      "content": "CS 7 844",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

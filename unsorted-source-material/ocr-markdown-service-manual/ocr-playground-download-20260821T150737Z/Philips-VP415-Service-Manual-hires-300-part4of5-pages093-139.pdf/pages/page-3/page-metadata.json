@@ -1,0 +1,168 @@
+{
+  "index": 2,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 0,
+      "topLeftY": 44,
+      "bottomRightX": 868,
+      "bottomRightY": 53,
+      "content": "10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31",
+      "confidenceScores": null,
+      "type": "aside_text"
+    },
+    {
+      "topLeftX": 0,
+      "topLeftY": 66,
+      "bottomRightX": 28,
+      "bottomRightY": 75,
+      "content": "→CLAMP",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 210,
+      "topLeftY": 66,
+      "bottomRightX": 250,
+      "bottomRightY": 74,
+      "content": "SLOW MIXER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 438,
+      "topLeftY": 66,
+      "bottomRightX": 475,
+      "bottomRightY": 74,
+      "content": "FAST MIXER",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 56,
+      "bottomRightX": 868,
+      "bottomRightY": 65,
+      "content": "VIDEO MIX MODULE",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 830,
+      "topLeftY": 66,
+      "bottomRightX": 868,
+      "bottomRightY": 72,
+      "content": "(Hold level 4)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 877,
+      "topLeftY": 54,
+      "bottomRightX": 891,
+      "bottomRightY": 68,
+      "content": "Y",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 0,
+      "topLeftY": 89,
+      "bottomRightX": 661,
+      "bottomRightY": 662,
+      "content": "![img-2.jpeg](img-2.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-4.jpeg"
+    },
+    {
+      "topLeftX": 704,
+      "topLeftY": 104,
+      "bottomRightX": 811,
+      "bottomRightY": 154,
+      "content": "|  MODE | HP3 | HP1 | HP0 |   |\n| --- | --- | --- | --- | --- |\n|  1 | 0 | 0 | 0 | 1/4 ONLY  |\n|  2 | 0 | 0 | 0 | COMPUTER ONLY  |\n|  3 | 0 | 1 | 0 | ENHANCED READY  |\n|  4 | 0 | 1 | 1 | MAX 100/80/80  |\n|  5 | 1 | 0 | 0 | HARD KEY RELIED  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 694,
+      "topLeftY": 317,
+      "bottomRightX": 845,
+      "bottomRightY": 441,
+      "content": "![img-3.jpeg](img-3.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-3.jpeg"
+    },
+    {
+      "topLeftX": 657,
+      "topLeftY": 429,
+      "bottomRightX": 889,
+      "bottomRightY": 645,
+      "content": "![img-4.jpeg](img-4.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-4.jpeg"
+    },
+    {
+      "topLeftX": 859,
+      "topLeftY": 643,
+      "bottomRightX": 882,
+      "bottomRightY": 658,
+      "content": "TYPE SCALE\n1/2\" = 1'-0\"\n1/2\" = 1'-0\"",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 0,
+      "topLeftY": 667,
+      "bottomRightX": 868,
+      "bottomRightY": 675,
+      "content": "10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31",
+      "confidenceScores": null,
+      "type": "aside_text"
+    },
+    {
+      "topLeftX": 975,
+      "topLeftY": 57,
+      "bottomRightX": 1000,
+      "bottomRightY": 79,
+      "content": "●",
+      "confidenceScores": null,
+      "type": "aside_text"
+    },
+    {
+      "topLeftX": 975,
+      "topLeftY": 249,
+      "bottomRightX": 1000,
+      "bottomRightY": 271,
+      "content": "●",
+      "confidenceScores": null,
+      "type": "aside_text"
+    },
+    {
+      "topLeftX": 975,
+      "topLeftY": 442,
+      "bottomRightX": 1000,
+      "bottomRightY": 464,
+      "content": "●",
+      "confidenceScores": null,
+      "type": "aside_text"
+    },
+    {
+      "topLeftX": 975,
+      "topLeftY": 634,
+      "bottomRightX": 1000,
+      "bottomRightY": 656,
+      "content": "●",
+      "confidenceScores": null,
+      "type": "aside_text"
+    }
+  ]
+}

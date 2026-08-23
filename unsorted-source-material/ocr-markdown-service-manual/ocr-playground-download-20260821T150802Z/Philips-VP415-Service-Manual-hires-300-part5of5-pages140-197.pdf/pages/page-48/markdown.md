@@ -1,0 +1,21 @@
+SURVEY OF SOFTWARE RELEASES VP410/415.
+
+|  MODULE | ITEM | NAME | PROGR NBR 3104 103 ... | SW REV LEVEL | INTRODUCTION. DATE | CHECKSUM | SERVICE CODE NBR 4822 209 ...  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+|  DRIVE PROC(R) | 7204 | DRIVE | 6803.4 | 1.5 | 1986-10-30 | B5F1 | 51257  |
+|   |   |   |  6803.5 | 1.6 | 1986-11-24 | 9DB6 | 51257  |
+|   |   |   |  6803.6 | 1.7 | 1987-02-23 | 68FF | 51257  |
+|  CONTROL (S) | 7202 | CONTROL | 6804.4 | 1.4 | 1986-10-30 | 1F53 | 51256  |
+|   |   |   |  6804.5 | 1.5 | 1986-11-24 | 2B55 | 51256  |
+|   |   |   |  6804.6 | 1.6 | 1987-02-09 | 5D44 | 51256  |
+|   |   |   |  6804.7 | 1.7 | 1987-02-23 | C699 | 51256  |
+|   |   |   |  6804.9 | 1.8 | 1987-03-19 | 6728 | 51256  |
+|  *CPU (W) | 7201 | SYNC | 6808.0 | 1.0 | 1986-10-30 | D120 | 51258  |
+|  *CPU (W) | 7224 | DESCR. | 6807.0 | 1.0 | 1986-10-30 | 1FBE | 51259  |
+|  *CPU (W) | 7247 | LVDOS#1 | 6805.2 | 1.3 | 1986-10-30 | B42D | ** 51261  |
+|   |   |   |  6805.3 | 1.4 | 1986-11-24 | BF90 | ** 51261  |
+|  *CPU (W) | 7248 | LVDOS#2 | 6806.2 | 1.3 | 1986-10-30 | 1A1C | ** 51262  |
+|   |   |   |  6806.3 | 1.4 | 1986-11-24 | 56D7 | ** 51262  |
+|  ATTENTION! *ONLY VP415 **ORDER BOTH SERVICE CODENUMBERS OF LV DOS WHEN THE PROGRAM- NUMBER OF THE EPROM'S IN THE SET TO BE REPAIRED DEVIATES FROM THE LATEST PROGRAMNUMBER  |   |   |   |   |   |   |   |
+
+CS 8 284

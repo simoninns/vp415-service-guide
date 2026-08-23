@@ -1,0 +1,155 @@
+{
+  "index": 3,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 69,
+      "topLeftY": 31,
+      "bottomRightX": 164,
+      "bottomRightY": 48,
+      "content": "# VP415 (front)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 70,
+      "bottomRightX": 134,
+      "bottomRightY": 81,
+      "content": "EJECT button",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 89,
+      "bottomRightX": 162,
+      "bottomRightY": 100,
+      "content": "STANDBY indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 108,
+      "bottomRightX": 169,
+      "bottomRightY": 120,
+      "content": "ON/STANDBY button",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 128,
+      "bottomRightX": 144,
+      "bottomRightY": 138,
+      "content": "EJECT indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 146,
+      "bottomRightX": 147,
+      "bottomRightY": 158,
+      "content": "PAUSE indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 166,
+      "bottomRightX": 155,
+      "bottomRightY": 177,
+      "content": "REPLAY indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 185,
+      "bottomRightX": 155,
+      "bottomRightY": 196,
+      "content": "REPEAT indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 204,
+      "bottomRightX": 155,
+      "bottomRightY": 215,
+      "content": "AUDIO 1 indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 223,
+      "bottomRightX": 155,
+      "bottomRightY": 234,
+      "content": "AUDIO 2 indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 242,
+      "bottomRightX": 134,
+      "bottomRightY": 254,
+      "content": "CAV indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 261,
+      "bottomRightX": 133,
+      "bottomRightY": 272,
+      "content": "CLV indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 280,
+      "bottomRightX": 209,
+      "bottomRightY": 292,
+      "content": "REMOTE CONTROL indicator",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 69,
+      "topLeftY": 385,
+      "bottomRightX": 158,
+      "bottomRightY": 403,
+      "content": "# VP415 (rear)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 425,
+      "bottomRightX": 219,
+      "bottomRightY": 759,
+      "content": "1 ON/OFF switch\n2 MAINS lead socket\n3 REPLAY on/off switch\n4 RCIR/EURO switch\n5 WIRED RC socket\n6 RS232C socket\n7 BAUD RATE dip switches\n8 AUDIO IN (1 & 2) sockets\n9 AUDIO OUT (1 & 2) sockets\n10 A/VEUROCONNECTOR\n11 H-SHIFT control [for Genlock]\n12 CVBS OUT socket\n13 SYNC OUT socket\n14 CVBSIN sockets\n15 SYNCIN sockets\n16 RGB (TTL) IN socket\n17 SCSI address dip switches\n18 SCSI socket",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 689,
+      "topLeftY": 964,
+      "bottomRightX": 697,
+      "bottomRightY": 974,
+      "content": "3",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

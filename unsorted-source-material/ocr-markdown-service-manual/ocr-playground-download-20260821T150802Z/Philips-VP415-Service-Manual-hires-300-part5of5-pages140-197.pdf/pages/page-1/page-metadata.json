@@ -1,0 +1,165 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 22,
+      "topLeftY": 56,
+      "bottomRightX": 37,
+      "bottomRightY": 67,
+      "content": "14",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 77,
+      "bottomRightX": 117,
+      "bottomRightY": 90,
+      "content": "# MODULE B – RGB",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 101,
+      "bottomRightX": 311,
+      "bottomRightY": 223,
+      "content": "See the block diagram in Fig.B1. The drop-out – and time-base corrected video, obtained from the VIDEO PROCESSING MODULE (C), is the input signal (CVBS) of this module. The CVBS signal will be split into a luminance and a chrominance signal and decoded into the R, G and B signals which are fed to the VIDEO MIXER MODULE (Y), via the ANALOG I/O MODULE (Ua). At the same time the luminance signal Y and the colour difference signals R–Y and B–Y are made available for creating the encoded CVBS signal on the ANALOG I/O MODULE (Ub).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 20,
+      "topLeftY": 234,
+      "bottomRightX": 117,
+      "bottomRightY": 248,
+      "content": "# Circuit description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 252,
+      "bottomRightX": 311,
+      "bottomRightY": 337,
+      "content": "First the incoming CVBS signal (plug 1B1) will be split into a luminance and a chrominance signal. By filtering the CVBS signal on the emitter of T7001, the luminance signal Y is present on the emitter of T7002 with an amplitude adjustable by potentiometer R3080. Via bandpass filtering with L5004 + C2005 the chrominance signal is present on pin 15 of IC7201.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 349,
+      "bottomRightX": 115,
+      "bottomRightY": 362,
+      "content": "# Chroma decoding",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 366,
+      "bottomRightX": 313,
+      "bottomRightY": 535,
+      "content": "The chroma signal will be decoded by IC7201, multistandard decoder, in an R–Y and a B–Y signal. The IC needs a crystal oscillator with a frequency of 8.86MHz (Cristal 5005) for chroma subcarrier generation. Capacitor C2010 is made switchable with T7012, driven by the CV/CS signal. The capacitor is connected to the +12V via the diode and resistor so that the AGC voltage remains at a fixed level if T7012 is out of conduction. The CV/CS signal will be low if the comp.sync signal is chosen instead of the video signal (mute function). In that case there will be no video content in the CVBS signal. The input signal, comp.sync, has no burst so the gain control in IC7201 will give more amplification and can cause some problems. Therefore the AGC voltage will be kept of a high level.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 84,
+      "bottomRightX": 476,
+      "bottomRightY": 97,
+      "content": "# Colour transient improver",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 101,
+      "bottomRightX": 633,
+      "bottomRightY": 162,
+      "content": "The colour difference signals R–Y and B–Y are present at pin 1 and pin 2 of IC7202 resp. This IC functions as colour transient improver. This means that the slope of the colour signal will be improved, thus giving a better visual impression.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 162,
+      "bottomRightX": 632,
+      "bottomRightY": 210,
+      "content": "The amplitudes of the (R–Y) and (B–Y) signals can be adjusted by potentiometers R3082 and R3084. The improved (R–Y) and (B–Y) signals are the output signals on pins 8 and 7 of IC7202.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 210,
+      "bottomRightX": 632,
+      "bottomRightY": 296,
+      "content": "Because of the processing time required to improve the colour transient, some time delay will occur in these output signals. The Y signal must have the same delay, which will be realised in IC7202. The output signals of IC7202 the luminance signal Y and the colour difference signals (R–Y) and (B–Y), will go to the ANALOG I/O MODULE Ub via plugs 10B3, 9B2 and 10B2 resp.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 307,
+      "bottomRightX": 412,
+      "bottomRightY": 319,
+      "content": "# PAL decoder",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 324,
+      "bottomRightX": 632,
+      "bottomRightY": 385,
+      "content": "At the same time the luminance and chrominance signals are going to IC7203, which takes care of decoding of these signals. The signals R, G and B go from pins 1, 3 and 5 of this IC7203, via output stages T7006, T7008 and T7010 to plugs 2B3, 3B3 and 4B3.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 385,
+      "bottomRightX": 632,
+      "bottomRightY": 422,
+      "content": "The dc-level of the output signals is adjustable by potentiometer R3045. The black level of the video signal is the reference point.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 94,
+      "topLeftY": 603,
+      "bottomRightX": 560,
+      "bottomRightY": 833,
+      "content": "![img-0.jpeg](img-0.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-0.jpeg"
+    },
+    {
+      "topLeftX": 525,
+      "topLeftY": 860,
+      "bottomRightX": 554,
+      "bottomRightY": 874,
+      "content": "PRS 01704\nT32-705",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 22,
+      "topLeftY": 987,
+      "bottomRightX": 71,
+      "bottomRightY": 1000,
+      "content": "CS 7 886",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

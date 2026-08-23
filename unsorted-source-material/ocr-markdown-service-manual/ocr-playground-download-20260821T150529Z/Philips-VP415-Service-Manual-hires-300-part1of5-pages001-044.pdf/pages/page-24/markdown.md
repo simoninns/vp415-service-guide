@@ -1,0 +1,5 @@
+# BLOCKDIAGRAM CONTROL ROUTES
+
+![img-30.jpeg](img-30.jpeg)
+
+CS 7 833

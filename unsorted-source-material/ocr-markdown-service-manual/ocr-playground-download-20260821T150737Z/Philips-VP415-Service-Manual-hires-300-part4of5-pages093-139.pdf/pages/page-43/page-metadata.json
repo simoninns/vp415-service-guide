@@ -1,0 +1,40 @@
+{
+  "index": 42,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 34,
+      "topLeftY": 90,
+      "bottomRightX": 153,
+      "bottomRightY": 102,
+      "content": "Fig. CR2 START-UP SEQUENCE",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 28,
+      "topLeftY": 110,
+      "bottomRightX": 321,
+      "bottomRightY": 757,
+      "content": "![img-54.jpeg](img-54.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-54.jpeg"
+    },
+    {
+      "topLeftX": 351,
+      "topLeftY": 95,
+      "bottomRightX": 641,
+      "bottomRightY": 522,
+      "content": "![img-55.jpeg](img-55.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-55.jpeg"
+    }
+  ]
+}

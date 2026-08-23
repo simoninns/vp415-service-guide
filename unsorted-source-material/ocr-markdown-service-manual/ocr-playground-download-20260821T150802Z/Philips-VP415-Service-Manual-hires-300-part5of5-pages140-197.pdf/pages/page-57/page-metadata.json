@@ -1,0 +1,191 @@
+{
+  "index": 56,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 326,
+      "topLeftY": 100,
+      "bottomRightX": 452,
+      "bottomRightY": 116,
+      "content": "# VIDEO PROBLEMS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 143,
+      "bottomRightX": 259,
+      "bottomRightY": 160,
+      "content": "Number : D 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 172,
+      "bottomRightX": 536,
+      "bottomRightY": 204,
+      "content": "Problem : White dots on monitor screen\n(motor disturbance in video signal)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 216,
+      "bottomRightX": 665,
+      "bottomRightY": 290,
+      "content": "Solution : Mount metal screening around coils L5001 and\nL5002 on HF PROC module K and metal screening\naround delay line L5001 on VIDEO DO CORR module L.\nScreening assy to be ordered under service code\nnumber 4822 462 41173",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 228,
+      "topLeftY": 303,
+      "bottomRightX": 660,
+      "bottomRightY": 349,
+      "content": "Add 3 capacitors 1n2 and delete 6 capacitors 47p\ndescribed in mod. level 6 of MOTOR + SEQ module F\n(see this service information)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 361,
+      "bottomRightX": 441,
+      "bottomRightY": 391,
+      "content": "Introduced : Module K : mod. level 0\nModule L : mod. level 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 433,
+      "bottomRightX": 259,
+      "bottomRightY": 449,
+      "content": "Number : D 2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 462,
+      "bottomRightX": 621,
+      "bottomRightY": 493,
+      "content": "Problem : Colour loss when 2 disc drives operate\nsynchronous and slave drive is in still mode.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 505,
+      "bottomRightX": 623,
+      "bottomRightY": 535,
+      "content": "Solution : Add resistor 22K between B-TS 7012 and 7B3 on\nmodule B.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 228,
+      "topLeftY": 548,
+      "bottomRightX": 577,
+      "bottomRightY": 565,
+      "content": "Connect 9C1 and 7B3 on Module Carrier V.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 577,
+      "bottomRightX": 423,
+      "bottomRightY": 593,
+      "content": "Introduced : Module B : mod level 8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 636,
+      "bottomRightX": 257,
+      "bottomRightY": 651,
+      "content": "Number : D 3",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 664,
+      "bottomRightX": 641,
+      "bottomRightY": 682,
+      "content": "Problem : Horizontal distorsion of computer-overlay VP415",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 693,
+      "bottomRightX": 606,
+      "bottomRightY": 725,
+      "content": "Solution : Change C2416 on Video Mix module Y from 8n2\ninto 100p.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 737,
+      "bottomRightX": 423,
+      "bottomRightY": 753,
+      "content": "Introduced : Module Y : mod level 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 795,
+      "bottomRightX": 257,
+      "bottomRightY": 811,
+      "content": "Number : D 4",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 824,
+      "bottomRightX": 511,
+      "bottomRightY": 841,
+      "content": "Problem : Jitter of computer overlay VP415",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 853,
+      "bottomRightX": 606,
+      "bottomRightY": 883,
+      "content": "Solution : Add resistor 10M parallel to C2415 on Video\nMix module Y.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 107,
+      "topLeftY": 896,
+      "bottomRightX": 423,
+      "bottomRightY": 912,
+      "content": "Introduced : Module Y : mod level 6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 652,
+      "topLeftY": 980,
+      "bottomRightX": 702,
+      "bottomRightY": 994,
+      "content": "CS 8 293",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "index": 5,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 123,
+      "topLeftY": 47,
+      "bottomRightX": 160,
+      "bottomRightY": 61,
+      "content": "ETBC",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 167,
+      "topLeftY": 47,
+      "bottomRightX": 242,
+      "bottomRightY": 61,
+      "content": "C MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 253,
+      "topLeftY": 45,
+      "bottomRightX": 270,
+      "bottomRightY": 63,
+      "content": "1",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 168,
+      "topLeftY": 66,
+      "bottomRightX": 232,
+      "bottomRightY": 76,
+      "content": "(MOD LEVEL 6)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 120,
+      "bottomRightX": 125,
+      "bottomRightY": 129,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 138,
+      "bottomRightX": 101,
+      "bottomRightY": 146,
+      "content": "Required",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 147,
+      "bottomRightX": 101,
+      "bottomRightY": 154,
+      "content": "Test disc",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 155,
+      "bottomRightX": 91,
+      "bottomRightY": 164,
+      "content": "Scope",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 172,
+      "bottomRightX": 150,
+      "bottomRightY": 180,
+      "content": "Adjustment conditions",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 181,
+      "bottomRightX": 120,
+      "bottomRightY": 188,
+      "content": "Load test disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 189,
+      "bottomRightX": 213,
+      "bottomRightY": 198,
+      "content": "Still picture, colour bar (picture no. 6200).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 205,
+      "bottomRightX": 110,
+      "bottomRightY": 214,
+      "content": "# Adjustment",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 66,
+      "topLeftY": 222,
+      "bottomRightX": 189,
+      "bottomRightY": 231,
+      "content": "1) L5001 (Special burst separator)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 76,
+      "topLeftY": 231,
+      "bottomRightX": 270,
+      "bottomRightY": 265,
+      "content": "- Measure the signal on B-TS7029 with the scope (line- frequent).\n- Adjust L5001 for maximum amplitude of the special burst signal.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 56,
+      "bottomRightX": 947,
+      "bottomRightY": 261,
+      "content": "![img-10.jpeg](img-10.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-10.jpeg"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 273,
+      "bottomRightX": 947,
+      "bottomRightY": 322,
+      "content": "![img-11.jpeg](img-11.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-11.jpeg"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 322,
+      "bottomRightX": 947,
+      "bottomRightY": 488,
+      "content": "![img-12.jpeg](img-12.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-12.jpeg"
+    },
+    {
+      "topLeftX": 280,
+      "topLeftY": 489,
+      "bottomRightX": 947,
+      "bottomRightY": 505,
+      "content": "![img-13.jpeg](img-13.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-13.jpeg"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 512,
+      "bottomRightX": 212,
+      "bottomRightY": 522,
+      "content": "LIST OF ELECTRICAL PARTS MODULE I",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 530,
+      "bottomRightX": 85,
+      "bottomRightY": 537,
+      "content": "Coils",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 538,
+      "bottomRightX": 197,
+      "bottomRightY": 547,
+      "content": "5001 4822 156 11003 12 μH",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 555,
+      "bottomRightX": 127,
+      "bottomRightY": 563,
+      "content": "NFR25 Resistors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 564,
+      "bottomRightX": 194,
+      "bottomRightY": 572,
+      "content": "3129 4822 111 30513 15 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 573,
+      "bottomRightX": 194,
+      "bottomRightY": 581,
+      "content": "3130 4822 111 30513 15 Ω",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 250,
+      "topLeftY": 512,
+      "bottomRightX": 271,
+      "bottomRightY": 699,
+      "content": "2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2017\n2019\n2020\n2023\n2024\n2025\n2026",
+      "confidenceScores": null,
+      "type": "aside_text"
+    },
+    {
+      "topLeftX": 305,
+      "topLeftY": 512,
+      "bottomRightX": 456,
+      "bottomRightY": 700,
+      "content": "|  5322 124 21643 | 22 μF | 40 V  |\n| --- | --- | --- |\n|  4822 122 31759 | 22 nF |   |\n|  4822 122 32974 | 100 pF |   |\n|  4822 122 31783 | 2.7 nF |   |\n|  4822 122 31767 | 150 pF |   |\n|  5322 124 21643 | 22 μF | 40 V  |\n|  4822 122 31759 | 22 nF |   |\n|  4822 122 31759 | 22 nF |   |\n|  4822 122 31969 | 3.3 nF |   |\n|  4822 122 31969 | 3.3 nF |   |\n|  4822 122 31759 | 22 nF |   |\n|  4822 122 31781 | 1.5 nF |   |\n|  4822 122 31781 | 1.5 nF |   |\n|  4822 124 22027 | 47 μF | 25 V  |\n|  4822 121 41608 | 100 nF | 100 V  |\n|  4822 122 31783 | 2.7 nF |   |\n|  4822 122 32976 | 470 pF |   |\n|  4822 122 32974 | 100 pF |   |\n|  4822 121 41545 | 33 nF | 250 V  |\n|  4822 121 41874 | 270 nF | 63 V  |\n|  4822 122 31774 | 56 pF |   |\n|  5322 124 21643 | 22 μF | 40 V  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 513,
+      "topLeftY": 512,
+      "bottomRightX": 719,
+      "bottomRightY": 700,
+      "content": "|  2027 | 4822 122 32504 | 15 pF  |\n| --- | --- | --- |\n|  2028 | 4822 122 31774 | 56 pF  |\n|  2029 | 4822 122 31784 | 4.7 nF  |\n|  2034 | 4822 122 31759 | 22 nF  |\n|  2037 | 5322 122 31647 | 1 nF  |\n|  2041 | 4822 122 31759 | 22 nF  |\n|  2042 | 4822 122 31775 | 680 pF  |\n|  2043 | 4822 122 32482 | 22 pF  |\n|  2044 | 4822 122 31772 | 47 pF  |\n|  2045 | 4822 122 32542 | 47 nF  |\n|  2046 | 4822 122 31774 | 56 pF  |\n|  2048 | 4822 122 32142 | 270 pF  |\n|  2049 | 5322 122 31647 | 1 nF  |\n|  2050 | 4822 124 22031 | 4.7 μF  |\n|  2051 | 4822 122 31759 | 22 nF  |\n|  2052 | 4822 121 51051 | 4.7 nF  |\n|  2053 | 4822 122 32891 | 68 nF  |\n|  2054 | 4822 124 22031 | 4.7 μF  |\n|  2057 | 4822 124 22031 | 4.7 μF  |\n|  2058 | 4822 121 41757 | 470 nF10%  |\n|  2059 | 4822 121 42915 | 330 pF  |\n|  2060 | 5322 124 21643 | 22 μF  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 725,
+      "topLeftY": 512,
+      "bottomRightX": 947,
+      "bottomRightY": 541,
+      "content": "|  2061 | 4822 122 32153 | 1.8 nF  |\n| --- | --- | --- |\n|  2063 | 5322 124 21711 | 100 μF  |\n|  2064 | 5322 124 21711 | 100 μF  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 63,
+      "topLeftY": 701,
+      "bottomRightX": 102,
+      "bottomRightY": 710,
+      "content": "CS 7.845",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

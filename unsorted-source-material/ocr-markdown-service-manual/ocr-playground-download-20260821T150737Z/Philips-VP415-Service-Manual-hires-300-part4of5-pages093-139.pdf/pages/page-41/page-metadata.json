@@ -1,0 +1,48 @@
+{
+  "index": 40,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 983,
+      "topLeftY": 46,
+      "bottomRightX": 992,
+      "bottomRightY": 56,
+      "content": "7",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 799,
+      "topLeftY": 104,
+      "bottomRightX": 945,
+      "bottomRightY": 116,
+      "content": "Fig. SP1 AUDIO/VIDEO SIGNAL PATH",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 124,
+      "topLeftY": 124,
+      "bottomRightX": 979,
+      "bottomRightY": 470,
+      "content": "![img-52.jpeg](img-52.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-52.jpeg"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 698,
+      "bottomRightX": 989,
+      "bottomRightY": 707,
+      "content": "CS 7 581",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

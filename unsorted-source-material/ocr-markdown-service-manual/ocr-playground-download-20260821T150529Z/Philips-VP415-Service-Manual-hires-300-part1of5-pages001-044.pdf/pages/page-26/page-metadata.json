@@ -1,0 +1,39 @@
+{
+  "index": 25,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 464,
+      "topLeftY": 54,
+      "bottomRightX": 589,
+      "bottomRightY": 66,
+      "content": "# BLOCKDIAGRAM SERVO",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 226,
+      "topLeftY": 110,
+      "bottomRightX": 916,
+      "bottomRightY": 547,
+      "content": "![img-32.jpeg](img-32.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-32.jpeg"
+    },
+    {
+      "topLeftX": 954,
+      "topLeftY": 694,
+      "bottomRightX": 989,
+      "bottomRightY": 703,
+      "content": "CS 7 835",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

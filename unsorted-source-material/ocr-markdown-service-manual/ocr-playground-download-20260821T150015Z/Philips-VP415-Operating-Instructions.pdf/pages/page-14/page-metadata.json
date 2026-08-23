@@ -1,0 +1,426 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 71,
+      "topLeftY": 32,
+      "bottomRightX": 288,
+      "bottomRightY": 48,
+      "content": "# SPECIAL PLAY FUNCTIONS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 65,
+      "bottomRightX": 366,
+      "bottomRightY": 141,
+      "content": "All the functions described in this section may be performed using the remote control handset. Some functions have different effects depending upon the present mode (e.g. whether the player is currently playing a disc or not). CAV (Active play) and CLV (Long play) discs also have certain commands which can only be used with that type of disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 147,
+      "bottomRightX": 366,
+      "bottomRightY": 174,
+      "content": "If the remote control handset does not function, check that the RC IR/EURO switch on the rear of the player is in the IR position.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 191,
+      "bottomRightX": 292,
+      "bottomRightY": 205,
+      "content": "# STANDBY (also ON/STANDBY control on player)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 210,
+      "bottomRightX": 366,
+      "bottomRightY": 286,
+      "content": "Pressing this button during any play operation will cause the current action to cease. The player goes to the standby mode. Any on-screen display goes out and the STANDBY indicator on the front of the player lights. If programming was in progress, it is terminated. Pressing any playing mode button while the player is in standby, causes the player to commence that action.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 296,
+      "bottomRightX": 362,
+      "bottomRightY": 321,
+      "content": "Note: If the replay function is in operation, the STANDBY button is disabled.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 340,
+      "bottomRightX": 159,
+      "bottomRightY": 352,
+      "content": "# PLAY FORWARD",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 358,
+      "bottomRightX": 366,
+      "bottomRightY": 385,
+      "content": "Pressing the ▶ section of the PLAY button starts forward play (at normal speed).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 402,
+      "bottomRightX": 206,
+      "bottomRightY": 415,
+      "content": "# PLAY REVERSE (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 420,
+      "bottomRightX": 366,
+      "bottomRightY": 447,
+      "content": "Pressing the ◀ section of the PLAY button starts reverse play (at normal speed).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 464,
+      "bottomRightX": 155,
+      "bottomRightY": 478,
+      "content": "# STILL (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 483,
+      "bottomRightX": 366,
+      "bottomRightY": 546,
+      "content": "When either section of the STILL button is pressed, the picture becomes stationary. A still picture is useful for the close examination of a situation (for example, in sport), or the study of details (in an instructional programme). It can also serve as a short interlude during playback.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 565,
+      "bottomRightX": 228,
+      "bottomRightY": 577,
+      "content": "# STEP FORWARD AND REVERSE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 582,
+      "bottomRightX": 366,
+      "bottomRightY": 609,
+      "content": "If the ▶ or ◀ section of the STILL button is pressed, the following or preceding picture appears respectively.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 626,
+      "bottomRightX": 357,
+      "bottomRightY": 649,
+      "content": "# PICTURE NUMBER, CHAPTER NUMBER AND TIME CODE DISPLAY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 655,
+      "bottomRightX": 366,
+      "bottomRightY": 745,
+      "content": "Each individual picture on a CAV disc has a number which is encoded on the disc. Discs may also be divided into chapters; these chapter numbers are also encoded on the disc. To display the current picture number on the monitor screen (Fig. 4), press the PNR button. The play mode is also displayed. Press the button again to remove the display. To display the chapter number on the screen (Fig. 5), press the CNR button. Press it again to remove the display.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 772,
+      "bottomRightX": 148,
+      "bottomRightY": 793,
+      "content": "STILL",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 223,
+      "topLeftY": 772,
+      "bottomRightX": 267,
+      "bottomRightY": 793,
+      "content": "PNR",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 294,
+      "topLeftY": 772,
+      "bottomRightX": 348,
+      "bottomRightY": 793,
+      "content": "1642",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 802,
+      "bottomRightX": 205,
+      "bottomRightY": 815,
+      "content": "Fig. 4: Picture number display.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 90,
+      "topLeftY": 841,
+      "bottomRightX": 197,
+      "bottomRightY": 861,
+      "content": "PLAY FWD",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 267,
+      "topLeftY": 842,
+      "bottomRightX": 348,
+      "bottomRightY": 861,
+      "content": "CNR 2",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 872,
+      "bottomRightX": 208,
+      "bottomRightY": 885,
+      "content": "Fig. 5: Chapter number display.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 71,
+      "topLeftY": 890,
+      "bottomRightX": 366,
+      "bottomRightY": 942,
+      "content": "In CLV discs, an elapsed time code is encoded on the disc. This time code may be in minutes only or in minutes and seconds, depending on the particular disc. Some CLV discs are also divided into chapters, and these chapter numbers encoded on the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 32,
+      "bottomRightX": 697,
+      "bottomRightY": 56,
+      "content": "To display the current elapsed time on the screen (Fig. 6), press the PNR button. Press it again to remove the display.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 57,
+      "bottomRightX": 697,
+      "bottomRightY": 83,
+      "content": "To display the chapter number on the screen (Fig. 5), press the CNR button. Press it again to remove the display.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 420,
+      "topLeftY": 109,
+      "bottomRightX": 679,
+      "bottomRightY": 130,
+      "content": "PLAY FWD TIME 11:23",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 139,
+      "bottomRightX": 515,
+      "bottomRightY": 152,
+      "content": "Fig. 6: Time code display.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 169,
+      "bottomRightX": 590,
+      "bottomRightY": 182,
+      "content": "# PLAYER AND DISC STATUS DISPLAY",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 187,
+      "bottomRightX": 699,
+      "bottomRightY": 239,
+      "content": "Pressing the DISPLAY button will cause the player and disc status to be displayed on the screen. Disc status (e.g. CAV/CLV, side, size, etc.) is shown on the right and player status (e.g. play mode) on the left. Pressing the button again switches the display off.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 252,
+      "bottomRightX": 699,
+      "bottomRightY": 290,
+      "content": "If, however, the picture number etc. was being displayed on the screen, the player enters the programming mode. See 'Programming' later in this section.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 420,
+      "topLeftY": 318,
+      "bottomRightX": 679,
+      "bottomRightY": 445,
+      "content": "|  VIDEO | ON | STEREO  |\n| --- | --- | --- |\n|  AUDIO1 | ON |   |\n|  AUDIO2 | ON |   |\n|  SLOW 1/3 |  | CAV  |\n|  FAST 3 |  | SIDE 1  |\n|  9600 BAUD |  | 30 CM  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 453,
+      "bottomRightX": 560,
+      "bottomRightY": 466,
+      "content": "Fig. 7: Player and disc status display.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 481,
+      "bottomRightX": 451,
+      "bottomRightY": 493,
+      "content": "# SEARCH",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 499,
+      "bottomRightX": 699,
+      "bottomRightY": 550,
+      "content": "If only a part of a disc is required, it can be quickly found using the SEARCH button. Pressing and holding the appropriate section of this button moves the optical readout unit in the desired direction at approximately 20 times normal speed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 554,
+      "bottomRightX": 699,
+      "bottomRightY": 581,
+      "content": "During this search action you will see on the screen a very rapid succession of pictures from the programme.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 585,
+      "bottomRightX": 699,
+      "bottomRightY": 611,
+      "content": "When the button is released, the player reverts to the mode which it was in prior to searching.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 616,
+      "bottomRightX": 699,
+      "bottomRightY": 641,
+      "content": "It is often useful to have the picture number etc. displayed while searching.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 647,
+      "bottomRightX": 699,
+      "bottomRightY": 685,
+      "content": "When searching a CAV disc containing chapter numbers and these numbers are being displayed, the player automatically reverts to its previous mode when it reaches the next chapter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 690,
+      "bottomRightX": 699,
+      "bottomRightY": 728,
+      "content": "If it is desired to continue searching this next chapter, release the SEARCH button and press again. Searching then continues to the next chapter.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 732,
+      "bottomRightX": 699,
+      "bottomRightY": 759,
+      "content": "If chapter numbers are not being displayed, searching is uninterrupted throughout the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 763,
+      "bottomRightX": 699,
+      "bottomRightY": 802,
+      "content": "With CLV discs, the SEARCH button operates in the same way as for CAV discs, but the display shows the elapsed time or chapter number, as appropriate.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 820,
+      "bottomRightX": 443,
+      "bottomRightY": 832,
+      "content": "# PAUSE",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 839,
+      "bottomRightX": 699,
+      "bottomRightY": 864,
+      "content": "When the PAUSE button is pressed, both audio and video are muted and the PAUSE indicator lights.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 865,
+      "bottomRightX": 699,
+      "bottomRightY": 904,
+      "content": "To resume the previous action, press the PAUSE button once more. While in the pause mode, other functions may also be started by pressing the appropriate buttons (e.g. PLAY, STILL, SEARCH etc.).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 75,
+      "topLeftY": 966,
+      "bottomRightX": 86,
+      "bottomRightY": 977,
+      "content": "13",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "index": 24,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 203,
+      "topLeftY": 940,
+      "bottomRightX": 393,
+      "bottomRightY": 962,
+      "content": "Service Information",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 599,
+      "topLeftY": 939,
+      "bottomRightX": 701,
+      "bottomRightY": 963,
+      "content": "Chapter 8",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 23,
+      "topLeftY": 41,
+      "bottomRightX": 177,
+      "bottomRightY": 56,
+      "content": "LV ROM DEC MODULE",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 155,
+      "topLeftY": 62,
+      "bottomRightX": 217,
+      "bottomRightY": 71,
+      "content": "(MOD. LEVEL 3)",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 224,
+      "topLeftY": 58,
+      "bottomRightX": 685,
+      "bottomRightY": 81,
+      "content": "|  2501 | B | 5 | 2515 | B | 5 | 2541 | C | 6 | 2604 | A | 2 | 2710 | B | 2 | 2710 | C | 1 | 5583 | C | 6 | 5587 | C | 6 | 5782 | A | 1 | 6510 | C | 4 | 6545 | A | 5 | 5583 | B | 6 | 6601 | A | 5 | 9505 | B | 2  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2502 | B | 4 | 2519 | B | 4 | 2543 | C | 5 | 2605 | B | 2 | 2711 | C | 2 | 2710 | C | 1 | 5584 | D | 5 | 5588 | D | 5 | 5759 | B | 1 | 6510 | B | 4 | 6545 | A | 5 | 6583 | B | 6 | 6602 | B | 2 | 6609 | B | 2  |\n|  2503 | C | 5 | 2527 | A | 5 | 2608 | B | 3 | 2705 | B | 2 | 2702 | C | 1 | 2711 | C | 2 | 5585 | B | 3 | 5601 | C | 3 | 5784 | B | 1 | 6540 | B | 5 | 6551 | A | 5 | 6565 | C | 3 | 6603 | D | 2 | 6704 | C | 1  |\n|  2510 | D | 3 | 2545 | C | 6 | 2603 | A | 3 | 2708 | B | 2 | 2714 | C | 2 | 6601 | B | 4 | 5586 | C | 6 | 5701 | A | 1 | 6581 | B | 5 | 6544 | A | 5 | 6551 | A | 5 | 6565 | B | 6 | 6604 | C | 2 | 6705 | C | 1  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 803,
+      "topLeftY": 36,
+      "bottomRightX": 1009,
+      "bottomRightY": 80,
+      "content": "|  2503 | B | 5 | 2525 | A | 5 | 2545 | B | 6 | 2701 | A | 2 | 3602 | B | 5 | 3510 | B | 4 | 3  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2505 | B | 5 | 2521 | A | 5 | 2546 | B | 6 | 2702 | A | 2 | 3603 | B | 5 | 3511 | B | 4 | 3  |\n|  2506 | B | 4 | 2523 | A | 5 | 2601 | A | 2 | 2702 | B | 2 | 3604 | B | 5 | 3512 | B | 4 | 3  |\n|  2508 | B | 5 | 2523 | A | 5 | 2608 | B | 2 | 2704 | B | 2 | 3605 | B | 5 | 3514 | D | 4 | 3  |\n|  2509 | B | 5 | 2525 | A | 5 | 2607 | B | 2 | 2706 | B | 2 | 3606 | B | 5 | 3515 | B | 4 | 3  |\n|  2511 | C | 5 | 2538 | B | 5 | 2608 | B | 3 | 2707 | B | 1 | 3607 | B | 4 | 3516 | B | 3 | 3  |\n|  2512 | A | 5 | 2538 | D | 2 | 2609 | C | 2 | 2709 | B | 1 | 3608 | B | 4 | 3520 | A | 3 | 3  |\n|  2514 | B | 5 | 2542 | C | 6 | 2610 | C | 2 | 2713 | C | 1 | 3609 | B | 5 | 3521 | A | 3 | 3  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 79,
+      "bottomRightX": 74,
+      "bottomRightY": 88,
+      "content": "# ADJUSTMENTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 96,
+      "bottomRightX": 51,
+      "bottomRightY": 105,
+      "content": "# Required",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 106,
+      "bottomRightX": 94,
+      "bottomRightY": 114,
+      "content": "Frequency counter",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 122,
+      "bottomRightX": 99,
+      "bottomRightY": 130,
+      "content": "# Adjustment conditions",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 131,
+      "bottomRightX": 128,
+      "bottomRightY": 139,
+      "content": "Stand-by position of the set",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 147,
+      "bottomRightX": 63,
+      "bottomRightY": 155,
+      "content": "# Adjustments",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 156,
+      "bottomRightX": 102,
+      "bottomRightY": 164,
+      "content": "1) L5501 (Demod. freq.)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 25,
+      "topLeftY": 164,
+      "bottomRightX": 217,
+      "bottomRightY": 223,
+      "content": "- Short-circuit pin 6-IC6501 to ground.\n- Measure with the frequency counter on 22-IC6501 (clock)\n- Adjust L5501 for a frequency of 4.32 MHz ± 1 kHz. (the voltage on junction R3510/R3511 should than be 5 V ± 0.1 V).\n- Remove the short circuit of pin 6.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 216,
+      "topLeftY": 88,
+      "bottomRightX": 779,
+      "bottomRightY": 482,
+      "content": "![img-21.jpeg](img-21.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-21.jpeg"
+    },
+    {
+      "topLeftX": 783,
+      "topLeftY": 88,
+      "bottomRightX": 1009,
+      "bottomRightY": 482,
+      "content": "![img-22.jpeg](img-22.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-22.jpeg"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 500,
+      "bottomRightX": 169,
+      "bottomRightY": 510,
+      "content": "LIST OF ELECTRICAL PARTS MODULE X",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 518,
+      "bottomRightX": 49,
+      "bottomRightY": 526,
+      "content": "Crystals",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 527,
+      "bottomRightX": 173,
+      "bottomRightY": 535,
+      "content": "|  5601 | 4822 242 71461 | 4.2336 MHz  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 544,
+      "bottomRightX": 36,
+      "bottomRightY": 551,
+      "content": "Coils",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 552,
+      "bottomRightX": 158,
+      "bottomRightY": 645,
+      "content": "|  5501 | 4822 156 21155 | 7.95 μH  |\n| --- | --- | --- |\n|  5503 | 4822 156 20966 | 47 μH  |\n|  5504 | 4822 156 20966 | 47 μH  |\n|  5505 | 4822 156 20966 | 47 μH  |\n|  5506 | 4822 158 10101 | 5.3 μH  |\n|  5507 | 4822 158 10101 | 5.3 μH  |\n|  5508 | 4822 158 10101 | 5.3 μH  |\n|  5701 | 4822 156 21026 | 34 μH  |\n|  5702 | 4822 156 11005 | 42.5 μH  |\n|  5703 | 4822 156 11005 | 42.5 μH  |\n|  5704 | 4822 156 21113 | 52 μH  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 653,
+      "bottomRightX": 79,
+      "bottomRightY": 660,
+      "content": "NPR25 Resistors",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 15,
+      "topLeftY": 661,
+      "bottomRightX": 150,
+      "bottomRightY": 670,
+      "content": "|  3549 | 4822 111 30492 | 2.2 Ω  |\n| --- | --- | --- |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 231,
+      "topLeftY": 499,
+      "bottomRightX": 762,
+      "bottomRightY": 686,
+      "content": "|  2501 | 4822 121 51099 | 22 nF | 63 V | 2542 | 4822 122 31759 | 22 nF |  | 2709  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  2502 | 4822 121 51099 | 22 nF | 63 V | 2543 | 5322 124 21643 | 22 μF | 40 V | 2710  |\n|  2505 | 4822 122 31644 | 2.2 nF |  | 2545 | 4822 122 31759 | 22 nF |  | 2711  |\n|  2506 | 4822 122 31644 | 2.2 nF |  | 2546 | 4822 122 31759 | 22 nF |  | 2712  |\n|  2507 | 5322 124 21643 | 22 μF | 40 V | 2601 | 4822 122 31759 | 22 nF |  | 2713  |\n|  2508 | 4822 122 31974 | 820 pF |  | 2602 | 4822 121 41608 | 100 nF | 100 V | 2714  |\n|  2511 | 4822 122 31759 | 22 nF |  | 2603 | 4822 121 41608 | 100 nF | 100 V | 2715  |\n|  2512 | 4822 122 31759 | 22 nF |  | 2604 | 5322 124 21643 | 22 μF | 40 V | 2716  |\n|  2513 | 5322 124 21643 | 22 μF | 40 V | 2605 | 4822 121 41936 | 2.2 μF | 10% 100 V | 2717  |\n|  2514 | 4822 122 31759 | 22 nF |  | 2606 | 4822 122 31759 | 22 nF |  |   |\n|  2515 | 4822 124 22028 | 1 μF | 63 V | 2607 | 4822 122 31965 | 220 pF |  |   |\n|  2519 | 5322 124 21643 | 22 μF | 40 V | 2608 | 4822 122 33002 | 68 pF |  |   |\n|  2520 | 4822 122 32976 | 470 pF |  | 2609 | 4822 122 31759 | 22 nF |  |   |\n|  2521 | 4822 122 32976 | 470 pF |  | 2610 | 4822 122 31759 | 22 nF |  |   |\n|  2522 | 4822 122 32442 | 10 nF |  | 2701 | 4822 121 42915 | 330 pF |  |   |\n|  2523 | 4822 122 31759 | 22 nF |  | 2702 | 4822 122 31974 | 820 pF |  |   |\n|  2525 | 4822 122 31644 | 2.2 nF |  | 2703 | 4822 122 31974 | 820 pF |  |   |\n|  2527 | 4822 121 41608 | 100 nF | 100 V | 2704 | 4822 122 33002 | 68 pF |  |   |\n|  2538 | 4822 122 31759 | 22 nF |  | 2705 | 4822 121 50632 | 1.5 nF | 250 V |   |\n|  2539 | 4822 122 31759 | 22 nF |  | 2706 | 4822 122 31768 | 160 pF |  |   |\n|  2540 | 5322 124 21643 | 22 μF | 40 V | 2707 | 4822 122 32442 | 10 nF |  |   |\n|  2541 | 5322 124 21643 | 22 μF | 40 V | 2708 | 5322 124 21643 | 22 μF | 40 V |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 796,
+      "topLeftY": 499,
+      "bottomRightX": 947,
+      "bottomRightY": 576,
+      "content": "|  4822 122 32482 | 22 pF |   |\n| --- | --- | --- |\n|  5322 124 21643 | 22 μF | 40 V  |\n|  5322 124 21643 | 22 μF | 40 V  |\n|  4822 121 41608 | 100 nF | 100 V  |\n|  4822 122 31974 | 820 pF |   |\n|  5322 124 21643 | 22 μF | 40 V  |\n|  5322 124 21643 | 22 μF | 40 V  |\n|  4822 121 41608 | 100 nF | 100 V  |\n|  5322 124 21643 | 22 μF | 40 V  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 16,
+      "topLeftY": 690,
+      "bottomRightX": 53,
+      "bottomRightY": 699,
+      "content": "CS 7 859",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

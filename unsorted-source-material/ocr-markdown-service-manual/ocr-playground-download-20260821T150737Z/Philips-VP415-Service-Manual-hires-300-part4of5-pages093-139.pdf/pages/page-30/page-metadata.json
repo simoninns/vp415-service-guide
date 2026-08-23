@@ -1,0 +1,85 @@
+{
+  "index": 29,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 19,
+      "topLeftY": 47,
+      "bottomRightX": 173,
+      "bottomRightY": 59,
+      "content": "# LIST OF ELECTRICAL PARTS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 65,
+      "bottomRightX": 312,
+      "bottomRightY": 77,
+      "content": "R.C.-T 4822 218 20607 Remote control transmitter",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 77,
+      "bottomRightX": 298,
+      "bottomRightY": 90,
+      "content": "R.C.-R 4822 212 21449 Remote control receiver",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 116,
+      "bottomRightX": 187,
+      "bottomRightY": 128,
+      "content": "# INTEGRATED CIRCUITS",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 61,
+      "topLeftY": 141,
+      "bottomRightX": 243,
+      "bottomRightY": 839,
+      "content": "|  4822 209 71276 | CLX1004  |\n| --- | --- |\n|  4822 209 71275 | CLX5001  |\n|  4822 209 71274 | GSCXB38113P01  |\n|  4822 209 10246 | HEF4001BP  |\n|  4822 209 10247 | HEF4011BP  |\n|  4822 209 10294 | HEF4012BP  |\n|  4822 209 10248 | HEF4013BP  |\n|  4822 209 10249 | HEF4015BP  |\n|  5322 209 14119 | HEF4016BP  |\n|  5322 209 10344 | HEF40161BP  |\n|  5322 209 11295 | HEF40163BP  |\n|  4822 209 10284 | HEF40175BP  |\n|  5322 209 84508 | HEF4022BP  |\n|  4822 209 11425 | HEF40240BP  |\n|  5322 209 10489 | HEF40244BP  |\n|  5322 209 10867 | HEF40245BP  |\n|  4822 209 10301 | HEF4028BP  |\n|  4822 209 10302 | HEF4029BP  |\n|  5322 209 14124 | HEF4030BP  |\n|  5322 209 10385 | HEF40374BP  |\n|  4822 209 10303 | HEF4041BP  |\n|  4822 209 10306 | HEF4049BP  |\n|  5322 209 10576 | HEF4053BP  |\n|  5322 209 10357 | HEF4066BP  |\n|  4822 209 10322 | HEF4068BP  |\n|  4822 209 10307 | HEF4071BP  |\n|  4822 209 10269 | HEF4081BP  |\n|  5322 209 14927 | HEF4093BP  |\n|  5322 209 10421 | HEF4094BP  |\n|  4822 209 10273 | HEF4104BP  |\n|  4822 209 10866 | HEF4528BP  |\n|  4822 209 10291 | HEF4538BP  |\n|  4822 209 10313 | HEF4539BP  |\n|  4822 209 10279 | HEF4555BP  |\n|  5322 209 10473 | HEF4557BP  |\n|  5322 209 85503 | LM311N  |\n|  4822 209 71285 | LM358  |\n|  5322 209 70225 | LM393D  |\n|  4822 209 80797 | LM393N  |\n|  4822 209 71279 | LM4921  |\n|  4822 209 10948 | MAB8031AH-12P  |\n|  4822 209 71278 | MB88303  |\n|  4822 209 10247 | MC14011BCP  |\n|  5322 209 10576 | MC14053BCP  |\n|  4822 209 70434 | MC14094BCP  |\n|  4822 209 81091 | MC14538BCP  |\n|  4822 209 71469 | MC1458D  |\n|  4822 209 81349 | MC1458P1  |\n|  5322 209 84307 | MC1488P  |\n|  4822 209 71309 | MC1489AP  |\n|  4822 209 80617 | MC1741CP1  |\n|  4822 209 71382 | MC34002BP  |\n|  4822 209 71361 | MC34002P  |\n|  4822 209 11345 | MC78L08ACP  |\n|  4822 209 10379 | MSM2128-20RS  |\n|  4822 209 71273 | NCR5385E  |\n|  5322 209 86546 | NE527N  |\n|  5322 209 86234 | NE5532N  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 383,
+      "topLeftY": 142,
+      "bottomRightX": 575,
+      "bottomRightY": 850,
+      "content": "|  4822 209 81132 | NE5535N  |\n| --- | --- |\n|  5322 209 85311 | N74LS32N  |\n|  5322 209 82215 | N74LS245N  |\n|  5322 209 86258 | N74LS377N  |\n|  4822 209 71381 | PA0017  |\n|  4822 209 11431 | PCF0706P/008  |\n|  5322 209 11106 | PC74HCT02P  |\n|  4822 209 82341 | PC74HCT04P  |\n|  4822 209 11427 | PC74HCT11P  |\n|  5322 209 11266 | PC74HCT32P  |\n|  5322 209 82575 | PC74HCT74P  |\n|  4822 209 11426 | PC74HCT86P  |\n|  4822 209 83044 | PC74HCT132P  |\n|  4822 209 11429 | PC74HCT153P  |\n|  4822 209 11428 | PC74HCT4075P  |\n|  4822 209 71277 | PD0011  |\n|  5322 209 81468 | SAA1043P  |\n|  4822 209 80823 | SAA1061  |\n|  4822 209 82786 | SAA5230/V2  |\n|  4822 209 11327 | SAA7000/0704  |\n|  4822 209 10857 | SAA7010  |\n|  4822 209 10377 | SAA7020  |\n|  4822 209 80641 | SN74LS00N  |\n|  4822 209 80783 | SN74LS04N  |\n|  5322 209 81626 | SN74LS08N  |\n|  4822 209 71281 | SN74LS26N  |\n|  5322 209 85311 | SN74LS32N  |\n|  4822 209 71283 | SN74LS38N  |\n|  4822 209 80782 | SN74LS74AN  |\n|  4822 209 71282 | SN74LS76AN  |\n|  5322 209 85266 | SN74LS123N  |\n|  5322 209 85647 | SN74LS138N  |\n|  5322 209 85752 | SN74LS155N  |\n|  5322 209 85862 | SN74LS240N  |\n|  5322 209 86017 | SN74LS244N  |\n|  5322 209 86062 | SN74LS373N  |\n|  5322 209 81646 | SN74LS374N  |\n|  5322 209 85938 | SN74LS670N  |\n|  4822 209 80629 | TCA240  |\n|  4822 209 81062 | TDA1432P  |\n|  4822 209 82146 | TDA2501  |\n|  4822 209 83227 | TDA2595/V5  |\n|  4822 209 80744 | TDA2730  |\n|  4822 209 83272 | TDA3505/V7  |\n|  4822 209 71319 | TDA3793T  |\n|  4822 209 83273 | TDA4555  |\n|  4822 209 71284 | TDA4560  |\n|  4822 209 71311 | TL431CLP  |\n|  4822 209 11412 | TL8704P  |\n|  *4822 209 71312 | TMS27128-20JL  |\n|  *4822 209 71317 | TMS27512-20JL  |\n|  4822 209 71316 | UAA1031  |\n|  4822 209 71315 | UA78L06ACLP  |\n|  5322 130 44843 | UA7905UC  |\n|  4822 209 11438 | UPD4364C-20L  |\n|  4822 209 10914 | UPD8041AHC-152  |\n|  4822 209 71314 | UPD8155C-2  |\n|  4822 209 71313 | UPD8255A-5  |\n|  5322 209 10179 | Z8400A  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 317,
+      "topLeftY": 862,
+      "bottomRightX": 421,
+      "bottomRightY": 875,
+      "content": "* = not programmed",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 12,
+      "topLeftY": 974,
+      "bottomRightX": 61,
+      "bottomRightY": 986,
+      "content": "CS 7 870",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "index": 14,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 70,
+      "topLeftY": 31,
+      "bottomRightX": 155,
+      "bottomRightY": 43,
+      "content": "# SLOW (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 49,
+      "bottomRightX": 366,
+      "bottomRightY": 87,
+      "content": "Forward or reverse slow motion is obtained by pressing the SLOW button. The slow motion speed may be altered by means of the SPEED + and SPEED - buttons.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 100,
+      "bottomRightX": 366,
+      "bottomRightY": 138,
+      "content": "The speed can be adjusted in steps to 1/3, 1/10, 1/25, 1/50 or 1/100 of the normal speed (which is 25 frames per second); 1/3 of normal speed is the default value.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 157,
+      "bottomRightX": 152,
+      "bottomRightY": 169,
+      "content": "# FAST (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 175,
+      "bottomRightX": 366,
+      "bottomRightY": 227,
+      "content": "Each time the ▶ or ◀ section of the FAST button is pressed, the optical readout unit moves at 3 (default value), 10 or 20 times its normal speed in forward or reverse, the effect on the screen being that of rapid motion. The speed is set using the SPEED + and - buttons.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 245,
+      "bottomRightX": 111,
+      "bottomRightY": 256,
+      "content": "# AUDIO",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 263,
+      "bottomRightX": 366,
+      "bottomRightY": 327,
+      "content": "The LaserVision disc contains not only picture information, but can also accommodate two sound channels. These can provide stereo sound, or separate sound channels; for example, a commentary in two languages. Note that LV-ROM discs can contain data in place of the audio. In this case the audio is automatically muted.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 340,
+      "bottomRightX": 366,
+      "bottomRightY": 404,
+      "content": "When the player is switched on, it always assumes the forward play mode, with both sound channels enabled. In the case of separate sound channels, you can switch one of them off by pressing the relevant AUDIO button (1 or 2). In this case the enabled audio channel appears at both outputs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 70,
+      "topLeftY": 416,
+      "bottomRightX": 366,
+      "bottomRightY": 454,
+      "content": "To switch on again, press the appropriate button; the enabled channels are indicated by the AUDIO 1 and AUDIO 2 indicators on the front panel.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 454,
+      "bottomRightX": 300,
+      "bottomRightY": 465,
+      "content": "Note: Sound is audible in the forward play mode only.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 72,
+      "topLeftY": 483,
+      "bottomRightX": 253,
+      "bottomRightY": 495,
+      "content": "# GOTO PICTURE NUMBER (CAV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 501,
+      "bottomRightX": 366,
+      "bottomRightY": 706,
+      "content": "1. If no picture number is currently displayed on the monitor, press the PNR button. A picture number appears.\n2. Press the digit buttons (max. 5) corresponding to the picture number you want to go to (e.g. 2, 2, 1, 3, 5, if you want picture number 22135). If you make a mistake, press the CORR button and start again. As soon as you press the first digit the player assumes the still mode. The number you select is displayed below the current picture number.\n3. Press the GOTO button. The player will quickly look for the number selected. During this action sound is muted, and the monitor screen is blank, but the selected number is displayed. On arrival at the selected picture number, the corresponding picture appears on the monitor in still mode. Now you can select any play mode by pressing the corresponding button.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 723,
+      "bottomRightX": 206,
+      "bottomRightY": 736,
+      "content": "# GOTO CHAPTER NUMBER",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 73,
+      "topLeftY": 743,
+      "bottomRightX": 366,
+      "bottomRightY": 935,
+      "content": "1. If no chapter number is currently displayed on the monitor, press the CNR button. The chapter number, if available on the disc, appears.\n2. Press the digit buttons (max. 2) corresponding to the chapter number you want to go to (e.g. 2 if you want chapter 02). If you make a mistake, press the CORR button and start again. Note that with CAV discs, the player assumes the still mode as soon as you press the first digit. The number you select is displayed below the current chapter number.\n3. Press the GOTO button. The player quickly looks for the first picture of the chapter selected. During this action, sound is muted and the monitor screen is blank. On reaching the required chapter, the player starts normal play forward.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 31,
+      "bottomRightX": 566,
+      "bottomRightY": 43,
+      "content": "# GOTO TIME POSITION (CLV only)",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 402,
+      "topLeftY": 49,
+      "bottomRightX": 696,
+      "bottomRightY": 75,
+      "content": "With CLV discs it is possible to go to a selected time position on the disc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 88,
+      "bottomRightX": 697,
+      "bottomRightY": 267,
+      "content": "1. If no time position is currently displayed, press the PNR button. A time position appears on the screen.\n2. Press the digit buttons corresponding to the minutes of the time position you want to go to; the number you select is displayed below the time code. If you make a mistake, press the CORR button and start again. Then press the ENTER button. Some new discs also allow you to enter seconds as well. To enter the seconds, again use the digit buttons followed by ENTER.\n3. Press the GOTO button. The player will quickly look for the number selected. During this action sound is muted, and the selected time position is displayed. On arrival at the selected time position, play starts from that point.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 284,
+      "bottomRightX": 489,
+      "bottomRightY": 296,
+      "content": "# PROGRAMMING",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 303,
+      "bottomRightX": 697,
+      "bottomRightY": 328,
+      "content": "It is possible to set up a sequence of picture numbers, chapter numbers or time codes by programming via the remote control handset.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 403,
+      "topLeftY": 341,
+      "bottomRightX": 697,
+      "bottomRightY": 417,
+      "content": "1. Press either PNR (for picture number or time code programming) or CNR (for chapter number programming), so that the display appears on the screen.\n2. Press the DISPLAY button. The current program (if any) is then displayed on the screen. See Fig. 8.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 436,
+      "bottomRightX": 696,
+      "bottomRightY": 576,
+      "content": "|  PROGRAM 1 PNR | 1642  |\n| --- | --- |\n|  1000 PLAY FWD | 2000  |\n|  3200 FAST* 10 | 4500  |\n|  2500 PLAY REV | 1000  |\n|  51000 SLOW: 50 | 51500  |\n|  2569 STILL 60 | 2579  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 586,
+      "bottomRightX": 696,
+      "bottomRightY": 791,
+      "content": "|  PROGRAM | CNR | 2  |\n| --- | --- | --- |\n|  1.CNR 5 | 9.CNR |   |\n|  2.CNR 7 | 10.CNR |   |\n|  3.CNR 9 | 11.CNR |   |\n|  4.CNR 16 | 12.CNR |   |\n|  5.CNR 18 | 13.CNR |   |\n|  6.CNR 20 | 14.CNR |   |\n|  7.CNR | 15.CNR |   |\n|  8.CNR | 16.CNR |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 801,
+      "bottomRightX": 696,
+      "bottomRightY": 922,
+      "content": "|  PROGRAM 1 TIME | 1:23  |\n| --- | --- |\n|  12:45 PLAY FWD | 17:20  |\n|  23:00 PLAY FWD | 28:25  |\n|  45:22 PLAY FWD | 56:55  |\n|  58:00 PLAY FWD | 59:16  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 924,
+      "bottomRightX": 529,
+      "bottomRightY": 937,
+      "content": "Fig. 8: Programming display.",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 686,
+      "topLeftY": 966,
+      "bottomRightX": 698,
+      "bottomRightY": 976,
+      "content": "14",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

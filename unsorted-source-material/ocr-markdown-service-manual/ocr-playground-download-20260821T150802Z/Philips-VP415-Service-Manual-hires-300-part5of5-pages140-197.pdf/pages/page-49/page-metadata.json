@@ -1,0 +1,57 @@
+{
+  "index": 48,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 113,
+      "topLeftY": 124,
+      "bottomRightX": 439,
+      "bottomRightY": 141,
+      "content": "# Survey of software releases VP410/415",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 153,
+      "bottomRightX": 439,
+      "bottomRightY": 169,
+      "content": "# Description of software modifications",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 323,
+      "topLeftY": 182,
+      "bottomRightX": 464,
+      "bottomRightY": 198,
+      "content": "DRIVE (on mod.R)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 113,
+      "topLeftY": 210,
+      "bottomRightX": 685,
+      "bottomRightY": 619,
+      "content": "|  Progr. No. 3104 103 ... | changed with respect to earlier release | Ref.doc AR33 | SW Rev level  |\n| --- | --- | --- | --- |\n|  6803.4 | First release. | -- | 1.5  |\n|  6803.5 | -Eject of disc tray when no disc has been inserted -Delayed closing of radial mirror loop at start up of motor. -Improved SCAN FRWD action. -Improved jump behaviour. -Adaptation of STAND-BY command. | 2125-087 | 1.6  |\n|  6803.6 | -Improved catch-in behaviour instant jump. -Influence of phase of 2-PPR signal deleted. -Adaptation of 2-PPR signal. -Measurement of radial mirror sensitivity adapted -Error code report commutation added (codes 77 & 78). | 2125-100 | 1.7  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 652,
+      "topLeftY": 986,
+      "bottomRightX": 700,
+      "bottomRightY": 998,
+      "content": "CS 8 285",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

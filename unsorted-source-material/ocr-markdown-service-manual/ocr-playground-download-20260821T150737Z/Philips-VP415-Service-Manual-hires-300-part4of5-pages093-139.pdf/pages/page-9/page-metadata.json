@@ -1,0 +1,47 @@
+{
+  "index": 8,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 202,
+      "topLeftY": 734,
+      "bottomRightX": 441,
+      "bottomRightY": 759,
+      "content": "Exploded view drawings",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 759,
+      "bottomRightX": 437,
+      "bottomRightY": 782,
+      "content": "List of mechanical parts",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 202,
+      "topLeftY": 782,
+      "bottomRightX": 414,
+      "bottomRightY": 805,
+      "content": "List of electrical parts",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 599,
+      "topLeftY": 734,
+      "bottomRightX": 703,
+      "bottomRightY": 759,
+      "content": "Chapter 5",
+      "confidenceScores": null,
+      "type": "text"
+    }
+  ]
+}

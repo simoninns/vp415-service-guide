@@ -1,0 +1,29 @@
+{
+  "index": 13,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 203,
+      "topLeftY": 834,
+      "bottomRightX": 348,
+      "bottomRightY": 859,
+      "content": "Repair method",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 597,
+      "topLeftY": 834,
+      "bottomRightX": 701,
+      "bottomRightY": 859,
+      "content": "Chapter 6",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

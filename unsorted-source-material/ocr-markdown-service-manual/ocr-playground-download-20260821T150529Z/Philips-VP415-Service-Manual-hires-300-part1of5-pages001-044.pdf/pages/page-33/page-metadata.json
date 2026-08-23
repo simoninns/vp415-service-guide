@@ -1,0 +1,21 @@
+{
+  "index": 32,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 193,
+      "topLeftY": 44,
+      "bottomRightX": 917,
+      "bottomRightY": 650,
+      "content": "![img-38.jpeg](img-38.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-38.jpeg"
+    }
+  ]
+}

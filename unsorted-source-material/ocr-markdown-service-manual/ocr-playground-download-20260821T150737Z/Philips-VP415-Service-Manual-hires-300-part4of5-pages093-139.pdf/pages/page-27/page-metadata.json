@@ -1,0 +1,39 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 110,
+      "topLeftY": 79,
+      "bottomRightX": 281,
+      "bottomRightY": 104,
+      "content": "# OPTICAL DECK",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 328,
+      "bottomRightX": 703,
+      "bottomRightY": 617,
+      "content": "![img-34.jpeg](img-34.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-34.jpeg"
+    },
+    {
+      "topLeftX": 650,
+      "topLeftY": 989,
+      "bottomRightX": 699,
+      "bottomRightY": 1002,
+      "content": "CS 7 867",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "index": 18,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 11,
+      "topLeftY": 56,
+      "bottomRightX": 27,
+      "bottomRightY": 68,
+      "content": "32",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 11,
+      "topLeftY": 73,
+      "bottomRightX": 35,
+      "bottomRightY": 85,
+      "content": "# CPU",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 91,
+      "bottomRightX": 302,
+      "bottomRightY": 152,
+      "content": "The CPU section operates as the intelligent communications interface between the player and the host computer. It is built around a Z80A microprocessor and has 32k/bytes of ROM and 32k/bytes of RAM of which one 8k block is shared with the data grabber.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 152,
+      "bottomRightX": 301,
+      "bottomRightY": 212,
+      "content": "- Communication with the host computer is via a SCSI interface (Small Computer System Interface).\n- Communication with the player is via a UART.\n- Communications with the data grabber have been described.",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 215,
+      "bottomRightX": 302,
+      "bottomRightY": 240,
+      "content": "An optional DMA controller for faster data transfer is catered for but this is not used in the VP415.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 10,
+      "topLeftY": 251,
+      "bottomRightX": 84,
+      "bottomRightY": 264,
+      "content": "# Inputs to CPU",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 269,
+      "bottomRightX": 272,
+      "bottomRightY": 308,
+      "content": "Commands in F-Code from host computer via SCSI.\nDisc data from LV-ROM decoder via data grabber.\nAcknowledgements from player via UART.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 10,
+      "topLeftY": 317,
+      "bottomRightX": 92,
+      "bottomRightY": 330,
+      "content": "# Outputs of CPU",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 335,
+      "bottomRightX": 228,
+      "bottomRightY": 362,
+      "content": "Disc dump data to host computer via SCSI.\nF-Code commands to player via UART.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 371,
+      "bottomRightX": 222,
+      "bottomRightY": 421,
+      "content": "All three busses of the Z80A are buffered.\nAddress bus in IC's 44,45.\nData bus in IC 41.\nControl bus in IC 40.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 431,
+      "bottomRightX": 302,
+      "bottomRightY": 495,
+      "content": "The RAM is arranged as 8kbyte blocks which are addressed by A0-A12. Selection of the desired block is by chip select lines -PR4 - -PR7 decoded from A13 - A15 in the 3 to 8 decoder IC56. The 3 to 8 decoder is enabled by -MREQ and gives active low outputs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 504,
+      "bottomRightX": 300,
+      "bottomRightY": 530,
+      "content": "Chip enable of the ROM is by means of -PRO0 AND -PRO1 (IC 67).",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 540,
+      "bottomRightX": 134,
+      "bottomRightY": 553,
+      "content": "# In/out port arrangement",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 557,
+      "bottomRightX": 301,
+      "bottomRightY": 630,
+      "content": "The I/O ports are arranged in 8 blocks. Each block or device is allocated a chip select signal (-SEL0 - -SEL7) which is derived from 3 to 8 line decoder IC 57 using address lines A4 to A6. The decoder is enabled when the CPU is carrying out a machine port access (IOREQ=0) and A7=0.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 9,
+      "topLeftY": 631,
+      "bottomRightX": 301,
+      "bottomRightY": 680,
+      "content": "The block identified by SEL3 is further divided into single bit I/O ports by decoding A0 - A3 in 3 to 8 line decoder IC 58 to give -SEL30 - -SEL37. This decoder is enabled by -SEL3.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 73,
+      "bottomRightX": 454,
+      "bottomRightY": 88,
+      "content": "# Read/write of I/O ports",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 332,
+      "topLeftY": 92,
+      "bottomRightX": 626,
+      "bottomRightY": 142,
+      "content": "When the Z80A accesses a machine port (I/O port) it does this by use of IOREQ with RD or WR. This separates I/O port access from memory access which uses MEMREQ and RD or WR.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 152,
+      "bottomRightX": 433,
+      "bottomRightY": 166,
+      "content": "# Single bit I/O ports",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 332,
+      "topLeftY": 169,
+      "bottomRightX": 626,
+      "bottomRightY": 219,
+      "content": "The input port is built around IC 53 and consists of 8 - D-TYPE flip flops. A word is loaded from the flip flops on the rising edge of the signal derived by ORing -SEL37 and -IORD.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 230,
+      "bottomRightX": 392,
+      "bottomRightY": 243,
+      "content": "Table W10",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 249,
+      "bottomRightX": 549,
+      "bottomRightY": 349,
+      "content": "|  Bit | Signal  |\n| --- | --- |\n|  0 | ID0=1 interrupt from SCSI controller.  |\n|  1 | ID1=1 interrupt from DMA controller.  |\n|  2 | -  |\n|  3 | -  |\n|  4 | Baudrate=9600.  |\n|  5 | MON=0 Monitor enabled.  |\n|  6-7 | -  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 332,
+      "topLeftY": 360,
+      "bottomRightX": 626,
+      "bottomRightY": 411,
+      "content": "The output port is built around IC 53 and consists of 8 D-TYPE flip flops. A word is loaded to the flip flops from the data bus when the device is selected (-SEL34) and the write pulse (-IOWR) occurs.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 420,
+      "bottomRightX": 391,
+      "bottomRightY": 433,
+      "content": "Table W11",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 438,
+      "bottomRightX": 587,
+      "bottomRightY": 515,
+      "content": "|  Bit | Signal  |\n| --- | --- |\n|  0 | INTR=0 Resets the interrupt flip flops.(IC 59).  |\n|  1-4 | -  |\n|  5 | RES=1 Reset data grabber.  |\n|  6 | ERD=1 Enable read data.  |\n|  7 | ENW=1 CPU access to RAM (8000h-9FFFh).  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 525,
+      "bottomRightX": 428,
+      "bottomRightY": 539,
+      "content": "# Interrupt handling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 332,
+      "topLeftY": 543,
+      "bottomRightX": 626,
+      "bottomRightY": 618,
+      "content": "The requirement is for two interrupt systems, one from the SCSI controller (INT0) and one from the DMA controller (-INT1). These two interrupts are combined in IC 67 and stored in J-K flip flop IC 59 to give an interrupt to the Z80A (-INT). IC 59 is reset when the interrupt has been serviced by -INTR from the output port IC 53.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 692,
+      "bottomRightX": 613,
+      "bottomRightY": 965,
+      "content": "![img-35.jpeg](img-35.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-35.jpeg"
+    },
+    {
+      "topLeftX": 10,
+      "topLeftY": 987,
+      "bottomRightX": 58,
+      "bottomRightY": 1001,
+      "content": "CS 7 904",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

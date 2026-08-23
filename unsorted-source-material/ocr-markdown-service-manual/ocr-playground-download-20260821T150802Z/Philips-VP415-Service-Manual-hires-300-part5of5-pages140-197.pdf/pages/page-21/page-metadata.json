@@ -1,0 +1,394 @@
+{
+  "index": 20,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 21,
+      "topLeftY": 55,
+      "bottomRightX": 37,
+      "bottomRightY": 66,
+      "content": "34",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 70,
+      "bottomRightX": 141,
+      "bottomRightY": 84,
+      "content": "# Installation of target ID",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 88,
+      "bottomRightX": 312,
+      "bottomRightY": 112,
+      "content": "There are eight possible ID's that can be selected for the target:-",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 112,
+      "bottomRightX": 312,
+      "bottomRightY": 137,
+      "content": "The ID is selected by means of dip switch S1 Nos 5,6 and 7.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 21,
+      "topLeftY": 148,
+      "bottomRightX": 79,
+      "bottomRightY": 160,
+      "content": "Table W19",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 165,
+      "bottomRightX": 277,
+      "bottomRightY": 296,
+      "content": "|  Dip switch setting |   |   | ID No.  |\n| --- | --- | --- | --- |\n|  5 | 6 | 7 |   |\n|  off | off | off | 0 Default  |\n|  off | off | on | 1  |\n|  off | on | off | 2  |\n|  off | on | on | 3  |\n|  on | off | off | 4  |\n|  on | off | on | 5  |\n|  on | on | off | 6  |\n|  on | on | on | 7  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 309,
+      "bottomRightX": 114,
+      "bottomRightY": 322,
+      "content": "# CPU memory map",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 326,
+      "bottomRightX": 311,
+      "bottomRightY": 353,
+      "content": "The CPU is organised to handle a maximum of 32kBytes of ROM plus 32kBytes of RAM.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 363,
+      "bottomRightX": 76,
+      "bottomRightY": 375,
+      "content": "Table W20",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 380,
+      "bottomRightX": 291,
+      "bottomRightY": 470,
+      "content": "|  IC No. | Address (h) | Chip select  |\n| --- | --- | --- |\n|  47 16k EPROM | 0000 - 3FFF | -PRO x -PR1  |\n|  48 16k EPROM | 4000 - 7FFF | -PR2 x -PR3  |\n|  22 8k RAM | 8000 - 9FFF | -PR4 (shared)  |\n|  49 8k RAM | A000 - BFFF | -PR5  |\n|  50 8k RAM | C000 - DFFF | -PR6  |\n|  51 8k RAM | E000 - FFFF | -PR7  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 481,
+      "bottomRightX": 93,
+      "bottomRightY": 494,
+      "content": "# CPU port map",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 19,
+      "topLeftY": 499,
+      "bottomRightX": 75,
+      "bottomRightY": 510,
+      "content": "Table W21",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 18,
+      "topLeftY": 513,
+      "bottomRightX": 306,
+      "bottomRightY": 844,
+      "content": "|  Port No. | IC No. | Chip sel. | I/O | Function  |\n| --- | --- | --- | --- | --- |\n|  00 | 39 | -SEL0 | I/O | SCSI data  |\n|  01 | .. | .. | I/O | SCSI command  |\n|  02 | .. | .. | I/O | SCSI control  |\n|  03 | .. | .. | I/O | SCSI destination  |\n|  04 | .. | .. | I/O | SCSI aux.  |\n|  05 | .. | .. | In | SCSI ID.  |\n|  06 | .. | .. | In | SCSI interrupt  |\n|  07 | .. | .. | In | Source ID.  |\n|  09 | .. | .. | In | Diag. status  |\n|  0C | .. | .. | I/O | Count MSB  |\n|  0D | .. | .. | I/O | Count 2nd byte  |\n|  0E | .. | .. | I/O | Count LSB  |\n|  0F | .. | .. | I/O | Reserved - test  |\n|  10 | 43 | -SEL1 | I/O | DMA data/control  |\n|  20 | 52 | -SEL2 | I/O | UPI-41 data  |\n|  21 | 52 | .. | In | UPI-41 status  |\n|  21 | 52 | .. | Out | UPI-41 control  |\n|  34 | 18 | -SEL34 | In | Data grab status  |\n|  34 | 54 | -SEL34 | Out | Data grab control and interrupt reset  |\n|  37 | 53 | -SEL37 | Out | Read dip sw. and interrupt f/f's.  |\n|  40 | 19,20 | -SEL4 | In | Header Mins.  |\n|  41 | .. .. | .. | In | Header Secs.  |\n|  42 | .. .. | .. | In | Header Blocks.  |\n|  43 | .. .. | .. | In | Header Mode.  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 854,
+      "bottomRightX": 178,
+      "bottomRightY": 867,
+      "content": "# Dip switches on the CPU panel",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 871,
+      "bottomRightX": 90,
+      "bottomRightY": 885,
+      "content": "Dip switch S1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 896,
+      "bottomRightX": 74,
+      "bottomRightY": 907,
+      "content": "Table W22",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 17,
+      "topLeftY": 913,
+      "bottomRightX": 294,
+      "bottomRightY": 980,
+      "content": "|  Switch | Purpose |   |\n| --- | --- | --- |\n|  1 | Baudrate selection | Not used  |\n|  2 | Monitor test | Not used  |\n|  3-4 | Not used |   |\n|  5-7 | Target ID installation. |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 345,
+      "topLeftY": 73,
+      "bottomRightX": 518,
+      "bottomRightY": 87,
+      "content": "# MODULE X - LV-ROM DECODER",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 104,
+      "bottomRightX": 463,
+      "bottomRightY": 117,
+      "content": "# Computer data on disc",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 122,
+      "bottomRightX": 635,
+      "bottomRightY": 171,
+      "content": "LV-ROM data storage has a similar format to that used on the Compact Disc in that the basic word size is sixteen bits with a sample rate of 44,100 per second alternating left and right to give 176.4 kBytes/Sec.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 171,
+      "bottomRightX": 635,
+      "bottomRightY": 209,
+      "content": "The data is organised in blocks. Each block consists of 98 frames. Each frame contains 12 pairs of byte values (6 x DLCF, 6 x DRCF) ie. 24 bytes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 209,
+      "bottomRightX": 635,
+      "bottomRightY": 233,
+      "content": "To allow synchronisation and identification each block commences with a sync pattern and header.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 343,
+      "topLeftY": 245,
+      "bottomRightX": 503,
+      "bottomRightY": 257,
+      "content": "We can summarise a block as :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 344,
+      "topLeftY": 268,
+      "bottomRightX": 391,
+      "bottomRightY": 280,
+      "content": "Table X1",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 389,
+      "topLeftY": 287,
+      "bottomRightX": 461,
+      "bottomRightY": 300,
+      "content": "12 bytes sync",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 395,
+      "topLeftY": 300,
+      "bottomRightX": 471,
+      "bottomRightY": 312,
+      "content": "4 bytes header",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 377,
+      "topLeftY": 312,
+      "bottomRightX": 458,
+      "bottomRightY": 324,
+      "content": "2048 bytes data",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 395,
+      "topLeftY": 324,
+      "bottomRightX": 473,
+      "bottomRightY": 335,
+      "content": "8 bytes unused",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 383,
+      "topLeftY": 336,
+      "bottomRightX": 618,
+      "bottomRightY": 347,
+      "content": "280 bytes CRC (error detection and correction)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 345,
+      "topLeftY": 347,
+      "bottomRightX": 433,
+      "bottomRightY": 360,
+      "content": "Total 2352 bytes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 371,
+      "bottomRightX": 561,
+      "bottomRightY": 383,
+      "content": "A block is read from the disc in 1/75th sec.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 383,
+      "bottomRightX": 635,
+      "bottomRightY": 456,
+      "content": "As the disc revolves at TV frame rate (25Hz) we may deduce that three blocks will be read during one revolution of the disc. Thus the position of any block on the disc can be obtained by dividing the block number by three to obtain the frame or picture number. The player accesses the disc in terms of frame number.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 467,
+      "bottomRightX": 635,
+      "bottomRightY": 598,
+      "content": "The encoding format on the disc uses a cross interleaved Reed Solomon code to give protection against reading errors caused by dust or scratches on the disc and each byte is represented by a 14 bit word. This process of modulation is termed EFM - Eight to Fourteen bit Modulation. An EFM word obeys the rule that there must be at least two and not more than ten '0's' between adjacent '1's'. Since this rule might be broken at the junction of two words three 'merging bits' are inserted between each pair of EFM words to ensure that the 2 - 10 rule is adhered to.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 598,
+      "bottomRightX": 634,
+      "bottomRightY": 636,
+      "content": "A 'Control and Display' word (and a synchronising pattern precede the data bytes in each frame. Two groups of parity bits each of 4 bytes complete the frame.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 646,
+      "bottomRightX": 635,
+      "bottomRightY": 684,
+      "content": "Over a block of 98 frames the C and D words are accumulated to provide a block label in terms of time.(Mins, Secs, 1/75 Secs)",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 694,
+      "bottomRightX": 515,
+      "bottomRightY": 707,
+      "content": "Each frame therefore consists of",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 711,
+      "bottomRightX": 500,
+      "bottomRightY": 792,
+      "content": "|  Sync pattern | 24 bits  |\n| --- | --- |\n|  Control and display | 14 bits  |\n|  Data (24 x 14) | 336 bits  |\n|  Parity (8 x 14) | 112 bits  |\n|  Merging (34 x 3) | 102 bits  |\n|  Total bits | 588 bits  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 341,
+      "topLeftY": 802,
+      "bottomRightX": 634,
+      "bottomRightY": 841,
+      "content": "In addition to the protection given by the CIRC (Cross interleaved Reed Solomon) coding further protection is provided by the 280 CRC bytes of each block.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 341,
+      "topLeftY": 851,
+      "bottomRightX": 634,
+      "bottomRightY": 876,
+      "content": "The bit rate as read from the disc is 4.3218 Mbits/Sec. giving a decoded data rate of 153.6 kbytes/Sec.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 342,
+      "topLeftY": 887,
+      "bottomRightX": 427,
+      "bottomRightY": 900,
+      "content": "# Data scrambling",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 340,
+      "topLeftY": 905,
+      "bottomRightX": 634,
+      "bottomRightY": 978,
+      "content": "There may be sections of data where a number of bytes have a similar value. This would have the effect of causing a DC offset (non-zero DSV) which could upset servo operation. To avoid this the data is modified by having a scrambling pattern superimposed. This scrambling must be unpicked in the player.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 14,
+      "topLeftY": 985,
+      "bottomRightX": 63,
+      "bottomRightY": 998,
+      "content": "CS 7 906",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

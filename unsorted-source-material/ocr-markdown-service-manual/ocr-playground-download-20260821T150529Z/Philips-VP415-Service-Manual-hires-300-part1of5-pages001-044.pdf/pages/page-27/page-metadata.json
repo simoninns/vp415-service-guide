@@ -1,0 +1,58 @@
+{
+  "index": 26,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 191,
+      "topLeftY": 57,
+      "bottomRightX": 396,
+      "bottomRightY": 69,
+      "content": "CONNECTIONS OF SEMICONDUCTORS",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 191,
+      "topLeftY": 71,
+      "bottomRightX": 564,
+      "bottomRightY": 335,
+      "content": "|  SMD TOPVIEW SOT-143 | 01 02 3 D  |   |   |   |\n| --- | --- | --- | --- | --- |\n|  SMD TOPVIEW SOT-23 VAR | VAR 1 2 3 E | VAR 2 2 E 6 | VAR 3 2 D 5 |   |\n|   | BOTTOM VIEW |   |   | TOP VIEW  |\n|   | VAR 1 | VAR 2 | VAR 3 | VAR 4  |\n|  TO-92 VAR | B C 1 | F B C | B E C | G S 0  |\n|  TO-18 TO-72 | 5 0 |  |  | 6 0  |\n|  TO-39 | 5 0 |  |  | 6 0  |\n|  SOT-32(TO-126) SOT-82 SOT-93 SOT-186 | B C E |  |  | B C E  |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 533,
+      "topLeftY": 335,
+      "bottomRightX": 563,
+      "bottomRightY": 347,
+      "content": "MDA 00636\nT10 T16",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 142,
+      "topLeftY": 359,
+      "bottomRightX": 644,
+      "bottomRightY": 980,
+      "content": "|  SOT-143 | BF992 | BC264 | TO-92 VAR.4  |\n| --- | --- | --- | --- |\n|  SOT-186 | BUT11F | BC327 | TO-92 VAR.2  |\n|  SOT-23 VAR.1 | BC807 | BC337 | TO-92 VAR.2  |\n|   | BC817 | BC368 | TO-92 VAR.1  |\n|   | BC847 | BC369 | TO-92 VAR.1  |\n|   | BC848 | BC375 | TO-92 VAR.2  |\n|   | BC849 | BC376 | TO-92 VAR.2  |\n|   | BC858 | BC546 | TO-92 VAR.2  |\n|   | BC859 | BC547 | TO-92 VAR.2  |\n|   | BFS19 | BC548 | TO-92 VAR.2  |\n|  SOT-23 VAR.3 | BFR30 | BC549 | TO-92 VAR.2  |\n|  SOT-32 (TO-126) | BD135 | BC556 | TO-92 VAR.2  |\n|   | BD434 | BC557 | TO-92 VAR.2  |\n|   | BD435 | BC558 | TO-92 VAR.2  |\n|   | BD436 | BC639 | TO-92 VAR.1  |\n|   | BD437 | BC640 | TO-92 VAR.1  |\n|   | BD438 | BC807 | SOT-23 VAR.1  |\n|   | BUX86 | BC817 | SOT-23 VAR.1  |\n|   |  | BC847 | SOT-23 VAR.1  |\n|   |  | BC848 | SOT-23 VAR.1  |\n|  SOT-82 | BUW85 | BC849 | SOT-23 VAR.1  |\n|  SOT-93 | BUW12 | BC858 | SOT-23 VAR.1  |\n|  TO-18 | BSV78 | BC859 | SOT-23 VAR.1  |\n|   | BSV80 | BD135 | SOT-32 (TO-126)  |\n|  TO-39 | BSW68 | BD434 | SOT-32 (TO-126)  |\n|  TO-72 | BSD213 | BD435 | SOT-32 (TO-126)  |\n|  TO-92 VAR.1 | BC368 | BD436 | SOT-32 (TO-126)  |\n|   | BC369 | BD437 | SOT-32 (TO-126)  |\n|   | BC639 | BD438 | SOT-32 (TO-126)  |\n|   | BC640 | BFR30 | SOT-23 VAR.3  |\n|  TO-92 VAR.2 | BC327 | BFR54 | TO-92 VAR.2  |\n|   | BC337 | BFS19 | SOT-23 VAR.1  |\n|   | BC375 | BF256 | TO-92 VAR.4  |\n|   | BC376 | BF450 | TO-92 VAR.3  |\n|   | BC546 | BF494 | TO-92 VAR.3  |\n|   | BC547 | BF992 | SOT-143  |\n|   | BC548 | BSD213 | TO-72  |\n|   | BC549 | BSV80 | TO-18  |\n|   | BC556 | BSW68 | TO-39  |\n|   | BC557 | BUT11F | SOT-186  |\n|   | BC558 | BUW12 | SOT-93  |\n|   | BFR54 | BUW85 | SOT-82  |\n|   | PH2369 | BUX86 | SOT-32 (TO-126)  |\n|  TO-92 VAR.3 | BF450 | PH2369 | TO-92 VAR.2  |\n|   | BF494 |  |   |\n|  TO-92 VAR.4 | BC264 |  |   |\n|   | BF256 |  |   |",
+      "confidenceScores": null,
+      "type": "table",
+      "tableId": null
+    },
+    {
+      "topLeftX": 648,
+      "topLeftY": 988,
+      "bottomRightX": 695,
+      "bottomRightY": 1000,
+      "content": "CS 8 121",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

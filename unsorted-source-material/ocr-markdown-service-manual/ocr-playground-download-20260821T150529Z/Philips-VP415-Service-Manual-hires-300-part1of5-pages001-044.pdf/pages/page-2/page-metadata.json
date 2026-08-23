@@ -1,0 +1,362 @@
+{
+  "index": 1,
+  "dimensions": {
+    "dpi": 87,
+    "height": 1018,
+    "width": 720
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 199,
+      "topLeftY": 45,
+      "bottomRightX": 342,
+      "bottomRightY": 67,
+      "content": "Technical data",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 69,
+      "bottomRightX": 516,
+      "bottomRightY": 92,
+      "content": "Controls, indicators, connections",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 93,
+      "bottomRightX": 377,
+      "bottomRightY": 117,
+      "content": "Connector pinning",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 144,
+      "bottomRightX": 288,
+      "bottomRightY": 166,
+      "content": "Remarks",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 168,
+      "bottomRightX": 291,
+      "bottomRightY": 191,
+      "content": "Warnings",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 191,
+      "bottomRightX": 378,
+      "bottomRightY": 211,
+      "content": "Modification levels",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 213,
+      "bottomRightX": 321,
+      "bottomRightY": 235,
+      "content": "Adjustments",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 236,
+      "bottomRightX": 434,
+      "bottomRightY": 259,
+      "content": "Demounting instructions",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 260,
+      "bottomRightX": 324,
+      "bottomRightY": 279,
+      "content": "Service hints",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 281,
+      "bottomRightX": 325,
+      "bottomRightY": 302,
+      "content": "Service tools",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 304,
+      "bottomRightX": 401,
+      "bottomRightY": 327,
+      "content": "List of used symbols",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 328,
+      "bottomRightX": 505,
+      "bottomRightY": 349,
+      "content": "Connections of semiconductors",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 379,
+      "bottomRightX": 511,
+      "bottomRightY": 404,
+      "content": "Module- and connector lay-out",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 404,
+      "bottomRightX": 321,
+      "bottomRightY": 426,
+      "content": "Signal listing",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 426,
+      "bottomRightX": 346,
+      "bottomRightY": 449,
+      "content": "Wiring diagram",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 449,
+      "bottomRightX": 477,
+      "bottomRightY": 471,
+      "content": "Blockdiagram Control routes",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 472,
+      "bottomRightX": 589,
+      "bottomRightY": 495,
+      "content": "Blockdiagram AUDIO/VIDEO signal path",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 495,
+      "bottomRightX": 396,
+      "bottomRightY": 518,
+      "content": "Blockdiagram Servo",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 545,
+      "bottomRightX": 383,
+      "bottomRightY": 569,
+      "content": "Survey of modules",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 570,
+      "bottomRightX": 354,
+      "bottomRightY": 590,
+      "content": "Modules A to Z",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 592,
+      "bottomRightX": 368,
+      "bottomRightY": 615,
+      "content": "- Circuit diagram",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 615,
+      "bottomRightX": 347,
+      "bottomRightY": 638,
+      "content": "- PCB lay-out",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 639,
+      "bottomRightX": 344,
+      "bottomRightY": 660,
+      "content": "- Adjustments",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 661,
+      "bottomRightX": 365,
+      "bottomRightY": 684,
+      "content": "- Electrical parts",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 684,
+      "bottomRightX": 351,
+      "bottomRightY": 704,
+      "content": "Remote control",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 735,
+      "bottomRightX": 437,
+      "bottomRightY": 759,
+      "content": "Exploded view drawings",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 759,
+      "bottomRightX": 432,
+      "bottomRightY": 783,
+      "content": "List of mechanical parts",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 783,
+      "bottomRightX": 410,
+      "bottomRightY": 805,
+      "content": "List of electrical parts",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 834,
+      "bottomRightX": 344,
+      "bottomRightY": 858,
+      "content": "Repair method",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 887,
+      "bottomRightX": 373,
+      "bottomRightY": 911,
+      "content": "Circuit description",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 199,
+      "topLeftY": 940,
+      "bottomRightX": 388,
+      "bottomRightY": 962,
+      "content": "Service Information",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 47,
+      "bottomRightX": 695,
+      "bottomRightY": 71,
+      "content": "# Chapter 1",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 144,
+      "bottomRightX": 696,
+      "bottomRightY": 169,
+      "content": "# Chapter 2",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 379,
+      "bottomRightX": 696,
+      "bottomRightY": 405,
+      "content": "# Chapter 3",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 545,
+      "bottomRightX": 698,
+      "bottomRightY": 571,
+      "content": "# Chapter 4",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 735,
+      "bottomRightX": 698,
+      "bottomRightY": 760,
+      "content": "# Chapter 5",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 834,
+      "bottomRightX": 696,
+      "bottomRightY": 858,
+      "content": "# Chapter 6",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 887,
+      "bottomRightX": 696,
+      "bottomRightY": 911,
+      "content": "# Chapter 7",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 594,
+      "topLeftY": 940,
+      "bottomRightX": 696,
+      "bottomRightY": 963,
+      "content": "# Chapter 8",
+      "confidenceScores": null,
+      "type": "title"
+    }
+  ]
+}

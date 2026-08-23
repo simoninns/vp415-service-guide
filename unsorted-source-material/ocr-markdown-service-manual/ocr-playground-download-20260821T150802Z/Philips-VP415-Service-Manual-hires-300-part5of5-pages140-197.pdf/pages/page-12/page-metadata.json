@@ -1,0 +1,599 @@
+{
+  "index": 11,
+  "dimensions": {
+    "dpi": 61,
+    "height": 714,
+    "width": 1010
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 980,
+      "topLeftY": 31,
+      "bottomRightX": 994,
+      "bottomRightY": 40,
+      "content": "25",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 49,
+      "bottomRightX": 219,
+      "bottomRightY": 58,
+      "content": "# MODULE P - FRONTLOADER",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 66,
+      "bottomRightX": 316,
+      "bottomRightY": 118,
+      "content": "The purpose of this module is to provide the required drive current to the motor of the front loading mechanism, which takes care, that the disc is positioned at the correct place in the player. Control signals are fed in from the drive processor module R and status signals are fed back to the drive processor. See Fig.P1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 110,
+      "topLeftY": 125,
+      "bottomRightX": 180,
+      "bottomRightY": 134,
+      "content": "# Circuit description",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 142,
+      "bottomRightX": 316,
+      "bottomRightY": 175,
+      "content": "The front loader motor is a d.c. motor, which can be driven in two ways, for loading and unloading respectively. Therefore the motor is connected to a bridge circuit. See Fig. P2.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 175,
+      "bottomRightX": 316,
+      "bottomRightY": 251,
+      "content": "Loading: When the tray is partly pushed in, the start stop switch is connected to ground and ST-ST signal \"L\" is fed to drive processor R. At this moment the LMOT-L signal from drive processor R becomes \"H\" and transistors 7001, 7006 and 7004 will conduct. This causes current I1 to drive the motor and the tray will move further inside. When the tray is fully inside, the \"tray inside\" switch is closed and \"I\" becomes \"L\". LMOT-L becomes \"L\" again and all transistors are cut off. The motor will stop.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 251,
+      "bottomRightX": 316,
+      "bottomRightY": 319,
+      "content": "Unloading: When \"EJECT\" is pressed, the drive processor delivers an LMOT-R signal \"H\". Now transistors 7003, 7005 and 7007 will conduct and the motor is driven by current I2. As I2 is in direction opposite to I1, the tray will now move outwards. This continues until the ST-ST switch is open again and ST-ST signal \"H\" is fed to the drive processor. LMOT-R becomes low and all transistors are blocked again.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 109,
+      "topLeftY": 319,
+      "bottomRightX": 316,
+      "bottomRightY": 353,
+      "content": "Protection device: When the tray is blocked during loading as well as during unloading, the LMOT-L and LMOT-R signals become \"L\" and the motor is not energized anymore.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 203,
+      "topLeftY": 365,
+      "bottomRightX": 328,
+      "bottomRightY": 375,
+      "content": "Fig.P1 FRONT LOADER CIRCUIT",
+      "confidenceScores": null,
+      "type": "caption"
+    },
+    {
+      "topLeftX": 335,
+      "topLeftY": 48,
+      "bottomRightX": 460,
+      "bottomRightY": 57,
+      "content": "# MODULE R - DRIVE PROCESSOR",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 335,
+      "topLeftY": 61,
+      "bottomRightX": 517,
+      "bottomRightY": 71,
+      "content": "The main tasks of the drive processor module are :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 345,
+      "topLeftY": 74,
+      "bottomRightX": 539,
+      "bottomRightY": 151,
+      "content": "a) To accept and interpret commands from control module S\nb) Radial tracking and access\nc) Manchester code reading\nd) Display on screen drive\ne) Start-up sequence of the disc drive\nf) Local control: 'standby' and 'eject'\ng) Audio and video switching\nh) Service diagnostics",
+      "confidenceScores": null,
+      "type": "list"
+    },
+    {
+      "topLeftX": 334,
+      "topLeftY": 158,
+      "bottomRightX": 541,
+      "bottomRightY": 252,
+      "content": "All the functions of module R run under control of microprocessor IC 7201. See the block diagram in Fig.R1. A 16k ROM is present on this module (IC 7204). The communication with control processor module S goes via the S-bus. The disc drive communication takes place via two I/O port expanders, ICs 7202 and 7203. Various drive and switching signals are given by the drive processor via the three 8-bit shift registers ICs 7213, 7214 and 7215. The drive processor reads the manchester codes of the video signal (clipped video) and also sees to insertion of the index signal.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 333,
+      "topLeftY": 296,
+      "bottomRightX": 515,
+      "bottomRightY": 397,
+      "content": "![img-24.jpeg](img-24.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-24.jpeg"
+    },
+    {
+      "topLeftX": 98,
+      "topLeftY": 386,
+      "bottomRightX": 372,
+      "bottomRightY": 656,
+      "content": "![img-25.jpeg](img-25.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-25.jpeg"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 48,
+      "bottomRightX": 645,
+      "bottomRightY": 58,
+      "content": "# sub a) Command input",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 61,
+      "bottomRightX": 765,
+      "bottomRightY": 103,
+      "content": "Command inputs from and responses to module S go via the S-bus. The S-bus interface comprises ICs 7203, 7216, 7206, 7207. IC 7203 is a port expander by which processor IC 7201 accesses S-bus handshake signals DAV and DAK.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 103,
+      "bottomRightX": 764,
+      "bottomRightY": 120,
+      "content": "IC 7207 is the data input buffer latch. IC 7206 is the data output buffer latch.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 120,
+      "bottomRightX": 764,
+      "bottomRightY": 137,
+      "content": "DAV and DAK are serviced via D-type flip flops 7216-2A and 2B.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 137,
+      "bottomRightX": 764,
+      "bottomRightY": 154,
+      "content": "For detailed information on the operation of the S-bus please refer to the S-bus section.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 162,
+      "bottomRightX": 680,
+      "bottomRightY": 172,
+      "content": "# sub b) Control of the slide motor",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 174,
+      "bottomRightX": 742,
+      "bottomRightY": 183,
+      "content": "Control of the slide motor takes place via software.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 183,
+      "bottomRightX": 764,
+      "bottomRightY": 209,
+      "content": "The slide motor is a stepping motor driven by the 4 phase signals COMM-1 - COMM-4 and SL-PWR which are output by port expander IC 7202.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 209,
+      "bottomRightX": 765,
+      "bottomRightY": 268,
+      "content": "During normal play functions the slide motor is driven when the deflection of the radial mirror is approaching its limit. This is determined by measuring the mirror offset by comparison of SP-POS (Radial error from mirror drive) with the output of DAC 7218 in IC 7210-2A. The result of this comparison (RAD-MIR) is applied to input pin 31 of port expander IC 7203.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 276,
+      "bottomRightX": 686,
+      "bottomRightY": 286,
+      "content": "# sub c) Reading Manchester codes",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 288,
+      "bottomRightX": 765,
+      "bottomRightY": 322,
+      "content": "IC 7211 is a dedicated device which reads Manchester codes from the clipped video signal CL-VID. The code data is stored on-board to be read by the processor via the data bus.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 322,
+      "bottomRightX": 678,
+      "bottomRightY": 332,
+      "content": "Signals required by IC 7211 are :",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 338,
+      "bottomRightX": 691,
+      "bottomRightY": 349,
+      "content": "Handshake from processor IC 7201:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 338,
+      "bottomRightX": 728,
+      "bottomRightY": 347,
+      "content": "ATN",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 347,
+      "bottomRightX": 728,
+      "bottomRightY": 357,
+      "content": "TX/RX",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 357,
+      "bottomRightX": 719,
+      "bottomRightY": 365,
+      "content": "STB",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 365,
+      "bottomRightX": 719,
+      "bottomRightY": 373,
+      "content": "IRQ",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 372,
+      "bottomRightX": 618,
+      "bottomRightY": 382,
+      "content": "Horizontal sync",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 382,
+      "bottomRightX": 609,
+      "bottomRightY": 390,
+      "content": "Vertical sync",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 390,
+      "bottomRightX": 611,
+      "bottomRightY": 399,
+      "content": "Clipped video",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 373,
+      "bottomRightX": 738,
+      "bottomRightY": 381,
+      "content": "HMANCH",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 381,
+      "bottomRightX": 738,
+      "bottomRightY": 390,
+      "content": "VMANCH",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 702,
+      "topLeftY": 390,
+      "bottomRightX": 732,
+      "bottomRightY": 398,
+      "content": "CL-VID",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 560,
+      "topLeftY": 406,
+      "bottomRightX": 653,
+      "bottomRightY": 416,
+      "content": "# sub d) Display on screen",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 418,
+      "bottomRightX": 765,
+      "bottomRightY": 445,
+      "content": "Status information from the manchester codes for display on screen is read from IC 7211 by processor IC 7201 and loaded into display driver IC 7212.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 559,
+      "topLeftY": 445,
+      "bottomRightX": 765,
+      "bottomRightY": 462,
+      "content": "IC 7212 contains the character generator for on screen display.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 380,
+      "topLeftY": 465,
+      "bottomRightX": 771,
+      "bottomRightY": 679,
+      "content": "![img-26.jpeg](img-26.jpeg)",
+      "confidenceScores": null,
+      "type": "image",
+      "imageId": "img-26.jpeg"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 43,
+      "bottomRightX": 853,
+      "bottomRightY": 53,
+      "content": "Inputs to IC 7212:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 60,
+      "bottomRightX": 901,
+      "bottomRightY": 69,
+      "content": "Databus Pins 14-21",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 69,
+      "bottomRightX": 865,
+      "bottomRightY": 77,
+      "content": "Reset 1",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 77,
+      "bottomRightX": 865,
+      "bottomRightY": 86,
+      "content": "HSTNC 8",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 86,
+      "bottomRightX": 865,
+      "bottomRightY": 94,
+      "content": "VSTNC 7",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 94,
+      "bottomRightX": 870,
+      "bottomRightY": 103,
+      "content": "LDI (Load index) 12",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 119,
+      "bottomRightX": 868,
+      "bottomRightY": 129,
+      "content": "Outputs from IC 7212:",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 135,
+      "bottomRightX": 939,
+      "bottomRightY": 145,
+      "content": "VOBN (Background for insertion) pin 6",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 145,
+      "bottomRightX": 939,
+      "bottomRightY": 154,
+      "content": "VOW (Character for insertion) pin 5",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 161,
+      "bottomRightX": 993,
+      "bottomRightY": 197,
+      "content": "To have correct timing vertical and horizontal syncs for IC 7212 are provided via IC 7219. When playing a CLV disc in the visible scan mode (internal video) the sync source is changed by NS-VID.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 204,
+      "bottomRightX": 888,
+      "bottomRightY": 213,
+      "content": "# sub e) Start up and control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 216,
+      "bottomRightX": 993,
+      "bottomRightY": 259,
+      "content": "The start-up procedure has by means of a block diagram with command signals (Fig.CR1) and timing diagrams (Fig.CR2) been dealt with in chapter 2 sub 'Control routes + start-up sequence'. Here the interaction with the various modules is discussed.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 259,
+      "bottomRightX": 993,
+      "bottomRightY": 335,
+      "content": "The start-up sequence operates under control of processor IC 7201 via output buffers ICs 7213, 7214, 7215 and I/O port expanders 7202 and 7203. Buffers 7213 and 7214 operate with +12V supply so the input signals are first converted by level converter IC 7208. Buffer 7215 works directly with +5V supply. The start-up consists of the sequence : Close tray, move slide to start position, detect disc, activate the tilt control, put laser on, find focus, spin disc, close radial tracking loop, find picture no. 1.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 335,
+      "bottomRightX": 993,
+      "bottomRightY": 368,
+      "content": "During start-up it is determined which type of player we are dealing with (PAL or NTSC). This is done by determining the distance between successive VR pulses over a number of periods.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 368,
+      "bottomRightX": 993,
+      "bottomRightY": 411,
+      "content": "These VR pulses are the derivatives of the REFV pulses of ref. source module D. The measured period time is studied within certain limits (windows) and next the system is evaluated. If the VR signal is missing the player will not start up.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 414,
+      "bottomRightX": 860,
+      "bottomRightY": 423,
+      "content": "# sub f) Local control",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 427,
+      "bottomRightX": 993,
+      "bottomRightY": 454,
+      "content": "The 'stand-by' and 'eject' keys on the front of the player give, if activated, a low level signal directly to I/O port expander IC 7203. The drive processor will respond to this.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 460,
+      "bottomRightX": 865,
+      "bottomRightY": 470,
+      "content": "# sub g) A/V switching",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 472,
+      "bottomRightX": 993,
+      "bottomRightY": 542,
+      "content": "The drive processor sees to switching on and off of the audio and video signals, not only during start-up but also during normal play procedures. It is e.g. necessary to mute audio and video during search actions, realized with the AUDION, AUD2ON and CV/CS signals respectively. Or e.g. to switch over from internal source to external source if this is requested via control processor module S, realized with the A1-E/I, A2-E/I and CV-E/I signals, etc.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 788,
+      "topLeftY": 549,
+      "bottomRightX": 886,
+      "bottomRightY": 558,
+      "content": "# sub h) Service diagnostics",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 561,
+      "bottomRightX": 993,
+      "bottomRightY": 638,
+      "content": "The diagnostic software has been integrated in the drive software in such a way that many of the tasks of the drive are checked for proper performance. If a fault is detected in the execution of a task, an error code is shown on the screen as video overlay (like the index information). The software program is very useful on behalf of service diagnosis. The working and the use of this diagnosis software is dealt with extensively in the REPAIR METHOD description.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 787,
+      "topLeftY": 645,
+      "bottomRightX": 993,
+      "bottomRightY": 673,
+      "content": "IC 7209 is a watchdog circuit which provides a reset for the processor on power up and also monitors the operation of the processor giving a reset if the program crashes.",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 955,
+      "topLeftY": 685,
+      "bottomRightX": 991,
+      "bottomRightY": 694,
+      "content": "CS 7 897",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}

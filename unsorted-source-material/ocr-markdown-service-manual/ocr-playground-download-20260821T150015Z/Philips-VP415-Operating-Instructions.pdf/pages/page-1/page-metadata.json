@@ -1,0 +1,74 @@
+{
+  "index": 0,
+  "dimensions": {
+    "dpi": 172,
+    "height": 1022,
+    "width": 772
+  },
+  "confidenceScores": null,
+  "blocks": [
+    {
+      "topLeftX": 72,
+      "topLeftY": 137,
+      "bottomRightX": 199,
+      "bottomRightY": 178,
+      "content": "LVROM",
+      "confidenceScores": null,
+      "type": "header"
+    },
+    {
+      "topLeftX": 405,
+      "topLeftY": 384,
+      "bottomRightX": 488,
+      "bottomRightY": 410,
+      "content": "# VP415",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 414,
+      "bottomRightX": 548,
+      "bottomRightY": 441,
+      "content": "# LaserVision",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 406,
+      "topLeftY": 445,
+      "bottomRightX": 593,
+      "bottomRightY": 473,
+      "content": "# ROM disc drive",
+      "confidenceScores": null,
+      "type": "title"
+    },
+    {
+      "topLeftX": 404,
+      "topLeftY": 488,
+      "bottomRightX": 560,
+      "bottomRightY": 507,
+      "content": "Operating Instructions",
+      "confidenceScores": null,
+      "type": "text"
+    },
+    {
+      "topLeftX": 74,
+      "topLeftY": 832,
+      "bottomRightX": 114,
+      "bottomRightY": 883,
+      "content": "PHILIPS",
+      "confidenceScores": null,
+      "type": "footer"
+    },
+    {
+      "topLeftX": 555,
+      "topLeftY": 830,
+      "bottomRightX": 699,
+      "bottomRightY": 863,
+      "content": "PHILIPS",
+      "confidenceScores": null,
+      "type": "footer"
+    }
+  ]
+}
