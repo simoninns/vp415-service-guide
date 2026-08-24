@@ -800,7 +800,7 @@ Four findings, in full in [phase-7-findings.md](phase-7-findings.md):
 
 ---
 
-## Phase 8 — Deployment
+## Phase 8 — Deployment ✅ *done*
 
 **Goal:** every push to `main` publishes the site. Deployment is done by GitHub Actions.
 
@@ -871,6 +871,38 @@ Notes:
 
 **Done when:** a push to `main` publishes to `https://simoninns.github.io/vp415-service-guide/`
 and the build is green.
+— **verified against the published site.** Full record:
+[phase-8-findings.md](phase-8-findings.md).
+
+The workflow above landed in phase 0, as this plan advised, and every phase since has published on
+push: **six deployments, all green**, a cold build of 253 s and warm builds of 61–77 s. What this
+phase found was not a broken deployment but a gate on the wrong path.
+
+**Landed:**
+
+- **The build that publishes is now the build that checks.** `.github/workflows/check.yml` triggers
+  `on: pull_request` — and **has never run**, because every phase in this repository landed as a
+  direct push to `main`. Phase 7's figure checks and generated signal index were guarding a code
+  path this project does not use. The deploy job now runs `just check` — figures, signal index,
+  `mkdocs build --strict`, `lychee` over every rendered `#anchor` — in place of the bare
+  `derive` + `build` it ran before. **14 823 links, 0 errors**; the added checks cost about five
+  seconds against a 61-second build, and a tree that fails them is not published.
+- **`cancel-in-progress: false`.** The workflow above cancels in progress, which is right for a
+  check and wrong for a deployment: two pushes a minute apart would cancel the first mid-publish.
+- **Off the deprecated Node 20 runtime**, release notes read rather than majors taken on trust:
+  `checkout` v4 → **v7**, `cache` v4 → **v6**, `upload-pages-artifact` v3 → **v5**, `deploy-pages`
+  v4 → **v5**. The one with teeth is `upload-pages-artifact` v4, which stopped including hidden
+  files in the artifact; the build produces **no dotfiles**, and Pages-from-Actions needs no
+  `.nojekyll`, so nothing published depends on it.
+- **`timeout-minutes` on every job**, so a hung `nix develop` cannot hold a runner for six hours.
+- **The published site probed directly**, not inferred from a green tick: the phase-7 pages are
+  live, `sitemap.xml` and `search_index.json` are served, an unknown path returns the site's own
+  styled **404**, a lightbox `-zoom` derivative resolves — and an `assets/originals/` URL returns
+  **404**, so `exclude_docs` holds. The artifact is **189 MB** against the 1 GB Pages ceiling.
+- **`nix build .#site` verified**, and the stale note in `flake.nix` saying it would not build until
+  phases 2 and 3 land removed. The derivation produces **793 files byte-for-byte identical to
+  `just build`** — but `src = self` copies the 874 MiB of archival originals into the store first,
+  so it is the tool for reproducing a release, not for iterating.
 
 ---
 
@@ -887,7 +919,7 @@ and the build is green.
 | 5 — Module pages ✅ | 2, 3, 4 (ch. 7 & 8 text) | largest |
 | 6 — Original material ✅ | 3 | medium |
 | 7 — Cross-linking ✅ | 4, 5, 6 | medium |
-| 8 — Deployment | 0, 3 | small |
+| 8 — Deployment ✅ | 0, 3 | small |
 
 Phases 0–3 are mechanical and can run back to back. Phase 8's workflow is worth landing early —
 as soon as Phase 3 gives a buildable skeleton — so that every subsequent phase is continuously

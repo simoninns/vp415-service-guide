@@ -24,9 +24,10 @@ repair case studies.
 non-module chapters and all twenty-six module pages — along with the VP415 *operating instructions*
 as a separate section, the firmware survey, the F-code reference and two repair case studies. Each
 error code names the modules to look at, each signal mnemonic names the modules that carry it, and
-each module page reaches its circuit description, its modification levels and its parts. What is
-left is the pull-request check and the last of the deployment work. See
-[planning/implementation-plan.md](planning/implementation-plan.md) for what is done and what is next.
+each module page reaches its circuit description, its modification levels and its parts. Every push
+to `main` checks the whole site and publishes it. See
+[planning/implementation-plan.md](planning/implementation-plan.md) for how it was built, phase by
+phase.
 
 ## Repository layout
 
@@ -66,18 +67,21 @@ Or without entering the shell: `nix develop -c just serve`.
 
 `just derive` regenerates `docs/**/assets/web/` from the committed originals. It hashes each source
 and skips unchanged files, so a warm re-run takes about two seconds; from clean it takes under a
-minute. `nix build .#site` produces the whole site as a reproducible derivation.
+minute. `nix build .#site` produces the whole site as a reproducible derivation — byte-for-byte
+the same 793 files as `just build`, though it copies the archival originals into the Nix store
+before it starts, so it is minutes rather than seconds.
 
 ## Deployment and checks
 
-Every push to `main` builds and publishes the site through
-[.github/workflows/deploy.yml](.github/workflows/deploy.yml): `just derive`, then
-`mkdocs build --strict`, then GitHub Pages.
+Every push to `main` runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml): `just check`
+— the figure checks, the generated signal index, `mkdocs build --strict`, and `lychee` over the
+rendered site including every `#anchor` — and then publishes the result to GitHub Pages. A tree that
+fails the checks is not published, so the last good deployment stays live. A warm build takes about
+a minute, and the uploaded site is 189 MB.
 
-Every pull request runs [.github/workflows/check.yml](.github/workflows/check.yml) instead, which
-is `just check` — the figure checks, the strict build, and `lychee` over the rendered site
-including every `#anchor`. The same workflow sweeps outbound links weekly, where a failure is a
-notification rather than a broken tree.
+Every pull request runs [.github/workflows/check.yml](.github/workflows/check.yml), which is the
+same `just check` without the publish. That workflow also sweeps outbound links weekly, where a
+failure is a notification rather than a broken tree.
 
 ## Contributing
 

@@ -19,8 +19,9 @@ jobs:
   build:
     name: Strict build and link check
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 1
       - uses: cachix/install-nix-action@v31
@@ -30,24 +31,24 @@ jobs:
       # Same key as the deploy workflow, so a pull request starts from the
       # derivatives the last build produced and re-derives only what changed.
       - name: Cache derived assets
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: docs/**/assets/web
           key: assets-${{ github.sha }}
           restore-keys: assets-
-      # Figure checks and the generated signal index first, so a page problem
-      # fails in seconds rather than after a full build.
-      - run: nix develop -c just lint
-      # `just check` derives the assets, builds with --strict, then runs lychee
-      # over the rendered site: every internal link and every #anchor, offline.
+      # `just check` runs the figure checks and the generated signal index
+      # first, so a page problem fails in seconds; then it derives the assets,
+      # builds with --strict, and runs lychee over the rendered site: every
+      # internal link and every #anchor, offline.
       - run: nix develop -c just check
 
   external-links:
     name: External links
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 1
       - uses: cachix/install-nix-action@v31
@@ -55,7 +56,7 @@ jobs:
           extra_nix_config: |
             experimental-features = nix-command flakes
       - name: Cache derived assets
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: docs/**/assets/web
           key: assets-${{ github.sha }}

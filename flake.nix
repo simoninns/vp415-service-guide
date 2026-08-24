@@ -58,10 +58,11 @@
           '';
         };
 
-        # Reproducible site build: derive the web assets, then render.
-        #
-        # NOTE: this output does not build until phase 2 lands tools/derive_assets.py
-        # and phase 3 lands mkdocs.yml. The dev shell above is phase 0's deliverable.
+        # Reproducible site build: derive the web assets, then render. The
+        # output is byte-for-byte identical to `just build` (verified in phase
+        # 8), but `src = self` copies the whole tree - archival originals and
+        # all - into the store first, so this is the tool for reproducing a
+        # release rather than for iterating. CI uses the dev shell instead.
         packages.site = pkgs.stdenv.mkDerivation {
           pname = "vp415-service-guide";
           version = "0.1.0";

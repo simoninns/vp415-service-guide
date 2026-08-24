@@ -10,42 +10,57 @@ permissions:
   pages: write
   id-token: write
 
+# One deployment at a time. Runs queued behind another are superseded, but a
+# deployment already under way is allowed to finish rather than being cancelled
+# half-published.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
+    name: Build and check
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 1
       - uses: cachix/install-nix-action@v31
         with:
           extra_nix_config: |
             experimental-features = nix-command flakes
+      # Keyed on the commit SHA with a prefix fallback, so a build starts from
+      # the last build's derivatives and derive_assets.py's per-file hash check
+      # re-derives only what actually changed.
       - name: Cache derived assets
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: docs/**/assets/web
           key: assets-${{ github.sha }}
           restore-keys: assets-
-      - run: nix develop -c just derive
-      - run: nix develop -c mkdocs build --strict
-      # ~200 MB. The 918 MB of archival originals are excluded from the build
-      # (see `exclude_docs` in mkdocs.yml); publishing them would put the site
-      # past the 1 GB ceiling GitHub Pages puts on a published site.
-      - uses: actions/upload-pages-artifact@v3
+      # The same gate a pull request runs: figure checks, the generated signal
+      # index, `mkdocs build --strict`, then lychee over the rendered site
+      # including every #anchor. Work lands on main directly in this repository,
+      # so unless the gate runs here it does not run at all — and a site that
+      # fails it is not published, leaving the last good deployment live.
+      - name: Lint, build and link-check
+        run: nix develop -c just check
+      # ~190 MB. The archival originals — roughly 900 MB of them — are excluded
+      # from the build (see `exclude_docs` in mkdocs.yml); publishing them would
+      # put the site past the 1 GB ceiling GitHub Pages puts on a published site.
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
   deploy:
+    name: Publish to Pages
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
