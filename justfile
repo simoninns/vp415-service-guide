@@ -54,7 +54,3 @@ _lychee *ARGS:
 clean:
     rm -rf site
     @test -d docs && find docs -type d -path '*/assets/web' -prune -exec rm -rf {} + || true
-
-# Move source material into docs/**/assets/originals/ (see tools/migrate.py --help)
-migrate *ARGS:
-    python3 tools/migrate.py {{ARGS}}

@@ -51,26 +51,37 @@ of the same ROM hash alike and land in the same row. The address range is
 `0x0000` to the top of the image in every case: 16 KB for the 27128 EPROMs,
 64 KB for the two 27512s, and 1 KB for the 8041s.
 
-!!! warning "Open question: the module S and module W 8041 dumps are the same image"
+!!! note "Modules S and W do run the same 8041 firmware — the part markings settle it"
 
     Image 3 is **eight files** — every VP415 8041 slave-CPU dump in the
     collection, saved under both *module S Control* and *module W CPU* names —
     and all eight decode to one 1 KB image, sum16 `0xFC62`,
     SHA-256 `35d258eb…`.
 
-    Either [module S](../modules/s-control/index.md) and
-    [module W](../modules/w-cpu-data-grabber/index.md) genuinely run the same
-    UPI-41 bus-interface firmware, or one dump was saved under both names and
-    the other device was never read. **The files cannot settle it** and neither
-    reading is presented here as fact.
+    That looked like it might be a filing mistake: one device read and saved
+    twice, the other never dumped. It is not. Both parts are marked **`NEC
+    D8041AHC 152`**, lot `8710X7`, legible in the component-side photographs on
+    the [module S](../modules/s-control/index.md) and
+    [module W](../modules/w-cpu-data-grabber/index.md) pages — open either in
+    the lightbox and zoom. `D8041AHC` is the **mask-ROM** UPI-41A, not the
+    windowed `D8741A` EPROM, so the program is fixed at manufacture and the
+    `152` is its ROM code. Two parts carrying the same ROM code carry the same
+    program.
+
+    The parts list agrees independently:
+    [`4822 209 10914 — UPD8041AHC-152`](../parts/electrical-parts.md#integrated-circuits)
+    is the only 8041 Philips lists, and it sits among the *collective standard
+    components*, while every programmed EPROM gets its own per-module service
+    code. One stock code for both positions.
 
     Two details worth having: the larger 8,848-byte files are the same 1 KB
     image repeated three times, which is what reading a 1 K device in a larger
     socket produces; and the VP410 8041 (image 11, `0xC014`) *is* a different
-    image, so the two machines at least do not share one.
+    image, so the two machines do not share one.
 
-    **If you have a VP415 to hand, reading the 8041 on module W and comparing
-    it against `0xFC62` would close this.**
+    What this rests on is the markings of one pair of boards, both from the
+    same lot. A reading from a module W of a different modification level would
+    confirm it holds across production runs.
 
 !!! danger "The manual prints `BF90` where the dump computes `8F90`"
 
@@ -90,25 +101,41 @@ of the same ROM hash alike and land in the same row. The address range is
 
 ## Every file
 
+Twenty-eight files, eleven distinct images. **14 of the 28 carry a checksum in
+the filename, and every one of them matches the sum computed here.** The rest
+are duplicates under other names: a HEX and a raw binary of the same ROM, or
+the same 1 KB image read three times over in a larger socket.
+
 | Image | File | In the collection as | Size on disk | Checksum in the name |
 | --- | --- | --- | --- | --- |
-| 1 | [R](../modules/r-drive-processor/index.md) | IC7204 EPROM | DRIVE | 3104 103 6803.6 | 1.7 | 16 KB | `0x68FF` | `6ec09eeb8d4751b5…` | 4 |
-| 2 | [S](../modules/s-control/index.md) | IC7202 EPROM | CONTROL | 3104 103 6804.9 | 1.8 | 64 KB | `0x6728` | `e372542baa52e57f…` | 2 |
-| 3 | [S](../modules/s-control/index.md) / [W](../modules/w-cpu-data-grabber/index.md) | 8041 slave CPU | — | not given by the manual | — | 1 KB | `0xFC62` | `35d258eb1ee0bfab…` | 8 |
-| 4 | [W](../modules/w-cpu-data-grabber/index.md) | IC7201 EPROM | SYNC | 3104 103 6808.0 | 1.0 | 16 KB | `0xD120` | `bc7eb8ca0f1e5d50…` | 3 |
-| 5 | [W](../modules/w-cpu-data-grabber/index.md) | IC7224 EPROM | DESCR. | 3104 103 6807.0 | 1.0 | 16 KB | `0x1FBE` | `850498330a6d4920…` | 3 |
-| 6 | [W](../modules/w-cpu-data-grabber/index.md) | IC7247 EPROM | LVDOS#1 | 3104 103 6805.2 | 1.3 | 16 KB | `0xB42D` | `d929bc98adcd200c…` | 2 |
-| 7 | [W](../modules/w-cpu-data-grabber/index.md) | IC7247 EPROM | LVDOS#1 | 3104 103 6805.3 | 1.4 | 16 KB | `0x8F90` | `ecdd68a65ebe45ae…` | 1 |
-| 8 | [W](../modules/w-cpu-data-grabber/index.md) | IC7248 EPROM | LVDOS#2 | 3104 103 6806.2 | 1.3 | 16 KB | `0x1A1C` | `e230f04b178c2533…` | 2 |
-| 9 | [W](../modules/w-cpu-data-grabber/index.md) | IC7248 EPROM | LVDOS#2 | 3104 103 6806.3 | 1.4 | 16 KB | `0x56D7` | `d87e81e193f38593…` | 1 |
-| 10 | VP410 S | EPROM | CONTROL A | 3104 103 6811.4 | — | 64 KB | `0xFC6F` | `9dee7647ab7480a4…` | 1 |
-| 11 | VP410 S | 8041 slave CPU | — | not given by the manual | — | 1 KB | `0xC014` | `b061c815822c0e35…` | 1 |
-
-## Every file
-
-14 of the 28 files carry a checksum in the filename, and every one of them matches the sum computed here.
-
-| Image | File | In the collection as | Size on disk | Checksum in the name |
+| 1 | [`domesday_6803_drive.bin`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_domesday_6803_drive.bin) | `VP415 ROM dumps/` | 16,384 bytes | — |
+| 1 | [`drive_rom_sdi.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_drive_rom_sdi.BIN) | `VP415 ROM dumps/` | 16,384 bytes | — |
+| 1 | [`R 3104 103 6803 6 DRIVE V1_7 0x68FF.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_R%203104%20103%206803%206%20DRIVE%20V1_7%200x68FF.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0x68FF` |
+| 1 | [`domesday_6803_drive 0x68FF.rom`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_old%20VP415%20ROMs_same_domesday_6803_drive%200x68FF.rom) | `VP415 ROM dumps/old VP415 ROMs/same/` | 16,384 bytes | `0x68FF` |
+| 2 | [`S 3104 103 6804 9 CONTROL V1_8 0x6728.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_S%203104%20103%206804%209%20CONTROL%20V1_8%200x6728.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 65,536 bytes | `0x6728` |
+| 2 | [`domesday_6804_control 0x6728.rom`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_old%20VP415%20ROMs_same_domesday_6804_control%200x6728.rom) | `VP415 ROM dumps/old VP415 ROMs/same/` | 65,536 bytes | `0x6728` |
+| 3 | [`D8041AHC_NEC_VP415_Module_S_Control 2.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_D8041AHC_NEC_VP415_Module_S_Control%202.hex) | `Microcontroller dumps/` | 2,891 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_S_Control 3.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_D8041AHC_NEC_VP415_Module_S_Control%203.hex) | `Microcontroller dumps/` | 2,891 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_S_Control.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_D8041AHC_NEC_VP415_Module_S_Control.hex) | `Microcontroller dumps/` | 8,848 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_W_CPU 2.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_D8041AHC_NEC_VP415_Module_W_CPU%202.hex) | `Microcontroller dumps/` | 2,891 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_W_CPU 3.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_D8041AHC_NEC_VP415_Module_W_CPU%203.hex) | `Microcontroller dumps/` | 2,891 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_W_CPU.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_D8041AHC_NEC_VP415_Module_W_CPU.hex) | `Microcontroller dumps/` | 8,848 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_S_Control.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_Complete_D8041AHC_NEC_VP415_Module_S_Control.hex) | `Microcontroller dumps/Complete/` | 2,891 bytes | — |
+| 3 | [`D8041AHC_NEC_VP415_Module_W_CPU.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_Complete_D8041AHC_NEC_VP415_Module_W_CPU.hex) | `Microcontroller dumps/Complete/` | 2,891 bytes | — |
+| 4 | [`domesday_scsi_6808.rom`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_domesday_scsi_6808.rom) | `VP415 ROM dumps/` | 16,384 bytes | — |
+| 4 | [`W 3104 103 6808 0 CPU V1_0 0xD120.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_W%203104%20103%206808%200%20CPU%20V1_0%200xD120.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0xD120` |
+| 4 | [`domesday_6808_sync 0xD120.rom`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_old%20VP415%20ROMs_same_domesday_6808_sync%200xD120.rom) | `VP415 ROM dumps/old VP415 ROMs/same/` | 16,384 bytes | `0xD120` |
+| 5 | [`domesday_scsi_6807.rom`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_domesday_scsi_6807.rom) | `VP415 ROM dumps/` | 16,384 bytes | — |
+| 5 | [`W 3104 103 6807 0 CPU V1_0 0x1FBE.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_W%203104%20103%206807%200%20CPU%20V1_0%200x1FBE.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0x1FBE` |
+| 5 | [`domesday_6807_descrambler 0x1FBE.rom`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_old%20VP415%20ROMs_same_domesday_6807_descrambler%200x1FBE.rom) | `VP415 ROM dumps/old VP415 ROMs/same/` | 16,384 bytes | `0x1FBE` |
+| 6 | [`W 3104 103 6805 2 CPU V1_3 0xB42D.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_W%203104%20103%206805%202%20CPU%20V1_3%200xB42D.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0xB42D` |
+| 6 | [`W 3104 103 6805 2 CPU V1_3 0xB42D.bin`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_old%20VP415%20ROMs_W%203104%20103%206805%202%20CPU%20V1_3%200xB42D.bin) | `VP415 ROM dumps/old VP415 ROMs/` | 16,384 bytes | `0xB42D` |
+| 7 | [`W 3104 103 6805 3 CPU V1_4 0x8F90.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_W%203104%20103%206805%203%20CPU%20V1_4%200x8F90.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0x8F90` |
+| 8 | [`W 3104 103 6806 2 CPU V1_3 0x1A1C.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_W%203104%20103%206806%202%20CPU%20V1_3%200x1A1C.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0x1A1C` |
+| 8 | [`W 3104 103 6806 2 CPU V1_3 0x1A1C.bin`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_old%20VP415%20ROMs_W%203104%20103%206806%202%20CPU%20V1_3%200x1A1C.bin) | `VP415 ROM dumps/old VP415 ROMs/` | 16,384 bytes | `0x1A1C` |
+| 9 | [`W 3104 103 6806 3 CPU V1_4 0x56D7.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP415%20ROM%20images_W%203104%20103%206806%203%20CPU%20V1_4%200x56D7.BIN) | `VP415 ROM dumps/VP415 ROM images/` | 16,384 bytes | `0x56D7` |
+| 10 | [`VP410 S Module - Control A 3104 103 68114.BIN`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/VP415%20ROM%20dumps_VP410%20S%20Module%20-%20Control%20A%203104%20103%2068114.BIN) | `VP415 ROM dumps/` | 65,536 bytes | — |
+| 11 | [`D8041AHC_NEC_VP410_Module_S_Control.hex`](https://github.com/simoninns/vp415-service-guide/raw/main/docs/reference/assets/originals/firmware/Microcontroller%20dumps_Complete_D8041AHC_NEC_VP410_Module_S_Control.hex) | `Microcontroller dumps/Complete/` | 2,893 bytes | — |
 
 Files are linked in the repository rather than served by the site: the archival
 originals are deliberately kept out of the published build, and a ROM image is

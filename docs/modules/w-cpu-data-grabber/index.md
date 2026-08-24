@@ -257,20 +257,23 @@ module whose every release has been dumped — with sizes and SHA-256 on the
     in a set deviates from the latest, **order both service code numbers of
     LV-DOS** — 4822 209 51261 and 4822 209 51262. They are a matched pair.
 
-!!! warning "Open question: the module S and module W 8041 dumps are the same image"
+!!! note "This 8041 and module S's IC7211 hold the same firmware"
 
     Every VP415 8041 slave-CPU dump in the collection this site is built from —
     eight files, saved under both **module S Control** and **module W CPU**
     names — decodes to the **same 1 KB image**: Philips sum16 `0xFC62`,
     SHA-256 `35d258eb…`.
 
-    Either modules S and W genuinely share the same UPI-41 firmware, or one
-    dump was saved under both names and the other device's image was never
-    captured. The files cannot settle which, and neither is presented here as
-    fact. Reading the 8041 on a real module W and comparing it against `0xFC62`
-    would settle it. The same note is on
-    [module S](../s-control/index.md) and on the
-    [firmware](../../reference/firmware.md) page.
+    That is not a filing mistake. This 8041 and IC7211 on
+    [module S](../s-control/index.md) are both marked **`NEC D8041AHC 152`**,
+    lot `8710X7` — zoom the component-side photograph above and you can read
+    it. `D8041AHC` is the mask-ROM UPI-41A, so the program is fixed at
+    manufacture and `152` is its ROM code; the same code means the same
+    program. The parts list carries one 8041 only,
+    [`4822 209 10914 — UPD8041AHC-152`](../../parts/electrical-parts.md#integrated-circuits),
+    among the standard components rather than as a per-module programmed part.
+
+    The [firmware](../../reference/firmware.md) page has the full argument.
 
 ## Modification levels
 

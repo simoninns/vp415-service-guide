@@ -9,8 +9,8 @@ and where it belongs in the site. Compiled 2026-08-23.
 
 Companion machine-readable files:
 
-- [source-inventory.csv](source-inventory.csv) — every source file with size and pixel dimensions (1361 files).
-- [service-manual-sheet-map.csv](service-manual-sheet-map.csv) — all 180 service-manual sheets,
+- `source-inventory.csv` — every source file with size and pixel dimensions (1361 files).
+- `service-manual-sheet-map.csv` — all 180 service-manual sheets,
   keyed by **panel** (273 rows), mapped to chapter / section / module / content type / Philips
   sheet code / vendor-OCR path / **canonical source file**. Replaces the old page-keyed map; see
   [phase-1-findings.md](phase-1-findings.md) §6.
@@ -343,7 +343,10 @@ measuring identical output size at one-fifth the encode time.
 The sheet map's `publish_source` column points at the `.webp` files; all 180 canonical paths
 re-verified as resolving.
 
-### 11.1 Remaining redundancy — not yet acted on
+### 11.1 Remaining redundancy — acted on after phase 8
+
+Everything below except the firmware dumps was deleted in the post-phase-8 cleanup, along with the
+rest of `unsorted-source-material/`. See the plan's closing section.
 
 | Item | Size | Why it was left |
 | --- | --- | --- |
@@ -377,7 +380,7 @@ force-pushing. **Done in Phase 1b** — pack 1.68 GiB → 1.04 GiB, force-pushed
 commits preserved and every stripped path verified absent from every object. The 1.04 GiB pack
 against a 1041 MB working tree means it is now essentially just current content.
 
-### 11.4 Firmware finding — carried onto the firmware page as an open question
+### 11.4 Firmware finding — settled after phase 8
 
 Every VP415 8041 microcontroller dump in the collection decodes to the **same 1 KB image**
 (0x0000–0x03F0):
@@ -390,14 +393,29 @@ Every VP415 8041 microcontroller dump in the collection decodes to the **same 1 
 - Only `Complete/D8041AHC_NEC_VP410_Module_S_Control.hex` (VP410, 2893 bytes) is genuinely
   distinct.
 
-So either the two 8041s genuinely run the same UPI-41 bus-interface firmware, or one dump was
-saved under both names. **The files alone cannot settle it** — it needs a read from a real
-player. Do not assert either way on the firmware page; state what the dumps show and flag the
-ambiguity.
+Phase 6 published this as an open question — either the two 8041s genuinely run the same UPI-41
+firmware, or one dump was saved under both names — on the grounds that the dump files alone cannot
+tell the two apart. **They cannot, but the board photographs can, and they were already in the
+repository.**
 
-**Phase 6 did exactly that.** `docs/reference/firmware.md` publishes the eight files as one
-image, states both explanations without choosing, and asks anyone with a player to read the 8041
-on module W and compare it against `0xFC62`. The same note is on the module S and module W pages.
+Both parts are marked `NEC D8041AHC 152`, lot `8710X7`, legible at native resolution in
+`docs/modules/s-control/assets/originals/s-control-top.jpg` (IC7211) and
+`docs/modules/w-cpu-data-grabber/assets/originals/w-cpu-data-grabber-top.jpg`. `D8041AHC` is the
+mask-ROM UPI-41A — not the windowed `D8741A` EPROM, whose datasheet is also held — so the program
+is fixed at manufacture and the `152` suffix is its ROM code. Two parts with the same ROM code hold
+the same program.
+
+The parts list corroborates it from the paper side: `4822 209 10914 — UPD8041AHC-152` is the only
+8041 Philips lists, and it appears among the collective *standard* components, whereas every
+programmed EPROM carries its own per-module service code. One stock code covers both positions.
+
+Two limits worth recording. The evidence is the markings of one pair of boards, both from the same
+lot, so strictly it establishes what Philips fitted in that build; a different modification level
+could in principle differ. And the `152`-is-a-ROM-code step rests on standard NEC practice plus the
+parts-list agreement — the `d8041ahc-nec.pdf` in the repository is an image-only scan with no text
+layer, so it could not be checked against the datasheet itself.
+
+The firmware page and both module pages now state the finding rather than the question.
 
 ### 11.5 Firmware checksums
 

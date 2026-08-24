@@ -16,8 +16,8 @@ work turned up that the plan did not anticipate.
 | `justfile` | gained `just migrate` alongside the existing `just derive` |
 
 **400 files migrated** — 180 canonical service-manual sheets driven by
-[service-manual-sheet-map.csv](service-manual-sheet-map.csv), and 220 photographs, scope traces,
-firmware images and documents driven by [../tools/asset_map.csv](../tools/asset_map.csv).
+`service-manual-sheet-map.csv`, and 220 photographs, scope traces,
+firmware images and documents driven by `tools/asset_map.csv`.
 
 `unsorted-source-material/` went from **1041 MB / 1155 files to 32 MB / 755 files**. What is left
 is exactly what the plan said would be left: 492 vendor-OCR files that `tools/import_ocr.py`

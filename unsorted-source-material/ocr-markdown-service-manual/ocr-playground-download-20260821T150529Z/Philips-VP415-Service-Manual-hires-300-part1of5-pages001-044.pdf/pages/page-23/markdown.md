@@ -1,7 +1,0 @@
-WIRING DIAGRAM SANDWICH
-
-WDS
-
-![img-29.jpeg](img-29.jpeg)
-
-CS 7 832

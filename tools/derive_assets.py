@@ -19,8 +19,8 @@ the file carries in planning/migration-log.csv:
 The operating-instructions photographs are sideways two-page sheets, so
 `text-spread` rotates each one upright and cuts it down the gutter, writing
 `-a-` for the left page and `-b-` for the right. Which printed page each half
-holds is not the derivation's business: planning/operating-instructions-page-map.csv
-records that, and tools/import_operating_instructions.py reads it.
+holds is not the derivation's business: the page numbering was resolved when the
+operating-instructions pages were written, and lives in those pages.
 
 Nothing is ever upscaled: a target wider than the source yields the source size.
 Every save strips metadata, so no EXIF reaches the published site.
@@ -205,7 +205,7 @@ def main() -> None:
     profiles = load_profiles()
     dirs = originals_dirs(roots)
     if not dirs:
-        print('no docs/**/assets/originals/ directories yet - run tools/migrate.py first')
+        print('no docs/**/assets/originals/ directories yet')
         return
 
     jobs, skipped, no_profile = [], 0, 0
@@ -238,7 +238,7 @@ def main() -> None:
                 sys.exit(f'derivative name collision in {originals.relative_to(ROOT)}:\n'
                          f'  {claimed[src.stem].name} and {src.name} both derive to '
                          f'{src.stem}-preview.webp\n'
-                         '  give one of them a distinct stem in tools/build_asset_map.py')
+                         '  rename one of them so the derivative stems differ')
             claimed[src.stem] = src
             digest = sha256(src)
             prior = old.get(src.name)

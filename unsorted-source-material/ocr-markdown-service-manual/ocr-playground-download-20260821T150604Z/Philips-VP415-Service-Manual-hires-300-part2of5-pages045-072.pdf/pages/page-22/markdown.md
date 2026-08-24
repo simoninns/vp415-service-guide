@@ -1,5 +1,0 @@
-![img-43.jpeg](img-43.jpeg)
-
-![img-44.jpeg](img-44.jpeg)
-
-CS 6 883

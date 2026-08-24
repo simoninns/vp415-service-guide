@@ -1,7 +1,0 @@
-8
-
-Fig. CR 1 BLOCKDIAGRAM CONTROL ROUTES
-
-![img-53.jpeg](img-53.jpeg)
-
-CS 7 882

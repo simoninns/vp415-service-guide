@@ -230,7 +230,7 @@ in Phase 2. The dev shell is Phase 0's actual deliverable.
 **Goal:** every one of the 197 scan pages is provably assigned to the right chapter, section and
 module before any content is written on top of it.
 
-[service-manual-sheet-map.csv](service-manual-sheet-map.csv) now holds this mapping.
+`service-manual-sheet-map.csv` now holds this mapping.
 Full verification record: [phase-1-findings.md](phase-1-findings.md).
 
 **The map is keyed by panel, not by captured page.** A captured page is an artefact of the
@@ -744,7 +744,6 @@ Six findings, in full in [phase-6-findings.md](phase-6-findings.md):
 `git rm`, its rows dropped from both CSVs, `build_asset_map.py` taught to exclude it, and the two
 survivors — the upright PNG on the firmware page and the manual sheet in chapter 8 — now
 cross-reference each other in their captions.
-excluded.
 
 ---
 
@@ -966,11 +965,48 @@ end of phase 6.
 
 ### Still genuinely open
 
-- **The `CS 8 284` triplicate.** Recommendation and the alternative are written out in Phase 6;
-  it needs an owner's yes or no, not more investigation. See
-  [phase-2-findings.md](phase-2-findings.md) §5.1.
-- **Module S vs module W 8041 firmware.** All eight VP415 8041 dumps decode to the *same* 1 KB
-  image (sum16 `0xFC62`, SHA-256 `35d258eb…`) — see manifest §11.4. Whether the two modules really
-  share firmware, or one dump was saved under both names, cannot be settled from the files. If you
-  can read a real player that answers it; otherwise the firmware page should state the ambiguity
-  rather than pick a side.
+Nothing. Both items that stood here after phase 8 have since been closed:
+
+- **The `CS 8 284` triplicate** — resolved in phase 6 as the plan recommended, and recorded in
+  [phase-6-findings.md](phase-6-findings.md) §5. The entry survived here only because this list was
+  never updated when that phase landed. The cropped JPEG is gone; the upright PNG and the manual
+  sheet remain and cross-reference each other.
+- **Module S vs module W 8041 firmware** — settled from the part markings. Both 8041s are
+  `NEC D8041AHC 152`, a mask-ROM part, readable in the component-side photographs already in the
+  repository, and the parts list gives one service code for both positions. See
+  [source-manifest.md](source-manifest.md) §11.4 for the argument and the two limits on it.
+
+---
+
+## Cleanup, after phase 8
+
+With all eight phases landed, the working files that only existed to carry the build were removed.
+They remain in git history; nothing published depends on them.
+
+**`unsorted-source-material/` — deleted.** The last 755 files were the vendor OCR that
+`import_ocr.py` consumed in phase 4, six zips whose members were verified byte-identical to the
+already-unpacked copies in `docs/reference/assets/originals/firmware/`, and the 20 MB uncompressed
+Operating Instructions PDF superseded by the compressed copy and the 27 page scans — the
+redundancies the manifest listed in §11.1. The tree the plan said would be "removed once empty" is
+now removed.
+
+**One-shot tooling — deleted.** `migrate.py`, `import_ocr.py`, `import_modules.py`,
+`import_firmware.py`, `import_operating_instructions.py`, `build_asset_map.py`,
+`build_sheet_map.py`, `build_oi_page_map.py` and `tools/asset_map.csv`. Each read from
+`unsorted-source-material/` and had already run. `just migrate` went with them.
+
+**Their input maps — deleted.** `source-inventory.csv`, `service-manual-sheet-map.csv` and
+`operating-instructions-page-map.csv`. Where the findings below mention them, they are describing
+what was used at the time.
+
+**What is left in `tools/`** is the three scripts the justfile and CI still run:
+`derive_assets.py`, `check_figures.py` and `build_signal_index.py`. **What is left in `planning/`**
+is this plan, the eight phase findings, the source manifest, `migration-log.csv` — which
+`derive_assets.py` reads for derivative profiles and `docs/contributing.md` points contributors at
+— and `firmware-checksums.csv`, which the published firmware page links to.
+
+Two page fixes went with it. The firmware page's **Every file** section was malformed in the phase 6
+commit — the heading duplicated, the image-summary table pasted in beneath it, and the promised
+28-file listing never written. It is now generated from `firmware-checksums.csv`: 28 rows, image
+number, size and the checksum carried in each filename. And the module S / module W 8041 question
+was closed from the part markings — see §11.4 of the manifest.

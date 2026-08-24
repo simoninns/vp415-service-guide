@@ -208,25 +208,25 @@ five releases, only 6804.9 is in the collection** — sum16 `0x6728`, held twice
 over — and it is on the [firmware](../../reference/firmware.md) page with its
 size and SHA-256.
 
-!!! warning "Open question: the module S and module W 8041 dumps are the same image"
+!!! note "IC7211 and the module W 8041 hold the same firmware"
 
     Every VP415 8041 slave-CPU dump in the collection this site is built from —
     eight files, saved under both **module S Control** and **module W CPU**
     names — decodes to the **same 1 KB image**: Philips sum16 `0xFC62`,
     SHA-256 `35d258eb…`.
 
-    That has two possible explanations, and the files cannot settle which:
+    That is not a filing mistake. IC7211 here and the 8041 on
+    [module W](../w-cpu-data-grabber/index.md) are both marked **`NEC D8041AHC
+    152`**, lot `8710X7` — zoom the component-side photograph above and you can
+    read it. `D8041AHC` is the mask-ROM UPI-41A, so the program is fixed at
+    manufacture and `152` is its ROM code; the same code means the same
+    program. The parts list carries one 8041 only,
+    [`4822 209 10914 — UPD8041AHC-152`](../../parts/electrical-parts.md#integrated-circuits),
+    among the standard components rather than as a per-module programmed part.
 
-    - modules S and W genuinely share the same UPI-41 firmware, or
-    - one dump was saved under both names at some point, and the other
-      device's image was never captured.
-
-    Neither is presented here as fact. **If you have a VP415 to hand, reading
-    the 8041 on module W and comparing it against `0xFC62` would settle it.**
-    The same note is on [module W](../w-cpu-data-grabber/index.md) and on the
-    [firmware](../../reference/firmware.md) page. A separate VP410 module S
-    dump *is* a different image (sum16 `0xC014`), which at least shows the two
-    machines do not share one.
+    The [firmware](../../reference/firmware.md) page has the full argument. A
+    separate VP410 module S dump *is* a different image (sum16 `0xC014`), so
+    the two machines do not share one.
 
 ## Modification levels
 
