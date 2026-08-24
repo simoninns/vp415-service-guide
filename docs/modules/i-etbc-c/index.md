@@ -73,7 +73,7 @@ time base is longer than the reference, which is what happens when the disc
 turns too slowly.
 
 The full text, including the special burst detector, is in
-[chapter 7, module I](../../circuit-description/modules.md#module-i).
+[chapter 7, module I](../../circuit-description/modules/i-etbc-c.md).
 
 ## Adjustments
 
@@ -200,7 +200,7 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-i) — the chapter 7 text in full
+- [Module I circuit description](../../circuit-description/modules/i-etbc-c.md) — the chapter 7 text in full
 - [Module H — ETBC B](../h-etbc-b/index.md) — corrects the error this module measures
 - [The LaserVision system](../../circuit-description/laservision-system.md) — the special burst and why it is there
 - [Modification levels per module](../../service-information/modification-levels.md#mod-i) — the two level-7 changes

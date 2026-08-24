@@ -18,7 +18,7 @@ VP415/00/05/35**.
 | [The LaserVision system](laservision-system.md) | 126–128 | Pits, encoding, CAV and CLV, the codes in the frame blanking, focusing, radial tracking, time base correction, genlock |
 | [The optical deck](optical-deck.md) | 129–131 | What is on the deck, the Laser Detection Unit, Active Tilt Control |
 | [VP400 series architecture](vp400-series.md) | 132–138 | The audio/video signal path, the control routes, the start-up sequence, the S-bus, the servo block diagram |
-| [Module circuit descriptions](modules.md) | 139–163 | Twenty-five module descriptions, A through Z |
+| [Module circuit descriptions](modules/index.md) | 139–163 | Twenty-five module descriptions, A through Z, a page each |
 
 ## The manual's own contents
 

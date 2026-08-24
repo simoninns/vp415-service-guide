@@ -27,8 +27,8 @@ and no explanation.
     something a page can link into.
 
     So the last column is an **index of where the signal is described on this
-    site**, not a netlist: a module is listed when its own page, or its section
-    of the [chapter 7 circuit description](../circuit-description/modules.md),
+    site**, not a netlist: a module is listed when its own page, or its page in
+    the [chapter 7 circuit description](../circuit-description/modules/index.md),
     names the signal. Where the module page states the direction itself, the
     module that **sources** the signal is in bold — `FOC-ER` reads
     [J](../modules/j-focus/index.md)

@@ -98,7 +98,7 @@ Over a block of 98 frames the control-and-display words accumulate into a
 block label in time — minutes, seconds and 1/75 seconds.
 
 The full text is in
-[chapter 7, module X](../../circuit-description/modules.md#module-x).
+[chapter 7, module X](../../circuit-description/modules/x-lv-rom-decoder.md).
 
 ## Adjustments
 
@@ -241,7 +241,7 @@ which the survey does not record — read the board, not the sheet.
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-x) — the chapter 7 text in full, including the block and frame formats
+- [Module X circuit description](../../circuit-description/modules/x-lv-rom-decoder.md) — the chapter 7 text in full, including the block and frame formats
 - [Module W — CPU + data grabber](../w-cpu-data-grabber/index.md) — takes this module's output on `W1`
 - [SCSI operation](../../operating-instructions/scsi-operation.md) — what the host does with the data
 - [Interactive play](../../operating-instructions/interactive-play.md) — what LV-ROM discs are for

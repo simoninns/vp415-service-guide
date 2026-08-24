@@ -55,7 +55,7 @@ The two front-panel switches are wired back to
 own logic.
 
 The full text is in
-[chapter 7, module N](../../circuit-description/modules.md#module-n).
+[chapter 7, module N](../../circuit-description/modules/n-display-keyboard.md).
 
 ## Adjustments
 
@@ -125,7 +125,7 @@ documenting.
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-n) — the chapter 7 text in full
+- [Module N circuit description](../../circuit-description/modules/n-display-keyboard.md) — the chapter 7 text in full
 - [Controls, indicators and connections](../../overview/controls-and-connections.md) — what each indicator means to the user
 - [Module S — Control](../s-control/index.md) — drives this board over the P-bus
 - [Module P — Frontloader](../p-frontloader/index.md) — shares this data sheet

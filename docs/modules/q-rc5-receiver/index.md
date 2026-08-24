@@ -111,5 +111,5 @@ mod-level sheet in chapter 8.
 - [Module R — Drive processor](../r-drive-processor/index.md) — carries this module's sheet
 - [Electrical parts](../../parts/electrical-parts.md) — the receiver and transmitter service codes
 - [Module and connector lay-out](../../system/module-layout.md) — where `IR-REC` sits
-- [Module circuit descriptions](../../circuit-description/modules.md#module-r) — chapter 7 gives module Q no section of its own; its RC5 circuit is described with module R, whose sheet carries it
+- [Module R circuit description](../../circuit-description/modules/r-drive-processor.md) — chapter 7 gives module Q no section of its own; its RC5 circuit is described with module R, whose sheet carries it
 - [Modification levels per module](../../service-information/modification-levels.md#survey-of-modification-levels) — module Q has no mod-level sheet: the survey shows it at level 0 in every production batch

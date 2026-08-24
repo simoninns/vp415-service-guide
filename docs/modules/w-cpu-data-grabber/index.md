@@ -112,7 +112,7 @@ through it; that pulse starts the byte counter. `SYN` = 1 sets the count to
 `000h`, and counting begins when `SYN` goes to 0.
 
 The full text is in
-[chapter 7, module W](../../circuit-description/modules.md#module-w).
+[chapter 7, module W](../../circuit-description/modules/w-cpu-data-grabber.md).
 
 ## Adjustments
 
@@ -290,7 +290,7 @@ and late boards.
 
 - [Software releases](../../service-information/software-releases.md) — the `SYNC`, `DESCR.` and both `LVDOS` programs
 - [Firmware](../../reference/firmware.md) — dumps with sizes, Philips sums and SHA-256
-- [Module circuit descriptions](../../circuit-description/modules.md#module-w) — the chapter 7 text in full
+- [Module W circuit description](../../circuit-description/modules/w-cpu-data-grabber.md) — the chapter 7 text in full
 - [Module X — LV-ROM decoder](../x-lv-rom-decoder/index.md) — feeds `DLCF`, `DRCF` and the error flags into `W1`
 - [Module S — Control](../s-control/index.md) — the other end of the local bus, and the other 8041
 - [SCSI operation](../../operating-instructions/scsi-operation.md) — what this board presents to the host

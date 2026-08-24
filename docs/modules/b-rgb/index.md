@@ -72,7 +72,7 @@ leave through output stages T7006, T7008 and T7010 on `2B3`, `3B3` and `4B3`.
 R3045 sets their DC level, referenced to the black level of the video signal.
 
 The full text is in
-[chapter 7, module B](../../circuit-description/modules.md#module-b).
+[chapter 7, module B](../../circuit-description/modules/b-rgb.md).
 
 ## Adjustments
 
@@ -273,7 +273,7 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-b) — the chapter 7 text in full
+- [Module B circuit description](../../circuit-description/modules/b-rgb.md) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-b) — what changed at levels 6 to 8
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptom A 4 involves this module
 - [Fault-finding charts](../../repair/fault-finding.md) — the no-colour and no-picture charts

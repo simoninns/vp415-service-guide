@@ -79,7 +79,7 @@ decoded further with A10, A11, `WR` and `RD` into `RD1`–`RD3`, `RDEN`, `WR1`,
 | IC7201 | The main processor — S-bus handshakes, and one RS232 port to the external connector through line transmitter 7214 and line receiver 7213 |
 
 The full text, including the S-bus operation and the link to the CPU board, is
-in [chapter 7, module S](../../circuit-description/modules.md#module-s).
+in [chapter 7, module S](../../circuit-description/modules/s-control.md).
 
 ## Adjustments
 
@@ -249,7 +249,7 @@ Full tables, with service code numbers:
 
 - [Software releases](../../service-information/software-releases.md) — what changed in `CONTROL` 6804.4 through 6804.9
 - [Firmware](../../reference/firmware.md) — dumps with sizes, Philips sums and SHA-256
-- [Module circuit descriptions](../../circuit-description/modules.md#module-s) — the chapter 7 text in full
+- [Module S circuit description](../../circuit-description/modules/s-control.md) — the chapter 7 text in full
 - [Module W — CPU + data grabber](../w-cpu-data-grabber/index.md) — the other end of the local bus, and the other 8041
 - [Modification levels per module](../../service-information/modification-levels.md#mod-s) — the firmware steps
 - [SCSI operation](../../operating-instructions/scsi-operation.md) — what the host end of this interface looks like

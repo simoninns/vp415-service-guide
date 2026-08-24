@@ -70,7 +70,7 @@ of T7008 and is clamped at 4 V by T7004, whose gate is driven by clamp pulses
 generated in IC7202.
 
 The full text is in
-[chapter 7, module C](../../circuit-description/modules.md#module-c).
+[chapter 7, module C](../../circuit-description/modules/c-video-processor.md).
 
 ## Adjustments
 
@@ -205,7 +205,7 @@ Full table, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-c) — the chapter 7 text in full
+- [Module C circuit description](../../circuit-description/modules/c-video-processor.md) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-c) — what changed at level 4
 - [Fault-finding charts](../../repair/fault-finding.md) — the no-picture charts
 - [Module B — RGB](../b-rgb/index.md) — the sandcastle pulse from this module drives its RGB switching

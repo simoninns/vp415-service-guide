@@ -70,7 +70,7 @@ amplifier 7006, 7007, 7008, with a < 2 MHz low-pass filter in 7006's collector
 (5004 with 2019, 2020 and 2021). `HF-AUD` leaves on `1K1`.
 
 The full text is in
-[chapter 7, module K](../../circuit-description/modules.md#module-k).
+[chapter 7, module K](../../circuit-description/modules/k-hf-processor.md).
 
 ## Adjustments
 
@@ -223,7 +223,7 @@ Full table, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-k) — the chapter 7 text in full
+- [Module K circuit description](../../circuit-description/modules/k-hf-processor.md) — the chapter 7 text in full
 - [Adjustments](../../general-service/adjustments.md) — R3043 must be set after a module swap
 - [Fault symptoms](../../service-information/fault-symptoms.md) — this module appears in the playability entries
 - [Modification levels per module](../../service-information/modification-levels.md#mod-k) — the level-1 change

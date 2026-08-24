@@ -238,7 +238,31 @@ nav:
       - The LaserVision system: circuit-description/laservision-system.md
       - The optical deck: circuit-description/optical-deck.md
       - VP400 series architecture: circuit-description/vp400-series.md
-      - Module circuit descriptions: circuit-description/modules.md
+      - Module circuit descriptions:
+          - circuit-description/modules/index.md
+          - A - Audio processor: circuit-description/modules/a-audio-processor.md
+          - B - RGB: circuit-description/modules/b-rgb.md
+          - C - Video processing: circuit-description/modules/c-video-processor.md
+          - D - Reference source: circuit-description/modules/d-reference-source.md
+          - E - Slide drive: circuit-description/modules/e-slide-drive.md
+          - F - Motor + sequence: circuit-description/modules/f-motor-sequence.md
+          - G - Genlock: circuit-description/modules/g-genlock.md
+          - H - ETBC B: circuit-description/modules/h-etbc-b.md
+          - I - ETBC C: circuit-description/modules/i-etbc-c.md
+          - J - Focus: circuit-description/modules/j-focus.md
+          - K - HF processing: circuit-description/modules/k-hf-processor.md
+          - L - Video drop-out correction: circuit-description/modules/l-video-dropout-correction.md
+          - M - Radial drive: circuit-description/modules/m-radial.md
+          - N - Display and keyboard: circuit-description/modules/n-display-keyboard.md
+          - P - Frontloader: circuit-description/modules/p-frontloader.md
+          - R - Drive processor: circuit-description/modules/r-drive-processor.md
+          - S - Control: circuit-description/modules/s-control.md
+          - T - Supply: circuit-description/modules/t-supply.md
+          - U - Analogue I/O: circuit-description/modules/u-analog-io.md
+          - W - Data grabber and CPU: circuit-description/modules/w-cpu-data-grabber.md
+          - X - LV-ROM decoder: circuit-description/modules/x-lv-rom-decoder.md
+          - Y - Video mixing: circuit-description/modules/y-video-mixer.md
+          - Z - Deck electronics: circuit-description/modules/z-deck-electronics.md
 
   - Service information:
       - service-information/index.md

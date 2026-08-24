@@ -94,9 +94,9 @@ the time difference between `CS-REF` and the sync on pin 25 of IC7651 — which
 is why the switch setting and adjustment 6 below both matter.
 
 The full text is in chapter 7, in three parts:
-[Ua](../../circuit-description/modules.md#module-ua),
-[Ub](../../circuit-description/modules.md#module-ub) and
-[Uc](../../circuit-description/modules.md#module-uc).
+[Ua](../../circuit-description/modules/u-analog-io.md#module-ua),
+[Ub](../../circuit-description/modules/u-analog-io.md#module-ub) and
+[Uc](../../circuit-description/modules/u-analog-io.md#module-uc).
 
 ## Adjustments
 
@@ -410,7 +410,7 @@ Full tables, with service code numbers:
 ## Related
 
 - [Adjustments](../../general-service/adjustments.md) — R3305 and R3315 must be set after a module swap, and after replacing module B
-- [Module circuit descriptions](../../circuit-description/modules.md#module-ua) — Ua, Ub and Uc in full
+- [Module U circuit description](../../circuit-description/modules/u-analog-io.md) — Ua, Ub and Uc in full
 - [Connector pinning](../../overview/connector-pinning.md) — what is on the SCART and the BNC sockets
 - [Controls, indicators and connections](../../overview/controls-and-connections.md) — the rear panel this board carries
 - [Modification levels per module](../../service-information/modification-levels.md#mod-u) — the level-4 changes

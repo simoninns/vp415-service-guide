@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Phase 7: fill in the *Modules* column of the alphabetical signal listing.
 
-  docs/modules/*/index.md          -.
-  docs/circuit-description/modules.md -> docs/system/signal-listing.md
+  docs/modules/*/index.md                 -.
+  docs/circuit-description/modules/*.md    -> docs/system/signal-listing.md
 
 The manual's signal listing (CS 7 830) gives 243 mnemonics, their meanings and
 their active levels, and nothing else - it never says which board a signal comes
@@ -10,7 +10,7 @@ from or goes to. The wiring diagrams do say, but they are fold-out scans: there
 is no machine-readable interconnection list anywhere in the source material.
 
 So the column is built the only way the material allows: **a signal is credited
-to a module when that module's page, or that module's section of the chapter 7
+to a module when that module's page, or that module's page in the chapter 7
 circuit description, mentions the mnemonic**. That is an index of where the
 signal is *described*, not a netlist, and the page says so. Where a module page
 states the direction itself - the `Out` / `Outputs to` row of its summary table
@@ -47,7 +47,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = ROOT / 'docs/system/signal-listing.md'
 MODULES = ROOT / 'docs/modules'
-CHAPTER7 = ROOT / 'docs/circuit-description/modules.md'
+CHAPTER7 = ROOT / 'docs/circuit-description/modules'
 
 # Mnemonics that mean something else in running text more often than they mean
 # the signal. Checked by hand against every hit they produced; see the phase 7
@@ -136,17 +136,18 @@ def collect(signals: list[str]):
         scan((MODULES / slug / 'index.md').read_text(), slug, lut, hits,
              sources, out_rows=True)
 
-    # Chapter 7 is one page with a section per module: `## Module H - ... { #module-h }`.
-    # Module U is split into Ua, Ub and Uc; all three are the one board. The
-    # remote control is not a lettered module and has no chapter 7 section, so
-    # it stays out of the letter map - otherwise it would swallow module R's.
-    by_letter = {slug[0]: slug for slug in slugs if slug != 'remote-control'}
-    ch7 = CHAPTER7.read_text()
-    parts = re.split(r'^## .*?\{ #module-(\w+) \}\s*$', ch7, flags=re.M)
-    for letter, body in zip(parts[1::2], parts[2::2]):
-        slug = by_letter.get(letter[0])
-        if slug:
-            scan(body, slug, lut, hits, sources, bare=True)
+    # Chapter 7 is a page per module, named for the same slug as the module
+    # page it pairs with: `docs/circuit-description/modules/h-etbc-b.md`. Its
+    # own index page describes no circuit, so it is skipped, and modules Q, V
+    # and the remote control have no page there at all. Module U's page carries
+    # Ua, Ub and Uc; all three are the one board.
+    known = set(slugs)
+    for page in sorted(CHAPTER7.glob('*.md')):
+        if page.stem == 'index' or page.stem not in known:
+            continue
+        # The front matter is this site's own summary, not the manual's text.
+        body = re.sub(r'\A---\n.*?\n---\n', '', page.read_text(), flags=re.S)
+        scan(body, page.stem, lut, hits, sources, bare=True)
     return hits, sources
 
 

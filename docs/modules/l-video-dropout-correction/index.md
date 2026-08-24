@@ -74,7 +74,7 @@ and falls when the input drops below the reference — that transition is the
 drop-out pulse which throws the switch to the delayed video.
 
 The full text, including the DC restorer and the `MTF` generator, is in
-[chapter 7, module L](../../circuit-description/modules.md#module-l).
+[chapter 7, module L](../../circuit-description/modules/l-video-dropout-correction.md).
 
 ## Adjustments
 
@@ -231,7 +231,7 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-l) — the chapter 7 text in full
+- [Module L circuit description](../../circuit-description/modules/l-video-dropout-correction.md) — the chapter 7 text in full
 - [Adjustments](../../general-service/adjustments.md) — R3050 must be set after a module swap
 - [Error 9 — frame lock](../../repair/case-studies/error-9-frame-lock.md) — a worked investigation in which this module is a candidate
 - [Fault symptoms](../../service-information/fault-symptoms.md) — the playability entries reach this module

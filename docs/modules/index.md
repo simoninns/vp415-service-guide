@@ -15,7 +15,7 @@ chapter 7, the adjustment procedure, the circuit diagram, the PCB lay-out, the
 list of electrical parts, and what changed at each modification level.
 
 Every module page ends with a **Related** list that reaches the same four
-places: its [chapter 7 circuit description](../circuit-description/modules.md),
+places: its [chapter 7 circuit description](../circuit-description/modules/index.md),
 its [chapter 8 modification levels](../service-information/modification-levels.md),
 the [collective parts lists](../parts/index.md), and the modules at the other
 end of its signals. It works in the other direction too — the

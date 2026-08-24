@@ -50,7 +50,7 @@ that is, a lower number.
 
     **Below that the manual names no module per code.** Those entries are this
     site's reading of which module carries the function the code is about,
-    traced through the [chapter 7 circuit description](../circuit-description/modules.md)
+    traced through the [chapter 7 circuit description](../circuit-description/modules/index.md)
     and the [signal listing](../system/signal-listing.md). They are where to
     start, not the manual's word — and a start-up fault often has its cause a
     module upstream of the one that reports it, which is exactly what the

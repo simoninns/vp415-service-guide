@@ -88,7 +88,7 @@ mode switches a different combination of mixers:
 | 5 | Hard key | off | off | **on** | **on** | — |
 
 The full text is in
-[chapter 7, module Y](../../circuit-description/modules.md#module-y).
+[chapter 7, module Y](../../circuit-description/modules/y-video-mixer.md).
 
 ## Adjustments
 
@@ -209,7 +209,7 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-y) — the chapter 7 text in full, including the mixer tables
+- [Module Y circuit description](../../circuit-description/modules/y-video-mixer.md) — the chapter 7 text in full, including the mixer tables
 - [Modification levels per module](../../service-information/modification-levels.md#mod-y) — the level-5 and level-6 changes
 - [Fault symptoms](../../service-information/fault-symptoms.md) — the computer-overlay entries
 - [Interactive play](../../operating-instructions/interactive-play.md) — the modes seen from the user's side

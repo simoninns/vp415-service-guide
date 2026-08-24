@@ -70,7 +70,7 @@ deflection of the mirror: course pulse `CP1` forward, `CP2` reverse, both fed
 into the same radial amplifier. During a jump `RLS` opens the radial loop.
 
 The full text is in
-[chapter 7, module M](../../circuit-description/modules.md#module-m).
+[chapter 7, module M](../../circuit-description/modules/m-radial.md).
 
 ## Adjustments
 
@@ -153,7 +153,7 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-m) — the chapter 7 text in full
+- [Module M circuit description](../../circuit-description/modules/m-radial.md) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-m) — three levels of changes, one of them a reversal
 - [Fault symptoms](../../service-information/fault-symptoms.md) — the playability entries reach this module
 - [Software releases](../../service-information/software-releases.md) — drive software 6803.5, which the level-2 change depends on

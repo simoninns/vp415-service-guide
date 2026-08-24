@@ -88,7 +88,7 @@ are combined by IC7206-2B and T7018 into `DEM-BK`, with the pulses suppressed
 around the vertical sync.
 
 The full text is in
-[chapter 7, module G](../../circuit-description/modules.md#module-g).
+[chapter 7, module G](../../circuit-description/modules/g-genlock.md).
 
 ## Adjustments
 
@@ -219,7 +219,7 @@ Full table, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-g) — the chapter 7 text in full
+- [Module G circuit description](../../circuit-description/modules/g-genlock.md) — the chapter 7 text in full
 - [Error 9 — frame lock](../../repair/case-studies/error-9-frame-lock.md) — a worked investigation, with scope traces taken on this module's connectors
 - [Modification levels per module](../../service-information/modification-levels.md#mod-g) — the level-4 change
 - [Fault-finding charts](../../repair/fault-finding.md) — the frame-lock paths

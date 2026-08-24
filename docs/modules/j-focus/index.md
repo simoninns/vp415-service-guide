@@ -88,7 +88,7 @@ stand-by — which is exactly what
 [error 7](../../repair/error-codes.md#error-7) reports.
 
 The full text, including the behaviour on brief reflection disturbances, is in
-[chapter 7, module J](../../circuit-description/modules.md#module-j).
+[chapter 7, module J](../../circuit-description/modules/j-focus.md).
 
 ## Adjustments
 
@@ -161,7 +161,7 @@ Full tables, with service code numbers:
 
 - [Error 7 — not in focus](../../repair/case-studies/error-7-focus.md) — a worked investigation on this module, and the source of the pinout erratum
 - [Error codes](../../repair/error-codes.md#error-7) — what the player reports when focus is not found
-- [Module circuit descriptions](../../circuit-description/modules.md#module-j) — the chapter 7 text in full
+- [Module J circuit description](../../circuit-description/modules/j-focus.md) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-j) — the level-3 and level-4 changes
 - [The LaserVision system](../../circuit-description/laservision-system.md) — the optics the focus loop is holding
 - [Module Z — Deck electronics](../z-deck-electronics/index.md) — supplies `FPI` and `FOC-ER`

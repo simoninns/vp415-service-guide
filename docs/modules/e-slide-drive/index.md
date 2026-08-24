@@ -57,7 +57,7 @@ slide is stationary, so the motor does not cook. All the drive signals come
 from [drive processor module R](../r-drive-processor/index.md).
 
 The full text is in
-[chapter 7, module E](../../circuit-description/modules.md#module-e).
+[chapter 7, module E](../../circuit-description/modules/e-slide-drive.md).
 
 ## Adjustments
 
@@ -112,7 +112,7 @@ documenting.
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-e) — the chapter 7 text in full
+- [Module E circuit description](../../circuit-description/modules/e-slide-drive.md) — the chapter 7 text in full
 - [The optical deck](../../circuit-description/optical-deck.md) — what the slide is moving, and why
 - [Fault-finding charts](../../repair/fault-finding.md) — slide and start-up faults
 - [Module and connector lay-out](../../system/module-layout.md) — connector positions

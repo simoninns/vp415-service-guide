@@ -90,7 +90,7 @@ Drive and switching signals leave through three 8-bit shift registers, IC7213,
 IC7214 and IC7215.
 
 The full text — all eight functions, plus the S-bus description — is in
-[chapter 7, module R](../../circuit-description/modules.md#module-r).
+[chapter 7, module R](../../circuit-description/modules/r-drive-processor.md).
 
 ## Adjustments
 
@@ -224,7 +224,7 @@ Full tables, with service code numbers:
 - [Error codes](../../repair/error-codes.md) — what it reports, and what each code means
 - [Software releases](../../service-information/software-releases.md) — what changed in `DRIVE` 6803.4, .5 and .6
 - [Firmware](../../reference/firmware.md) — dumps of the `DRIVE` EPROM, with checksums
-- [Module circuit descriptions](../../circuit-description/modules.md#module-r) — the chapter 7 text in full
+- [Module R circuit description](../../circuit-description/modules/r-drive-processor.md) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-r) — five levels of changes
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptoms A 1 and A 2 are fixed here
 - [Module Q — RC5 receiver](../q-rc5-receiver/index.md) — shares this data sheet

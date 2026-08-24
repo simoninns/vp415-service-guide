@@ -72,7 +72,7 @@ The corrected video leaves as `CV-TBC` for
 the same job on `HFAUD` through IC7203 and leaves as `HFATBC`.
 
 The full text is in
-[chapter 7, module H](../../circuit-description/modules.md#module-h).
+[chapter 7, module H](../../circuit-description/modules/h-etbc-b.md).
 
 ## Adjustments
 
@@ -280,7 +280,7 @@ Full tables, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-h) — the chapter 7 text in full
+- [Module H circuit description](../../circuit-description/modules/h-etbc-b.md) — the chapter 7 text in full
 - [Module I — ETBC C](../i-etbc-c/index.md) — measures the error this module corrects
 - [The LaserVision system](../../circuit-description/laservision-system.md) — why the time base needs correcting at all
 - [Modification levels per module](../../service-information/modification-levels.md#mod-h) — the four level-5 changes

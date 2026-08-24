@@ -62,7 +62,7 @@ are not exactly on track; the servo preamplifier turns that into `RAD-ER` for
 [radial module M](../m-radial/index.md).
 
 The full text — focus, tilt and the active tilt control — is in
-[chapter 7, module Z](../../circuit-description/modules.md#module-z).
+[chapter 7, module Z](../../circuit-description/modules/z-deck-electronics.md).
 
 ## Adjustments
 
@@ -193,7 +193,7 @@ Full tables, with service code numbers:
 ## Related
 
 - [The optical deck](../../circuit-description/optical-deck.md) — the LDU this board reads
-- [Module circuit descriptions](../../circuit-description/modules.md#module-z) — the chapter 7 text in full
+- [Module Z circuit description](../../circuit-description/modules/z-deck-electronics.md) — the chapter 7 text in full
 - [Warnings](../../general-service/warnings.md) — laser safety
 - [Modification levels per module](../../service-information/modification-levels.md#mod-z) — the corner sensor and tilt motor changes
 - [Module J — Focus](../j-focus/index.md) — takes `FOC-ER` and `FPI` from here

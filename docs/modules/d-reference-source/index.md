@@ -82,7 +82,7 @@ at all, IC7063 raises "no sync" on pin 13, which brings the 10 MHz reference
 oscillator into use through switch IC7062-3A.
 
 The full text is in
-[chapter 7, module D](../../circuit-description/modules.md#module-d).
+[chapter 7, module D](../../circuit-description/modules/d-reference-source.md).
 
 ## Adjustments
 
@@ -178,7 +178,7 @@ documenting.
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-d) — the chapter 7 text in full
+- [Module D circuit description](../../circuit-description/modules/d-reference-source.md) — the chapter 7 text in full
 - [Error 9 — frame lock](../../repair/case-studies/error-9-frame-lock.md) — a worked investigation in which this module is a candidate
 - [Fault-finding charts](../../repair/fault-finding.md) — the "no sync" paths come back here
 - [VP400 series architecture](../../circuit-description/vp400-series.md) — where the reference timing fits

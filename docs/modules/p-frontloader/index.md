@@ -76,7 +76,7 @@ the tray outwards, until the start/stop switch opens and `ST-ST` goes high
 again.
 
 The full text is in
-[chapter 7, module P](../../circuit-description/modules.md#module-p).
+[chapter 7, module P](../../circuit-description/modules/p-frontloader.md).
 
 ## Adjustments
 
@@ -130,7 +130,7 @@ are fixed on
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-p) — the chapter 7 text in full
+- [Module P circuit description](../../circuit-description/modules/p-frontloader.md) — the chapter 7 text in full
 - [Module N — Display + keyboard](../n-display-keyboard/index.md) — carries this module's data sheet
 - [Module R — Drive processor](../r-drive-processor/index.md) — drives the loader and reads its switches
 - [Demounting](../../general-service/demounting.md) — getting the front loader out

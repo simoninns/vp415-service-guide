@@ -77,7 +77,7 @@ driver stage's own supply is made by rectifying pulses from winding 10-3 with
 V301 and C301; the +15 V starting voltage comes from the auxiliary supply.
 
 The full text, including the current monitor and the standby rails, is in
-[chapter 7, module T](../../circuit-description/modules.md#module-t).
+[chapter 7, module T](../../circuit-description/modules/t-supply.md).
 
 ## Adjustments
 
@@ -255,7 +255,7 @@ Full table, with the service code number:
 ## Related
 
 - [Warnings](../../general-service/warnings.md) — **read first**: mains-side servicing, isolating transformer, earthing checks
-- [Module circuit descriptions](../../circuit-description/modules.md#module-t) — the chapter 7 text in full
+- [Module T circuit description](../../circuit-description/modules/t-supply.md) — the chapter 7 text in full
 - [Remarks](../../general-service/remarks.md) — why this board's component numbering differs
 - [Fault symptoms](../../service-information/fault-symptoms.md) — symptom A 5, VP410 only
 - [Fault-finding charts](../../repair/fault-finding.md) — dead-set and supply paths

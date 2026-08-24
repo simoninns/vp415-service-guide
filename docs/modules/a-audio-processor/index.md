@@ -72,7 +72,7 @@ one channel selected, cross-coupling through 2007/3017 and 2021/3041 feeds that
 channel to both outputs.
 
 The full text is in
-[chapter 7, module A](../../circuit-description/modules.md#module-a).
+[chapter 7, module A](../../circuit-description/modules/a-audio-processor.md).
 
 ## Adjustments
 
@@ -217,7 +217,7 @@ Full table, with service code numbers:
 
 ## Related
 
-- [Module circuit descriptions](../../circuit-description/modules.md#module-a) — the chapter 7 text in full
+- [Module A circuit description](../../circuit-description/modules/a-audio-processor.md) — the chapter 7 text in full
 - [Modification levels per module](../../service-information/modification-levels.md#mod-a) — what changed at level 3
 - [Adjustments](../../general-service/adjustments.md) — the general adjustment rules
 - [VP400 series architecture](../../circuit-description/vp400-series.md) — where the audio path sits in the player
