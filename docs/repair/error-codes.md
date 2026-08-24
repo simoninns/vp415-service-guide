@@ -20,7 +20,7 @@ The code number itself carries the severity — **the lower the code, the more
 serious the fault**:
 
 | Range | Severity | Effect in self-test mode |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | 1–30 | Fatal fault | Interrupts the programme loop; the drive goes to STAND-BY |
 | 31–59 | Major fault | Interrupts the programme loop; the drive goes to STAND-BY |
 | 60–80 | Behaviour fault | Programme loop continues |
