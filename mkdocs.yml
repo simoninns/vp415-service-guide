@@ -9,6 +9,13 @@ repo_url: https://github.com/simoninns/vp415-service-guide
 repo_name: simoninns/vp415-service-guide
 edit_uri: edit/main/docs/
 
+# Rendered in the footer of every page by the Material theme. Provided "as
+# is", no warranty - see the full legal disclaimer page for what that means.
+copyright: >-
+  Unofficial and provided "as is", without warranty of any kind &mdash;
+  see the
+  <a href="https://simoninns.github.io/vp415-service-guide/legal-disclaimer/">legal disclaimer</a>.
+
 docs_dir: docs
 site_dir: site
 
@@ -260,3 +267,4 @@ nav:
       - Downloads: reference/downloads.md
 
   - Contributing: contributing.md
+  - Legal disclaimer: legal-disclaimer.md
