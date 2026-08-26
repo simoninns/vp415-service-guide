@@ -63,7 +63,7 @@ has no affiliation with the BBC.
 ## Licensing
 
 The material in this repository is published under the **GNU General Public
-License v3.0** — see [LICENSE](https://github.com/simoninns/vp415-service-guide/blob/main/LICENSE)
+License v3.0** — see [LICENSE](https://github.com/domesday86/vp415-service-guide/blob/main/LICENSE)
 in the repository. GPLv3 already carries its own no-warranty terms (sections
 15 and 16 of the license); this page states the same thing in plainer words
 and extends it explicitly to the site's content, not just its code.

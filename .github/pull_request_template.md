@@ -27,5 +27,5 @@ there was one.
 
 <!--
 The house rules and a worked example of adding a repair guide to a module page:
-https://simoninns.github.io/vp415-service-guide/contributing/
+https://domesday86.github.io/vp415-service-guide/contributing/
 -->

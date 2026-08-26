@@ -8,7 +8,7 @@ body:
       value: |
         Thank you - this is the most useful thing anyone can add to the site.
         An **unfinished** diagnosis is welcome too: both of the published
-        [case studies](https://simoninns.github.io/vp415-service-guide/repair/case-studies/)
+        [case studies](https://domesday86.github.io/vp415-service-guide/repair/case-studies/)
         started as one. Fill in what you have and leave the rest blank.
 
   - type: input
@@ -37,7 +37,7 @@ body:
       label: Error code
       description: >-
         The number in the corner of the picture in
-        [self-test mode](https://simoninns.github.io/vp415-service-guide/repair/diagnostic-mode/),
+        [self-test mode](https://domesday86.github.io/vp415-service-guide/repair/diagnostic-mode/),
         or `- - -` if there is none.
       placeholder: "007"
     validations:
@@ -86,7 +86,7 @@ body:
       description: >-
         Signal or pin, what it should be, what it was. Connector references
         like `3G2` and mnemonics from the
-        [signal listing](https://simoninns.github.io/vp415-service-guide/system/signal-listing/)
+        [signal listing](https://domesday86.github.io/vp415-service-guide/system/signal-listing/)
         make this checkable by someone else.
       value: |
         | Point | Should be | Was |

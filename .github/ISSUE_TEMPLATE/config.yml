@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
   - name: How to contribute
-    url: https://simoninns.github.io/vp415-service-guide/contributing/
+    url: https://domesday86.github.io/vp415-service-guide/contributing/
     about: What is wanted, how to build the site locally, and a worked example of adding a repair guide to a module page
   - name: The published site
-    url: https://simoninns.github.io/vp415-service-guide/
+    url: https://domesday86.github.io/vp415-service-guide/
     about: The service guide itself

@@ -868,7 +868,7 @@ Notes:
   repository settings.
 - A second workflow runs `mkdocs build --strict` and `lychee` on pull requests without deploying.
 
-**Done when:** a push to `main` publishes to `https://simoninns.github.io/vp415-service-guide/`
+**Done when:** a push to `main` publishes to `https://domesday86.github.io/vp415-service-guide/`
 and the build is green.
 — **verified against the published site.** Full record:
 [phase-8-findings.md](phase-8-findings.md).
@@ -938,7 +938,7 @@ end of phase 6.
    presented as reference, not as a republication.
 2. **Operating instructions: in, as their own section.** Kept clearly separate from the service
    manual so the two are never confused. **BBC Master AIV guide: out** — its OCR has been deleted.
-3. **Domain:** `https://simoninns.github.io/vp415-service-guide/`. No custom domain, so no `CNAME`
+3. **Domain:** `https://domesday86.github.io/vp415-service-guide/`. No custom domain, so no `CNAME`
    and `site_url` is the default Pages URL.
 4. **Issue and PR templates: yes.** Landed in Phase 7: a repair report, a correction, and a pull
    request template whose first question is which source page the change is based on. The site's
@@ -956,7 +956,7 @@ end of phase 6.
    originals stay in the repository as the single copy of each file.
 8. **Deployment is live.** The `push` trigger on `.github/workflows/deploy.yml` was enabled in
    Phase 3 and the first run went green:
-   <https://simoninns.github.io/vp415-service-guide/> is published and serving. Pages was already
+   <https://domesday86.github.io/vp415-service-guide/> is published and serving. Pages was already
    configured to deploy from GitHub Actions. Verified against the live site — module pages and
    `-zoom` derivatives serve, `assets/originals/` returns 404 as intended. The pull-request check
    workflow — `just check` on every PR, plus a weekly external-link sweep — landed with Phase 7 as

@@ -2,7 +2,7 @@
 
 A service guide for the Philips VP415 Domesday LaserDisc player.
 
-## 📖 Read it here: **<https://simoninns.github.io/vp415-service-guide/>**
+## 📖 Read it here: **<https://domesday86.github.io/vp415-service-guide/>**
 
 The site is the point of this repository — everything below is how it gets built.
 
@@ -92,7 +92,7 @@ correction is based on — every page on the site carries both.
 
 There are issue templates for a [repair report](.github/ISSUE_TEMPLATE/repair-report.yml) and a
 [correction](.github/ISSUE_TEMPLATE/correction.yml), and the site's
-[contributing page](https://simoninns.github.io/vp415-service-guide/contributing/) walks through
+[contributing page](https://domesday86.github.io/vp415-service-guide/contributing/) walks through
 adding a repair guide to a module page — where the photographs go, how the derivatives are built,
 and the figure rules the build enforces.
 

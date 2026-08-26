@@ -23,7 +23,7 @@ manual is fixed; what surrounds it is not.
     turned out to be. Even an unfinished diagnosis is useful — both
     [case studies](repair/case-studies/index.md) started as one.
 
-    [:octicons-arrow-right-24: Open a repair report](https://github.com/simoninns/vp415-service-guide/issues/new?template=repair-report.yml)
+    [:octicons-arrow-right-24: Open a repair report](https://github.com/domesday86/vp415-service-guide/issues/new?template=repair-report.yml)
 
 -   :material-text-search: **Corrections**
 
@@ -33,7 +33,7 @@ manual is fixed; what surrounds it is not.
     dead link. Say which page and which sheet, and it can be checked against
     the 300 dpi original in the repository.
 
-    [:octicons-arrow-right-24: Report a correction](https://github.com/simoninns/vp415-service-guide/issues/new?template=correction.yml)
+    [:octicons-arrow-right-24: Report a correction](https://github.com/domesday86/vp415-service-guide/issues/new?template=correction.yml)
 
 -   :material-image-plus: **Better material**
 
@@ -42,7 +42,7 @@ manual is fixed; what surrounds it is not.
     Sharper photographs of a board, a scan of a sheet this copy of the manual
     is missing, an oscillogram of a signal the manual only describes.
 
-    [:octicons-arrow-right-24: Open an issue](https://github.com/simoninns/vp415-service-guide/issues/new)
+    [:octicons-arrow-right-24: Open an issue](https://github.com/domesday86/vp415-service-guide/issues/new)
 
 </div>
 
@@ -67,7 +67,7 @@ Everything the site needs is in the flake, so there is nothing to install
 beyond Nix:
 
 ```bash
-git clone https://github.com/simoninns/vp415-service-guide
+git clone https://github.com/domesday86/vp415-service-guide
 cd vp415-service-guide
 nix develop -c just serve      # http://127.0.0.1:8000, live reload
 ```

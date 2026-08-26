@@ -156,7 +156,7 @@ build did not change the site will look in the repository first.
 
 ## 9. Done when
 
-> a push to `main` publishes to `https://simoninns.github.io/vp415-service-guide/` and the build is
+> a push to `main` publishes to `https://domesday86.github.io/vp415-service-guide/` and the build is
 > green.
 
 Met before this phase opened, and now met on stronger terms: the build that publishes is the build
